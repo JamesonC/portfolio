@@ -4,42 +4,48 @@ title: About — Claudio Vallejo
 <%# Config %>
 <% about = data.about %>
 <%# Content %>
-<div>
-  <%# Hero %>
-  <article class="mb4">
-    <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
-      <div class="aspect-ratio--object cover bg-near-white"></div>
-    </div>
-  </article>
-  <div class="ph1">
-    <%# Bio %>
-    <%# Variables %>
-    <% bsl = about.bio.content.length - 1 %>
-    <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= about.bio.title %></h3>
-    <%# end %>
-    <% about.bio.content.each_with_index do |section, s| %>
-      <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh-copy"><%= section %></p>
-    <% end %>
-    <div>
-      <%# Detail Sections %>
-      <%# Variables %>
-      <% dsl = about.details.length - 1 %>
-      <% about.details.each_with_index do |section, s| %>
-        <div class="<% if s != dsl %>mb4<% end %>">
-          <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= section.title %></h3>
-          <ul class="ma0 merriweather pa0 list">
-            <%# Details %>
-            <%# Variables %>
-            <% dll = section.content.length - 1 %>
-            <% section.content.each_with_index do |detail, d| %>
-              <li class="<% if d != dll %>mb2<% end %>">
-                <a class="mb05 dib dark-gray link" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
-                <p class="ma0 gray"><%= detail.subtitle %></p>
-              </li>
-            <% end %>
-          </ul>
+<div class="mw8-l center mt4-m">
+  <div class="cf">
+    <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+    <div class="fl-ns w-80-m w-60-l">
+      <%# Hero %>
+      <article class="mb4">
+        <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
+          <div class="aspect-ratio--object cover bg-near-white"></div>
         </div>
-      <% end %>
+      </article>
+      <div class="ph1 ph0-ns">
+        <%# Bio %>
+        <%# Variables %>
+        <% bsl = about.bio.content.length - 1 %>
+        <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= about.bio.title %></h3>
+        <%# end %>
+        <% about.bio.content.each_with_index do |section, s| %>
+          <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh-copy"><%= section %></p>
+        <% end %>
+        <div class="cf">
+          <%# Detail Sections %>
+          <%# Variables %>
+          <% dsl = about.details.length - 1 %>
+          <% about.details.each_with_index do |section, s| %>
+            <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
+              <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= section.title %></h3>
+              <ul class="ma0 merriweather pa0 list">
+                <%# Details %>
+                <%# Variables %>
+                <% dll = section.content.length - 1 %>
+                <% section.content.each_with_index do |detail, d| %>
+                  <li class="<% if d != dll %>mb2<% end %>">
+                    <a class="mb05 dib dark-gray link" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
+                    <p class="ma0 gray"><%= detail.subtitle %></p>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
+    <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
   </div>
 </div>
