@@ -64,6 +64,7 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
+.mt2 { margin-top: 2rem; }
 .mt8 { margin-top: 8rem; }
 .mr2 { margin-right: 2rem; }
 .mb05 { margin-bottom: 0.5rem; }
@@ -129,10 +130,14 @@ html { -webkit-font-smoothing: antialiased; }
   }
 */
 @media screen and (min-width: 30em) {
+  .mt2-m { margin-top: 2rem; }
+  .mt4-m { margin-top: 4rem; }
+  .pb2-m { padding-bottom: 2rem; }
+  .ph0-ns { padding-right: 0; padding-left: 0; }
   .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
-
+  .ph2-m { padding-right: 2rem; padding-left: 2rem; }
 }
 @media screen and (min-width: 60em) {
 
