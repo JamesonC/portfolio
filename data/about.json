@@ -1,0 +1,44 @@
+{
+  "hero": "hero.jpg",
+  "bio": {
+    "title": "Bio",
+    "content": [
+      "Hi there! I’m Claudio, a Mexican web designer / front-end developer freelancing from Monterrey, Mexico. At the moment I’m looking for a job opportunity in the United States as a Product Designer with a focus on design systems or business tools.",
+
+      "I graduated from Baylor University with a BBA in Entrepreneurship on May 2014. I first learned about design my senior year of college as a part of the <a class=\"gray link\" href=\"http://www.baylor.edu/business/entrepreneurship/index.php?id=89585\" target=\"_blank\">Baylor Accelerated Ventures Program</a>. During my last semester I signed up for an introductory Media Design class and fell in love with design.",
+
+      "After graduation I moved to Phoenix to help an old friend start a video production company. I lived in Phoenix for 9 months during which I learned about startups, business, video editing, animation, and worked for <a class=\"gray link\" href=\"http://brushfireinteractive.com\" target=\"_blank\">Brushfire Interactive</a> as a freelance Motion Designer.",
+
+      "I moved to Monterrey, Mexico and worked for Parámetro Studio as a Junior Web Designer the fall of 2015. I left Parámetro and continued freelancing for Brushfire while working on web projects for local clients. During 2016 I learned about design process, front-end development and got a chance to be a part of Epicurrence in Moab, UT.",
+
+      "My goals and aspirations are to become a US citizen, be a part of a team that works on a business product with global impact, stay healthy, and help new designers (like myself) learn about design and development."
+    ]
+  },
+  "details": [
+    {
+      "title": "Recent Events",
+      "content": [
+        {
+          "title": "Epicsode No. 2",
+          "subtitle": "Austin TX, August 2016",
+          "source": "https://dribbble.com/shots/2905207-Epicsode-No-2-Live-in-Austin"
+        },
+        {
+          "title": "Epicurrence No. 4",
+          "subtitle": "Moab UT, October 2016",
+          "source": "https://dribbble.com/shots/2724029-Epicurrence-No-4-MOAB-UT"
+        }
+      ]
+    },
+    {
+      "title": "Press",
+      "content": [
+        {
+          "title": "Ep. 50 — Don't Be Afraid to Jump",
+          "subtitle": "Hustle Podcast, October 2016",
+          "source": "http://funsize.co/hustle/dont-be-afraid-to-jump-feat-claudio-vallejo"
+        }
+      ]
+    }
+  ]
+}

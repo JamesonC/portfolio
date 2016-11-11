@@ -1,0 +1,139 @@
+html { -webkit-font-smoothing: antialiased; }
+/*
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+*/
+.lato { font-family: 'Lato', sans-serif; }
+.merriweather { font-family: 'Merriweather', serif; }
+/*
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.lh-copy { line-height: 1.75em; }
+/*
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.tracked { letter-spacing: 0.15em; }
+/*
+   SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+*/
+/* Text colors */
+.dark-gray { color: #333; }
+.gray { color: #bdbdbd; }
+/* Background colors */
+.bg-dark-gray { background-color: #333; }
+.bg-gray { background-color: #bdbdbd; }
+/*
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+   An eight step powers of two scale ranging from 0 to 16rem.
+   Base:
+     p = padding
+     m = margin
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.mt8 { margin-top: 8rem; }
+.mr2 { margin-right: 2rem; }
+.mb05 { margin-bottom: 0.5rem; }
+.mb1 { margin-bottom: 1rem; }
+.mb2 { margin-bottom: 2rem; }
+.mb4 { margin-bottom: 4rem; }
+.ph1 { padding-right: 1rem; padding-left: 1rem; }
+.pb1 { padding-bottom: 1rem; }
+.pb2 { padding-bottom: 2rem; }
+/*
+   TYPE SCALE
+   Docs: http://tachyons.io/docs/typography/scale/
+   Base:
+    f = font-size
+   Modifiers
+     1 = 1st step in size scale
+     2 = 2nd step in size scale
+     3 = 3rd step in size scale
+     4 = 4th step in size scale
+     5 = 5th step in size scale
+     6 = 6th step in size scale
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.f075 { font-size: 0.75rem; }
+.f1 { font-size: 1rem; }
+/*
+
+    OVERFLOW
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+.overflow-scrolling { -webkit-overflow-scrolling: touch; }
+.scrollbar-dn::-webkit-scrollbar { display: none; }
+/*
+  CUSTOM MEDIA QUERIES
+  Media query values can be changed to fit your own content.
+  There are no magic bullets when it comes to media query width values.
+  They should be declared in em units - and they should be set to meet
+  the needs of your content. You can also add additional media queries,
+  or remove some of the existing ones.
+  These media queries can be referenced like so:
+  @media (--breakpoint-not-small) {
+    .medium-and-larger-specific-style {
+      background-color: red;
+    }
+  }
+  @media (--breakpoint-medium) {
+    .medium-screen-specific-style {
+      background-color: red;
+    }
+  }
+  @media (--breakpoint-large) {
+    .large-and-larger-screen-specific-style {
+      background-color: red;
+    }
+  }
+*/
+@media screen and (min-width: 30em) {
+  .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+
+}
+@media screen and (min-width: 60em) {
+
+}
