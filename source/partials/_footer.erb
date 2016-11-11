@@ -1,17 +1,23 @@
 <%# Config %>
 <% contact = data.contact.content %>
 <%# Partial %>
-<footer class="mt8 pb1">
-  <ul class="ma0 pa0 ph1 overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
-    <%# Links %>
-    <%# Variables %>
-    <% cll = contact.length - 1 %>
-    <% contact.each_with_index do |link, l| %>
-      <li class="dib">
-        <a class="dib <% if l != cll %>mr2<% end %> lato f075 b tracked ttu gray link" href="<%= link.source %>" target="_blank">
-          <%= link.title %>
-        </a>
-      </li>
-    <% end %>
-  </ul>
+<footer class="mw8-l center mt8 pb1 pb2-m">
+  <div class="cf">
+    <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+    <div class="fl-ns w-80-m w-60-l">
+      <ul class="ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+        <%# Links %>
+        <%# Variables %>
+        <% cll = contact.length - 1 %>
+        <% contact.each_with_index do |link, l| %>
+          <li class="dib">
+            <a class="dib <% if l != cll %>mr2<% end %> lato f075 b tracked ttu gray link" href="<%= link.source %>" target="_blank">
+              <%= link.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+  </div>
 </footer>
