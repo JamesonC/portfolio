@@ -32,7 +32,7 @@ title: About — Claudio Vallejo
             <%# Variables %>
             <% dll = section.content.length - 1 %>
             <% section.content.each_with_index do |detail, d| %>
-              <li class="<% if d != dll %>mb1<% end %>">
+              <li class="<% if d != dll %>mb2<% end %>">
                 <a class="mb05 dib dark-gray link" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
                 <p class="ma0 gray"><%= detail.subtitle %></p>
               </li>
