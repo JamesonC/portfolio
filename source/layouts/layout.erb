@@ -5,13 +5,16 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title><%= current_page.data.title %></title>
+    <%= partial "partials/meta" %>
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
     <%= stylesheet_link_tag :tachyons %>
     <%= stylesheet_link_tag :site %>
   </head>
-  <body class="debug">
+  <!-- <body class="load is-hidden"> -->
+  <body class="load is-hidden">
     <%= yield %>
     <%= partial "partials/footer" %>
   </body>
+  <%= javascript_include_tag :all %>
 </html>
