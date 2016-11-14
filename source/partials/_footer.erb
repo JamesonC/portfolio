@@ -11,7 +11,7 @@
         <% cll = contact.length - 1 %>
         <% contact.each_with_index do |link, l| %>
           <li class="dib">
-            <a class="dib <% if l != cll %>mr2<% end %> lato f075 b tracked ttu gray link" href="<%= link.source %>" target="_blank">
+            <a class="dib <% if l != cll %>mr2<% end %> lato f075 b tracked ttu gray link hover-dark-gray" href="<%= link.source %>" target="_blank">
               <%= link.title %>
             </a>
           </li>
