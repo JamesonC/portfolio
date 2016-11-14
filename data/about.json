@@ -1,17 +1,17 @@
 {
   "hero": "hero.jpg",
   "bio": {
-    "title": "Bio",
+    "title": "About",
     "content": [
-      "Hi there! I’m Claudio, a Mexican web designer / front-end developer freelancing from Monterrey, Mexico. At the moment I’m looking for a job opportunity in the United States as a Product Designer with a focus on design systems or business tools.",
+      "Hi there! I’m Claudio, a Mexican web designer and front-end developer freelancing from Monterrey, Mexico. At the moment I’m looking for a job opportunity in the United States as a Product Designer working on design systems or business tools with global impact.",
 
-      "I graduated from Baylor University with a BBA in Entrepreneurship on May 2014. I first learned about design my senior year of college as a part of the <a class=\"gray link\" href=\"http://www.baylor.edu/business/entrepreneurship/index.php?id=89585\" target=\"_blank\">Baylor Accelerated Ventures Program</a>. During my last semester I signed up for an introductory Media Design class and fell in love with design.",
+      "I stumbled with design as a senior at Baylor University, where I designed my first logo as part of the <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://www.baylor.edu/business/entrepreneurship/index.php?id=89585\" target=\"_blank\">Baylor Accelerated Ventures Program</a>. During my last semester I took an intro to media design course where I worked on my first freelance project and found my first mentor. I decided to pursue a career as a graphic designer after graduating with a BBA in Entrepreneurship in May 2014.",
 
-      "After graduation I moved to Phoenix to help an old friend start a video production company. I lived in Phoenix for 9 months during which I learned about startups, business, video editing, animation, and worked for <a class=\"gray link\" href=\"http://brushfireinteractive.com\" target=\"_blank\">Brushfire Interactive</a> as a freelance Motion Designer.",
+      "I moved to Phoenix, Arizona August 2014 with one of my best friends to start a video production company. I lived in Phoenix for 9 months during which I learned about business, graphic design, video editing, animation, and worked for <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://brushfireinteractive.com\" target=\"_blank\">Brushfire Interactive</a> as a freelance motion designer.",
 
-      "I moved to Monterrey, Mexico and worked for Parámetro Studio as a Junior Web Designer the fall of 2015. I left Parámetro and continued freelancing for Brushfire while working on web projects for local clients. During 2016 I learned about design process, front-end development and got a chance to be a part of Epicurrence in Moab, UT.",
+      "My student Visa expired, so I moved to Monterrey, Mexico and worked for <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://parametrostudio.com/\" taget=\"_blank\">Parámetro Studio</a> as a junior web designer the fall of 2015. During 2016 I freelanced as a web designer/developer for local clients, continued working with Brushfire, and participated in several design events in the US.",
 
-      "My goals and aspirations are to become a US citizen, be a part of a team that works on a business product with global impact, stay healthy, and help new designers (like myself) learn about design and development."
+      "My goals for the near future are to join a design team solving global business problems, be a part of and contribute to the design community, dive deeper into web development, and become a US citizen."
     ]
   },
   "details": [
@@ -19,14 +19,14 @@
       "title": "Recent Events",
       "content": [
         {
-          "title": "Epicsode No. 2",
-          "subtitle": "Austin TX, August 2016",
-          "source": "https://dribbble.com/shots/2905207-Epicsode-No-2-Live-in-Austin"
-        },
-        {
           "title": "Epicurrence No. 4",
           "subtitle": "Moab UT, October 2016",
           "source": "https://dribbble.com/shots/2724029-Epicurrence-No-4-MOAB-UT"
+        },
+        {
+          "title": "Epicsode No. 2",
+          "subtitle": "Austin TX, August 2016",
+          "source": "https://dribbble.com/shots/2905207-Epicsode-No-2-Live-in-Austin"
         }
       ]
     },
