@@ -1,5 +1,6 @@
 ---
 title: About — Claudio Vallejo
+layout: main
 meta_title: About
 description: Hi there! I’m Claudio, a Mexican web designer and front-end developer freelancing from Monterrey, Mexico. At the moment I’m looking for a job opportunity in the United States as a Product Designer working on design systems or business tools with global impact.
 ---
@@ -7,9 +8,9 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
 <% about = data.about %>
 <%# Content %>
 <main>
-  <div class="mw8-l center mt4-m">
+  <div class="mw8-l center mt4-ns">
     <div class="cf">
-      <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
       <div class="fl-ns w-80-m w-60-l">
         <%# Hero %>
         <article class="mb4">
@@ -41,7 +42,7 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
                   <% dll = section.content.length - 1 %>
                   <% section.content.each_with_index do |detail, d| %>
                     <li class="<% if d != dll %>mb2<% end %>">
-                      <a class="mb05 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
+                      <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
                       <p class="ma0 gray"><%= detail.subtitle %></p>
                     </li>
                   <% end %>
@@ -51,7 +52,7 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
           </div>
         </div>
       </div>
-      <div class="fl-ns w-10-m w-20-l" style="min-height: 1px;"></div>
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
     </div>
   </div>
 </main>
