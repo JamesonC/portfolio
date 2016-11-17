@@ -1,0 +1,56 @@
+---
+title: Project Detail Test — Claudio Vallejo
+layout: main
+meta_title: Project Detail Test
+description: Heh, lorem ipsum.
+---
+<%# Config %>
+<% project = locals[:project] %>
+<%# End %>
+<main>
+  <div class="mw8-l center mt4-ns">
+    <div class="cf">
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+      <div class="fl-ns w-80-m w-60-l">
+        <%# Header %>
+        <article>
+          <header>
+            <h1><%= project.title %></h1>
+            <h2><%= project.caption %></h2>
+          </header>
+          <% project.links.each_with_index do |link| %>
+            <a href="<%= link.path %>"><%= link.title %></a>
+          <% end %>
+        </article>
+        <%# Content %>
+        <% project.content.each_with_index do |section, s| %>
+          <div>
+            <% if section.title %>
+              <h3><%= section.title %></h3>
+            <% end %>
+            <% section.subsections.each_with_index do |subsection, sb| %>
+              <% if subsection.type === "text" %>
+                <p><%= subsection.text %></p>
+              <% elsif subsection.type === "image" %>
+                <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
+                  <div class="aspect-ratio--object cover" title="<%= subsection.alt %>" style="background-color: #fafafa;"></div>
+                </div>
+                <% if !subsection.caption %>
+                  <p><%= subsection.caption %></p>
+                <% end %>
+              <% elsif subsection.type === "list" %>
+                <ul>
+                  <% subsection.list.each_with_index do |item| %>
+                    <h4><%= item.title %></h4>
+                    <p><%= item.text %></p>
+                  <% end %>
+                </ul>
+              <% end %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+    </div>
+  </div>
+</main>
