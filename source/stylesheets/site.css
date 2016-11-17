@@ -43,6 +43,32 @@ html { -webkit-font-smoothing: antialiased; }
 .dim:hover, .dim:focus { opacity: .5; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
 .dim:active { opacity: .8; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
 /*
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+     -auto = string value of auto
+     -inherit = string value of inherit
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+.min-h-1 { min-height: 1px; }
+/*
    LINKS
    Docs: http://tachyons.io/docs/elements/links/
 */
@@ -97,10 +123,11 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
+.mv4 { margin-top: 4rem; margin-bottom: 4rem; }
 .mt2 { margin-top: 2rem; }
 .mt8 { margin-top: 8rem; }
 .mr2 { margin-right: 2rem; }
-.mb05 { margin-bottom: 0.5rem; }
+.mb0_5 { margin-bottom: 0.5rem; }
 .mb1 { margin-bottom: 1rem; }
 .mb2 { margin-bottom: 2rem; }
 .mb4 { margin-bottom: 4rem; }
@@ -172,14 +199,15 @@ transition: opacity 1.5s ease-in-out; }
   }
 */
 @media screen and (min-width: 30em) {
-  .mt2-m { margin-top: 2rem; }
-  .mt4-m { margin-top: 4rem; }
-  .pb2-m { padding-bottom: 2rem; }
+  .mt4-ns { margin-top: 4rem; }
   .ph0-ns { padding-right: 0; padding-left: 0; }
   .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .mt2-m { margin-top: 2rem; }
+  .mt4-m { margin-top: 4rem; }
   .ph2-m { padding-right: 2rem; padding-left: 2rem; }
+  .pb2-m { padding-bottom: 2rem; }
 }
 @media screen and (min-width: 60em) {
 
