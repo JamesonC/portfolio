@@ -18,5 +18,5 @@ page '/*.txt', layout: false
 # Proxies
 #
 data.projects.each do |project|
-  proxy "/projects/#{ I18n.transliterate(project.title).downcase.strip.gsub(' ', '-') }", "/project-detail.html", :locals => { :project => project }, :ignore => true
+  proxy "/projects/#{ I18n.transliterate(project.title).downcase.strip.gsub(' ', '-') }/index.html", "/project-detail.html", :locals => { :project => project }, :ignore => true
 end
