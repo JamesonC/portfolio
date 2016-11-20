@@ -2,3 +2,21 @@
 layout: main
 title: Projects — Claudio Vallejo
 ---
+<main>
+  <div class="mw8-l center mt4-ns ph1 ph0-ns">
+    <div class="cf">
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+      <div class="fl-ns w-80-m w-60-l">
+        <article>
+          <header>
+            <h1><%= data.index.intro %></h1>
+          </header>
+          <% data.projects.each do |project| %>
+            <a class="ma0 f2 lato dark-gray link" href="/projects/<%= pretty_url project.title %>/index.html"><%= project.title %></a>
+          <% end %>
+        </article>
+      </div>
+      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+    </div>
+  </div>
+</main>
