@@ -15,7 +15,7 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
         <%# Hero %>
         <article class="mb4">
           <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
-            <div class="aspect-ratio--object cover bg-center" title="Hola! Mucho gusto, soy Claudio :)" style="background-image: url(images/portrait.jpg)"></div>
+            <div class="aspect-ratio--object cover bg-center" title="Hola! Mucho gusto, soy Claudio :)" style="background-image: url(/images/portrait.jpg)"></div>
           </div>
         </article>
         <div class="ph1 ph0-ns">
@@ -23,10 +23,10 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
           <%# Variables %>
           <% bsl = about.bio.content.length - 1 %>
           <%# End %>
-          <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= about.bio.title %></h3>
+          <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= about.bio.title %></h3>
           <%# end %>
           <% about.bio.content.each_with_index do |section, s| %>
-            <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh-copy"><%= section %></p>
+            <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh1_75"><%= section %></p>
           <% end %>
           <div class="cf">
             <%# Detail Sections %>
@@ -35,7 +35,7 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
             <%# End %>
             <% about.details.each_with_index do |section, s| %>
               <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
-                <h3 class="ma0 mb2 lato f075 tracked ttu gray"><%= section.title %></h3>
+                <h3 class="ma0 mb2 lato f0_75 tracked ttu gray"><%= section.title %></h3>
                 <ul class="ma0 merriweather pa0 list">
                   <%# Details %>
                   <%# Variables %>
