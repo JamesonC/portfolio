@@ -15,73 +15,99 @@
     ],
     "content": [
       {
-        "title": false,
+        "title": "Introduction",
         "subsections": [
           {
             "type": "text",
-            "text": "Late January 2016 Materiales Vallejo was approached by an advertising agency offering to create their first website. My father knew I was interested in learning more about design and development and asked me if I would like to design Materiales Valejo’s first website. He offered full creative freedom and availability for business research and content details. At the time I was working on a Squarespace website for a client and had basic knowledge of web-development. I immediately accepted the offer and saw it as the perfect opportunity to learn more about the web while helping my family’s business in a small way."
+            "text": "Late January 2016 my father was approached by an advertising agency offering to create Materiales Vallejo’s first website. My father knew I was interested in learning more about web design and development and asked if I wanted to take care of the family business website. He offered full creative freedom and availability for business research and content details. At the time I had experience working with website builders and a basic understanding of HTML, CSS, and JavaScript. I accepted the offer and saw it as the perfect opportunity to learn more about the web while helping my family’s business in a small way."
           }
         ]
       },
       {
-        "title": "Business Details",
+        "title": "First Attempts",
         "subsections": [
           {
             "type": "text",
-            "text": "Materiales Vallejo is a small building material store in Matamoros, Tamaulipas selling cement, steel bars, building blocks and sand to local clients. The business is part of a community in Mexico where online retail is basically inexistent and where having an online business presence is not yet a need."
+            "text": "While my father came up with a list of products and services, I searched online for the websites I liked the most and started exploring with different website layouts. Simultaneously, I worked on establishing a visual direction for the site—I explored with colors, spacing, and icons— and drove to my hometown for a weekend to take product and store pictures."
           },
           {
             "type": "image",
             "image": {
               "path": "",
-              "alt": "Bobcat working sand",
-              "caption": "Mexican-American border city neighbor of Brownsville, Texas"
+              "alt": "Web layout sketches",
+              "caption": "Lorem ipsum dolor sit amet"
             }
           },
           {
             "type": "text",
-            "text": "After my grandfather passed away 15 years ago my father took over the business and has relied on reputation and word of mouth marketing to acquire new sales. Having a website would help the business engage with potential clients and generate new sales leads while serving as a first step to establishing an online presence which will be required in several years."
+            "text": "After a month of exploring with different layouts and visual directions, I finally found a design I was happy with. My father approved of the design and content and I started figuring out how to develop the website."
           },
           {
             "type": "image",
             "image": {
               "path": "",
-              "alt": "Revenue breakdown chart",
-              "caption": "70% of revenue comes from wholeselling to local material and hardware stores"
+              "alt": "Version 1 desktop designs",
+              "caption": "Lorem ipsum dolor sit amet"
             }
           },
           {
             "type": "text",
-            "text": "The business’s hiring process is composed of publishing job advertisements on the local newspapers and radio stations. Every job applicant must purchase a job application form at a local office supply store, fill out the form, and email it or hand it in person. Having a website could also help the business expedite the hiring process by providing a simple place where interested job applicants can view details about the job and apply directly online."
+            "text": "I worked for a month and a half to develop the website. Along the way I used git for the first time, learned about CSS and SASS, and took innumerable Treehouse courses to catch up on HTML and learn about JavaScript. I published the website and continued working on other web projects and taking web development courses online."
+          },
+          {
+            "type": "text",
+            "text": "A month passed and I got an opportunity to critique my father’s website. I realized there was superfluous content and too many images and as a consequence the experience was slow and fragmented. So I decided to redesign and rebuild the website to offer a faster, simpler experience."
           },
           {
             "type": "image",
             "image": {
               "path": "",
-              "alt": "Employee carrying steel rings",
-              "caption": "Materiales Vallejo is a small business with only 15 employees, 10 of which work outside doing physical labor"
+              "alt": "Version 2 mobile designs",
+              "caption": "Lorem ipsum dolor sit amet"
             }
+          },
+          {
+            "type": "text",
+            "text": "The website was published and I got busy with other web projects while I continued to learn more about web design and development. Five months passed and I got a chance to critique my father’s website again. I realized I had been designing for visuals and had no business or user problems I was trying to solve. On top of that, the website had several layout flaws and IE bugs that I had to fix. So I decided to redesign and redevelop the website, but this time I defined a purpose and designed for particular business and user needs."
           }
         ]
       },
       {
-        "title": "User Details",
+        "title": "Purpose",
         "subsections": [
           {
             "type": "text",
-            "text": "The website was designed to provide a quick run-through of the business for potential new clients. These users are typically construction firm secretaries or small business owners looking for product availability, price, and delivery estimates. These users are most likely to visit the website and engage with the business because they have purchasing power, know how to use a web browser, and are familiar with product use and terminology."
-          },
-          {
-            "type": "image",
-            "image": {
-              "path": "",
-              "alt": "Core User Card",
-              "caption": "The user represents 78% of the business revenue"
-            }
+            "text": "Materiales Vallejo is a small building material store in Matamoros, Tamaulipas selling cement, steel bars, and other building materials to local clients. The business is part of a community in Mexico where online retail is inexistent and where establishing an online presence is not even contemplated."
           },
           {
             "type": "text",
-            "text": "The website will help automate the job application process by featuring a jobs section, where potential new hires can obtain information about the available job and fill out a form to apply online."
+            "text": "The website was designed to engage with local potential customers and to expedite the hiring process. At the same time, since Materiales Vallejo has no budget or time to manage the website, hosting should be free and development tools should make content editing simple and fast."
+          }
+        ]
+      },
+      {
+        "title": "Core User",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "Any potential client that calls the business looks for three things: product availability, price, and delivery estimates. 70% of business revenue comes from wholeselling to local material and hardware stores. In Mexico, particularly in wholeselling, pricing is kept private. Every client gets a different price based on length of relationship with the business, frequency of purchase, and volume of purchase. As a consequence, clients have to interact with the business to figure out pricing."
+          },
+          {
+            "type": "text",
+            "text": "The website was designed to provide a quick run-through of the business while providing accessible and up-to-date forms of contact. The website was designed for construction firm secretaries and small business owners that have purchasing power and that are familiar with building material use and terminology and that are used to calling the business to find out about product pricing."
+          }
+        ]
+      },
+      {
+        "title": "Secondary User",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "The business has 16 employees and has a very out-of-date hiring process. Whenever there’s an available job, the business publishes a job ad in a local newspaper and on several radio stations. Anyone who’s interested in applying has to go to an office supply store, purchase a job application form, and deliver the application in person or via email."
+          },
+          {
+            "type": "text",
+            "text": "The website will help automate the job application process by featuring a jobs section, where potential new hires can obtain information about the available job and fill out a form to apply online, saving applicants time and money. At the same time, the applications will be sent to a private site where the business will have an easier way to manage and navigate through job applications."
           }
         ]
       },
@@ -90,90 +116,51 @@
         "subsections": [
           {
             "type": "text",
-            "text": "The user should know who the business is and what it offers on their first impression of the website. The index page was designed to provide a quick but complete snapshot of the business and contains all the information the core user looks for."
+            "text": "Core users should know who the business is and what it offers on their first impression of the website. The index page was designed to provide a quick but complete snapshot of the business and contains all the information the core user looks for. Each section was structured to provide efficient content consumption while minimizing section height to keep the experience short."
           },
           {
             "type": "image",
             "image": {
               "path": "",
               "alt": "Mobile Index Page",
-              "caption": "The page introduces who the business is and what it does, then displays available products and services, and it ends with the available forms of contact"
+              "caption": "Lorem ipsum dolor sit amet"
             }
           },
           {
             "type": "text",
-            "text": "Users should be able to navigate through available products in a fast and intuitive way. The product section features a continuous product carrusel. The products were organized by categories and were ordered from most popular to least popular."
+            "text": "Core users should be able to find available products as fast as possible. Product cards were ordered from most popular to least popular and were arranged by category. Product cards were designed to provide just enough information for users to navigate through the carrusel without having to process product details. If the user is interested in learning more about the product, the user can press the product card and read about available measurements and sale unit."
           },
           {
             "type": "image",
             "image": {
               "path": "",
               "alt": "Mobile Product Carrusel",
-              "caption": "Product cards were designed to display only the most important details up front"
+              "caption": "Lorem ipsum dolor sit amet"
             }
           },
           {
             "type": "text",
-            "text": "Users should be able to contact the business at any point of their experience. The site features auto-updating forms of contact, displaying the form of contact that guarantees the fastest business response based on current day and time."
+            "text": "Core users should be able to contact the business at any point of their experience. The site features auto-updating forms of contact that prioritize user engagement. If the business is open, contact buttons and relevant content sections invite the user to call the office. Otherwise, contact buttons and content invite the user to send an email."
           },
           {
             "type": "image",
             "image": {
               "path": "",
               "alt": "Updating Contact Forms",
-              "caption": "If the business is open, the contact button calls the office. Otherwise, the contact button opens the user’s email client"
+              "caption": "Lorem ipsum dolor sit amet"
             }
-          }
-        ]
-      },
-      {
-        "title": "Development Details",
-        "subsections": [
+          },
           {
             "type": "text",
-            "text": "The site is built with Middleman to deliver a lean experience and provide a fast development process. Tachyons was used to make CSS classes manageable and reusable which resulted in a more efficient development experience and a smaller CSS file. Gulp.js was used to automate file optimization, concatenation and minification."
+            "text": "The business should be able to share a link to a job detail page in the newspaper and radio ads so potential hires can find more about eh job and fill out an online application. At the same time, the website should display a job banner that doesn’t interfere with the core user experience."
           },
           {
             "type": "image",
             "image": {
               "path": "",
-              "alt": "Google PageSpeed Insights and CSS Stats",
-              "caption": false
+              "alt": "Job Banner, Job Application Form",
+              "caption": "Lorem ipsum dolor sit amet"
             }
-          },
-          {
-            "type": "text",
-            "text": "The site was integrated with DatoCMS, a content management system for static websites that offers a fully customizable backend with a free unlimited starter plan. DatoCMS integrates seamlessly with Netlify, which provides free hosting and continuous deployment."
-          },
-          {
-            "type": "text",
-            "text": "Dropbox and GitHub accounts were created to facilitate the sharing of site files and assets and make future feature additions and collaborations simpler."
-          }
-        ]
-      },
-      {
-        "title": "Key Insights",
-        "subsections": [
-          {
-            "type": "text",
-            "text": "The website has gone through three published versions during 2016. After publishing the first version I continued working on client projects and worked on the website on my free time. As the year went by I found myself coming back to my father’s website to apply new insights and development tools I picked up along the way."
-          },
-          {
-            "type": "list",
-            "list": [
-              {
-                "title": "Designing for Myself",
-                "text": "Lorem ipsum dolor sit amet consectetur adipiscing seit in questa. Parole maecenas rex. In questa parole. Nenimsei, in questa prole. Ad astra per aspera in questa vitro firenze."
-              },
-              {
-                "title": "Content",
-                "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-              },
-              {
-                "title": "Branding",
-                "text": "Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure."
-              }
-            ]
           }
         ]
       }
