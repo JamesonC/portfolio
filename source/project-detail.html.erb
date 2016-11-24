@@ -8,49 +8,73 @@ description: Heh, lorem ipsum.
 <% project = locals[:project] %>
 <%# End %>
 <main>
-  <div class="mw8-l center mt4-ns">
-    <div class="cf">
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
-      <div class="fl-ns w-80-m w-60-l">
-        <%# Header %>
-        <article>
-          <header>
-            <h1><%= project.title %></h1>
-            <h2><%= project.caption %></h2>
-          </header>
-          <% project.links.each_with_index do |link| %>
-            <a href="<%= link.path %>"><%= link.title %></a>
-          <% end %>
-        </article>
-        <%# Content %>
-        <% project.content.each_with_index do |section, s| %>
-          <div>
-            <% if section.title %>
-              <h3><%= section.title %></h3>
-            <% end %>
-            <% section.subsections.each_with_index do |subsection, sb| %>
-              <% if subsection.type === "text" %>
-                <p><%= subsection.text %></p>
-              <% elsif subsection.type === "image" %>
-                <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
-                  <div class="aspect-ratio--object cover" title="<%= subsection.alt %>" style="background-color: #fafafa;"></div>
-                </div>
-                <% if !subsection.caption %>
-                  <p><%= subsection.caption %></p>
-                <% end %>
-              <% elsif subsection.type === "list" %>
-                <ul>
-                  <% subsection.list.each_with_index do |item| %>
-                    <h4><%= item.title %></h4>
-                    <p><%= item.text %></p>
-                  <% end %>
-                </ul>
-              <% end %>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+  <%# Hero %>
+  <div class="mw58-ns center">
+    <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
+      <div class="aspect-ratio--object cover bg-center" title="<%= project.hero.alt %>" style="background-image: url('<%= project.hero.path %>');"></div>
     </div>
   </div>
+  <%# Header %>
+  <section class="mw28 center mv8 ph1 ph0-ns tc">
+    <%# Header %>
+    <h1 class="ma0 mb1 merriweather f2_5 fw3 dark-gray"><%= project.title %></h1>
+    <h2 class="ma0 lato f1_875 fw3 lh1_25 dark-gray"><%= project.caption %></h2>
+    <%# Links %>
+    <div class="mt2">
+      <% project.links.each_with_index do |link, l| %>
+        <a class="dib <% if l % 2 === 0 %>mr1<% else %>ml1<% end %> lato f0_75 b tracked ttu blue link hover-dark-gray" href="<%= link.path %>" target="_blank">
+          <%= link.title %>
+          <span class="dib pr1">
+            <svg viewBox="0 0 100 100" width="0.5rem" height="0.5rem">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="blue-fill" transform="translate(100, 100) rotate(180)"></path>
+            </svg>
+          </span>
+        </a>
+      <% end %>
+    </div>
+  </section>
+  <%# Content %>
+  <% project.content.each_with_index do |section, s| %>
+    <section>
+      <% if section.title %>
+        <div class="mw38-ns center ph1 ph0-ns">
+          <h3 class="ma0 mb2 lato f0_75 b tracked ttu dark-gray"><%= section.title %></h3>
+        </div>
+      <% end %>
+      <%# Config %>
+      <% sbl = section.subsections.length - 1 %>
+      <%# End %>
+      <% section.subsections.each_with_index do |subsection, sb| %>
+        <%# End %>
+        <% if subsection.type === "text" %>
+          <div class="mw38-ns center ph1 ph0-ns">
+            <p class="ma0 <% if sb != sbl %>mb1<% else %>mb4<% end %> merriweather f1_25 lh1_75 dark-gray"><%= subsection.text %></p>
+          </div>
+        <% elsif subsection.type === "image" %>
+          <div class="mw58-ns center">
+            <div class="mt4 <% if sb != sbl %>mb4<% else %>mb8<% end %>">
+              <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
+                <div class="aspect-ratio--object cover bg-center" title="<%= subsection.image.alt %>" style="background-image: url('<%= subsection.image.path %>');"></div>
+              </div>
+              <% if subsection.image.caption %>
+                <p class="ma0 mt0_5 ph1 ph0-ns lato f0_9375 tc lh1_25 dark-gray"><%= subsection.image.caption %></p>
+              <% end %>
+            </div>
+          </div>
+        <% elsif subsection.type === "list" %>
+          <%# Config %>
+          <% il = subsection.list.length - 1 %>
+          <%# End %>
+          <% subsection.list.each_with_index do |item, i| %>
+            <div class="mw38-ns center ph1 ph0-ns">
+              <div class="<% if i === 0 %>mt4<% else %>mt2<% end %> pl2">
+                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= item.title %></h4>
+                <p class="ma0 merriweather fw3 lh1_75 dark-gray"><%= item.text %></p>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </section>
+  <% end %>
 </main>
