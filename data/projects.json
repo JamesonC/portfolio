@@ -3,14 +3,18 @@
     "title": "Materiales Vallejo",
     "type": "Case Study",
     "caption": "Designing and developing a building material store’s first website.",
+    "hero": {
+      "path": "/images/projects/materiales-vallejo/hero.jpg",
+      "alt": "Three mobile screens depicting three different sections of the Materiales Vallejo website."
+    },
     "links": [
       {
         "title": "Website",
-        "path": ""
+        "path": "http://materialesvallejo.netlify.com/"
       },
       {
         "title": "Source Code",
-        "path": ""
+        "path": "https://github.com/claudiovallejo/materiales-vallejo"
       }
     ],
     "content": [
@@ -19,7 +23,11 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Late January 2016 my father was approached by an advertising agency offering to create Materiales Vallejo’s first website. My father knew I was interested in learning more about web design and development and asked if I wanted to take care of the family business website. He offered full creative freedom and availability for business research and content details. At the time I had experience working with website builders and a basic understanding of HTML, CSS, and JavaScript. I accepted the offer and saw it as the perfect opportunity to learn more about the web while helping my family’s business in a small way."
+            "text": "Late January 2016 I was approached by Materiales Vallejo to design and develop their first website and was granted full creative freedom. At the time I had experience working with website builders, a grasp of basic HTML, CSS, and JavaScript, and a lot of interest to learn more about web design and development."
+          },
+          {
+            "type": "text",
+            "text": "The project has gone through three published versions this year, each new version fixing previous errors and incorporating new design and development tools picked up along the way. The official website is in Spanish, so a separate English site was created to serve as a reference for this case study."
           }
         ]
       },
@@ -28,47 +36,59 @@
         "subsections": [
           {
             "type": "text",
-            "text": "While my father came up with a list of products and services, I searched online for the websites I liked the most and started exploring with different website layouts. Simultaneously, I worked on establishing a visual direction for the site—I explored with colors, spacing, and icons— and drove to my hometown for a weekend to take product and store pictures."
+            "text": "While the client came up with a list of products and services, I searched for website references and started exploring with layouts and site structures. I explored with different icons and imagery and drove out of town for a weekend to take product and store pictures. After a month of exploring and working on content, the client and I were happy with the proposed designs. The site had a total of 6 sections—index, products, wholesale, retail, contact, and about."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Web layout sketches",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v1-sketches-index.jpg",
+              "alt": "Early index layout sketches.",
+              "caption": "Early index layout explorations."
             }
           },
           {
             "type": "text",
-            "text": "After a month of exploring with different layouts and visual directions, I finally found a design I was happy with. My father approved of the design and content and I started figuring out how to develop the website."
+            "text": "While developing the site I learned about git, HTML/CSS, SASS, and Javascript. I found it extremely challenging to learn while building. I found it frustrating that simple things took me several hours to figure out, but as the weeks went by I got better at finding answers on forums and books. The first version of the website was published mid April 2016 on <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://aws.amazon.com/\" target=\"_blank\">AWS S3</a>."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Version 1 desktop designs",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v1--index.jpg",
+              "alt": "First version of index section.",
+              "caption": ""
             }
-          },
-          {
-            "type": "text",
-            "text": "I worked for a month and a half to develop the website. Along the way I used git for the first time, learned about CSS and SASS, and took innumerable Treehouse courses to catch up on HTML and learn about JavaScript. I published the website and continued working on other web projects and taking web development courses online."
-          },
-          {
-            "type": "text",
-            "text": "A month passed and I got an opportunity to critique my father’s website. I realized there was superfluous content and too many images and as a consequence the experience was slow and fragmented. So I decided to redesign and rebuild the website to offer a faster, simpler experience."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Version 2 mobile designs",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v1-products.jpg",
+              "alt": "First version of products section.",
+              "caption": ""
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v1--about.jpg",
+              "alt": "First version of about section.",
+              "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "The website was published and I got busy with other web projects while I continued to learn more about web design and development. Five months passed and I got a chance to critique my father’s website again. I realized I had been designing for visuals and had no business or user problems I was trying to solve. On top of that, the website had several layout flaws and IE bugs that I had to fix. So I decided to redesign and redevelop the website, but this time I defined a purpose and designed for particular business and user needs."
+            "text": "A month passed and I got an opportunity to critique my client’s website. I realized the site had superfluous content and numerous bugs, and as a consequence the experience was slow and fragmented. For the second version I combined the service and product sections, fixed the product navigation, and built a custom index gallery with vanilla js. The second version had a cleaner look, less text and images, and 4 sections."
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v2--products.jpg",
+              "alt": "Second version of published website.",
+              "caption": "Second version of website with a unified product and service section."
+            }
+          },
+          {
+            "type": "text",
+            "text": "The second version was published the last week of June, after which I continued working on client web projects. Five months passed and I got a chance to critique my client’s website again. I realized I had been designing for visuals and had no business or user problems I was trying to solve. On top of that, the website had several layout and interaction bugs that required fixing. So I decided to redesign and redevelop the website. This time, though, I defined a purpose and designed for particular business and user needs."
           }
         ]
       },
@@ -81,7 +101,7 @@
           },
           {
             "type": "text",
-            "text": "The website was designed to engage with local potential customers and to expedite the hiring process. At the same time, since Materiales Vallejo has no budget or time to manage the website, hosting should be free and development tools should make content editing simple and fast."
+            "text": "The website was designed to engage with local potential customers and to expedite the hiring process. Materiales Vallejo has no budget or time to manage the website. As a consequence the site was developed using <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://middlemanapp.com/\" target=\"_blank\">Middleman</a>, <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://gulpjs.com/\" target=\"_blank\">Gulp.js</a> and <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a> to provide free hosting, continuous deployment, and a fast and efficient development process."
           }
         ]
       },
@@ -90,11 +110,7 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Any potential client that calls the business looks for three things: product availability, price, and delivery estimates. 70% of business revenue comes from wholeselling to local material and hardware stores. In Mexico, particularly in wholeselling, pricing is kept private. Every client gets a different price based on length of relationship with the business, frequency of purchase, and volume of purchase. As a consequence, clients have to interact with the business to figure out pricing."
-          },
-          {
-            "type": "text",
-            "text": "The website was designed to provide a quick run-through of the business while providing accessible and up-to-date forms of contact. The website was designed for construction firm secretaries and small business owners that have purchasing power and that are familiar with building material use and terminology and that are used to calling the business to find out about product pricing."
+            "text": "The website was designed for construction firm secretaries and small business owners that have purchasing power, are familiar with building material use and terminology, and call the business regularly to find out about product availability and pricing. Pricing is not published or displayed in the store because pricing depends on the client relationship with the business. As a consequence, each client gets a different price. While product pricing is not displayed on the website, the site was designed to ensure users always have access to the available contact form."
           }
         ]
       },
@@ -103,11 +119,7 @@
         "subsections": [
           {
             "type": "text",
-            "text": "The business has 16 employees and has a very out-of-date hiring process. Whenever there’s an available job, the business publishes a job ad in a local newspaper and on several radio stations. Anyone who’s interested in applying has to go to an office supply store, purchase a job application form, and deliver the application in person or via email."
-          },
-          {
-            "type": "text",
-            "text": "The website will help automate the job application process by featuring a jobs section, where potential new hires can obtain information about the available job and fill out a form to apply online, saving applicants time and money. At the same time, the applications will be sent to a private site where the business will have an easier way to manage and navigate through job applications."
+            "text": "The business has a hiring process that requires job applicants to purchase a job application at a local supply store and deliver the form in person or via email. The website will help automate the job application process by featuring a jobs section, where potential new hires can obtain information about available jobs and fill out a form to apply online. The business will have access to the applications through <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://getsimpleform.com/\" target=\"_blank\">Simple Form</a>, a free service that provides a private domain to manage and store form submissions."
           }
         ]
       },
@@ -116,26 +128,26 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Core users should know who the business is and what it offers on their first impression of the website. The index page was designed to provide a quick but complete snapshot of the business and contains all the information the core user looks for. Each section was structured to provide efficient content consumption while minimizing section height to keep the experience short."
+            "text": "Core users should know who the business is and what it offers on their first impression of the website. The index page was designed to provide a quick but complete snapshot of the business and contains all the information the core user looks for. Each section was structured to provide efficient content consumption while minimizing section height to keep the experience fast."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Mobile Index Page",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v3-index.jpg",
+              "alt": "Mobile index page featuring a condensed and minified experience for faster content consumption.",
+              "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "Core users should be able to find available products as fast as possible. Product cards were ordered from most popular to least popular and were arranged by category. Product cards were designed to provide just enough information for users to navigate through the carrusel without having to process product details. If the user is interested in learning more about the product, the user can press the product card and read about available measurements and sale unit."
+            "text": "Core users should be able to find available products as fast as possible. Product cards were ordered from most popular to least popular and were arranged by category. Product cards were designed to provide just enough information for users to navigate through the carrusel without having to process product details. Tapping or clicking the card reveals important purchasing details like product availability and sale unit."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Mobile Product Carrusel",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v3-index-products.jpg",
+              "alt": "Index page featuring a continuous product swimlane.",
+              "caption": ""
             }
           },
           {
@@ -145,22 +157,54 @@
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Updating Contact Forms",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v3-index-contact.jpg",
+              "alt": "Dynamic forms of contact and text.",
+              "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "The business should be able to share a link to a job detail page in the newspaper and radio ads so potential hires can find more about eh job and fill out an online application. At the same time, the website should display a job banner that doesn’t interfere with the core user experience."
+            "text": "Potential applicants should be able to find details about available jobs and apply directly online by filling out an application form. The business has four different types of job positions—secretary, accountant, chofer, and assistant chofer. Job detail descriptions were prepared in advance for each position. Whenever there's an available job, changing a boolean value in Middleman will activate the job, job detail, and job application sections and create an appropriate banner on the index and about pages."
           },
           {
             "type": "image",
             "image": {
-              "path": "",
-              "alt": "Job Banner, Job Application Form",
-              "caption": "Lorem ipsum dolor sit amet"
+              "path": "/images/projects/materiales-vallejo/v3-jobs.jpg",
+              "alt": "Dynamic job banner and sample job detail and application form.",
+              "caption": ""
             }
+          }
+        ]
+      },
+      {
+        "title": "Development Details",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "Lorem ipsum."
+          }
+        ]
+      },
+      {
+        "title": "Challenges and Insights",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "Dolor sit amet."
+          }
+        ]
+      },
+      {
+        "title": "Tools Used",
+        "subsections": [
+          {
+            "type": "list",
+            "list": [
+              {
+                "title": "Middleman",
+                "text": "Static Site Generator"
+              }
+            ]
           }
         ]
       }
