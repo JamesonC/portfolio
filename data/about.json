@@ -1,5 +1,8 @@
 {
-  "hero": "hero.jpg",
+  "hero": {
+    "path": "/images/about/portrait-dark.jpg",
+    "alt": "Hola! Mucho gusto, soy Claudio :)"
+  },
   "bio": {
     "title": "About",
     "content": [
