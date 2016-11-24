@@ -1,0 +1,20 @@
+<%# Config %>
+<% contact = data.navigation.content %>
+<%# Partial %>
+<!-- <nav class="fixed top-0 z-999 w-100 pv1 bg-white-90"> -->
+<nav class="w-100 pv1 bg-white-90">
+  <div class="mw8-l center cf ph1">
+    <ul class="ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+      <%# Links %>
+      <%# Variables %>
+      <% cll = contact.length - 1 %>
+      <% contact.each_with_index do |link, l| %>
+        <li class="dib">
+          <a class="dib <% if l != cll %>mr2<% end %> lato f0_75 b tracked ttu dark-gray link hover-gray" href="<%= link.source %>">
+            <%= link.title %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
