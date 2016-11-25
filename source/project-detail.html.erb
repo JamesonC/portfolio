@@ -8,34 +8,29 @@ description: Heh, lorem ipsum.
 <% project = locals[:project] %>
 <%# End %>
 <main>
-  <%# Hero %>
-  <div class="mw58-ns center">
-    <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
-      <div class="aspect-ratio--object cover bg-center" title="<%= project.hero.alt %>" style="background-image: url('<%= project.hero.path %>');"></div>
-    </div>
+  <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
+    <div class="aspect-ratio--object cover bg-center" title="<%= project.hero.alt %>" style="background-image: url('<%= project.hero.path %>');"></div>
   </div>
-  <%# Header %>
-  <section class="mw28 center mv8 ph1 ph0-ns tc">
-    <%# Header %>
+  <%# Header C %>
+  <section class="mw38-ns center mv8 ph1 ph0-ns">
+    <h3 class="ma0 mb2 lato f0_75 b tracked ttu gray"><%= project.type %></h3>
     <h1 class="ma0 mb1 merriweather f2_5 fw3 dark-gray"><%= project.title %></h1>
-    <h2 class="ma0 lato f1_875 fw3 lh1_25 dark-gray"><%= project.caption %></h2>
-    <%# Links %>
+    <h2 class="mw28-ns ma0 lato f1_875 fw3 lh1_50 dark-gray"><%= project.caption %></h2>
+    <%# Config %>
+    <% ll = project.links.length - 1 %>
+    <%# End %>
     <div class="mt2">
       <% project.links.each_with_index do |link, l| %>
-        <a class="dib <% if l % 2 === 0 %>mr1<% else %>ml1<% end %> lato f0_75 b tracked ttu blue link hover-dark-gray" href="<%= link.path %>" target="_blank">
-          <%= link.title %>
-          <span class="dib pr1">
-            <svg viewBox="0 0 100 100" width="0.5rem" height="0.5rem">
-              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="blue-fill" transform="translate(100, 100) rotate(180)"></path>
-            </svg>
-          </span>
-        </a>
+        <a class="dib <% if l != ll %>mr2<% end %> lato f0_75 b tracked ttu silver link hover-dark-gray" href="<%= link.path %>" target="_blank"><%= link.title %> ⇾</a>
       <% end %>
     </div>
   </section>
   <%# Content %>
+  <%# Config %>
+  <% sl = project.content.length - 1 %>
+  <%# End %>
   <% project.content.each_with_index do |section, s| %>
-    <section>
+    <section class="<% if s != sl %>mb8<% end %>">
       <% if section.title %>
         <div class="mw38-ns center ph1 ph0-ns">
           <h3 class="ma0 mb2 lato f0_75 b tracked ttu dark-gray"><%= section.title %></h3>
@@ -45,34 +40,58 @@ description: Heh, lorem ipsum.
       <% sbl = section.subsections.length - 1 %>
       <%# End %>
       <% section.subsections.each_with_index do |subsection, sb| %>
+        <%# Config %>
+        <% if sb != sbl %>
+          <% next_subsection = section.subsections[sb + 1].type %>
+        <% else %>
+          <% next_subsection = subsection.type %>
+        <% end %>
         <%# End %>
         <% if subsection.type === "text" %>
           <div class="mw38-ns center ph1 ph0-ns">
-            <p class="ma0 <% if sb != sbl %>mb1<% else %>mb4<% end %> merriweather f1_25 lh1_75 dark-gray"><%= subsection.text %></p>
+            <p class="ma0 <% if sb != sbl && next_subsection === "image" %>mb4<% elsif sb != sbl %>mb1<% end %> merriweather f1_25 lh1_75 dark-gray"><%= subsection.text %></p>
           </div>
         <% elsif subsection.type === "image" %>
           <div class="mw58-ns center">
-            <div class="mt4 <% if sb != sbl %>mb4<% else %>mb8<% end %>">
+            <div class="<% if sb != sbl && next_subsection === "image" %>mb0_5<% elsif sb != sbl %>mb4<% end %>">
               <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
                 <div class="aspect-ratio--object cover bg-center" title="<%= subsection.image.alt %>" style="background-image: url('<%= subsection.image.path %>');"></div>
               </div>
               <% if subsection.image.caption %>
-                <p class="ma0 mt0_5 ph1 ph0-ns lato f0_9375 tc lh1_25 dark-gray"><%= subsection.image.caption %></p>
+                <p class="ma0 mt0_5 ph1 ph0-ns lato f0_9375 tc lh1_25 silver"><%= subsection.image.caption %></p>
               <% end %>
             </div>
           </div>
-        <% elsif subsection.type === "list" %>
-          <%# Config %>
-          <% il = subsection.list.length - 1 %>
-          <%# End %>
-          <% subsection.list.each_with_index do |item, i| %>
+        <% elsif subsection.type === "pointers" %>
+          <% subsection.pointers.each do |point| %>
             <div class="mw38-ns center ph1 ph0-ns">
-              <div class="<% if i === 0 %>mt4<% else %>mt2<% end %> pl2">
-                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= item.title %></h4>
-                <p class="ma0 merriweather fw3 lh1_75 dark-gray"><%= item.text %></p>
+              <div class="mt2 pl2">
+                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= point.title %></h4>
+                <p class="ma0 merriweather fw3 lh1_75 dark-gray"><%= point.text %></p>
               </div>
             </div>
           <% end %>
+        <% elsif subsection.type === "blocks" %>
+          <div class="mw38-ns center ph1 ph0-ns cf">
+            <%# Config %>
+            <% bl = subsection.blocks.length - 1 %>
+            <%# End %>
+            <% subsection.blocks.each_with_index do |block, b| %>
+              <div class="fl-ns w-50-ns mb4">
+                <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= block.title %></h3>
+                <ul class="ma0 merriweather pa0 list">
+                  <%# Config %>
+                  <% il = block.items.length - 1 %>
+                  <%# End %>
+                  <% block.items.each_with_index do |item, i| %>
+                    <li class="<% if i != il %>mb0_5<% end %>">
+                      <a class="mb0_5 dib no-underline dark-gray dim" href="<%= item.source %>" target="_blank"><%= item.title %>, <span class="gray"><%= item.subtitle %></span></a>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
+          </div>
         <% end %>
       <% end %>
     </section>
