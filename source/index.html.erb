@@ -1,22 +1,30 @@
 ---
 layout: main
-title: Projects — Claudio Vallejo
+title: Projects — Claudio Vallejo, Mexican web designer and developer
 ---
-<main>
-  <div class="mw8-l center mt4-ns ph1 ph0-ns">
-    <div class="cf">
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
-      <div class="fl-ns w-80-m w-60-l">
-        <article>
-          <header>
-            <h1><%= data.index.intro %></h1>
-          </header>
-          <% data.projects.each do |project| %>
-            <a class="ma0 f2 lato dark-gray link" href="/projects/<%= pretty_url project.title %>/index.html"><%= project.title %></a>
-          <% end %>
-        </article>
+<%# Config %>
+<% projects = data.projects %>
+<%# End %>
+<main class="cf">
+  <div class="mw38-ns center cf mv8 ph1 ph0-ns">
+    <section class="mv8">
+      <header class="mw28-l">
+        <h1 class="merriweather f2 fw1 lh1_50"><%= data.index.intro %></h1>
+        <a class="ma0 mb1 lato f0_75 b tracked ttu silver hover-dark-gray link no-underline" href="/about">Read Bio ⇾</a>
+      </header>
+    </section>
+    <%# Config %>
+    <% jl = projects.length - 1 %>
+    <%# End %>
+    <% projects.each_with_index do |project, j| %>
+      <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio--16x9-ns">
+        <a class="db relative aspect-ratio--object <% if j != jl %>mb2<% else %>mb8<% end %> cover no-underline" title="<%= project.card.alt %>" href="/projects/<%= pretty_url project.title %>" style="background: url('<%= project.card.path %>') no-repeat center;">
+          <div class="absolute pa2">
+            <h1 class="ma0 mb1 merriweather f1 fw3 dark-gray"><%= project.title %></h1>
+            <h3 class="ma0 lato f0_75 b tracked ttu gray"><%= project.type %></h3>
+          </div>
+        </a>
       </div>
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
-    </div>
+    <% end %>
   </div>
 </main>
