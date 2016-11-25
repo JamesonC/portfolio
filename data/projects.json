@@ -56,7 +56,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-index-sketch.jpg",
               "alt": "Early index layout sketches.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -64,7 +64,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-products-sketch.jpg",
               "alt": "Early index layout sketches.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -72,7 +72,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-about-sketch.jpg",
               "alt": "Early index layout sketches.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -84,7 +84,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-index-export.jpg",
               "alt": "First version of index section.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -92,7 +92,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-products-export.jpg",
               "alt": "First version of products section.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -100,7 +100,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v1-about-export.jpg",
               "alt": "First version of about section.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -164,7 +164,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v3-index-export.jpg",
               "alt": "Mobile index page featuring a condensed and minified experience for faster content consumption.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -176,7 +176,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v3-products-export.jpg",
               "alt": "Index page featuring a continuous product swimlane.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -188,7 +188,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v3-contact-export.jpg",
               "alt": "Dynamic forms of contact and text.",
-              "caption": ""
+              "caption": false
             }
           },
           {
@@ -200,7 +200,7 @@
             "image": {
               "path": "/images/projects/materiales-vallejo/v3-jobs-export.jpg",
               "alt": "Dynamic job banner and sample job detail and application form.",
-              "caption": ""
+              "caption": false
             }
           },
           {
