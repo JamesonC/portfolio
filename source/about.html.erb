@@ -7,7 +7,7 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
 <%# Config %>
 <% about = data.about %>
 <%# Content %>
-<main>
+<main class="cf">
   <div class="mw8-l center mt4-ns">
     <div class="cf">
       <div class="fl-ns w-10-m w-20-l min-h-1"></div>
@@ -19,27 +19,27 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
           </div>
         </article>
         <div class="ph1 ph0-ns">
-          <%# Bio %>
-          <%# Variables %>
+          <%# Config %>
           <% bsl = about.bio.content.length - 1 %>
           <%# End %>
+          <%# Bio %>
           <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= about.bio.title %></h3>
-          <%# end %>
           <% about.bio.content.each_with_index do |section, s| %>
             <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh1_75"><%= section %></p>
           <% end %>
           <div class="cf">
-            <%# Detail Sections %>
-            <%# Variables %>
+            <%# Config %>
             <% dsl = about.details.length - 1 %>
             <%# End %>
+            <%# Detail Sections %>
             <% about.details.each_with_index do |section, s| %>
               <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
                 <h3 class="ma0 mb2 lato f0_75 tracked ttu gray"><%= section.title %></h3>
                 <ul class="ma0 merriweather pa0 list">
-                  <%# Details %>
-                  <%# Variables %>
+                  <%# Config %>
                   <% dll = section.content.length - 1 %>
+                  <%# End %>
+                  <%# Details %>
                   <% section.content.each_with_index do |detail, d| %>
                     <li class="<% if d != dll %>mb2<% end %>">
                       <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
