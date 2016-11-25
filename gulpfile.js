@@ -1,19 +1,26 @@
 var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     concat = require('gulp-concat'),
+    uncss = require('gulp-uncss'),
     cssmin = require('gulp-csso'),
     uglify = require('gulp-uglify'),
-    // del = require('del'),
     gzip = require('gulp-gzip');
-    // imagemin = require('gulp-imagemin'),
-    // sitemap = require('gulp-sitemap');
+    imagemin = require('gulp-imagemin'),
+    sitemap = require('gulp-sitemap');
 
 //  Minify .html
 gulp.task('markup', function(){
   gulp.src('build/**/*.html')
   .pipe(htmlmin())
   .pipe(gulp.dest('build'))
-})
+});
+
+//  Remove unused css from tachyons.css
+gulp.task('uncss', function(){
+  return gulp.src('build/stylesheets/tachyons.css')
+    .pipe(uncss({ html: ['build/**/*.html'] }))
+    .pipe(gulp.dest('build/stylesheets'))
+});
 
 //  Concatenate site.css + animate.css -> site.css
 //  Minify site.css + Gzip site.css
@@ -36,22 +43,22 @@ gulp.task('scripts', function(){
 });
 
 //  Optimize images
-// gulp.task('images', function(){
-//   gulp.src('build/images/**/*')
-//     .pipe(imagemin({ progressive: true }))
-//     .pipe(gulp.dest('build/images'))
-// });
+gulp.task('images', function(){
+  gulp.src('build/images/**/*')
+    .pipe(imagemin({ progressive: true }))
+    .pipe(gulp.dest('build/images'))
+});
 
 //  Generate sitemap
-// gulp.task('sitemap', function() {
-//   gulp.src('build/**/*.html', {
-//     read: false
-//   })
-//   .pipe(sitemap({
-//     siteUrl: 'https://www.tymforest.com'
-//   }))
-//   .pipe(gulp.dest('./build'));
-// });
+gulp.task('sitemap', function() {
+  gulp.src('build/**/*.html', {
+    read: false
+  })
+  .pipe(sitemap({
+    siteUrl: 'https://www.tymforest.com'
+  }))
+  .pipe(gulp.dest('./build'));
+});
 
 // Run previously declared tasks on `gulp`
-gulp.task('build', ['markup', 'styles', 'scripts']);
+gulp.task('build', ['markup', 'uncss', 'styles', 'scripts', 'images', 'sitemap']);
