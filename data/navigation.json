@@ -1,12 +1,12 @@
 {
   "content": [
     {
-      "title": "Projects",
-      "source": "/"
-    },
-    {
       "title": "About",
       "source": "/about"
+    },
+    {
+      "title": "Projects",
+      "source": "/"
     }
   ]
 }
