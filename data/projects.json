@@ -2,6 +2,10 @@
   {
     "title": "Materiales Vallejo",
     "type": "Case Study",
+    "card": {
+      "path": "/images/projects/materiales-vallejo/card.jpg",
+      "alt": "Materiales Vallejo website version three."
+    },
     "caption": "Designing and developing a building material store’s first website.",
     "hero": {
       "path": "/images/projects/materiales-vallejo/hero.jpg",
@@ -9,7 +13,7 @@
     },
     "links": [
       {
-        "title": "Website",
+        "title": "View Website",
         "path": "http://materialesvallejo.netlify.com/"
       },
       {
@@ -17,9 +21,18 @@
         "path": "https://github.com/claudiovallejo/materiales-vallejo"
       }
     ],
+    "meta": {
+      "type": "article",
+      "title": "Materiales Vallejo — Web Design and Development Case Study by Claudio Vallejo",
+      "description": "Web design and development project for Materiales Vallejo, a small building material store in Matamoros, Tamaulipas. The case study goes through first design attempts, project purpose, business and user needs, design details, challenges and insights, and tools used.",
+      "images": {
+        "og": "images/projects/materiales-vallejo/meta-og.jpg",
+        "twitter": "images/projects/materiales-vallejo/meta-twitter.jpg"
+      }
+    },
     "content": [
       {
-        "title": "Introduction",
+        "title": "",
         "subsections": [
           {
             "type": "text",
@@ -41,9 +54,25 @@
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v1-sketches-index.jpg",
+              "path": "/images/projects/materiales-vallejo/v1-index-sketch.jpg",
               "alt": "Early index layout sketches.",
-              "caption": "Early index layout explorations."
+              "caption": ""
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v1-products-sketch.jpg",
+              "alt": "Early index layout sketches.",
+              "caption": ""
+            }
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v1-about-sketch.jpg",
+              "alt": "Early index layout sketches.",
+              "caption": ""
             }
           },
           {
@@ -53,7 +82,7 @@
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v1--index.jpg",
+              "path": "/images/projects/materiales-vallejo/v1-index-export.jpg",
               "alt": "First version of index section.",
               "caption": ""
             }
@@ -61,7 +90,7 @@
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v1-products.jpg",
+              "path": "/images/projects/materiales-vallejo/v1-products-export.jpg",
               "alt": "First version of products section.",
               "caption": ""
             }
@@ -69,19 +98,19 @@
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v1--about.jpg",
+              "path": "/images/projects/materiales-vallejo/v1-about-export.jpg",
               "alt": "First version of about section.",
               "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "A month passed and I got an opportunity to critique my client’s website. I realized the site had superfluous content and numerous bugs, and as a consequence the experience was slow and fragmented. For the second version I combined the service and product sections, fixed the product navigation, and built a custom index gallery with vanilla js. The second version had a cleaner look, less text and images, and 4 sections."
+            "text": "A month passed and I got an opportunity to critique my client’s website. I realized the site had superfluous content and numerous bugs, and as a consequence the experience was slow and fragmented. For the second version I combined the service and product sections, fixed the product navigation, and built a custom index gallery with JavaScript. The second version had a cleaner look, less text and images, and 4 sections—index, products and services, contact, and about."
           },
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v2--products.jpg",
+              "path": "/images/projects/materiales-vallejo/v2-products-export.jpg",
               "alt": "Second version of published website.",
               "caption": "Second version of website with a unified product and service section."
             }
@@ -119,7 +148,7 @@
         "subsections": [
           {
             "type": "text",
-            "text": "The business has a hiring process that requires job applicants to purchase a job application at a local supply store and deliver the form in person or via email. The website will help automate the job application process by featuring a jobs section, where potential new hires can obtain information about available jobs and fill out a form to apply online. The business will have access to the applications through <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://getsimpleform.com/\" target=\"_blank\">Simple Form</a>, a free service that provides a private domain to manage and store form submissions."
+            "text": "The business has a hiring process that requires job applicants to purchase a job application form at a local supply store and deliver the form in person or via email. The website will automate the job application process by featuring a careers section, where potential new hires can obtain information about available jobs and fill out a form to apply online. The business will have access to the applications through <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://getsimpleform.com/\" target=\"_blank\">Simple Form</a>, a free service that provides a private domain to manage and store form submissions."
           }
         ]
       },
@@ -128,36 +157,36 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Core users should know who the business is and what it offers on their first impression of the website. The index page was designed to provide a quick but complete snapshot of the business and contains all the information the core user looks for. Each section was structured to provide efficient content consumption while minimizing section height to keep the experience fast."
+            "text": "Core users should know who the business is and what it offers on their first impression of the website. Unlike previous versions of the website, the index page provides a quick but complete snapshot of the business and contains most of the information the core user looks for. As a consequence the user will find the information they're looking for much faster to hopefully increase the chances of them getting in touch with the business."
           },
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v3-index.jpg",
+              "path": "/images/projects/materiales-vallejo/v3-index-export.jpg",
               "alt": "Mobile index page featuring a condensed and minified experience for faster content consumption.",
               "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "Core users should be able to find available products as fast as possible. Product cards were ordered from most popular to least popular and were arranged by category. Product cards were designed to provide just enough information for users to navigate through the carrusel without having to process product details. Tapping or clicking the card reveals important purchasing details like product availability and sale unit."
+            "text": "Core users should be able to find available products as fast as possible. Product cards are grouped by category to facilitate navigation and were ordered by popularity. Product cards were designed to provide just enough information for users to navigate through the carrusel without having to process product details. Tapping or clicking the card reveals important purchasing details like product availability and sale unit."
           },
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v3-index-products.jpg",
+              "path": "/images/projects/materiales-vallejo/v3-products-export.jpg",
               "alt": "Index page featuring a continuous product swimlane.",
               "caption": ""
             }
           },
           {
             "type": "text",
-            "text": "Core users should be able to contact the business at any point of their experience. The site features auto-updating forms of contact that prioritize user engagement. If the business is open, contact buttons and relevant content sections invite the user to call the office. Otherwise, contact buttons and content invite the user to send an email."
+            "text": "Core users should be able to contact the business at any point of their experience. The site features auto-updating forms of contact that prioritize user engagement with the business. If the business is open, contact buttons and relevant content sections invite the user to call the store. Otherwise, contact buttons and content invite the user to get in touch via email."
           },
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v3-index-contact.jpg",
+              "path": "/images/projects/materiales-vallejo/v3-contact-export.jpg",
               "alt": "Dynamic forms of contact and text.",
               "caption": ""
             }
@@ -169,19 +198,14 @@
           {
             "type": "image",
             "image": {
-              "path": "/images/projects/materiales-vallejo/v3-jobs.jpg",
+              "path": "/images/projects/materiales-vallejo/v3-jobs-export.jpg",
               "alt": "Dynamic job banner and sample job detail and application form.",
               "caption": ""
             }
-          }
-        ]
-      },
-      {
-        "title": "Development Details",
-        "subsections": [
+          },
           {
             "type": "text",
-            "text": "Lorem ipsum."
+            "text": "The third version of the website is the simplest and most compact and is the first version with clear user and business goals. Google Analytics is integrated into the site to provide site usage information to inform the business about it's online users and provide a foundation for future site improvements."
           }
         ]
       },
@@ -190,19 +214,88 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Dolor sit amet."
+            "text": "My experience working with Materiales Vallejo on their first website was very challenging and I made innumerable mistakes along the way. From not defining user and business needs, to styling without purpose, to miscommunication and inefficient process, the was journey rocky and scattered. What I find most interesting about my experience is that, while my intent was to learn about web design and development, I ended learning more about myself, communication, and business than I expected. Out of all the things I learned through this project, there are two lessons that stood out—"
+          },
+          {
+            "type": "pointers",
+            "pointers": [
+              {
+                "title": "Designing Tools",
+                "text": "Because I had creative freedom, I focused on designing something I liked rather than desiging something that brought value to the business. The real value comes from engaging with the client to understand how the product can help solve business needs and achieve business goals. Its about creating tools, not trophies."
+              },
+              {
+                "title": "Learn by Building",
+                "text": "Developing the first version of the website was one of the biggest challenges I faced during this project. Overcoming the initial fear of not knowing how to do something is really hard. Fortunately, programming is all about learning to face the unknown, and I realized that the only way to learn is by searching, testing, and building."
+              }
+            ]
           }
         ]
       },
       {
-        "title": "Tools Used",
+        "title": "",
         "subsections": [
           {
-            "type": "list",
-            "list": [
+            "type": "blocks",
+            "blocks": [
               {
-                "title": "Middleman",
-                "text": "Static Site Generator"
+                "title": "Design Tools",
+                "items": [
+                  {
+                    "title": "Swipies",
+                    "subtitle": "Wireframing",
+                    "source": "http://swipi.es/"
+                  },
+                  {
+                    "title": "Figma",
+                    "subtitle": "Web Design",
+                    "source": "https://www.figma.com/"
+                  },
+                  {
+                    "title": "Sketch",
+                    "subtitle": "Web Design",
+                    "source": "https://sketchapp.com/"
+                  },
+                  {
+                    "title": "Photoshop",
+                    "subtitle": "Image Editing",
+                    "source": "http://www.adobe.com/products/photoshop.html"
+                  }
+                ]
+              },
+              {
+                "title": "Development Tools",
+                "items": [
+                  {
+                    "title": "Atom",
+                    "subtitle": "Text Editing",
+                    "source": "https://atom.io/"
+                  },
+                  {
+                    "title": "Middleman",
+                    "subtitle": "Static Site Generator",
+                    "source": "https://middlemanapp.com/"
+                  },
+                  {
+                    "title": "Tachyons",
+                    "subtitle": "CSS Library",
+                    "source": "http://tachyons.io/"
+                  },
+                  {
+                    "title": "Simple Forms",
+                    "subtitle": "Form Manager",
+                    "source": "https://getsimpleform.com/"
+                  },
+                  {
+                    "title": "Gulp.js",
+                    "subtitle": "Build Tool",
+                    "source": "http://gulpjs.com/"
+                  },
+                  {
+                    "title": "Netlify",
+                    "subtitle": "Continuous Deployment",
+                    "source": "https://www.netlify.com/"
+                  }
+                ]
               }
             ]
           }
