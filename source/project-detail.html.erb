@@ -12,7 +12,7 @@ description: Heh, lorem ipsum.
     <div class="aspect-ratio--object cover bg-center" title="<%= project.hero.alt %>" style="background-image: url('<%= project.hero.path %>');"></div>
   </div>
   <%# Header C %>
-  <section class="mw38-ns center mv4 mv8-ns ph1 ph0-ns">
+  <section class="mw38-ns center mv8 ph1 ph0-ns">
     <h3 class="ma0 mb2 lato f0_75 b tracked ttu gray"><%= project.type %></h3>
     <h1 class="ma0 mb1 merriweather f1_5 f2_5-ns fw3 dark-gray"><%= project.title %></h1>
     <h2 class="mw28-ns ma0 lato f1_5 f1_875-ns fw3 lh1_50 dark-gray"><%= project.caption %></h2>
@@ -30,7 +30,7 @@ description: Heh, lorem ipsum.
   <% sl = project.content.length - 1 %>
   <%# End %>
   <% project.content.each_with_index do |section, s| %>
-    <section class="<% if s != sl %>mb4 mb8-ns<% end %>">
+    <section class="<% if s != sl %>mb4<% end %>">
       <% if section.title %>
         <div class="mw38-ns center ph1 ph0-ns">
           <h3 class="ma0 mb2 lato f0_75 b tracked ttu dark-gray"><%= section.title %></h3>
@@ -53,14 +53,7 @@ description: Heh, lorem ipsum.
           </div>
         <% elsif subsection.type === "image" %>
           <div class="mw58-ns center">
-            <div class="<% if sb != sbl && next_subsection === "image" %>mb0<% elsif sb != sbl %>mb4<% end %>">
-              <div class="aspect-ratio aspect-ratio aspect-ratio--16x9">
-                <div class="aspect-ratio--object cover bg-center" title="<%= subsection.image.alt %>" style="background-image: url('<%= subsection.image.path %>');"></div>
-              </div>
-              <% if subsection.image.caption %>
-                <p class="ma0 mt0_5 ph1 ph0-ns lato f0_9375 tc lh1_25 silver"><%= subsection.image.caption %></p>
-              <% end %>
-            </div>
+            <img class="db <% if sb != sbl && next_subsection === "image" %>mb0<% elsif sb != sbl %>mb4<% end %>" src="<%= subsection.image.path %>" alt="<%= subsection.image.alt %>">
           </div>
         <% elsif subsection.type === "pointers" %>
           <% subsection.pointers.each do |point| %>
