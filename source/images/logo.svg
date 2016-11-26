@@ -1,0 +1,22 @@
+<svg width="30" height="17" viewBox="0 0 30 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6117 -2267)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 6117 2267L 6147 2267L 6147 2284L 6117 2284L 6117 2267Z" fill="#FFFFFF"/>
+</mask>
+<g id="logo" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<path d="M 6117 2267L 6147 2267L 6147 2284L 6117 2284L 6117 2267Z" fill="#FFFFFF"/>
+<g id="Vector (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.44929e-16 2.44929e-16 1 6131 2270)" fill="#333333" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(6120 2270)" fill="#333333" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 1.47823 0L 11.5218 0L 13 0L 12.2395 1.28708L 7.21769 9.78545L 6.5 11L 5.78231 9.78545L 0.760544 1.28708L 0 0Z"/>
+<path id="path1_fill" d="M 11 5.5C 11 8.53757 8.53757 11 5.5 11C 2.46243 11 0 8.53757 0 5.5C 0 2.46243 2.46243 0 5.5 0C 8.53757 0 11 2.46243 11 5.5Z"/>
+</defs>
+</svg>
