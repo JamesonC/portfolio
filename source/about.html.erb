@@ -8,51 +8,43 @@ description: Hi there! I’m Claudio, a Mexican web designer and front-end devel
 <% about = data.about %>
 <%# Content %>
 <main class="cf">
-  <div class="mw8-l center mt4-ns">
-    <div class="cf">
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
-      <div class="fl-ns w-80-m w-60-l">
-        <%# Hero %>
-        <article class="mb4">
-          <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
-            <div class="aspect-ratio--object cover bg-center" title="<%= about.hero.alt %>" style="background-image: url('<%= about.hero.path %>')"></div>
-          </div>
-        </article>
-        <div class="ph1 ph0-ns">
-          <%# Config %>
-          <% bsl = about.bio.content.length - 1 %>
-          <%# End %>
-          <%# Bio %>
-          <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= about.bio.title %></h3>
-          <% about.bio.content.each_with_index do |section, s| %>
-            <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh1_75"><%= section %></p>
-          <% end %>
-          <div class="cf">
-            <%# Config %>
-            <% dsl = about.details.length - 1 %>
-            <%# End %>
-            <%# Detail Sections %>
-            <% about.details.each_with_index do |section, s| %>
-              <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
-                <h3 class="ma0 mb2 lato f0_75 tracked ttu gray"><%= section.title %></h3>
-                <ul class="ma0 merriweather pa0 list">
-                  <%# Config %>
-                  <% dll = section.content.length - 1 %>
-                  <%# End %>
-                  <%# Details %>
-                  <% section.content.each_with_index do |detail, d| %>
-                    <li class="<% if d != dll %>mb2<% end %>">
-                      <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
-                      <p class="ma0 gray"><%= detail.subtitle %></p>
-                    </li>
-                  <% end %>
-                </ul>
-              </div>
-            <% end %>
-          </div>
-        </div>
+  <div class="mw58 center mt4-ns">
+    <article class="mb4">
+      <div class="aspect-ratio aspect-ratio--1x1 aspect-ratio aspect-ratio--16x9-ns">
+        <div class="aspect-ratio--object cover bg-center" title="<%= about.hero.alt %>" style="background-image: url('<%= about.hero.path %>')"></div>
       </div>
-      <div class="fl-ns w-10-m w-20-l min-h-1"></div>
+    </article>
+  </div>
+  <div class="mw38 center ph1 ph0-ns">
+    <%# Config %>
+    <% bsl = about.bio.content.length - 1 %>
+    <%# End %>
+    <%# Bio %>
+    <% about.bio.content.each_with_index do |section, s| %>
+      <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh1_75"><%= section %></p>
+    <% end %>
+    <div class="cf">
+      <%# Config %>
+      <% dsl = about.details.length - 1 %>
+      <%# End %>
+      <%# Detail Sections %>
+      <% about.details.each_with_index do |section, s| %>
+        <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
+          <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= section.title %></h3>
+          <ul class="ma0 merriweather pa0 list">
+            <%# Config %>
+            <% dll = section.content.length - 1 %>
+            <%# End %>
+            <%# Details %>
+            <% section.content.each_with_index do |detail, d| %>
+              <li class="<% if d != dll %>mb2<% end %>">
+                <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
+                <p class="ma0 silver"><%= detail.subtitle %></p>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </div>
   </div>
 </main>
