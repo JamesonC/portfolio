@@ -1,20 +1,19 @@
 <%# Config %>
 <% contact = data.navigation.content %>
 <%# Partial %>
-<!-- <nav class="fixed top-0 z-999 w-100 pv1 bg-white-90"> -->
-<nav class="fixed top-0 z-999 w-100 pv1 ph1 ph0-ns bg-white-90">
+<nav class="pv1 pv2-ns ph1 ph0-ns bg-white">
   <div class="mw38-ns center cf">
-    <div class="fl w-50">
-      <a class="ma0 merriweather f1 fw1 dark-gray link hover-gray no-underline" href="/">Claudio Vallejo</a>
-    </div>
-    <div class="fr w-50">
+    <a class="db fl w-25" href="/">
+      <img class="dim" src="/images/logo.svg" alt="Test logo">
+    </a>
+    <div class="fr w-75">
       <ul class="ma0 pa0 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
         <%# Links %>
         <%# Variables %>
         <% cll = contact.length - 1 %>
         <% contact.each_with_index do |link, l| %>
           <li class="dib fr tar">
-            <a class="<% if l != cll %>ml2<% end %> lato f0_75 b tracked ttu gray link hover-dark-gray" href="<%= link.source %>">
+            <a class="<% if l != cll %>ml2<% end %> lato f0_75 b tracked ttu silver dim no-underline" href="<%= link.source %>">
               <%= link.title %>
             </a>
           </li>
