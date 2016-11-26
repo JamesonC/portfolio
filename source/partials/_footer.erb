@@ -2,14 +2,14 @@
 <% contact = data.contact.content %>
 <%# Partial %>
 <footer class="mw8-l center mt8 pb1 pb2-m">
-  <div class="mw38-ns center cf ph1 ph0-ns">
+  <div class="mw38-ns center cf">
     <ul class="ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
-      <%# Links %>
-      <%# Variables %>
+      <%# Config %>
       <% cll = contact.length - 1 %>
+      <%# End %>
       <% contact.each_with_index do |link, l| %>
         <li class="dib">
-          <a class="dib <% if l != cll %>mr2<% end %> lato f0_75 b tracked ttu gray link hover-dark-gray" href="<%= link.source %>" target="_blank">
+          <a class="dib <% if l != cll %>mr2<% end %> lato f0_75 b tracked ttu silver dim no-underline" href="<%= link.source %>" target="_blank">
             <%= link.title %>
           </a>
         </li>
