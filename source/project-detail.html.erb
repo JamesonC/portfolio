@@ -16,14 +16,6 @@ description: Heh, lorem ipsum.
     <h3 class="ma0 mb2 lato f0_75 b tracked ttu gray"><%= project.type %></h3>
     <h1 class="ma0 mb1 merriweather f1_5 f2_5-ns fw3 dark-gray"><%= project.title %></h1>
     <h2 class="mw28-ns ma0 lato f1_5 f1_875-ns fw3 lh1_50 dark-gray"><%= project.caption %></h2>
-    <%# Config %>
-    <% ll = project.links.length - 1 %>
-    <%# End %>
-    <div class="mt2">
-      <% project.links.each_with_index do |link, l| %>
-        <a class="dib <% if l != ll %>mr2<% end %> lato f0_75 b tracked ttu blue link hover-dark-blue" href="<%= link.path %>" target="_blank"><%= link.title %> ⇾</a>
-      <% end %>
-    </div>
   </section>
   <%# Content %>
   <%# Config %>
@@ -77,8 +69,9 @@ description: Heh, lorem ipsum.
                   <% il = block.items.length - 1 %>
                   <%# End %>
                   <% block.items.each_with_index do |item, i| %>
-                    <li class="<% if i != il %>mb0_5<% end %>">
-                      <a class="mb0_5 dib no-underline dark-gray dim" href="<%= item.source %>" target="_blank"><%= item.title %>, <span class="gray"><%= item.subtitle %></span></a>
+                    <li class="<% if i != il %>mb1<% end %>">
+                      <a class="mb0_5 dib no-underline dark-gray dim" href="<%= item.source %>" target="_blank"><%= item.title %></a>
+                      <p class="ma0 silver"><%= item.subtitle %></p>
                     </li>
                   <% end %>
                 </ul>
