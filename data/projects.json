@@ -238,20 +238,7 @@
         "subsections": [
           {
             "type": "text",
-            "text": "My experience working with Materiales Vallejo on their first website was very challenging and I made innumerable mistakes along the way. From not defining user and business needs, to styling without purpose, to miscommunication and inefficient process, the journey was rocky and scattered. What I find most interesting about my experience is that, while my intent was to learn about web design and development, I ended learning more about myself, communication, and business than I expected. Out of all the things I learned through this project, there are two lessons that stood out—"
-          },
-          {
-            "type": "pointers",
-            "pointers": [
-              {
-                "title": "Designing Tools",
-                "text": "Because I had creative freedom, I focused on designing something I liked rather than desiging something that brought value to the business. I learned that the real value of a website, as simple as it may be, comes from understanding how the product can help solve business needs. The value in design comes from building tools, not trophies."
-              },
-              {
-                "title": "Learn by Building",
-                "text": "Developing the first version of the website was one of the biggest challenges I faced during this project. Overcoming the initial fear of not knowing how to do something is something I continue to struggle with. Fortunately, programming is all about learning to face the unknown, and I realized that the only way to learn is by searching, testing, and building."
-              }
-            ]
+            "text": "I never expected such a simple website to bring so many lessons outside of design and development. To be honest, when I started the project I was solely focused on designing something to add to my portfolio. At the same time, I was so focused on what I wanted from the project that I forgot what the project was all about and who it was for. Fortunately, each new redesign was an opportunity to re-evaluate my intentions and as a consequence the project's objective. The hardest challenge I faced was not learning about JavaScript or progressive enhancement. The hardest challenge was becoming aware of my expectations to more accurately interpret business and user needs. Other challenges I faced included establishing an efficient process, communicating clearly with my client, setting clear project expectations, setting clear project deadlines, and learning about web development. One of the things I realized from this project is that doing things well takes more than three tries. There is no such thing as a perfect first try."
           }
         ]
       },
@@ -312,7 +299,7 @@
                   {
                     "title": "Website",
                     "subtitle": "Case Study",
-                    "source": "http://www.materialesvallejo.com"
+                    "source": "http://materialesvallejo.netlify.com/"
                   },
                   {
                     "title": "Source Code",
