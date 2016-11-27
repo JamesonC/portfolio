@@ -275,11 +275,6 @@
                     "source": "https://www.figma.com/"
                   },
                   {
-                    "title": "Sketch",
-                    "subtitle": "Web Design",
-                    "source": "https://sketchapp.com/"
-                  },
-                  {
                     "title": "Photoshop",
                     "subtitle": "Image Editing",
                     "source": "http://www.adobe.com/products/photoshop.html"
@@ -289,11 +284,6 @@
               {
                 "title": "Development Tools",
                 "items": [
-                  {
-                    "title": "Atom",
-                    "subtitle": "Text Editing",
-                    "source": "https://atom.io/"
-                  },
                   {
                     "title": "Middleman",
                     "subtitle": "Static Site Generator",
@@ -305,11 +295,6 @@
                     "source": "http://tachyons.io/"
                   },
                   {
-                    "title": "Simple Forms",
-                    "subtitle": "Form Manager",
-                    "source": "https://getsimpleform.com/"
-                  },
-                  {
                     "title": "Gulp.js",
                     "subtitle": "Build Tool",
                     "source": "http://gulpjs.com/"
@@ -318,6 +303,21 @@
                     "title": "Netlify",
                     "subtitle": "Continuous Deployment",
                     "source": "https://www.netlify.com/"
+                  }
+                ]
+              },
+              {
+                "title": "Project Links",
+                "items": [
+                  {
+                    "title": "Website",
+                    "subtitle": "Case Study",
+                    "source": "http://www.materialesvallejo.com"
+                  },
+                  {
+                    "title": "Source Code",
+                    "subtitle": "Case Study",
+                    "source": "https://github.com/claudiovallejo/materiales-vallejo"
                   }
                 ]
               }
