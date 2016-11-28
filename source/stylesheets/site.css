@@ -296,6 +296,15 @@ html { -webkit-font-smoothing: antialiased; }
 .overflow-scrolling { -webkit-overflow-scrolling: touch; }
 .scrollbar-dn::-webkit-scrollbar { display: none; }
 /*
+
+    ANIMATION
+
+*/
+.js-load { webkit-transition: opacity 1.5s ease-in-out;
+transition: opacity 1.5s ease-in-out; }
+.is-hidden { opacity: 0; }
+.is-visible { opacity: 1; }
+/*
   CUSTOM MEDIA QUERIES
   Media query values can be changed to fit your own content.
   There are no magic bullets when it comes to media query width values.
