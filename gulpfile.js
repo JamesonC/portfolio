@@ -6,7 +6,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     gzip = require('gulp-gzip');
     imagemin = require('gulp-imagemin'),
-    sitemap = require('gulp-sitemap');
+    sitemap = require('gulp-sitemap'),
+    runSequence = require('run-sequence'),
+    clean = require('gulp-clean');
 
 //  Minify .html
 gulp.task('markup', function(){
@@ -19,13 +21,14 @@ gulp.task('markup', function(){
 gulp.task('uncss', function(){
   return gulp.src('build/stylesheets/tachyons.css')
     .pipe(uncss({ html: ['build/**/*.html'] }))
+    .pipe(cssmin())
     .pipe(gulp.dest('build/stylesheets'))
 });
 
 //  Concatenate site.css + animate.css -> site.css
 //  Minify site.css + Gzip site.css
 gulp.task('styles', function(){
-  gulp.src(['build/stylesheets/tachyons.css', 'build/stylesheets/site.css', 'build/stylesheets/animate.css'])
+  gulp.src(['build/stylesheets/tachyons.css', 'build/stylesheets/site.css'])
   .pipe(concat('site.css'))
   .pipe(cssmin())
   .pipe(gulp.dest('build/stylesheets'))
@@ -55,10 +58,21 @@ gulp.task('sitemap', function() {
     read: false
   })
   .pipe(sitemap({
-    siteUrl: 'https://www.tymforest.com'
+    siteUrl: 'http://www.claudiovallejo.mx'
   }))
   .pipe(gulp.dest('./build'));
 });
 
-// Run previously declared tasks on `gulp`
-gulp.task('build', ['markup', 'uncss', 'styles', 'scripts', 'images', 'sitemap']);
+//  Remove unused files
+gulp.task('clean', function(){
+  gulp.src('build/stylesheets/tachyons.css', {read: false})
+  .pipe(clean());
+});
+
+// Run previously `gulp` tasks in sequence
+gulp.task('sequence', function(callback) {
+  runSequence('uncss', ['markup', 'styles', 'scripts', 'images', 'sitemap'], 'clean');
+});
+
+// Build
+gulp.task('build', ['sequence']);
