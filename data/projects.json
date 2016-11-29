@@ -40,7 +40,7 @@
           },
           {
             "type": "text",
-            "text": "The project went through three published versions during 2016. Each new version fixed design and development errors and incorporated new tools and learnings picked up along the way. The business website is in Spanish and separate <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://materialesvallejo.netlify.com\" target=\"_blank\">English site</a> was created to serve as a reference for this case study."
+            "text": "The project went through three published versions during 2016. Each new version fixed design and development errors and incorporated new tools and learnings picked up along the way. The business website is in Spanish, so a separate <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://materialesvallejo.netlify.com\" target=\"_blank\">English site</a> was created to serve as a reference for this case study."
           }
         ]
       },
@@ -145,7 +145,7 @@
           },
           {
             "type": "text",
-            "text": "Four months passed and I got a chance to critique my client’s website again. I realized I had been designing for visuals and had no business or user problems I was trying to solve. On top of that, the website had several layout and interaction bugs and required file minifaction and image optimization. So I redesigned the website with a clear definition of business and user needs and reusing as many assets from previous versions."
+            "text": "Four months passed and I got a chance to critique my client’s website again. I realized I had been designing for visuals and had no business or user problems I was trying to solve. On top of that, the website had several layout and interaction bugs and required file minifaction and image optimization. So I redesigned the website with a clear definition of business and user needs and reused as many assets from previous versions."
           }
         ]
       },
@@ -185,7 +185,7 @@
         "subsections": [
           {
             "type": "text",
-            "text": "Core users should know who the business is and what it offers on their first impression of the website. Unlike previous versions of the website, the index page provides a quick but complete snapshot of the business and contains most of the information the core user looks for. As a consequence the user will find the information they're looking for much faster than in previous versions and hopefully increase the probability a user will engage with a business via phone or email."
+            "text": "Core users should know who the business is and what it offers on their first impression of the website. Unlike previous versions of the website, the index page provides a quick but complete snapshot of the business and contains most of the information the core user looks for. As a consequence the user will find the information they're looking for much faster than in previous versions and hopefully increase the probability a user will engage with the business via phone or email."
           },
           {
             "type": "image",
@@ -218,7 +218,7 @@
           },
           {
             "type": "text",
-            "text": "Potential applicants should be able to find details about available jobs and apply directly online by filling out an application form. The business has four different types of job positions—secretary, accountant, chofer, and assistant chofer. Job detail descriptions were prepared in advance for each position. Whenever there's an available job, changing a boolean value in Middleman will activate the job, job detail, and job application sections and create an appropriate banner on the index and about pages. The business will receive email notifications for every new application and will have access to the applications through a private website."
+            "text": "Potential applicants should be able to find details about available jobs and apply directly online by filling out an application form. The business has four different types of job positions—secretary, accountant, chofer, and assistant chofer. Job detail descriptions were prepared in advance for each position. Whenever there's an available job, changing a boolean value in Middleman will activate the job, job detail, and job application sections and create an appropriate banner on the index and about pages. The business will receive email notifications for every new application received and will have access to the applications through a private website."
           },
           {
             "type": "image",
@@ -230,15 +230,36 @@
           {
             "type": "text",
             "text": "The third version of the website is the simplest and most compact and is the first version with clear user and business goals. Google Analytics is integrated into the site to inform the business about it's online users and provide a foundation for future site improvements."
+          },
+          {
+            "type": "text",
+            "text": "The third version of the website is built with Middleman to take advantage of partials, data files, templates, and automation. Tachyons is used to create reusable, responsive classes to facilitate class management and minimize CSS file size. Gulp.js was used to automate the build process and deliver minified and optimized files. The site is hosted on Netlify to take advantage of continuous deployment, file optimization, and free hosting for simple websites."
           }
         ]
       },
       {
-        "title": "Challenges and Insights",
+        "title": "Observations",
         "subsections": [
           {
             "type": "text",
-            "text": "When I started the project I was solely focused on designing something to add to my portfolio. At the same time, I was so focused on learning about web development and getting a handle on the process that I forgot what the project was all about and who it was for. Fortunately, each new redesign was an opportunity to re-evaluate my intentions and the project's objective. The hardest challenge was getting rid of personal expectations to more accurately interpret business and user needs. Other challenges I faced included establishing an efficient process, communicating clearly with my client, setting clear project expectations, setting clear project deadlines, and learning about web development. I found it interesting that I entered the project with the intent of learning about web design and development and I ended learning more about business, communication, and personal flaws."
+            "text": "After designing and building this project several times and making many mistakes along the way, there are several things I became aware of through that go beyond web design and development."
+          },
+          {
+            "type": "pointers",
+            "pointers": [
+              {
+                "title": "Business Tools",
+                "text": "The value of a business website comes from building a tool that helps solve business needs. The challenge lies in identifying the business needs and figuring out how to adapt the tool to the business's process."
+              },
+              {
+                "title": "Defining Goals",
+                "text": "Solving business problems requires awareness of personal expectations to more easily differentiate between business and personal goals."
+              },
+              {
+                "title": "Learning from Mistakes",
+                "text": "Mistakes are markers that point to areas where things can be improved, and not areas to be avoided."
+              }
+            ]
           }
         ]
       },
