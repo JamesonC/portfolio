@@ -1,28 +1,48 @@
 ---
+title: Claudio Vallejo
 layout: main
-title: Projects — Claudio Vallejo, Mexican web designer and developer
+meta_title: About
+description: Hi there! I’m Claudio, product designer freelancing from Monterrey, Mexico. At the moment I’m looking for a job opportunity as a Product Designer working on design systems or business tools with global impact.
 ---
 <%# Config %>
-<% projects = data.projects %>
-<%# End %>
+<% about = data.about %>
+<%# Content %>
 <main class="cf">
-  <div class="mw38-ns center cf mt0 mt4-ns mb8 ph1 ph0-ns">
-    <section class="mt4 mt0-l mb8">
-      <header class="mw28">
-        <h1 class="merriweather f1_5 f2-ns fw1 lh1_50"><%= data.index.intro %></h1>
-      </header>
-    </section>
+  <div class="mw38 center mt4-ns">
+    <article class="mb4">
+      <img src="<%= about.hero["1x"] %>" srcset="<%= about.hero["1x"] %> 1x, <%= about.hero["2x"] %> 2x" alt="<%= about.hero.description %>">
+    </article>
+  </div>
+  <div class="mw38 center ph1 ph0-ns">
     <%# Config %>
-    <% jl = projects.length - 1 %>
+    <% bsl = about.bio.content.length - 1 %>
     <%# End %>
-    <% projects.each_with_index do |project, j| %>
-      <a class="db dim no-underline" href="/projects/<%= pretty_url project.title %>">
-        <div class="aspect-ratio aspect-ratio--16x9">
-          <img src="<%= project.card.path %>" alt="<%= project.card.alt %>">
-        </div>
-        <h1 class="ma0 mt1 mb0_5 merriweather f1 fw3 dark-gray"><%= project.title %></h1>
-        <h3 class="ma0 lato f0_75 b tracked ttu gray"><%= project.type %></h3>
-      </a>
+    <%# Bio %>
+    <% about.bio.content.each_with_index do |section, s| %>
+      <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather dark-gray lh1_75"><%= section %></p>
     <% end %>
+    <div class="cf">
+      <%# Config %>
+      <% dsl = about.details.length - 1 %>
+      <%# End %>
+      <%# Detail Sections %>
+      <% about.details.each_with_index do |section, s| %>
+        <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
+          <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= section.title %></h3>
+          <ul class="ma0 merriweather pa0 list">
+            <%# Config %>
+            <% dll = section.content.length - 1 %>
+            <%# End %>
+            <%# Details %>
+            <% section.content.each_with_index do |detail, d| %>
+              <li class="<% if d != dll %>mb2<% end %>">
+                <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
+                <p class="ma0 silver"><%= detail.subtitle %></p>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
   </div>
 </main>

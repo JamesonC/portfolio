@@ -14,9 +14,3 @@ activate :directory_indexes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-
-# Proxies
-#
-data.projects.each do |project|
-  proxy "/projects/#{ I18n.transliterate(project.title).downcase.strip.gsub(' ', '-') }/index.html", "/project-detail.html", :locals => { :project => project }, :ignore => true
-end

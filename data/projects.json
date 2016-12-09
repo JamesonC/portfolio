@@ -1,7 +1,8 @@
 [
   {
-    "title": "Materiales Vallejo",
-    "type": "Case Study",
+    "title": "Materiales Vallejo (A)",
+    "category": "Case Study",
+    "type": "A",
     "card": {
       "path": "/images/projects/materiales-vallejo/card.jpg",
       "alt": "Materiales Vallejo website version three."
@@ -234,6 +235,217 @@
           {
             "type": "text",
             "text": "The third version of the website is built with Middleman to take advantage of partials, data files, templates, and automation. Tachyons is used to create reusable, responsive classes to facilitate class management and minimize CSS file size. Gulp.js was used to automate the build process and deliver minified and optimized files. The site is hosted on Netlify to take advantage of continuous deployment, file optimization, and free hosting for simple websites."
+          }
+        ]
+      },
+      {
+        "title": "Observations",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "After designing and building this project multiple times and making many mistakes along the way, there are several things I learned that go beyond web design and development—"
+          },
+          {
+            "type": "pointers",
+            "pointers": [
+              {
+                "title": "Business Tools",
+                "text": "The value of a business website comes from building a tool that helps solve business needs. The challenge lies in identifying the business needs and figuring out how to adapt the tool to the business's process."
+              },
+              {
+                "title": "Defining Goals",
+                "text": "Solving business problems requires awareness of personal expectations to more easily differentiate between business and personal goals."
+              },
+              {
+                "title": "Learning from Mistakes",
+                "text": "Mistakes are markers that point to areas where things can be improved, and not areas to be avoided."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "",
+        "subsections": [
+          {
+            "type": "blocks",
+            "blocks": [
+              {
+                "title": "Design Tools",
+                "items": [
+                  {
+                    "title": "Swipies",
+                    "subtitle": "Wireframing",
+                    "source": "http://swipi.es/"
+                  },
+                  {
+                    "title": "Figma",
+                    "subtitle": "Web Design",
+                    "source": "https://www.figma.com/"
+                  },
+                  {
+                    "title": "Photoshop",
+                    "subtitle": "Image Editing",
+                    "source": "http://www.adobe.com/products/photoshop.html"
+                  }
+                ]
+              },
+              {
+                "title": "Development Tools",
+                "items": [
+                  {
+                    "title": "Middleman",
+                    "subtitle": "Static Site Generator",
+                    "source": "https://middlemanapp.com/"
+                  },
+                  {
+                    "title": "Tachyons",
+                    "subtitle": "CSS Library",
+                    "source": "http://tachyons.io/"
+                  },
+                  {
+                    "title": "Gulp.js",
+                    "subtitle": "Build Tool",
+                    "source": "http://gulpjs.com/"
+                  },
+                  {
+                    "title": "Netlify",
+                    "subtitle": "Continuous Deployment",
+                    "source": "https://www.netlify.com/"
+                  }
+                ]
+              },
+              {
+                "title": "Project Links",
+                "items": [
+                  {
+                    "title": "Website",
+                    "subtitle": "Case Study",
+                    "source": "http://materialesvallejo.netlify.com/"
+                  },
+                  {
+                    "title": "Source Code",
+                    "subtitle": "Case Study",
+                    "source": "https://github.com/claudiovallejo/materiales-vallejo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Materiales Vallejo (B)",
+    "category": "Case Study",
+    "type": "B",
+    "card": {
+      "path": "/images/projects/materiales-vallejo/card.jpg",
+      "alt": "Materiales Vallejo website version three."
+    },
+    "caption": "Designing and developing a building material store’s first website.",
+    "hero": {
+      "path": "/images/projects/materiales-vallejo/hero.jpg",
+      "alt": "Three mobile screens depicting three different sections of the Materiales Vallejo website."
+    },
+    "links": [
+      {
+        "title": "View Website",
+        "path": "http://materialesvallejo.netlify.com/"
+      },
+      {
+        "title": "Source Code",
+        "path": "https://github.com/claudiovallejo/materiales-vallejo"
+      }
+    ],
+    "meta": {
+      "type": "article",
+      "title": "Materiales Vallejo — Web Design and Development Case Study by Claudio Vallejo",
+      "description": "Web design and development project for Materiales Vallejo, a small building material store in Matamoros, Tamaulipas. The case study goes through first design attempts, project purpose, business and user needs, design details, challenges and insights, and tools used.",
+      "images": {
+        "og": "images/projects/materiales-vallejo/meta-og.jpg",
+        "twitter": "images/projects/materiales-vallejo/meta-twitter.jpg"
+      }
+    },
+    "content": [
+      {
+        "title": "",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "Materiales Vallejo is a small building material store in Matamoros, Tamaulipas selling cement, steel rebars, and other building materials to local clients. The business is part of a community in Mexico where online retail is inexistent and where establishing an online presence is not even contemplated."
+          },
+          {
+            "type": "text",
+            "text": "The website was designed to engage with local potential customers and to expedite the hiring process. Materiales Vallejo has no budget or time to manage the website. As a consequence the site was developed using <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://middlemanapp.com/\" target=\"_blank\">Middleman</a>, <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, <a class=\"no-underline bb--dotted dark-gray dim\" href=\"http://gulpjs.com/\" target=\"_blank\">Gulp.js</a> and <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://www.netlify.com/\" target=\"_blank\">Netlify</a> to provide free hosting, continuous deployment, and a fast and efficient development process."
+          }
+        ]
+      },
+      {
+        "title": "Core User",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "The website was designed for construction firm secretaries and small business owners that have purchasing power, are familiar with building material use and terminology, and call the business regularly to find out about product availability and pricing. Pricing depends on the client's relationship with the business and each client gets a different price. As a consequence, product pricing is not displayed on the website but the contact forms are readily available at any part of the experience to ensure users can always get in touch with the business."
+          }
+        ]
+      },
+      {
+        "title": "Secondary User",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "The business has a hiring process that requires job applicants to purchase a job application form at a local supply store and deliver the form in person or via email. The website will automate the job application process by having a careers page where potential new hires can obtain information about available jobs and apply online. The business will have access to the applications through <a class=\"no-underline bb--dotted dark-gray dim\" href=\"https://getsimpleform.com/\" target=\"_blank\">Simple Form</a>, a free service that provides a private domain to manage form submissions."
+          }
+        ]
+      },
+      {
+        "title": "Design Details",
+        "subsections": [
+          {
+            "type": "text",
+            "text": "Core users should know who the business is and what it offers on their first impression of the website. Unlike previous versions of the website, the index page provides a quick but complete snapshot of the business and contains most of the information the core user looks for. As a consequence the user will find the information they're looking for much faster than in previous versions and hopefully increase the probability a user will engage with the business via phone or email."
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v3-index-export.jpg",
+              "alt": "Mobile index page featuring a condensed and minified experience for faster content consumption."
+            }
+          },
+          {
+            "type": "text",
+            "text": "Core users should be able to find available products as fast as possible. Product cards are grouped by category to facilitate product location and were ordered from most popular to least popular. Product cards were designed to provide just enough information for users to navigate through the carousel at a glance. Tapping or clicking the card reveals product availability and sale unit."
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v3-products-export.jpg",
+              "alt": "Index page featuring a continuous product swimlane."
+            }
+          },
+          {
+            "type": "text",
+            "text": "Core users should be able to contact the business at any point of their experience. The site features a fixed navigation header and always-visible forms of contact. The forms of contact are dynamic, and update based on the type of day and time of day. If the business is open, contact buttons and relevant content sections invite the user to call the store. Otherwise, contact buttons and content invite the user to get in touch via email."
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v3-contact-export.jpg",
+              "alt": "Dynamic forms of contact and text."
+            }
+          },
+          {
+            "type": "text",
+            "text": "Potential applicants should be able to find details about available jobs and apply directly online by filling out an application form. The business has four different types of job positions—secretary, accountant, chofer, and assistant chofer. Job detail descriptions were prepared in advance for each position. Whenever there's an available job, changing a boolean value in Middleman will activate the job, job detail, and job application sections and create an appropriate banner on the index and about pages. The business will receive email notifications for every new application received and will have access to the applications through a private website."
+          },
+          {
+            "type": "image",
+            "image": {
+              "path": "/images/projects/materiales-vallejo/v3-jobs-export.jpg",
+              "alt": "Dynamic job banner and sample job detail and application form."
+            }
           }
         ]
       },
