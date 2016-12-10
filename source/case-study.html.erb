@@ -5,14 +5,16 @@ layout: main
 <% project = locals[:project] %>
 <%# End %>
 <article class="h-100">
-  <header class="dt w-100 h-100 h40-ns mb4" style="background-color: #fafafa;">
-    <div class="dtc v-mid tc ph1 ph0-ns">
-      <h1 class="mw25 center mb1 lato f2 fw4 dark-gray"><%= project.name %></h1>
-      <h2 class="mw25 center mb2 lato f1_5 fw4 lh1_25 gray"><%= project.caption %></h2>
-      <ul class="pa0 list">
-        <li class="dib tc"><a class="dib w8 pv0_5 mr1 lato f1 fw7 no-underline white bg-blue br0_125" href="<%= project.source.site.path %>" target="_blank"><%= project.source.site.title %></a></li>
-        <li class="dib tc"><a class="dib w8 pv0_5 lato f1 no-underline dark-gray ba b--light-gray br0_125" href="<%= project.source.code.path %>" target="_blank"><%= project.source.code.title %></a></li>
-      </ul>
+  <header class="dt w-100 h-100 h40-ns mb4" style="background: url('<%= project.hero.path_1x %>'); center" title="<%= project.hero.alt %>">
+    <div class="dtc v-mid h-100 ph1 ph0-ns">
+      <div class="mw45 center">
+        <h1 class="mb1 lato f2 fw4 dark-gray"><%= project.name %></h1>
+        <h2 class="w-50-ns mb2 lato f1_5 fw4 lh1_25 gray"><%= project.caption %></h2>
+        <ul class="pa0 list">
+          <li class="dib tc"><a class="dib w8 pv0_5 mr1 lato f1 fw7 no-underline white bg-blue br0_125" href="<%= project.source.site.path %>" target="_blank"><%= project.source.site.title %></a></li>
+          <li class="dib tc"><a class="dib w8 pv0_5 lato f1 no-underline dark-gray ba b--light-gray br0_125" href="<%= project.source.code.path %>" target="_blank"><%= project.source.code.title %></a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <%# Config %>
@@ -41,9 +43,7 @@ layout: main
         <% end %>
         <% if content.type === "media" %>
           <div class="mw60 center">
-            <div class="aspect-ratio aspect-ratio--16x9 mb4">
-              <div class="aspect-ratio--object cover" style="background-color: #fafafa"></div>
-            </div>
+            <img src="<%= content.media.path_1x %>" srcset="<%= content.media.path_1x %> 1x, <%= content.media.path_2x %> 2x" alt="<%= content.media.alt %>">
           </div>
         <% end %>
         <% if content.type === "block" %>

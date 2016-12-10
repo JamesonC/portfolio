@@ -12,6 +12,11 @@
         "path": "https://github.com/claudiovallejo/materiales-vallejo"
       }
     },
+    "hero": {
+      "path_1x": "",
+      "path_2x": "",
+      "alt": "Lorem ipsum"
+    },
     "tool_kit": {
       "title": "Tool Kit",
       "tools": [
@@ -95,23 +100,15 @@
             "text": "The site was designed to provide a quick but informative run through of the business and has an index page, about page, and dynamic job pages. The site’s navigation menu is fixed and has a contact button to ensure users can get in touch with the business at any point of the experience."
           },
           {
-            "type": "media",
-            "media": {
-              "path_1x": "",
-              "path_2x": "",
-              "alt": ""
-            }
-          },
-          {
             "type": "text",
-            "text": "The menu’s contact button is dynamic and displays the available form of contact at the time of visit. If the store is open, the button invites the user to call the store. Otherwise, the button invites the user to send an email. Mobiles and tablets feature a dynamic button on the lower right corner of the screen."
+            "text": "The menu’s contact button is dynamic and displays the available form of contact at the time of visit. If the store is open, the button invites the user to call the store. Otherwise, the button invites the user to send an email. Mobiles feature a dynamic button on the lower right corner of the screen."
           },
           {
             "type": "media",
             "media": {
-              "path_1x": "",
-              "path_2x": "",
-              "alt": ""
+              "path_1x": "/images/projects/materiales-vallejo/nav-detail@1x.jpg",
+              "path_2x": "/images/projects/materiales-vallejo/nav-detail@2x.jpg",
+              "alt": "Dolor sit a puta met."
             }
           },
           {
@@ -121,9 +118,9 @@
           {
             "type": "media",
             "media": {
-              "path_1x": "",
-              "path_2x": "",
-              "alt": ""
+              "path_1x": "/images/projects/materiales-vallejo/hero-detail@1x.jpg",
+              "path_2x": "/images/projects/materiales-vallejo/hero-detail@2x.jpg",
+              "alt": "Lorem ipsum"
             }
           },
           {
