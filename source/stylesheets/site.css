@@ -34,7 +34,8 @@ html { -webkit-font-smoothing: antialiased; }
 */
 /* Text colors */
 .dark-gray { color: #333; }
-.gray { color: #bdbdbd; }
+.space-gray { color: #4f4f4f; }
+.gray { color: #828282; }
 .blue { color: #0080ff; }
 /* Fill colors */
 .blue-fill { fill: #0080ff; }
@@ -43,8 +44,8 @@ html { -webkit-font-smoothing: antialiased; }
 .bg-gray { background-color: #bdbdbd; }
 .bg-almost-white { background-color: #fafafa; }
 /* Hover */
-.hover-gray:hover { color: #bdbdbd; }
-.hover-gray:focus { color: #bdbdbd; }
+.hover-gray:hover { color: #828282; }
+.hover-gray:focus { color: #828282; }
 .hover-dark-gray:hover { color: #333333; }
 .hover-dark-gray:focus { color: #333333; }
 .hover-dark-blue:hover { color: #0070df; }
@@ -79,9 +80,14 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
+.w8 { width: 8rem; }
+.mw25 { max-width: 25rem; }
 .mw28 { max-width: 28rem; }
 .mw38 { max-width: 38rem; }
 .mw58 { max-width: 58rem; }
+.mw45 { max-width: 45rem; }
+.mw46 { max-width: 46rem; }
+.mw60 { max-width: 60rem; }
 /*
    HEIGHTS
    Docs: http://tachyons.io/docs/layout/heights/
@@ -109,6 +115,7 @@ html { -webkit-font-smoothing: antialiased; }
 */
 .min-h-1 { min-height: 1px; }
 .h38 { height: 38rem; }
+.h40 { height: 40rem; }
 /*
    LINKS
    Docs: http://tachyons.io/docs/elements/links/
@@ -135,6 +142,7 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
+.br0_125 { border-radius: 0.125rem; }
 .bb--dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
 .b--light-gray { border-color: #e0e0e0; }
 /*
@@ -277,6 +285,7 @@ html { -webkit-font-smoothing: antialiased; }
 */
 .f0_75 { font-size: 0.75rem; }
 .f1 { font-size: 1rem; }
+.f1_125 { font-size: 1.125rem; }
 .f1_5 { font-size: 1.5rem; }
 .f2 { font-size: 2rem; }
 .f3 { font-size: 3rem; }
@@ -335,7 +344,10 @@ transition: opacity 1.5s ease-in-out; }
   .mw38-ns { max-width: 38rem; }
   .mw58-ns { max-width: 58rem; }
   .mw45-ns { max-width: 45rem; }
+  .mw46-ns { max-width: 46rem; }
   .mw60-ns { max-width: 60rem; }
+  /* Heights */
+  .h40-ns { height: 40rem; }
   /* Aspect */
   .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
   /* Margin all */
@@ -417,11 +429,11 @@ transition: opacity 1.5s ease-in-out; }
   .pt8-ns { padding-top: 8rem; }
   /* Padding right */
   .pr0-ns { padding-right: 0; }
-  .pr0_5-ns { padding-top: 0.5rem; }
-  .pr1-ns { padding-top: 1rem; }
-  .pr2-ns { padding-top: 2rem; }
-  .pr4-ns { padding-top: 4rem; }
-  .pr8-ns { padding-top: 8rem; }
+  .pr0_5-ns { padding-right: 0.5rem; }
+  .pr1-ns { padding-right: 1rem; }
+  .pr2-ns { padding-right: 2rem; }
+  .pr4-ns { padding-right: 4rem; }
+  .pr8-ns { padding-right: 8rem; }
   /* Padding bottom */
   .pb0-ns { padding-bottom: 0; }
   .pb0_5-ns { padding-bottom: 0.5rem; }
@@ -436,13 +448,26 @@ transition: opacity 1.5s ease-in-out; }
   .pl2-ns { padding-left: 2rem; }
   .pl4-ns { padding-left: 4rem; }
   .pl8-ns { padding-left: 8rem; }
+  /* Fonts */
+  .f0_75-ns { font-size: 0.75rem; }
+  .f1-ns { font-size: 1rem; }
+  .f1_125-ns { font-size: 1.125rem; }
+  .f1_5-ns { font-size: 1.5rem; }
+  .f2-ns { font-size: 2rem; }
+  .f3-ns { font-size: 3rem; }
+  .f4-ns { font-size: 4rem; }
+  .f6-ns { font-size: 6rem; }
+  .f8-ns { font-size: 8rem; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
   /* Widths */
   .w-60-m { width: 60%; }
   .mw28-m { max-width: 28rem; }
   .mw38-m { max-width: 38rem; }
+  .mw46-m { max-width: 46rem; }
   .mw58-m { max-width: 58rem; }
+  /* Heights */
+  .h40-m { height: 40rem; }
   /* Aspect */
   .aspect-ratio--16x9-m { padding-bottom: 56.25%; }
   /* Margin all */
@@ -543,13 +568,26 @@ transition: opacity 1.5s ease-in-out; }
   .pl2-m { padding-left: 2rem; }
   .pl4-m { padding-left: 4rem; }
   .pl8-m { padding-left: 8rem; }
+  /* Fonts */
+  .f0_75-m { font-size: 0.75rem; }
+  .f1-m { font-size: 1rem; }
+  .f1_125-m { font-size: 1.125rem; }
+  .f1_5-m { font-size: 1.5rem; }
+  .f2-m { font-size: 2rem; }
+  .f3-m { font-size: 3rem; }
+  .f4-m { font-size: 4rem; }
+  .f6-m { font-size: 6rem; }
+  .f8-m { font-size: 8rem; }
 }
 @media screen and (min-width: 60em) {
   /* Widths */
   .w-60-l { width: 60%; }
   .mw28-l { max-width: 28rem; }
   .mw38-l { max-width: 38rem; }
+  .mw46-l { max-width: 46rem; }
   .mw58-l { max-width: 58rem; }
+  /* Heights */
+  .h40-l { height: 40rem; }
   /* Aspect */
   .aspect-ratio--16x9-l { padding-bottom: 56.25%; }
   /* Margin all */
@@ -631,11 +669,11 @@ transition: opacity 1.5s ease-in-out; }
   .pt8-l { padding-top: 8rem; }
   /* Padding right */
   .pr0-l { padding-right: 0; }
-  .pr0_5-l { padding-top: 0.5rem; }
-  .pr1-l { padding-top: 1rem; }
-  .pr2-l { padding-top: 2rem; }
-  .pr4-l { padding-top: 4rem; }
-  .pr8-l { padding-top: 8rem; }
+  .pr0_5-l { padding-right: 0.5rem; }
+  .pr1-l { padding-right: 1rem; }
+  .pr2-l { padding-right: 2rem; }
+  .pr4-l { padding-right: 4rem; }
+  .pr8-l { padding-right: 8rem; }
   /* Padding bottom */
   .pb0-l { padding-bottom: 0; }
   .pb0_5-l { padding-bottom: 0.5rem; }
@@ -650,4 +688,14 @@ transition: opacity 1.5s ease-in-out; }
   .pl2-l { padding-left: 2rem; }
   .pl4-l { padding-left: 4rem; }
   .pl8-l { padding-left: 8rem; }
+  /* Fonts */
+  .f0_75-l { font-size: 0.75rem; }
+  .f1-l { font-size: 1rem; }
+  .f1_125-l { font-size: 1.125rem; }
+  .f1_5-l { font-size: 1.5rem; }
+  .f2-l { font-size: 2rem; }
+  .f3-l { font-size: 3rem; }
+  .f4-l { font-size: 4rem; }
+  .f6-l { font-size: 6rem; }
+  .f8-l { font-size: 8rem; }
 }
