@@ -209,6 +209,7 @@ html { -webkit-font-smoothing: antialiased; }
 .mb1 { margin-bottom: 1rem; }
 .mb2 { margin-bottom: 2rem; }
 .mb4 { margin-bottom: 4rem; }
+.mb6 { margin-bottom: 6rem; }
 .mb8 { margin-bottom: 8rem; }
 /* Margin left */
 .ml0 { margin-left: 0; }
@@ -391,6 +392,7 @@ transition: opacity 1.5s ease-in-out; }
   .mb1-ns { margin-bottom: 1rem; }
   .mb2-ns { margin-bottom: 2rem; }
   .mb4-ns { margin-bottom: 4rem; }
+  .mb6-ns { margin-bottom: 6rem; }
   .mb8-ns { margin-bottom: 8rem; }
   /* Margin left */
   .ml0-ns { margin-left: 0; }
@@ -511,6 +513,7 @@ transition: opacity 1.5s ease-in-out; }
   .mb1-m { margin-bottom: 1rem; }
   .mb2-m { margin-bottom: 2rem; }
   .mb4-m { margin-bottom: 4rem; }
+  .mb6-m { margin-bottom: 6rem; }
   .mb8-m { margin-bottom: 8rem; }
   /* Margin left */
   .ml0-m { margin-left: 0; }
@@ -631,6 +634,7 @@ transition: opacity 1.5s ease-in-out; }
   .mb1-l { margin-bottom: 1rem; }
   .mb2-l { margin-bottom: 2rem; }
   .mb4-l { margin-bottom: 4rem; }
+  .mb6-l { margin-bottom: 6rem; }
   .mb8-l { margin-bottom: 8rem; }
   /* Margin left */
   .ml0-l { margin-left: 0; }

@@ -79,7 +79,11 @@
           },
           {
             "type": "text",
-            "text": "The business uses manual processes to take care of business tasks. If there’s an available job, interested applicants have to purchase a job application form at a local office supply store and deliver the application in person or email a scanned copy. For inventory management, the business does an in-person count every morning and adds the new data to an excel spreadsheet. To manage daily sales, the business manually goes through each receipt making sure the sales were made and the cash was received."
+            "text": "Materiales Vallejo’s hiring process is very manual and could use some automation. The business purchases newspaper and radio ads to promote an available job. Interested applicants are asked to purchase a job application form at a local office supply store and deliver the application in person or email a scanned copy, making the application process quite slow."
+          },
+          {
+            "type": "text",
+            "text": "The business is part of a community where businesses are barely starting to engage with users online. The business took interest in building a website because businesses in larger cities were obtaining sales leads through their websites and marketing campaigns. Due to technology and budget limitations, a simple website was built to help Materiales Vallejo engage with local clients and streamline their hiring process."
           }
         ]
       },
@@ -88,7 +92,11 @@
         "content": [
           {
             "type": "text",
-            "text": "The core user profile was based on Materiales Vallejo’s client profile. Most clients are construction firm secretaries and small business owners that have purchasing power, are familiar with building material use and terminology, and prefer to engage on the phone with the business to inquire about product availability and negotiate pricing. The secondary user profile was based on the profile of a potential secretary hire. Secretaries, unlike other job positions available in Materiales Vallejo, are familiar using a computer and own a personal email."
+            "text": "The core user profile was based on Materiales Vallejo’s client profile. Most clients are construction firm secretaries and small business owners that have purchasing power, are familiar with building material use and terminology, and prefer to engage on the phone with the business to inquire about product availability and negotiate pricing. Core user’s will likely visit the website for quick reference about product and service availability and will call the store to ask about pricing."
+          },
+          {
+            "type": "text",
+            "text": "Secondary users are users that would visit the website to find out about available jobs and apply online. These users would find out about the available job through a newspaper or radio ad and instead of being sent to purchase an application form, a link would be provided where potential hires will find more details about the job and where they could fill out and submit an application form."
           }
         ]
       },
@@ -97,35 +105,7 @@
         "content": [
           {
             "type": "text",
-            "text": "The site was designed to provide a quick but informative run through of the business and has an index page, about page, and dynamic job pages. The site’s navigation menu is fixed and has a contact button to ensure users can get in touch with the business at any point of the experience."
-          },
-          {
-            "type": "text",
-            "text": "The menu’s contact button is dynamic and displays the available form of contact at the time of visit. If the store is open, the button invites the user to call the store. Otherwise, the button invites the user to send an email. Mobiles feature a dynamic button on the lower right corner of the screen."
-          },
-          {
-            "type": "media",
-            "media": {
-              "path_1x": "/images/projects/materiales-vallejo/nav-detail@1x.jpg",
-              "path_2x": "/images/projects/materiales-vallejo/nav-detail@2x.jpg",
-              "alt": "Dolor sit a puta met."
-            }
-          },
-          {
-            "type": "text",
-            "text": "The index page features a hero section that introduces the business and provides links to the products and contact sections as they are the sections the user is most likely interested in. The hero section has a dark background to focus the user’s attention on the section’s content."
-          },
-          {
-            "type": "media",
-            "media": {
-              "path_1x": "/images/projects/materiales-vallejo/hero-detail@1x.jpg",
-              "path_2x": "/images/projects/materiales-vallejo/hero-detail@2x.jpg",
-              "alt": "Lorem ipsum"
-            }
-          },
-          {
-            "type": "text",
-            "text": "A carousel was designed to provide a quick way of navigating through the available products. Products were grouped by category for fast product navigation and categories were ordered by popularity. Users can either press a category name or scroll through the swimlane to navigate through the product cards."
+            "text": "A simple website was designed featuring a landing page, an about page, and dynamic job pages. The landing page provides a fast but complete run-through of the business for core users. The landing page was designed for fast consumption to minimize search time and maximize the probability of turning the visit into an engagement."
           },
           {
             "type": "media",
@@ -137,7 +117,43 @@
           },
           {
             "type": "text",
-            "text": "Product cards were designed to inform about product availability. Tapping the card displays details about sale unit and available measurements. Product cards don’t display prices because the business values engaging and negotiating with clients and because the business was not interested in updating prices."
+            "text": "The navigation menu is fixed and has a contact button that displays the available form of contact at the time of visit. If the store is open, the button invites users to call the store. If the business is away for lunch or closed, the button invites users to send an email."
+          },
+          {
+            "type": "media",
+            "media": {
+              "path_1x": "/images/projects/materiales-vallejo/nav-detail@1x.jpg",
+              "path_2x": "/images/projects/materiales-vallejo/nav-detail@2x.jpg",
+              "alt": "Dynamic desktop and mobile contact buttons."
+            }
+          },
+          {
+            "type": "text",
+            "text": "The landing page’s hero section introduces the business and provides links to the products and services sections. The hero’s background is dark to focus the user’s attention on the section’s content. A bright blue color was used for the product button as it contains information users will most likely want to engage the business for."
+          },
+          {
+            "type": "media",
+            "media": {
+              "path_1x": "/images/projects/materiales-vallejo/hero-detail@1x.jpg",
+              "path_2x": "/images/projects/materiales-vallejo/hero-detail@2x.jpg",
+              "alt": "Desktop hero section"
+            }
+          },
+          {
+            "type": "text",
+            "text": "A carousel was designed to provide a quick way of navigating through the available products. Products were grouped by category for fast product navigation and categories were ordered by popularity. Users can either press a category name or scroll through the swimlane to navigate through the product cards."
+          },
+          {
+            "type": "media",
+            "media": {
+              "path_1x": "/images/projects/materiales-vallejo/carousel-detail@1x.jpg",
+              "path_2x": "/images/projects/materiales-vallejo/carousel-detail@2x.jpg",
+              "alt": "Product carousel"
+            }
+          },
+          {
+            "type": "text",
+            "text": "Product cards were designed to inform about product availability. Tapping the card displays details about sale unit and available measurements. Product cards don’t display prices because the business values engaging and negotiating with clients."
           },
           {
             "type": "media",
@@ -170,6 +186,18 @@
               "path_2x": "",
               "alt": ""
             }
+          },
+          {
+            "type": "text",
+            "text": "The about page was designed to provide a brief overview of business history, goals, and service standards. The about page displays business details for users interested in learning more about the business and its story. The page provides a brief run-through of the business history, goals, and service standards. The section also contains dynamic content that invites users to take a specific form of action based on the store’s current status."
+          },
+          {
+            "type": "media",
+            "media": {
+              "path_1x": "",
+              "path_2x": "",
+              "alt": ""
+            }
           }
         ]
       },
@@ -178,26 +206,26 @@
         "content": [
           {
             "type": "text",
-            "text": "Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex. Visuvius lex in nativi tatem in lorem veinti lex."
+            "text": "The website was built with Middleman, Tachyons, and Netlify for fast content editing, dynamic pages, reusable styling, free hosting and continuous deployment."
           },
           {
             "type": "block",
             "block": [
               {
-                "title": "Simple Editing",
-                "description": "Lorem ipsum dolor sit amet consectetur adipiscing seit."
+                "title": "Fast Content Editing",
+                "description": "Each page has it's own <span class=\"gray\">`.json`</span> data file that contains the page's content, making content easy to locate and fast to update."
               },
               {
-                "title": "Manageable CSS",
-                "description": "Maecenas rex in questa parole lara ad astra per aspera septim."
+                "title": "Dynamic Pages",
+                "description": "When a job is available, changing a boolean variable in <span class=\"gray\">`jobs.json`</span> activates the job's detail and application pages."
               },
               {
-                "title": "Dynamic Sections",
-                "description": "Frente la mone trilon faustino la sid is terra nova in latorre ma."
+                "title": "Reusable Styling",
+                "description": "Tachyons encapsulates CSS properties by function, eliminating specificity issues and enabling easy, predictable UI updates."
               },
               {
-                "title": "Store Hour Script",
-                "description": "Une scripti le made in tandem perra fevaroeche la moza di natura"
+                "title": "Simple Deployment",
+                "description": "Netlify offers free hosting and integrates with GitHub to provide fast and easy deployment with <span class=\"gray\">`git push`</span>."
               }
             ]
           }

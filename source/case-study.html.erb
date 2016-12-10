@@ -5,7 +5,7 @@ layout: main
 <% project = locals[:project] %>
 <%# End %>
 <article class="h-100">
-  <header class="dt w-100 h-100 h40-ns mb4" style="background: url('<%= project.hero.path_1x %>'); center" title="<%= project.hero.alt %>">
+  <header class="dt w-100 h-100 h40-ns mb6" style="background-color: #fafafa;" title="<%= project.hero.alt %>">
     <div class="dtc v-mid h-100 ph1 ph0-ns">
       <div class="mw45 center">
         <h1 class="mb1 lato f2 fw4 dark-gray"><%= project.name %></h1>
@@ -24,7 +24,7 @@ layout: main
     <section>
       <% if section.title %>
         <div class="mw45 center ph1 ph0-ns">
-          <h3 class="ma0 mb2 lato f1_5 fw4 dark-gray"><%= section.title %></h3>
+          <h3 class="ma0 mb1 lato f1_5 fw4 dark-gray"><%= section.title %></h3>
         </div>
       <% end %>
       <%# Config %>
@@ -38,12 +38,15 @@ layout: main
         <%# End %>
         <% if content.type === "text" %>
           <div class="mw45 center ph1 ph0-ns">
-            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif c != cl %>mb2<% else %>mb4<% end %> merriweather f1 f1_125-ns fw3 space-gray lh1_75"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb4<% elsif c != cl %>mb1<% else %>mb6<% end %> lato f1 f1_125-ns fw4 space-gray lh1_75"><%= content.text %></p>
           </div>
         <% end %>
         <% if content.type === "media" %>
-          <div class="mw60 center">
+          <div class="mw60 center mb6">
             <img src="<%= content.media.path_1x %>" srcset="<%= content.media.path_1x %> 1x, <%= content.media.path_2x %> 2x" alt="<%= content.media.alt %>">
+            <div class="mw45 center tc">
+              <p class="ma0 lato f1 fw4 gray"><%= content.media.alt %></p>
+            </div>
           </div>
         <% end %>
         <% if content.type === "block" %>
@@ -53,11 +56,11 @@ layout: main
           <div class="mw45 center ph1 ph0-ns">
             <% content.block.each_with_index do |item, i| %>
               <% if i % 2 == 0 %>
-                <div class="cf <% if i < il - 1 %>mb2-ns<% else %>mb4-ns<% end %>">
+                <div class="cf mb4-ns">
               <% end %>
-                  <div class="fl-ns w-50-ns <% if i % 2 === 0 %>pr1-ns<% else %>pl1-ns<% end %> <% if i != il %>mb2<% else %>mb4<% end %> mb0-ns">
+                  <div class="fl-ns w-50-ns <% if i % 2 === 0 %>pr1-ns<% else %>pl1-ns<% end %> <% if i != il %>mb2<% else %>mb6<% end %> mb0-ns">
                     <h4 class="ma0 mb0_5 lato f1 f1_125-ns fw4 dark-gray"><%= item.title %></h4>
-                    <p class="ma0 merriweather f1 f1_125-ns lh1_75 space-gray"><%= item.description %></p>
+                    <p class="ma0 lato f1 f1_125-ns fw4 lh1_75 space-gray"><%= item.description %></p>
                   </div>
               <% if i % 2 != 0 %>
                 </div>
@@ -76,7 +79,7 @@ layout: main
         <div class="mw45 mw46-ns center ph1 ph0-ns cf">
           <% project.tool_kit.tools.each_with_index do |tool, t| %>
           <div class="fl w-50 w-third-ns <% if t < tl - 1 %>mb1<% end %> <% if t < tl - 2 %>mb1-ns<% end %> <% if t % 2 == 0 %>pr0_5<% else %>pl0_5<% end %> ph0_5-ns">
-            <a class="db pa1 ba b--light-gray no-underline" href="<%= tool.path %>" target="_blank">
+            <a class="db pa1 ba br0_125 b--light-gray no-underline" href="<%= tool.path %>" target="_blank">
               <p class="ma0 mb0_5 lato f1 f1_125-ns dark-gray"><%= tool.title %></p>
               <p class="ma0 lato f1 f1_125-ns gray"><%= tool.subtitle %></p>
             </a>

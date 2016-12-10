@@ -1,15 +1,15 @@
 <%# Config %>
 <% contact = data.contact.content %>
 <%# Partial %>
-<footer class="mw8-l center mt8 pb1 pb2-m">
-  <div class="mw38-ns center cf">
-    <ul class="ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+<footer class="mw8-l center mt8 pb1">
+  <div class="mw45 center cf">
+    <ul class="fr ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
       <%# Config %>
       <% cll = contact.length - 1 %>
       <%# End %>
       <% contact.each_with_index do |link, l| %>
         <li class="dib">
-          <a class="dib <% if l != cll %>mr2<% end %> lato f0_75 b tracked ttu silver dim no-underline" href="<%= link.source %>" target="_blank">
+          <a class="dib <% if l != cll %>mr2<% end %> lato f1 gray no-underline" href="<%= link.source %>" target="_blank">
             <%= link.title %>
           </a>
         </li>
