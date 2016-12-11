@@ -1,19 +1,18 @@
 <%# Config %>
 <% contact = data.contact.content %>
+<% last_update = data.contact.date %>
 <%# Partial %>
-<footer class="mw8-l center mt8 pb1">
-  <div class="mw45 center cf">
-    <ul class="fr ma0 pa0 ph1 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+<footer class="mw45 center mt8 ph1 ph0-ns pv1">
+    <ul class="ma0 pa0 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
       <%# Config %>
       <% cll = contact.length - 1 %>
       <%# End %>
       <% contact.each_with_index do |link, l| %>
         <li class="dib">
-          <a class="dib <% if l != cll %>mr2<% end %> lato f1 gray no-underline" href="<%= link.source %>" target="_blank">
+          <a class="<% if l != cll %>mr2<% end %> lato f0_75 fw7 tracked ttu dark-gray no-underline" href="<%= link.source %>">
             <%= link.title %>
           </a>
         </li>
       <% end %>
     </ul>
-  </div>
 </footer>

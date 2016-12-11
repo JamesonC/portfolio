@@ -16,6 +16,7 @@ html { -webkit-font-smoothing: antialiased; }
 .lh1_25 { line-height: 1.25; }
 .lh1_50 { line-height: 1.50; }
 .lh1_75 { line-height: 1.75; }
+.lh2 { line-height: 2; }
 /*
    LETTER SPACING
    Docs: http://tachyons.io/docs/typography/tracking/
@@ -36,11 +37,14 @@ html { -webkit-font-smoothing: antialiased; }
 .dark-gray { color: #333; }
 .space-gray { color: #4f4f4f; }
 .gray { color: #828282; }
+.silver { color: #bdbdbd; }
+.light-gray { color: #e0e0e0; }
 .blue { color: #0080ff; }
 /* Fill colors */
 .blue-fill { fill: #0080ff; }
 /* Background colors */
 .bg-dark-gray { background-color: #333; }
+.bg-space-gray { background-color: #4f4f4f;}
 .bg-gray { background-color: #bdbdbd; }
 .bg-almost-white { background-color: #fafafa; }
 /* Hover */
@@ -80,7 +84,7 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
-.w8 { width: 8rem; }
+.w10 { width: 10rem; }
 .mw25 { max-width: 25rem; }
 .mw28 { max-width: 28rem; }
 .mw38 { max-width: 38rem; }
@@ -144,6 +148,7 @@ html { -webkit-font-smoothing: antialiased; }
 */
 .br0_125 { border-radius: 0.125rem; }
 .bb--dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
+.b--blue { border-color: #0080ff; }
 .b--light-gray { border-color: #e0e0e0; }
 /*
    SPACING
@@ -339,6 +344,11 @@ transition: opacity 1.5s ease-in-out; }
   }
 */
 @media screen and (min-width: 30em) {
+  /* Line Heights */
+  .lh1_25-ns { line-height: 1.25; }
+  .lh1_50-ns { line-height: 1.50; }
+  .lh1_75-ns { line-height: 1.75; }
+  .lh2-ns { line-height: 2; }
   /* Widths */
   .w-60-ns { width: 60%; }
   .mw28-ns { max-width: 28rem; }
@@ -462,6 +472,11 @@ transition: opacity 1.5s ease-in-out; }
   .f8-ns { font-size: 8rem; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  /* Line Heights */
+  .lh1_25-m { line-height: 1.25; }
+  .lh1_50-m { line-height: 1.50; }
+  .lh1_75-m { line-height: 1.75; }
+  .lh2-m { line-height: 2; }
   /* Widths */
   .w-60-m { width: 60%; }
   .mw28-m { max-width: 28rem; }
@@ -583,6 +598,11 @@ transition: opacity 1.5s ease-in-out; }
   .f8-m { font-size: 8rem; }
 }
 @media screen and (min-width: 60em) {
+  /* Line Heights */
+  .lh1_25-l { line-height: 1.25; }
+  .lh1_50-l { line-height: 1.50; }
+  .lh1_75-l { line-height: 1.75; }
+  .lh2-l { line-height: 2; }
   /* Widths */
   .w-60-l { width: 60%; }
   .mw28-l { max-width: 28rem; }

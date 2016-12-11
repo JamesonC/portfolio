@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>figma</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9464 -10428)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9464 10428L 9528 10428L 9528 10492L 9464 10492L 9464 10428Z" fill="#FFFFFF"/>
+</mask>
+<g id="figma" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Polygon" style="mix-blend-mode:normal;" figma:type="vector">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9482 10446)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9482 10446)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 13.4815 0L 28 28L 13.4815 23.1724L 0 28L 13.4815 0Z"/>
+<path id="path1_stroke_2x" d="M 13.4815 0L 14.3692 -0.460317L 13.4483 -2.23631L 12.5805 -0.433816L 13.4815 0ZM 28 28L 27.6845 28.9489L 30.0214 29.726L 28.8878 27.5397L 28 28ZM 0 28L -0.901002 27.5662L -1.95907 29.7637L 0.337127 28.9415L 0 28ZM 13.4815 23.1724L 13.797 22.2235L 13.4694 22.1146L 13.1444 22.231L 13.4815 23.1724ZM 12.5937 0.460317L 27.1122 28.4603L 28.8878 27.5397L 14.3692 -0.460317L 12.5937 0.460317ZM 0.901002 28.4338L 14.3825 0.433816L 12.5805 -0.433816L -0.901002 27.5662L 0.901002 28.4338ZM 28.3155 27.0511L 13.797 22.2235L 13.166 24.1213L 27.6845 28.9489L 28.3155 27.0511ZM 13.1444 22.231L -0.337127 27.0585L 0.337127 28.9415L 13.8186 24.1139L 13.1444 22.231Z"/>
+</defs>
+</svg>

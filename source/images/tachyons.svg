@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>tachyons</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9464 -10508)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9464 10508L 9528 10508L 9528 10572L 9464 10572L 9464 10508Z" fill="#FFFFFF"/>
+</mask>
+<g id="tachyons" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9483 10534)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9496.33 10534)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9496.33 10547)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9483 10521)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 0 -0.5L -0.5 -0.5L -0.5 0L 0 0ZM 13.3333 0L 13.8333 0L 13.8333 -0.5L 13.3333 -0.5L 13.3333 0ZM 13.3333 13L 13.3333 13.5L 13.8333 13.5L 13.8333 13L 13.3333 13ZM 0 13L -0.5 13L -0.5 13.5L 0 13.5L 0 13ZM 0 0.5L 13.3333 0.5L 13.3333 -0.5L 0 -0.5L 0 0.5ZM 12.8333 0L 12.8333 13L 13.8333 13L 13.8333 0L 12.8333 0ZM 13.3333 12.5L 0 12.5L 0 13.5L 13.3333 13.5L 13.3333 12.5ZM 0.5 13L 0.5 0L -0.5 0L -0.5 13L 0.5 13ZM 0.34905 13.358L 13.6824 0.358L 12.9843 -0.358L -0.34905 12.642L 0.34905 13.358ZM -0.34905 0.358L 12.9843 13.358L 13.6824 12.642L 0.34905 -0.358L -0.34905 0.358Z"/>
+</defs>
+</svg>

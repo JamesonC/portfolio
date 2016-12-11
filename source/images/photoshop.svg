@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>photoshop</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9544 -10428)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9544 10428L 9608 10428L 9608 10492L 9544 10492L 9544 10428Z" fill="#FFFFFF"/>
+</mask>
+<g id="photoshop" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9556 10440)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9556 10440)" fill="#56CCF2" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(9572 10456)" fill="#56CCF2" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 40 20C 40 31.0457 31.0457 40 20 40C 8.95431 40 0 31.0457 0 20C 0 8.95431 8.95431 0 20 0C 31.0457 0 40 8.95431 40 20Z"/>
+<path id="path1_stroke_2x" d="M 39 20C 39 30.4934 30.4934 39 20 39L 20 41C 31.598 41 41 31.598 41 20L 39 20ZM 20 39C 9.50659 39 1 30.4934 1 20L -1 20C -1 31.598 8.40202 41 20 41L 20 39ZM 1 20C 1 9.50659 9.50659 1 20 1L 20 -1C 8.40202 -1 -1 8.40202 -1 20L 1 20ZM 20 1C 30.4934 1 39 9.50659 39 20L 41 20C 41 8.40202 31.598 -1 20 -1L 20 1Z"/>
+<path id="path2_fill" d="M 4.5 0L 3.5 0L 3.5 3.5L 0 3.5L 0 4.5L 3.5 4.5L 3.5 8L 4.5 8L 4.5 4.5L 8 4.5L 8 3.5L 4.5 3.5L 4.5 0Z"/>
+</defs>
+</svg>

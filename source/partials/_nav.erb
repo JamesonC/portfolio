@@ -1,9 +1,9 @@
 <%# Config %>
 <% contact = data.navigation.content %>
 <%# Partial %>
-<nav class="pv1 ph1 ph0-ns bg-white">
-  <div class="mw45 center cf">
-    <a class="db fl w-40 lato f1 fw4 dark-gray no-underline" href="/">
+<nav class="mw45 center pv1 ph1 ph0-ns bg-white">
+  <div class="center cf">
+    <a class="db fl w-40 lato f0_75 fw7 tracked ttu dark-gray no-underline" href="/">
       Claudio Vallejo
     </a>
     <div class="fr w-60">
@@ -13,7 +13,7 @@
         <% cll = contact.length - 1 %>
         <% contact.each_with_index do |link, l| %>
           <li class="dib fr tar">
-            <a class="<% if l != cll %>ml2<% end %> lato f1 fw4 gray no-underline" href="<%= link.source %>">
+            <a class="<% if l != cll %>ml2<% end %> lato f0_75 fw7 tracked ttu gray no-underline" href="<%= link.source %>">
               <%= link.title %>
             </a>
           </li>

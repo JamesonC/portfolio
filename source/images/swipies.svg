@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>swipies</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9384 -10428)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9384 10428L 9448 10428L 9448 10492L 9384 10492L 9384 10428Z" fill="#FFFFFF"/>
+</mask>
+<g id="swipies" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Rectangle 21" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9401 10440)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9401 10440)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 22" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="translate(9422 10476)" fill="#828282" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 2C 0 0.895431 0.895431 0 2 0L 26 0C 27.1046 0 28 0.895431 28 2L 28 38C 28 39.1046 27.1046 40 26 40L 2 40C 0.895431 40 0 39.1046 0 38L 0 2Z"/>
+<path id="path1_stroke_2x" d="M 2 1L 26 1L 26 -1L 2 -1L 2 1ZM 27 2L 27 38L 29 38L 29 2L 27 2ZM 26 39L 2 39L 2 41L 26 41L 26 39ZM 1 38L 1 2L -1 2L -1 38L 1 38ZM 2 -1C 0.343146 -1 -1 0.343146 -1 2L 1 2C 1 1.44772 1.44772 1 2 1L 2 -1ZM 26 1C 26.5523 1 27 1.44772 27 2L 29 2C 29 0.343146 27.6569 -1 26 -1L 26 1ZM 27 38C 27 38.5523 26.5523 39 26 39L 26 41C 27.6569 41 29 39.6569 29 38L 27 38ZM 2 39C 1.44772 39 1 38.5523 1 38L -1 38C -1 39.6569 0.343146 41 2 41L 2 39Z"/>
+<path id="path2_fill" d="M 0 0L 4 0L 4 1L 0 1L 0 0Z"/>
+</defs>
+</svg>

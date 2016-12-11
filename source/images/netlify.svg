@@ -1,0 +1,32 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>netlify</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9544 -10508)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9544 10508L 9608 10508L 9608 10572L 9544 10572L 9544 10508Z" fill="#FFFFFF"/>
+</mask>
+<g id="netlify" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 9" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9567 10523)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(9583 10537)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(9565 10537)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(9575 10521)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(9573 10555)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 16L -0.423999 15.735L -0.902124 16.5L 0 16.5L 0 16ZM 18 16L 18.4371 16.2428L 18.8498 15.5L 18 15.5L 18 16ZM 9.576 -0.264999L -0.423999 15.735L 0.423999 16.265L 10.424 0.264999L 9.576 -0.264999ZM 0 16.5L 18 16.5L 18 15.5L 0 15.5L 0 16.5ZM 17.5629 15.7572L 7.56292 33.7572L 8.43708 34.2428L 18.4371 16.2428L 17.5629 15.7572Z"/>
+<path id="path1_fill" d="M 4 2C 4 3.10457 3.10457 4 2 4C 0.895431 4 0 3.10457 0 2C 0 0.895431 0.895431 0 2 0C 3.10457 0 4 0.895431 4 2Z"/>
+</defs>
+</svg>
