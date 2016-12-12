@@ -5,22 +5,21 @@ meta_title: Claudio Vallejo, Product Designer
 description: DESCRIPTION PENDING
 ---
 <%# Config %>
-<% about = data.about %>
+<% index = data.index %>
 <%# Content %>
 <main class="mt1 cf">
   <div class="mw38 center mt4-ns ph1 ph0-ns">
-    <a class="db cf mb6 ba b--light-gray no-underline" href="/about">
+    <%# Profile Card %>
+    <a class="db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
-        <picture>
-          <source srcset="/images/about/portrait-square@1x.jpg 1x, /images/about/portrait-square@2x.jpg 2x" media="(min-width: 30rem)">
-          <img class="db w-100" src="/images/about/portrait@1x.jpg" srcset="/images/about/portrait@1x.jpg 1x, /images/about/portrait@2x.jpg 2x" alt="<%= data.about.hero.alt %>">
-        </picture>
+
       </div>
       <div class="fl-ns w-70-ns pa1 pa2-ns">
-        <p class="ma0 mb1 merriweather f1 dark-gray lh1_75">Hi there I'm Claudio, a freelance product designer focusing on design systems and business tools.</p>
-        <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read Bio</h3>
+        <p class="ma0 mb1 merriweather f1 dark-gray lh1_75"><%= index.profile.description %></p>
+        <h3 class="ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.title %></h3>
       </div>
     </a>
+    <%# Content Sections %>
     <section class="mb6">
       <header class="mb1">
         <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Selected Work</h1>

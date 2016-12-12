@@ -1,3 +1,22 @@
 {
-  "intro": "Hi I'm Claudio, a Mexican web designer learning about product design and web development."
+  "profile": {
+    "description": "Hi I'm Claudio, a freelance product designer focusing on design systems and business tools.",
+    "link": {
+      "title": "Read Bio",
+      "path": "/about"
+    },
+    "image": {
+      "path_1x": "/images/about/portrait@1x.jpg",
+      "path_2x": "/images/about/portrait@2x.jpg",
+      "alt": "Hi, I'm Claudio.",
+      "responsive": true,
+      "breakpoints": [
+        {
+          "width": 30,
+          "1x": "/images/about/portrait-square@1x.jpg",
+          "2x": "/images/about/portrait-square@2x.jpg"
+        }
+      ]
+    }
+  }
 }
