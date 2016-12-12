@@ -6,43 +6,28 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
 ---
 <%# Config %>
 <% about = data.about %>
-<%# Content %>
+<%# End %>
 <main class="cf">
   <div class="mw38 center mt4-ns">
     <article class="mb4">
-      <img src="<%= about.hero["1x"] %>" srcset="<%= about.hero["1x"] %> 1x, <%= about.hero["2x"] %> 2x" alt="<%= about.hero.description %>">
+      <picture>
+        <% about.image.breakpoints.each do |breakpoint| %>
+          <source srcset="<%= breakpoint["1x"] %> 1x, <%= breakpoint["2x"] %> 2x" media="(min-width: <%= breakpoint.width %>rem)">
+        <% end %>
+        <img class="db w-100" src="<%= about.image["1x"] %>" srcset="<%= about.image["1x"] %> 1x, <%= about.image["2x"] %> 2x" alt="<%= about.image.alt %>">
+      </picture>
     </article>
+    <header class="mb2">
+      <h1 class="relative z-2 dib ma0 merriweather f1 fw4 black">About</h1>
+    </header>
   </div>
   <div class="mw38 center ph1 ph0-ns">
     <%# Config %>
     <% bsl = about.bio.content.length - 1 %>
     <%# End %>
-    <%# Bio %>
     <% about.bio.content.each_with_index do |section, s| %>
-      <p class="ma0 <% if s != bsl %>mb2<% else %>mb4<% end %> merriweather f1 f1_125-ns dark-gray lh1_75 lh2-ns"><%= section %></p>
+      <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1 space-gray lh1_75"><%= section %></p>
     <% end %>
-    <div class="cf">
-      <%# Config %>
-      <% dsl = about.details.length - 1 %>
-      <%# End %>
-      <%# Detail Sections %>
-      <% about.details.each_with_index do |section, s| %>
-        <div class="fl-ns w-50-ns <% if s != dsl %>mb4<% end %>">
-          <h3 class="ma0 mb2 lato f0_75 tracked ttu dark-gray"><%= section.title %></h3>
-          <ul class="ma0 merriweather pa0 list">
-            <%# Config %>
-            <% dll = section.content.length - 1 %>
-            <%# End %>
-            <%# Details %>
-            <% section.content.each_with_index do |detail, d| %>
-              <li class="<% if d != dll %>mb2<% end %>">
-                <a class="mb0_5 dib no-underline dark-gray dim" href="<%= detail.source %>" target="_blank"><%= detail.title %></a>
-                <p class="ma0 silver"><%= detail.subtitle %></p>
-              </li>
-            <% end %>
-          </ul>
-        </div>
-      <% end %>
-    </div>
+    <%# Config %>
   </div>
 </main>

@@ -21,3 +21,7 @@ page '/*.txt', layout: false
 data.projects.each do |id, project|
   proxy "/#{ project.name.parameterize }/index.html", "/case-study.html", :locals => { :project => project }, :ignore => true
 end
+
+data.writings.each do |id, article|
+  proxy "/#{ I18n.transliterate(article.title).downcase.strip.gsub(' ', '-').gsub('(', '').gsub(')', '') }/index.html", "/article.html", :locals => { :article => article }, :ignore => true
+end

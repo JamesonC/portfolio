@@ -1,48 +1,29 @@
 {
-  "hero": {
-    "1x": "/images/about/portrait@1x.jpg",
-    "2x": "/images/about/portrait@2x.jpg",
-    "alt": "Hola! Mucho gusto, soy Claudio :)"
+  "image": {
+    "1x": "/images/about/portrait-square@1x.jpg",
+    "2x": "/images/about/portrait-square@2x.jpg",
+    "alt": "Hi, I'm Claudio.",
+    "responsive": true,
+    "breakpoints": [
+      {
+        "width": 30,
+        "1x": "/images/about/portrait@1x.jpg",
+        "2x": "/images/about/portrait@2x.jpg"
+      }
+    ]
   },
   "bio": {
     "title": "About",
     "content": [
-      "I’m Claudio Vallejo, a product designer freelancing from <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"https://www.google.com.mx/maps/place/Monterrey,+Nuevo+Leon/@25.6487782,-100.3733071,12z/data=!3m1!4b1!4m5!3m4!1s0x86629531b437f8f5:0xa3d3d3ca6ac89894!8m2!3d25.6866142!4d-100.3161126?hl=en\" target=\"_blank\">Monterrey, Nuevo Leon</a> and looking for a job opportunity working on design systems or business tools with global impact.",
 
-      "I first learned about design as a senior at Baylor University, where I designed my first logo as part of the <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://www.baylor.edu/business/entrepreneurship/index.php?id=89585\" target=\"_blank\">Baylor Accelerated Ventures Program</a>. During my last semester I took an intro to media design course where I worked on my first freelance project and designed my first website. I decided to pursue a career as a designer after graduating with a BBA in Entrepreneurship in May 2014.",
+      "Hi I’m Claudio, a product designer freelancing from Monterrey, Mexico developing custom online experiences for businesses. I’m currently available for hire and looking for product design opportunities focusing on design systems, internal business tools, or building new product features.",
 
-      "I moved to Phoenix, Arizona August 2014 with one of my best friends to start a video production company. I lived in Phoenix for 9 months where I learned more about business and graphic design and worked for <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://brushfireinteractive.com\" target=\"_blank\">Brushfire Interactive</a> as a freelance motion designer.",
+      "I graduated with a BBA in Entrepreneurship from Baylor University and worked on my first design project as part of the <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://www.baylor.edu/business/entrepreneurship/index.php?id=89585\" target=\"_blank\">Baylor Accelerated Ventures Program</a>. Over the past couple of years I’ve freelanced as a motion designer for <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://brushfireinteractive.com\" target=\"_blank\">Brushfire Interactive</a>, worked as a web designer for <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://parametrostudio.com/\" taget=\"_blank\">Parámetro Studio</a>, and helped businesses develop custom and manageable online experiences.",
 
-      "My student Visa expired and I moved to Monterrey where I worked for <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://parametrostudio.com/\" taget=\"_blank\">Parámetro Studio</a> as a junior web designer the fall of 2015. During 2016 I freelanced as a web designer/developer for local businesses, continued freelancing with Brushfire as a motion designer, and participated in several design events in the US.",
+      "Most recently I shared my journey as a designer on the <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://funsize.co/hustle/dont-be-afraid-to-jump-feat-claudio-vallejo\" target=\"_blank\">Hustle Podcast</a> and adventured with many of my design role models at <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"https://www.youtube.com/watch?v=gNHzaOzDrHs\" target=\"_blank\">Epicurrence #4</a> in Moab, Utah. I’m currently participating in <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"https://medium.com/@dustin/holiday-office-hours-92ea96e6c29f#.nm1percjo\" target=\"_blank\">Holiday Office Hours</a>, a really cool project where designers and developers from leading tech companies connect with young designers/developers for career advice.",
 
-      "My goals for the near future are to join a design team solving global business problems, be a part of and contribute to the design community, and learn more about JavaScript development."
+      "My goals for the near future are to find an opportunity to collaborate with a great design team, dive into JavaScript web development, and continue being a part of and contributing to the design community."
+
     ]
-  },
-  "details": [
-    {
-      "title": "Recent Events",
-      "content": [
-        {
-          "title": "Epicurrence No. 4",
-          "subtitle": "Moab UT, October 2016",
-          "source": "https://dribbble.com/shots/2724029-Epicurrence-No-4-MOAB-UT"
-        },
-        {
-          "title": "Epicsode No. 2",
-          "subtitle": "Austin TX, August 2016",
-          "source": "https://dribbble.com/shots/2905207-Epicsode-No-2-Live-in-Austin"
-        }
-      ]
-    },
-    {
-      "title": "Press",
-      "content": [
-        {
-          "title": "Ep. 50 — Don't Be Afraid to Jump",
-          "subtitle": "Hustle Podcast, October 2016",
-          "source": "http://funsize.co/hustle/dont-be-afraid-to-jump-feat-claudio-vallejo"
-        }
-      ]
-    }
-  ]
+  }
 }
