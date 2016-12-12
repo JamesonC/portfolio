@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>holidays</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9544 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9544 10668L 9608 10668L 9608 10732L 9544 10732L 9544 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="holidays" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9564 10690)" fill="#27AE60" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="translate(9584.29 10693.6)" fill="#27AE60" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0 0L 0 -0.5L -0.5 -0.5L -0.5 0L 0 0ZM 20.2899 0L 20.7899 0L 20.7899 -0.5L 20.2899 -0.5L 20.2899 0ZM 12.5797 19.6985L 12.6999 20.1839L 12.7101 20.1812L 12.5797 19.6985ZM 7.71014 19.6985L 7.55983 20.1754L 7.57475 20.1801L 7.58994 20.1838L 7.71014 19.6985ZM 0 0.5L 20.2899 0.5L 20.2899 -0.5L 0 -0.5L 0 0.5ZM 19.7899 0L 19.7899 2.61307L 20.7899 2.61307L 20.7899 0L 19.7899 0ZM 19.7899 2.61307L 19.7899 9.84925L 20.7899 9.84925L 20.7899 2.61307L 19.7899 2.61307ZM 19.7899 9.84925C 19.7899 14.2339 16.7074 18.0653 12.4493 19.2158L 12.7101 20.1812C 17.3796 18.9196 20.7899 14.7109 20.7899 9.84925L 19.7899 9.84925ZM 12.4595 19.2132C 10.896 19.6042 9.39388 19.6042 7.83035 19.2132L 7.58994 20.1838C 9.27279 20.5968 11.0171 20.5968 12.6999 20.1838L 12.4595 19.2132ZM 7.86046 19.2216C 3.58161 17.8729 0.5 14.0297 0.5 9.64824L -0.5 9.64824C -0.5 14.513 2.91115 18.71 7.55983 20.1754L 7.86046 19.2216ZM 0.5 9.64824L 0.5 0L -0.5 0L -0.5 9.64824L 0.5 9.64824Z"/>
+<path id="path1_stroke" d="M 0 8.13819L 2.63768 8.13819L 2.63768 7.13819L 0 7.13819L 0 8.13819ZM 2.63768 8.13819C 5.74997 8.13819 8.21015 5.70769 8.21015 2.61307L 7.21015 2.61307C 7.21015 5.14658 5.20655 7.13819 2.63768 7.13819L 2.63768 8.13819ZM 8.21015 2.61307C 8.21015 0.925478 6.76447 -0.5 5.07246 -0.5L 5.07246 0.5C 6.22104 0.5 7.21015 1.48658 7.21015 2.61307L 8.21015 2.61307ZM 5.07246 -0.5L 0 -0.5L 0 0.5L 5.07246 0.5L 5.07246 -0.5Z"/>
+</defs>
+</svg>

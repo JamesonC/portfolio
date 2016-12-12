@@ -1,0 +1,44 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>epicurrence</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9384 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9384 10668L 9448 10668L 9448 10732L 9384 10732L 9384 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="epicurrence" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Polygon 2" style="mix-blend-mode:normal;" figma:type="vector">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9394 10690)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9394 10690)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Polygon 2" style="mix-blend-mode:normal;" figma:type="vector">
+<mask id="mask2_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9417 10690)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9417 10690)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Polygon 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(9400 10687)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask3_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(9400 10687)"/>
+</mask>
+<g mask="url(#mask3_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(9400 10687)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 10.5 0L 21 18L 0 18L 10.5 0Z"/>
+<path id="path1_stroke_2x" d="M 10.5 0L 11.3638 -0.503871L 10.5 -1.98463L 9.63622 -0.503871L 10.5 0ZM 21 18L 21 19L 22.741 19L 21.8638 17.4961L 21 18ZM 0 18L -0.863779 17.4961L -1.74104 19L 0 19L 0 18ZM 9.63622 0.503871L 20.1362 18.5039L 21.8638 17.4961L 11.3638 -0.503871L 9.63622 0.503871ZM 21 17L 0 17L 0 19L 21 19L 21 17ZM 0.863779 18.5039L 11.3638 0.503871L 9.63622 -0.503871L -0.863779 17.4961L 0.863779 18.5039Z"/>
+<path id="path2_fill" d="M 16 0L 32 27L 0 27L 16 0Z"/>
+<path id="path3_stroke_2x" d="M 16 0L 16.8603 -0.509802L 16 -1.96154L 15.1397 -0.509802L 16 0ZM 32 27L 32 28L 33.755 28L 32.8603 26.4902L 32 27ZM 0 27L -0.860292 26.4902L -1.75499 28L 0 28L 0 27ZM 15.1397 0.509802L 31.1397 27.5098L 32.8603 26.4902L 16.8603 -0.509802L 15.1397 0.509802ZM 32 26L 0 26L 0 28L 32 28L 32 26ZM 0.860292 27.5098L 16.8603 0.509802L 15.1397 -0.509802L -0.860292 26.4902L 0.860292 27.5098Z"/>
+</defs>
+</svg>

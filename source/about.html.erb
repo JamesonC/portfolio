@@ -6,6 +6,13 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
 ---
 <%# Config %>
 <% about = data.about %>
+<% links = [] %>
+<% data.press.each do |id, post| %>
+  <% links.push(post) %>
+<% end %>
+<% data.events.each do |id, event| %>
+  <% links.push(event) %>
+<% end %>
 <%# End %>
 <main class="cf">
   <div class="mw38 center mt4-ns">
@@ -17,17 +24,45 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
         <img class="db w-100" src="<%= about.image["1x"] %>" srcset="<%= about.image["1x"] %> 1x, <%= about.image["2x"] %> 2x" alt="<%= about.image.alt %>">
       </picture>
     </article>
+  </div>
+  <section class="mw38 center ph1 ph0-ns">
     <header class="mb2">
       <h1 class="relative z-2 dib ma0 merriweather f1 fw4 black">About</h1>
     </header>
-  </div>
-  <div class="mw38 center ph1 ph0-ns">
     <%# Config %>
     <% bsl = about.bio.content.length - 1 %>
     <%# End %>
     <% about.bio.content.each_with_index do |section, s| %>
       <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1 space-gray lh1_75"><%= section %></p>
     <% end %>
+  </section>
+  <section class="mw38 center ph1 ph0-ns">
+    <header class="mb2">
+      <h1 class="relative z-2 dib ma0 merriweather f1 fw4 black">Press and Events</h1>
+    </header>
     <%# Config %>
-  </div>
+    <% rl = links.length - 1 %>
+    <%# End %>
+    <% links.each_with_index do |post, r| %>
+      <div class="fl w-100 w-50-ns <% if r < rl %>mb1<% end %> <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
+        <a class="db ba b--light-gray no-underline" href="<%= post.source %>" target="_blank">
+          <table class="w-100" style="border-spacing: 0;">
+            <tbody>
+              <tr>
+                <td class="tc w-20 w-25-ns">
+                  <%= image_tag post.avatar, :class => "v-mid" %>
+                </td>
+                <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                  <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
+                  <p class="ma0 lato f0_75 fw7 tracked ttu silver">
+                    <%= post.subtitle %>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </a>
+      </div>
+    <% end %>
+  </section>
 </main>

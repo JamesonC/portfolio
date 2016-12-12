@@ -27,7 +27,7 @@
         "path": "http://swipi.es/",
         "profile": {
           "image": {
-            "path": "/images/swipies.svg",
+            "path": "/images/tools/swipies.svg",
             "alt": "Swipies concept icon"
           }
         }
@@ -38,7 +38,7 @@
         "path": "https://www.figma.com/",
         "profile": {
           "image": {
-            "path": "/images/figma.svg",
+            "path": "/images/tools/figma.svg",
             "alt": "Figma concept icon"
           }
         }
@@ -49,7 +49,7 @@
         "path": "http://www.adobe.com/products/photoshop.html",
         "profile": {
           "image": {
-            "path": "/images/photoshop.svg",
+            "path": "/images/tools/photoshop.svg",
             "alt": "Photoshop concept icon"
           }
         }
@@ -60,7 +60,7 @@
         "path": "https://middlemanapp.com/",
         "profile": {
           "image": {
-            "path": "/images/middleman.svg",
+            "path": "/images/tools/middleman.svg",
             "alt": "Middleman concept icon"
           }
         }
@@ -71,7 +71,7 @@
         "path": "http://tachyons.io/",
         "profile": {
           "image": {
-            "path": "/images/tachyons.svg",
+            "path": "/images/tools/tachyons.svg",
             "alt": "Swipies concept icon"
           }
         }
@@ -82,7 +82,7 @@
         "path": "https://www.netlify.com/",
         "profile": {
           "image": {
-            "path": "/images/netlify.svg",
+            "path": "/images/tools/netlify.svg",
             "alt": "Netlify concept icon"
           }
         }
