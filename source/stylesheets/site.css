@@ -40,6 +40,7 @@ html { -webkit-font-smoothing: antialiased; }
 .silver { color: #bdbdbd; }
 .light-gray { color: #e0e0e0; }
 .blue { color: #0080ff; }
+.orange { color: #f2994a; }
 /* Fill colors */
 .blue-fill { fill: #0080ff; }
 /* Background colors */
@@ -120,6 +121,8 @@ html { -webkit-font-smoothing: antialiased; }
 .min-h-1 { min-height: 1px; }
 .h38 { height: 38rem; }
 .h40 { height: 40rem; }
+/* POSITION */
+.top--1_5 { top: -1.5rem; }
 /*
    LINKS
    Docs: http://tachyons.io/docs/elements/links/

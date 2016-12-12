@@ -1,28 +1,65 @@
 ---
 title: Claudio Vallejo, Product Designer
-layout: main
+layout: index
 meta_title: Claudio Vallejo, Product Designer
 description: DESCRIPTION PENDING
 ---
 <%# Config %>
 <% about = data.about %>
 <%# Content %>
-<main class="cf">
-  <div class="mw38 center mt4-ns">
-    <div class="fl w-100">
-      <a class="db ba b--light-gray no-underline" href="/about">
-        <table class="w-100" style="border-spacing: 0;">
-          <tbody>
-            <tr>
-              <td class="tc w-20 w-30-ns cover" style="background-image: url('/images/about/portrait-square@1x.jpg');"></td>
-              <td class="w-80 w-70-ns pa2 bl b--light-gray">
-                <p class="ma0 mb1 merriweather f1 dark-gray lh1_75">Hi there I'm Claudio, a product designer focusing on design systems and business tools freelancing from Mexico.</p>
-                <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read More</h3>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </a>
-    </div>
+<main class="mt1 cf">
+  <div class="mw38 center mt4-ns ph1 ph0-ns">
+    <a class="db cf mb6 ba b--light-gray no-underline" href="/about">
+      <div class="fl-ns w-30-ns">
+        <picture>
+          <source srcset="/images/about/portrait-square@1x.jpg 1x, /images/about/portrait-square@2x.jpg 2x" media="(min-width: 30rem)">
+          <img class="db w-100" src="/images/about/portrait@1x.jpg" srcset="/images/about/portrait@1x.jpg 1x, /images/about/portrait@2x.jpg 2x" alt="<%= data.about.hero.alt %>">
+        </picture>
+      </div>
+      <div class="fl-ns w-70-ns pa1 pa2-ns">
+        <p class="ma0 mb1 merriweather f1 dark-gray lh1_75">Hi there I'm Claudio, a freelance product designer focusing on design systems and business tools.</p>
+        <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read Bio</h3>
+      </div>
+    </a>
+    <section class="mb6">
+      <header class="mb1">
+        <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Selected Work</h1>
+        <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
+      </header>
+      <div>
+        <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;">
+          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Materiales Vallejo Website</h1>
+          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study<span class="ph0_5">・</span><span class="gold">Draft</span></h3>
+        </a>
+        <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;">
+          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Filipao Nunes Website</h1>
+          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study<span class="ph0_5">・</span><span class="space-gray">Pending</span></h3>
+        </a>
+        <a class="db no-underline pa2" style="background-color: #fafafa; height: 15rem;">
+          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Tym Forest Website</h1>
+          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study</h3>
+        </a>
+      </div>
+    </section>
+    <section>
+      <header class="mb1">
+        <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Writing</h1>
+        <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
+      </header>
+      <div>
+        <a class="db no-underline mb2 pa2 ba b--light-gray">
+          <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">Oct 17 2016<span class="ph0_5">・</span><span class="gold">Draft</span></h3>
+          <h1 class="ma0 mb0_5 merriweather f1 dark-gray">An Epic Occurrence</h1>
+          <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75">Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex visuvius lex messperas.</p>
+          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read More</h3>
+        </a>
+        <a class="db no-underline mb2 pa2 ba b--light-gray">
+          <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">Dec 15 2016</h3>
+          <h1 class="ma0 mb0_5 merriweather f1 dark-gray">(Fun)ctional CSS</h1>
+          <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75">Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex visuvius lex messperas.</p>
+          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read More</h3>
+        </a>
+      </div>
+    </section>
   </div>
 </main>
