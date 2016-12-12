@@ -1,12 +1,28 @@
 {
   "content": [
     {
-      "title": "About",
-      "source": "/about"
+      "title": "Work",
+      "color": "space-gray",
+      "source": "/",
+      "target": false
     },
     {
-      "title": "Work",
-      "source": "/"
+      "title": "About",
+      "color": "space-gray",
+      "source": "/about",
+      "target": false
+    },
+    {
+      "title": "Twitter",
+      "color": "space-gray",
+      "source": "https://twitter.com/claudiovallejop",
+      "target": true
+    },
+    {
+      "title": "Email",
+      "color": "space-gray",
+      "source": "mailto:hola@claudiovallejo.mx",
+      "target": false
     }
   ]
 }

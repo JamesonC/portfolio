@@ -1,24 +1,17 @@
 <%# Config %>
 <% contact = data.navigation.content %>
 <%# Partial %>
-<nav class="mw45 center pv1 ph1 ph0-ns bg-white">
-  <div class="center cf">
-    <a class="db fl w-40 lato f0_75 fw7 tracked ttu dark-gray no-underline" href="/">
-      Claudio Vallejo
-    </a>
-    <div class="fr w-60">
-      <ul class="ma0 pa0 ph0-ns overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
-        <%# Links %>
-        <%# Variables %>
-        <% cll = contact.length - 1 %>
-        <% contact.each_with_index do |link, l| %>
-          <li class="dib fr tar">
-            <a class="<% if l != cll %>ml2<% end %> lato f0_75 fw7 tracked ttu gray no-underline" href="<%= link.source %>">
-              <%= link.title %>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  </div>
+<nav class="mw38 center pv1 ph1 ph0-ns bg-white">
+  <ul class="ma0 pa0 overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
+    <%# Links %>
+    <%# Variables %>
+    <% cll = contact.length - 1 %>
+    <% contact.each_with_index do |link, l| %>
+      <li class="dib">
+        <a class="<% if l != cll %>mr2<% end %> lato f0_75 fw7 tracked ttu <%= link.color %> no-underline" href="<%= link.source %>" <% if link.target %>target="_blank"<% end %>>
+          <%= link.title %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
 </nav>
