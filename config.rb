@@ -18,6 +18,6 @@ page '/*.txt', layout: false
 ###
 # Proxies
 ###
-data.projects.each do |project|
+data.projects.each do |id, project|
   proxy "/#{ project.name.parameterize }/index.html", "/case-study.html", :locals => { :project => project }, :ignore => true
 end

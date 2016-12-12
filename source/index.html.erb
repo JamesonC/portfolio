@@ -6,6 +6,14 @@ description: DESCRIPTION PENDING
 ---
 <%# Config %>
 <% index = data.index %>
+<% projects = [] %>
+<% data.projects.each do |id, project| %>
+  <% projects.push(project) %>
+<% end %>
+<% writings = [] %>
+<% data.writings.each do |id, article| %>
+  <% writings.push(article) %>
+<% end %>
 <%# Content %>
 <main class="mt1 cf">
   <div class="mw38 center mt4-ns ph1 ph0-ns">
@@ -36,10 +44,10 @@ description: DESCRIPTION PENDING
         </header>
         <% if section.type === "projects" %>
           <%# Config %>
-          <% rl = data.projects.length - 1 %>
+          <% rl = projects.length - 1 %>
           <%# End %>
-          <% data.projects.each do |project, r| %>
-            <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;" href="/<%= project.title %>">
+          <% projects.each do |project, r| %>
+            <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;" href="/<%= pretty_url project.name %>">
               <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75"><%= project.name %> <%= project.category %></h1>
               <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
                 <%= project.type %>
@@ -51,9 +59,9 @@ description: DESCRIPTION PENDING
           <% end %>
         <% elsif section.type === "writing" %>
           <%# Config %>
-          <% al = data.writings.length - 1 %>
+          <% al = writings.length - 1 %>
           <%# End %>
-          <% data.writings.each do |article, a| %>
+          <% writings.each do |article, a| %>
             <a class="db no-underline mb2 pa2 ba b--light-gray" href="<%= article.link.path %>">
               <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">
                 <%= article.date %>
@@ -69,50 +77,6 @@ description: DESCRIPTION PENDING
         <% end %>
       </section>
     <% end %>
-  </div>
-  <div class="mw38 center cf mb6 ph1 ph0-ns">
-    <header class="mb1">
-      <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Recent Events</h1>
-      <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
-    </header>
-    <div class="fl w-100 w-50-ns pr0_5-ns">
-      <a class="db ba b--light-gray no-underline" href="/" target="_blank">
-        <table class="w-100" style="border-spacing: 0;">
-          <tbody>
-            <tr>
-              <td class="tc w-20 w-25-ns">
-                <%= image_tag "/images/epicurrence.svg", :class => "v-mid" %>
-              </td>
-              <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
-                <p class="ma0 mb0_5 merriweather f1 dark-gray">Epicurrence No. 4</p>
-                <p class="ma0 lato f0_75 fw7 tracked ttu silver">
-                  Oct 2016
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </a>
-    </div>
-    <div class="fl w-100 w-50-ns pl0_5-ns">
-      <a class="db ba b--light-gray no-underline" href="/" target="_blank">
-        <table class="w-100" style="border-spacing: 0;">
-          <tbody>
-            <tr>
-              <td class="tc w-20 w-25-ns">
-                <%= image_tag "/images/epicsode.svg", :class => "v-mid" %>
-              </td>
-              <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
-                <p class="ma0 mb0_5 merriweather f1 dark-gray">Epicsode No. 2</p>
-                <p class="ma0 lato f0_75 fw7 tracked ttu silver">
-                  Aug 2016
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </a>
-    </div>
   </div>
   <div class="mw38 center cf ph1 ph0-ns">
     <header class="mb1">
