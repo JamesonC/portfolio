@@ -12,7 +12,12 @@ description: DESCRIPTION PENDING
     <%# Profile Card %>
     <a class="db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
-
+        <picture>
+          <% index.profile.image.breakpoints.each do |breakpoint| %>
+            <source srcset="<%= breakpoint["1x"] %> 1x, <%= breakpoint["2x"] %> 2x" media="(min-width: <%= breakpoint.width %>rem)">
+          <% end %>
+          <img class="db w-100" src="<%= index.profile.image["1x"] %>" srcset="<%= index.profile.image["1x"] %> 1x, <%= index.profile.image["2x"] %> 2x" alt="<%= index.profile.image.alt %>">
+        </picture>
       </div>
       <div class="fl-ns w-70-ns pa1 pa2-ns">
         <p class="ma0 mb1 merriweather f1 dark-gray lh1_75"><%= index.profile.description %></p>
