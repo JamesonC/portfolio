@@ -2,6 +2,12 @@
   {
     "type": "Case Study",
     "name": "Materiales Vallejo",
+    "category": "Website",
+    "status": {
+      "active": true,
+      "title": "Draft",
+      "color": "gold"
+    },
     "caption": "Designing and building a material store’s first website",
     "source": {
       "site": {

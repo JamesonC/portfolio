@@ -10,7 +10,7 @@ description: DESCRIPTION PENDING
 <main class="mt1 cf">
   <div class="mw38 center mt4-ns ph1 ph0-ns">
     <%# Profile Card %>
-    <a class="db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
+    <a class="db cf mb6 ba bn-ns b--light-gray no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
         <picture>
           <% index.profile.image.breakpoints.each do |breakpoint| %>
@@ -25,45 +25,118 @@ description: DESCRIPTION PENDING
       </div>
     </a>
     <%# Content Sections %>
-    <section class="mb6">
-      <header class="mb1">
-        <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Selected Work</h1>
-        <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
-      </header>
-      <div>
-        <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;">
-          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Materiales Vallejo Website</h1>
-          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study<span class="ph0_5">・</span><span class="gold">Draft</span></h3>
-        </a>
-        <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;">
-          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Filipao Nunes Website</h1>
-          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study<span class="ph0_5">・</span><span class="space-gray">Pending</span></h3>
-        </a>
-        <a class="db no-underline pa2" style="background-color: #fafafa; height: 15rem;">
-          <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75">Tym Forest Website</h1>
-          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Case Study</h3>
-        </a>
-      </div>
-    </section>
-    <section>
-      <header class="mb1">
-        <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Writing</h1>
-        <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
-      </header>
-      <div>
-        <a class="db no-underline mb2 pa2 ba b--light-gray">
-          <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">Oct 17 2016<span class="ph0_5">・</span><span class="gold">Draft</span></h3>
-          <h1 class="ma0 mb0_5 merriweather f1 dark-gray">An Epic Occurrence</h1>
-          <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75">Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex visuvius lex messperas.</p>
-          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read More</h3>
-        </a>
-        <a class="db no-underline mb2 pa2 ba b--light-gray">
-          <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">Dec 15 2016</h3>
-          <h1 class="ma0 mb0_5 merriweather f1 dark-gray">(Fun)ctional CSS</h1>
-          <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75">Lorem ipsum dolor sit amet consectetur adipiscing seit. In questa parole maecenas rex visuvius lex messperas.</p>
-          <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">Read More</h3>
-        </a>
-      </div>
-    </section>
+    <%# Config %>
+    <% sl = index.sections.length - 1 %>
+    <%# End %>
+    <% index.sections.each do |section, s| %>
+      <section class="mb6">
+        <header class="mb1">
+          <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white"><%= section.title %></h1>
+          <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
+        </header>
+        <% if section.type === "projects" %>
+          <%# Config %>
+          <% rl = data.projects.length - 1 %>
+          <%# End %>
+          <% data.projects.each do |project, r| %>
+            <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;" href="/<%= project.title %>">
+              <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75"><%= project.name %> <%= project.category %></h1>
+              <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
+                <%= project.type %>
+                <% if project.status.active %>
+                  <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
+                <% end %>
+              </h3>
+            </a>
+          <% end %>
+        <% elsif section.type === "writing" %>
+          <%# Config %>
+          <% al = data.writings.length - 1 %>
+          <%# End %>
+          <% data.writings.each do |article, a| %>
+            <a class="db no-underline mb2 pa2 ba b--light-gray" href="<%= article.link.path %>">
+              <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">
+                <%= article.date %>
+                <% if article.status.active %>
+                  <span class="ph0_5">・</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
+                <% end %>
+              </h3>
+              <h1 class="ma0 mb0_5 merriweather f1 dark-gray"><%= article.title %></h1>
+              <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75"><%= article.description %></p>
+              <h3 class="ma0 lato f0_75 fw7 tracked ttu silver"><%= article.link.title %></h3>
+            </a>
+          <% end %>
+        <% end %>
+      </section>
+    <% end %>
+  </div>
+  <div class="mw38 center cf mb6 ph1 ph0-ns">
+    <header class="mb1">
+      <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Recent Events</h1>
+      <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
+    </header>
+    <div class="fl w-100 w-50-ns pr0_5-ns">
+      <a class="db ba b--light-gray no-underline" href="/" target="_blank">
+        <table class="w-100" style="border-spacing: 0;">
+          <tbody>
+            <tr>
+              <td class="tc w-20 w-25-ns">
+                <%= image_tag "/images/epicurrence.svg", :class => "v-mid" %>
+              </td>
+              <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                <p class="ma0 mb0_5 merriweather f1 dark-gray">Epicurrence No. 4</p>
+                <p class="ma0 lato f0_75 fw7 tracked ttu silver">
+                  Oct 2016
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+    </div>
+    <div class="fl w-100 w-50-ns pl0_5-ns">
+      <a class="db ba b--light-gray no-underline" href="/" target="_blank">
+        <table class="w-100" style="border-spacing: 0;">
+          <tbody>
+            <tr>
+              <td class="tc w-20 w-25-ns">
+                <%= image_tag "/images/epicsode.svg", :class => "v-mid" %>
+              </td>
+              <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                <p class="ma0 mb0_5 merriweather f1 dark-gray">Epicsode No. 2</p>
+                <p class="ma0 lato f0_75 fw7 tracked ttu silver">
+                  Aug 2016
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+    </div>
+  </div>
+  <div class="mw38 center cf ph1 ph0-ns">
+    <header class="mb1">
+      <h1 class="relative z-2 dib ma0 merriweather f1 fw3 pr1 bg-white">Press</h1>
+      <span class="dib relative top--1_5 w-100 bb b--light-gray"></span>
+    </header>
+    <div class="fl w-100 w-50-ns pr0_5-ns">
+      <a class="db ba b--light-gray no-underline" href="/" target="_blank">
+        <table class="w-100" style="border-spacing: 0;">
+          <tbody>
+            <tr>
+              <td class="tc w-20 w-25-ns">
+                <%= image_tag "/images/figma.svg", :class => "v-mid" %>
+              </td>
+              <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                <p class="ma0 mb0_5 merriweather f1 dark-gray">Don't be Afraid to Jump</p>
+                <p class="ma0 lato f0_75 fw7 tracked ttu silver">
+                  Hustle Podcast
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+    </div>
   </div>
 </main>

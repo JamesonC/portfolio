@@ -18,5 +18,15 @@
         }
       ]
     }
-  }
+  },
+  "sections": [
+    {
+      "title": "Selected Work",
+      "type": "projects"
+    },
+    {
+      "title": "Writing",
+      "type": "writing"
+    }
+  ]
 }
