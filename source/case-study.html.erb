@@ -89,10 +89,10 @@ layout: main
                 <table class="w-100" style="border-spacing: 0;">
                   <tbody>
                     <tr>
-                      <td class="tc w-20 w-25-ns <% if tool.profile.color %>bg-<%= tool.profile.color %><% end %>">
+                      <td class="tc w-20 <% if tool.profile.color %>bg-<%= tool.profile.color %><% end %>">
                         <%= image_tag tool.profile.image.path, :class => "v-mid", :alt => tool.profile.image.path %>
                       </td>
-                      <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                      <td class="w-80 pv1 pl1 bl b--light-gray">
                         <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= tool.title %></p>
                         <p class="ma0 lato f0_75 fw7 tracked ttu silver"><%= tool.subtitle %></p>
                       </td>
