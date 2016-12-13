@@ -15,7 +15,7 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
 <% end %>
 <%# End %>
 <main class="cf">
-  <div class="mw38 center mt4-ns">
+  <div class="mw45 center mt4-ns">
     <article class="mb4">
       <picture>
         <% about.image.breakpoints.each do |breakpoint| %>
@@ -25,7 +25,7 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
       </picture>
     </article>
   </div>
-  <section class="mw38 center ph1 ph0-ns">
+  <section class="mw45 center ph1 ph0-ns">
     <header class="mb2">
       <h1 class="relative z-2 dib ma0 merriweather f1 fw4 black">About</h1>
     </header>
@@ -33,10 +33,10 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
     <% bsl = about.bio.content.length - 1 %>
     <%# End %>
     <% about.bio.content.each_with_index do |section, s| %>
-      <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1 space-gray lh1_75"><%= section %></p>
+      <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1 f1_125-ns fw3 space-gray lh1_75 lh2-ns"><%= section %></p>
     <% end %>
   </section>
-  <section class="mw38 center mb6 ph1 ph0-ns cf">
+  <section class="mw45 center mb6 ph1 ph0-ns cf">
     <header class="mb2">
       <h1 class="relative z-2 dib ma0 merriweather f1 fw4 black">Press and Events</h1>
     </header>

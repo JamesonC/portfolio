@@ -7,7 +7,12 @@ layout: main
 <article>
   <header>
     <div class="mw45 center pv6 ph1 ph0-ns">
-      <h3 class="mb2 lato f0_75 fw7 tracked ttu silver"><%= article.date %></h3>
+      <h3 class="mb2 lato f0_75 fw7 tracked ttu silver">
+        <%= article.date %>
+        <% if article.status.active %>
+          <span class="ph0_5">・</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
+        <% end %>
+      </h3>
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= article.title %></h1>
       <h2 class="w-80-ns lato f1_5 fw3 lh1_50 dark-gray"><%= article.description %></h2>
     </div>

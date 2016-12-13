@@ -53,7 +53,7 @@ description: DESCRIPTION PENDING
           <% rl = projects.length - 1 %>
           <%# End %>
           <% projects.each do |project, r| %>
-            <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;" href="/<%= pretty_url project.name %>">
+            <a class="db no-underline mb2 pa2" style="background-image: url('<%= project.card["1x"] %>'); height: 15rem;" href="/<%= pretty_url project.name %>">
               <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
               <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
                 <%= project.type %>

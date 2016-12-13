@@ -8,6 +8,9 @@
     "color": "gold"
   },
   "caption": "Designing and building a material store’s first website",
+  "card": {
+    "1x": "/images/projects/materiales-vallejo/card@1x.jpg"
+  },
   "hero": {
     "1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
     "2x": "/images/projects/materiales-vallejo/hero@2x.jpg",
@@ -239,20 +242,15 @@
       ]
     },
     {
-      "title": "Development Details",
-      "content": [
-        {
-          "type": "text",
-          "text": "The website is mobile first, responsive, cross-browser compatible with modern browsers, and is currently being optimized for older versions of IE (10+). The site delivers minified and compressed files, optimized images, and concatenated stylesheets. The site is built with Middleman, a static site generator, for fast content editing and dynamic pages. The site is styled with Tachyons, a functional CSS library, for reusable and manageable styling. The site is optimized with Gulp.js, a JavaScript built tool and is hosted on Netlify for free hosting and simple, continuous deployment."
-        }
-      ]
-    },
-    {
       "title": "Next Steps",
       "content": [
         {
           "type": "text",
-          "text": "Materiales Vallejo’s website was published on December 2016 and will track user data to provide better insight into user engagement and website use. At the moment, the business is not interested in investing time in ad words campaigns, so it will take some time to acquire a decent amount of user data. Nonetheless, I will be monitoring the site’s usage and working on cross-browser compatibility bugs in the coming months."
+          "text": "Materiales Vallejo’s website was published on December 2016 and is tracking user data to provide better insight into user engagement and website use. At the moment, the business is not interested in investing time in ad words campaigns, so it will take some time to acquire a decent amount of user data. Nonetheless, I will be monitoring the site’s usage and working on cross-browser compatibility bugs in the coming weeks."
+        },
+        {
+          "type": "text",
+          "text": "On another note, through this project I realized there is a need for business automation tools for small businesses in Mexico. There are so many areas where technology could make the lives of entrepreneurs much easier—payment processing, inventory management systems, client management systems, invoicing and PoS systems. I would love to tackle one of these problems in the near future."
         }
       ]
     },
@@ -261,7 +259,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The project was a great learning experience and I had a lot of fun running through the full design and development process. When the project started I had prior experience with website builders, a limited understanding of HTML/CSS, and was working on another web project. I faced multiple challenges and made innumerable mistakes on a number of different areas—communication, process, efficiency, design, and development. Through my experience with challenges, mistakes and small successes, I was able to become aware of several ideas—"
+          "text": "The project was a great learning experience and I had a lot of fun running through the full design and development process. When the project started I had prior experience with website builders, a limited understanding of HTML/CSS, and was working on another web project. Throughout the project I faced multiple challenges and made innumerable mistakes on a number of different areas—communication, process, efficiency, design, and development. Through the challenges, mistakes and small successes, I was able to become aware of several principles / ideas—"
         },
         {
           "type": "block",
@@ -272,11 +270,11 @@
             },
             {
               "title": "Design Pillar",
-              "description": "Communication is at the core of design. What do you have to say and why? Communicating clearly is probably the hardest challenge a designer faces."
+              "description": "Communication is at the core of design. What do you have to say and why? Communicating clearly is one of the hardest challenges a designer faces."
             },
             {
               "title": "External Factors",
-              "description": "The ideal design solution may not be the right solution due to long-time business habits, technological limitations, and cultural factors."
+              "description": "The ideal design solution may not be the right solution due to long-time business habits, technical limitations, and cultural factors."
             }
           ]
         }
