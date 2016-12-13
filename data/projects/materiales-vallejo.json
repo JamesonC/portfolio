@@ -8,6 +8,11 @@
     "color": "gold"
   },
   "caption": "Designing and building a material store’s first website",
+  "hero": {
+    "1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
+    "2x": "/images/projects/materiales-vallejo/hero@2x.jpg",
+    "alt": "Materiales Vallejo Case Study: Designing and building a material store's first website."
+  },
   "source": {
     "site": {
       "title": "Website",
@@ -102,20 +107,12 @@
     {
       "content": [
         {
-          "type": "media",
-          "media": {
-            "path_1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/hero@2x.jpg",
-            "alt": "Materiales Vallejo Case Study: Designing and building a material store's first website."
-          }
-        }
-      ]
-    },
-    {
-      "content": [
-        {
           "type": "text",
           "text": "Materiales Vallejo is a small building material store in Matamoros, Mexico selling cement, steel rebars, and other building materials to local clients. The business needed a website to engage with new clients and to serve as a tool to expedite their hiring process."
+        },
+        {
+          "type": "note",
+          "text": "Note: The official business website is in Spanish so I made an English site to use as reference for this case study."
         }
       ]
     },
@@ -274,8 +271,8 @@
               "description": "The value of a business website comes from solving real business problems. Business web design is about building usable tools, not useless trophies."
             },
             {
-              "title": "Communication is Hard",
-              "description": "Whether it be inquiring about business needs, documenting client meetings, or writing content for the site, clear communication is hard but essential for good design."
+              "title": "Design Pillar",
+              "description": "Communication is at the core of design. What do you have to say and why? Communicating clearly is probably the hardest challenge a designer faces."
             },
             {
               "title": "External Factors",

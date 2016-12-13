@@ -4,9 +4,12 @@ layout: main
 <%# Config %>
 <% project = locals[:project] %>
 <%# End %>
-<article>
-  <header class="mb6">
-    <div class="mw38 center pv6 ph1 ph0-ns tc">
+<article class="mb6">
+  <div class="mw60 center mt6">
+    <img src="<%= project.hero["1x"] %>" srcset="<%= project.hero["1x"] %> 1x, <%= project.hero["2x"] %> 2x" <% if project.hero.alt %>alt="<%= project.hero.alt %>"<% end %>>
+  </div>
+  <header class="mb2 tc">
+    <div class="mw45 center pv6 ph1 ph0-ns">
       <h3 class="mb2 lato f0_75 fw7 tracked ttu silver"><%= project.type %></h3>
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= project.name %></h1>
       <h2 class="w-50-ns center mb2 lato f1_5 fw3 lh1_50 dark-gray"><%= project.caption %></h2>
@@ -30,7 +33,7 @@ layout: main
   <% project.content.each_with_index do |section, s| %>
     <section>
       <% if section.title %>
-        <div class="mw38 center ph1 ph0-ns">
+        <div class="mw45 center ph1 ph0-ns">
           <h3 class="ma0 mb2 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h3>
         </div>
       <% end %>
@@ -43,9 +46,9 @@ layout: main
           <% next_type = section.content[c + 1].type %>
         <% end %>
         <%# End %>
-        <% if content.type === "text" %>
-          <div class="mw38 center ph1 ph0-ns">
-            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1 f1_125-ns fw4 space-gray lh1_75 lh2-ns"><%= content.text %></p>
+        <% if content.type === "text" || content.type === "note" %>
+          <div class="mw45 center ph1 ph0-ns">
+            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1 f1_125-ns fw3 <% if content.type === "text" %>space-gray<% else %>gray<% end %> lh1_75 lh2-ns"><%= content.text %></p>
           </div>
         <% end %>
         <% if content.type === "media" %>
@@ -62,24 +65,24 @@ layout: main
           <%# Config %>
           <% il = content.block.length - 1 %>
           <%# End %>
-          <div class="mw38 center ph1 ph0-ns">
+          <div class="mw45 center ph1 ph0-ns">
             <% content.block.each_with_index do |item, i| %>
               <div class="<% if i != il %>mb2<% else %>mb6<% end %> pl2 bl b--light-gray">
-                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= item.title %></h4>
-                <p class="ma0 merriweather f1 f1_125-ns fw4 lh1_75 space-gray"><%= item.description %></p>
+                <h4 class="ma0 mb1 merriweather f1 fw4 dark-gray"><%= item.title %></h4>
+                <p class="ma0 merriweather f1 f1_125-ns fw3 lh1_75 space-gray"><%= item.description %></p>
               </div>
             <% end %>
           </div>
         <% end %>
       <% end %>
       <% if s === sl %>
-        <div class="mw38 center ph1 ph0-ns">
+        <div class="mw45 center ph1 ph0-ns">
           <h3 class="ma0 mb2 merriweather f1_5 fw4 dark-gray"><%= project.tool_kit.title %></h3>
         </div>
         <%# Config %>
         <% tl = project.tool_kit.tools.length - 1 %>
         <%# End %>
-        <div class="mw38 center cf ph1 ph0-ns">
+        <div class="mw45 center cf ph1 ph0-ns">
           <% project.tool_kit.tools.each_with_index do |tool, t| %>
             <div class="fl w-100 w-50-ns <% if t != tl %>mb1<% end %> <% if t < tl - 1 %>mb1-ns<% end %> <% if t % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
               <a class="db ba b--light-gray no-underline" href="<%= tool.path %>" target="_blank">

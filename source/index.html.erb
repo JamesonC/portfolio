@@ -14,9 +14,12 @@ description: DESCRIPTION PENDING
 <% data.writings.each do |id, article| %>
   <% writings.push(article) %>
 <% end %>
-<% press = [] %>
+<% links = [] %>
 <% data.press.each do |id, post| %>
-  <% press.push(post) %>
+  <% links.push(post) %>
+<% end %>
+<% data.events.each do |id, event| %>
+  <% links.push(event) %>
 <% end %>
 <%# Content %>
 <main class="mt1 cf">
@@ -51,7 +54,7 @@ description: DESCRIPTION PENDING
           <%# End %>
           <% projects.each do |project, r| %>
             <a class="db no-underline mb2 pa2" style="background-color: #fafafa; height: 15rem;" href="/<%= pretty_url project.name %>">
-              <h1 class="ma0 mb0_5 merriweather f1 fw3 dark-gray lh1_75"><%= project.name %> <%= project.category %></h1>
+              <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
               <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
                 <%= project.type %>
                 <% if project.status.active %>
@@ -72,17 +75,17 @@ description: DESCRIPTION PENDING
                   <span class="ph0_5">・</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
                 <% end %>
               </h3>
-              <h1 class="ma0 mb0_5 merriweather f1 dark-gray"><%= article.title %></h1>
+              <h1 class="ma0 mb0_5 merriweather f1 fw4 black"><%= article.title %></h1>
               <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75"><%= article.description %></p>
               <h3 class="ma0 lato f0_75 fw7 tracked ttu silver"><%= article.link.title %></h3>
             </a>
           <% end %>
         <% elsif section.type === "press" %>
           <%# Config %>
-          <% rl = press.length - 1 %>
+          <% rl = links.length - 1 %>
           <%# End %>
-          <% press.each_with_index do |post, r| %>
-            <div class="fl w-100 w-50-ns <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
+          <% links.each_with_index do |post, r| %>
+            <div class="fl w-100 w-50-ns <% if r < rl %>mb1<% end %> <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
               <a class="db ba b--light-gray no-underline" href="<%= post.source %>" target="_blank">
                 <table class="w-100" style="border-spacing: 0;">
                   <tbody>

@@ -4,5 +4,67 @@ layout: main
 <%# Config %>
 <% article = locals[:article] %>
 <%# End %>
-<a href="/">Take me home</a>
-<h1><%= article.title %></h1>
+<article>
+  <header>
+    <div class="mw45 center pv6 ph1 ph0-ns">
+      <h3 class="mb2 lato f0_75 fw7 tracked ttu silver"><%= article.date %></h3>
+      <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= article.title %></h1>
+      <h2 class="w-80-ns lato f1_5 fw3 lh1_50 dark-gray"><%= article.description %></h2>
+    </div>
+  </header>
+  <%# Config %>
+  <% sl = article.content.length - 1 %>
+  <%# End %>
+  <% article.content.each_with_index do |section, s| %>
+    <section>
+      <% if section.title %>
+        <div class="mw38 center ph1 ph0-ns">
+          <h3 class="ma0 mb2 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h3>
+        </div>
+      <% end %>
+      <%# Config %>
+      <% cl = section.content.length - 1 %>
+      <%# End %>
+      <% section.content.each_with_index do |content, c| %>
+        <%# Config %>
+        <% if cl != c %>
+          <% next_type = section.content[c + 1].type %>
+        <% end %>
+        <%# End %>
+        <% if content.type === "text" %>
+          <div class="mw45 center ph1 ph0-ns">
+            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1 f1_125-ns fw3 space-gray lh1_75 lh2-ns"><%= content.text %></p>
+          </div>
+        <% end %>
+        <% if content.type === "media" %>
+          <div class="mw60 center mb6">
+            <img src="<%= content.media["1x"] %>" srcset="<%= content.media["1x"] %> 1x, <%= content.media["2x"] %> 2x" alt="<% if content.media.alt %><%= content.media.alt %><% end %>">
+            <% if content.media.caption %>
+              <div class="mw45 center tc ph1 ph0-ns">
+                <p class="ma0 lato f1 fw4 lh1_25 gray"><%= content.media.caption %></p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+        <% if content.type === "block" %>
+          <%# Config %>
+          <% il = content.block.length - 1 %>
+          <%# End %>
+          <div class="mw45 center ph1 ph0-ns">
+            <% content.block.each_with_index do |item, i| %>
+              <div class="<% if i != il %>mb2<% else %>mb6<% end %> pl2 bl b--light-gray">
+                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= item.title %></h4>
+                <p class="ma0 merriweather f1 f1_125-ns fw4 lh1_75 space-gray"><%= item.description %></p>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+        <% if content.type === "break" %>
+          <div class="mw45 center mt2 mb4">
+            <div class="w5 bb b--light-gray"></div>
+          </div>
+        <% end %>
+      <% end %>
+    </section>
+  <% end %>
+</article>
