@@ -22,10 +22,10 @@ description: DESCRIPTION PENDING
   <% links.push(event) %>
 <% end %>
 <%# Content %>
-<main class="mt1 cf">
+<main class="mt1 mb6 cf">
   <div class="mw38 center mt4-ns ph1 ph0-ns">
     <%# Profile Card %>
-    <a class="db cf mb6 ba bn-ns b--light-gray no-underline" href="<%= index.profile.link.path %>">
+    <a class="db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
         <picture>
           <% index.profile.image.breakpoints.each do |breakpoint| %>
@@ -53,7 +53,7 @@ description: DESCRIPTION PENDING
           <% rl = projects.length - 1 %>
           <%# End %>
           <% projects.each do |project, r| %>
-            <a class="db no-underline mb2 pa2" style="background-image: url('<%= project.card["1x"] %>'); height: 15rem;" href="/<%= pretty_url project.name %>">
+            <a class="db no-underline mb2 pa2 cover" style="background-image: url('<%= project.card["1x"] %>'); height: 15rem;" href="/<%= pretty_url project.name %>">
               <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
               <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
                 <%= project.type %>
@@ -68,7 +68,7 @@ description: DESCRIPTION PENDING
           <% al = writings.length - 1 %>
           <%# End %>
           <% writings.each do |article, a| %>
-            <a class="db no-underline mb2 pa2 ba b--light-gray" href="<%= article.link.path %>">
+            <a class="db no-underline mb2 pv2 pl2 pr4 ba b--light-gray" href="<%= article.link.path %>">
               <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">
                 <%= article.date %>
                 <% if article.status.active %>

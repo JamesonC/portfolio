@@ -1,0 +1,131 @@
+{
+  "type": "Case Study",
+  "name": "Filipao Nunes",
+  "category": "Website",
+  "status": {
+    "active": true,
+    "title": "Draft",
+    "color": "gold"
+  },
+  "caption": "Designing and building an architecture studio’s online portfolio",
+  "card": {
+    "1x": "/images/pending@1x.jpg",
+    "2x": "/images/pending@2x.jpg",
+    "alt": "Image pending."
+  },
+  "hero": {
+    "1x": "/images/pending@1x.jpg",
+    "2x": "/images/pending@2x.jpg",
+    "alt": "Image pending."
+  },
+  "source": {
+    "site": {
+      "title": "Website",
+      "path": "http://filipaonunes.com"
+    },
+    "code": {
+      "title": "Source Code",
+      "path": "https://github.com/claudiovallejo/prototypes"
+    }
+  },
+  "tool_kit": {
+    "title": "Tool Kit",
+    "tools": [
+      {
+        "title": "Swipies",
+        "subtitle": "Sketching",
+        "path": "http://swipi.es/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/swipies.svg",
+            "alt": "Swipies concept icon"
+          }
+        }
+      },
+      {
+        "title": "Figma",
+        "subtitle": "Wireframing",
+        "path": "https://www.figma.com/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/figma.svg",
+            "alt": "Figma concept icon"
+          }
+        }
+      },
+      {
+        "title": "Middleman",
+        "subtitle": "Static Site Generator",
+        "path": "https://middlemanapp.com/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/middleman.svg",
+            "alt": "Middleman concept icon"
+          }
+        }
+      },
+      {
+        "title": "Tachyons",
+        "subtitle": "Reusable Styling",
+        "path": "http://tachyons.io/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/tachyons.svg",
+            "alt": "Swipies concept icon"
+          }
+        }
+      },
+      {
+        "title": "Netlify",
+        "subtitle": "Continuous Deploys",
+        "path": "https://www.netlify.com/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/netlify.svg",
+            "alt": "Netlify concept icon"
+          }
+        }
+      }
+    ]
+  },
+  "meta": {
+    "type": "",
+    "title": "",
+    "description": "",
+    "images": {
+      "og": "",
+      "twitter": ""
+    }
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "Filipao Nunes is a multi-disciplinary agency based in Monterrey, Mexico working on residential and business architecture and interior design projects. The studio was looking for a portfolio that fit with their new branding and displayed their work to primarily serve as a work reference for future clients."
+        }
+      ]
+    },
+    {
+      "title": "Business Details",
+      "content": [
+        {
+          "type": "text",
+          "text": "Filipao Nunes is an upcoming agency that has succeeded at penetrating the high-end business and residential market in Monterrey, Mexico. He is mostly known for his residential work and high-end restaurants and night clubs."
+        },
+        {
+          "type": "text",
+          "text": "For the past several years the studio had been working without a website and without a definite branding. With the studio’s recent success, the studio has been busy building a team, establishing new offices, and defining their identity. Nation Visuals, a multi-disciplinary agency in Monterrey focusing on branding, helped Filipao Nunes design the studio’s branding and photograph and document a select group of projects to feature on the studio’s portfolio."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/pending@1x.jpg",
+            "2x": "/images/pending@2x.jpg",
+            "alt": "Image pending."
+          }
+        }
+      ]
+    }
+  ]
+}

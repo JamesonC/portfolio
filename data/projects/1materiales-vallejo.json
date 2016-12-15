@@ -9,7 +9,9 @@
   },
   "caption": "Designing and building a material store’s first website",
   "card": {
-    "1x": "/images/projects/materiales-vallejo/card@1x.jpg"
+    "1x": "/images/pending@1x.jpg",
+    "2x": "/images/pending@2x.jpg",
+    "alt": "Image pending."
   },
   "hero": {
     "1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
@@ -64,7 +66,7 @@
       },
       {
         "title": "Middleman",
-        "subtitle": "Dynamic Pages",
+        "subtitle": "Static Site Generator",
         "path": "https://middlemanapp.com/",
         "profile": {
           "image": {
@@ -129,6 +131,14 @@
         {
           "type": "text",
           "text": "Materiales Vallejo uses manual processes for daily management tasks. It doesn’t count with an up-to-date inventory system and most of its sales transactions are made with cash. When there’s an available job, the business purchases newspaper and radio ads with a job description and application instructions. Interested applicants are asked to purchase a job application form at a local office supply store and deliver the application in person or email a scanned copy."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/pending@1x.jpg",
+            "2x": "/images/pending@2x.jpg",
+            "alt": "Image pending."
+          }
         }
       ]
     },
@@ -159,8 +169,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/nav-detail@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/nav-detail@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/nav-detail@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/nav-detail@2x.jpg",
             "alt": "Dynamic desktop navigation menus and dynamic mobile contact buttons.",
             "caption": "Dynamic desktop and mobile contact buttons."
           }
@@ -172,8 +182,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/hero-detail@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/hero-detail@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/hero-detail@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/hero-detail@2x.jpg",
             "alt": "Desktop hero section",
             "caption": "Desktop hero section"
           }
@@ -185,8 +195,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/carousel-detail-desktop@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/carousel-detail-desktop@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/carousel-detail-desktop@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/carousel-detail-desktop@2x.jpg",
             "alt": "Desktop product carousel with navigation arrows",
             "caption": "Desktop product carousel with navigation arrows"
           }
@@ -194,8 +204,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/carousel-detail-tablet@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/carousel-detail-tablet@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/carousel-detail-tablet@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/carousel-detail-tablet@2x.jpg",
             "alt": "Scrollable tablet product carousel",
             "caption": "Scrollable tablet product carousel"
           }
@@ -207,8 +217,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/card-detail@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/card-detail@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/card-detail@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/card-detail@2x.jpg",
             "alt": "Default and active product card states",
             "caption": "Default and active product card states"
           }
@@ -220,8 +230,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/contact-detail@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/contact-detail@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/contact-detail@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/contact-detail@2x.jpg",
             "alt": "Mobile contact sections—open out for lunch, and closed states",
             "caption": "Mobile contact sections: open, out for lunch, and closed states"
           }
@@ -233,8 +243,8 @@
         {
           "type": "media",
           "media": {
-            "path_1x": "/images/projects/materiales-vallejo/job-detail@1x.jpg",
-            "path_2x": "/images/projects/materiales-vallejo/job-detail@2x.jpg",
+            "1x": "/images/projects/materiales-vallejo/job-detail@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/job-detail@2x.jpg",
             "alt": "Mobile job banner, job detail, and application form",
             "caption": "Mobile job banner, job detail, and application form"
           }
@@ -269,12 +279,16 @@
               "description": "The value of a business website comes from solving real business problems. Business web design is about building usable tools, not useless trophies."
             },
             {
-              "title": "Design Pillar",
-              "description": "Communication is at the core of design. What do you have to say and why? Communicating clearly is one of the hardest challenges a designer faces."
+              "title": "Communication",
+              "description": "Clear communication is at the core of good design and one of the biggest challenges a designer faces."
             },
             {
               "title": "External Factors",
-              "description": "The ideal design solution may not be the right solution due to long-time business habits, technical limitations, and cultural factors."
+              "description": "The ideal design solution may not be the right solution due to long-time business habits, technical limitations, and personal and cultural factors."
+            },
+            {
+              "title": "Iteration",
+              "description": "Design is not a one-time thing. It's a continuous, long-term process. It's about building, analyzing, and rebuilding with a clear goal."
             }
           ]
         }
