@@ -1,0 +1,40 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>epicurrence-no_4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9384 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9384 10668L 9448 10668L 9448 10732L 9384 10732L 9384 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="epicurrence-no_4" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Line" style="mix-blend-mode:normal;" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(6.12323e-17 1 -1 6.12323e-17 9415.5 10680)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line" style="mix-blend-mode:normal;" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 9435.5 10700)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line" style="mix-blend-mode:normal;" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(-0.707107 0.707107 -0.707107 -0.707107 9429.64 10685.9)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Line" style="mix-blend-mode:normal;" figma:type="line">
+<use xlink:href="#path0_stroke" transform="matrix(0.707107 0.707107 -0.707107 0.707107 9401.18 10686.4)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 7" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path1_fill" transform="translate(9404 10688)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 7" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(9407 10691)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(9407 10691)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0.5 -1C 0.223858 -1 0 -0.776142 0 -0.5C 0 -0.223858 0.223858 0 0.5 0L 0.5 -1ZM 39.5 0C 39.7761 0 40 -0.223858 40 -0.5C 40 -0.776142 39.7761 -1 39.5 -1L 39.5 0ZM 0.5 0L 39.5 0L 39.5 -1L 0.5 -1L 0.5 0Z"/>
+<path id="path1_fill" d="M 24 12C 24 18.6274 18.6274 24 12 24C 5.37258 24 0 18.6274 0 12C 0 5.37258 5.37258 0 12 0C 18.6274 0 24 5.37258 24 12Z"/>
+<path id="path2_fill" d="M 18 9C 18 13.9706 13.9706 18 9 18C 4.02944 18 0 13.9706 0 9C 0 4.02944 4.02944 0 9 0C 13.9706 0 18 4.02944 18 9Z"/>
+<path id="path3_stroke_2x" d="M 17 9C 17 13.4183 13.4183 17 9 17L 9 19C 14.5228 19 19 14.5228 19 9L 17 9ZM 9 17C 4.58172 17 1 13.4183 1 9L -1 9C -1 14.5228 3.47715 19 9 19L 9 17ZM 1 9C 1 4.58172 4.58172 1 9 1L 9 -1C 3.47715 -1 -1 3.47715 -1 9L 1 9ZM 9 1C 13.4183 1 17 4.58172 17 9L 19 9C 19 3.47715 14.5228 -1 9 -1L 9 1Z"/>
+</defs>
+</svg>

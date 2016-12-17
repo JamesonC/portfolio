@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>epicurrence-no_5</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9624 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9624 10668L 9688 10668L 9688 10732L 9624 10732L 9624 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="epicurrence-no_5" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(9638 10682)" fill="#56CCF2" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 18.5 37L 18.5 19.4854L 8.9541 29.0312L 8.9541 33.874L 7.9541 33.874L 7.9541 30.0312L 4.86816 33.1172L 4.16113 32.4092L 7.19629 29.374L 3.4541 29.374L 3.4541 28.374L 8.19629 28.374L 17.8213 18.75L 0 18.75L 0 17.75L 17.7861 17.75L 8.97949 8.94336L 4.13574 8.94336L 4.13574 7.94336L 7.97949 7.94336L 4.89355 4.85742L 5.60059 4.15039L 8.63574 7.18555L 8.63574 3.44336L 9.63574 3.44336L 9.63574 8.18555L 18.5 17.0498L 18.5 0L 19.5 0L 19.5 17.0713L 28.4102 8.16113L 28.4102 3.41895L 29.4102 3.41895L 29.4102 7.16113L 32.4453 4.12598L 33.1523 4.83301L 30.0664 7.91895L 33.9102 7.91895L 33.9102 8.91895L 29.0664 8.91895L 20.2354 17.75L 37 17.75L 37 18.75L 20.2002 18.75L 29.8496 28.3994L 34.5918 28.3994L 34.5918 29.3994L 30.8496 29.3994L 33.8848 32.4346L 33.1777 33.1426L 30.0918 30.0566L 30.0918 33.8994L 29.0918 33.8994L 29.0918 29.0566L 19.5 19.4639L 19.5 37L 18.5 37Z"/>
+</defs>
+</svg>
