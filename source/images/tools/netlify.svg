@@ -6,27 +6,22 @@
 <path d="M 9544 10508L 9608 10508L 9608 10572L 9544 10572L 9544 10508Z" fill="#FFFFFF"/>
 </mask>
 <g id="netlify" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
-<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
-<g id="Vector 9" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_stroke" transform="translate(9567 10523)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+<g id="Vector 13" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(9569 10532)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
 </g>
-<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
-<use xlink:href="#path1_fill" transform="translate(9583 10537)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
-</g>
-<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
-<use xlink:href="#path1_fill" transform="translate(9565 10537)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
-</g>
-<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
-<use xlink:href="#path1_fill" transform="translate(9575 10521)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
-</g>
-<g id="Ellipse 5" style="mix-blend-mode:normal;" figma:type="ellipse">
-<use xlink:href="#path1_fill" transform="translate(9573 10555)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+<g id="Ellipse 8" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(9556 10520)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(9556 10520)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>
 </g>
 <defs>
-<path id="path0_stroke" d="M 0 16L -0.423999 15.735L -0.902124 16.5L 0 16.5L 0 16ZM 18 16L 18.4371 16.2428L 18.8498 15.5L 18 15.5L 18 16ZM 9.576 -0.264999L -0.423999 15.735L 0.423999 16.265L 10.424 0.264999L 9.576 -0.264999ZM 0 16.5L 18 16.5L 18 15.5L 0 15.5L 0 16.5ZM 17.5629 15.7572L 7.56292 33.7572L 8.43708 34.2428L 18.4371 16.2428L 17.5629 15.7572Z"/>
-<path id="path1_fill" d="M 4 2C 4 3.10457 3.10457 4 2 4C 0.895431 4 0 3.10457 0 2C 0 0.895431 0.895431 0 2 0C 3.10457 0 4 0.895431 4 2Z"/>
+<path id="path0_stroke" d="M -0.341106 6.16585C -0.543009 6.35424 -0.553965 6.67063 -0.365577 6.87253C -0.17719 7.07443 0.139203 7.08539 0.341106 6.897L -0.341106 6.16585ZM 7 0L 7.34111 -0.365577L 7 -0.68385L 6.65889 -0.365577L 7 0ZM 13.6589 6.897C 13.8608 7.08539 14.1772 7.07443 14.3656 6.87253C 14.554 6.67063 14.543 6.35424 14.3411 6.16585L 13.6589 6.897ZM 6.5 16C 6.5 16.2761 6.72386 16.5 7 16.5C 7.27614 16.5 7.5 16.2761 7.5 16L 6.5 16ZM 0.341106 6.897L 7.34111 0.365577L 6.65889 -0.365577L -0.341106 6.16585L 0.341106 6.897ZM 6.65889 0.365577L 13.6589 6.897L 14.3411 6.16585L 7.34111 -0.365577L 6.65889 0.365577ZM 6.5 0L 6.5 16L 7.5 16L 7.5 0L 6.5 0Z"/>
+<path id="path1_fill" d="M 40 20C 40 31.0457 31.0457 40 20 40C 8.95431 40 0 31.0457 0 20C 0 8.95431 8.95431 0 20 0C 31.0457 0 40 8.95431 40 20Z"/>
+<path id="path2_stroke_2x" d="M 39 20C 39 30.4934 30.4934 39 20 39L 20 41C 31.598 41 41 31.598 41 20L 39 20ZM 20 39C 9.50659 39 1 30.4934 1 20L -1 20C -1 31.598 8.40202 41 20 41L 20 39ZM 1 20C 1 9.50659 9.50659 1 20 1L 20 -1C 8.40202 -1 -1 8.40202 -1 20L 1 20ZM 20 1C 30.4934 1 39 9.50659 39 20L 41 20C 41 8.40202 31.598 -1 20 -1L 20 1Z"/>
 </defs>
 </svg>

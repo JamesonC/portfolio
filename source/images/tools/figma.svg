@@ -11,7 +11,7 @@
 <use xlink:href="#path0_fill" fill="white" transform="translate(9485.6 10446.6)"/>
 </mask>
 <g mask="url(#mask1_outline_ins)">
-<use xlink:href="#path1_stroke_2x" transform="translate(9485.6 10446.6)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_stroke_2x" transform="translate(9485.6 10446.6)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 <g id="Rectangle 23" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
@@ -19,7 +19,7 @@
 <use xlink:href="#path0_fill" fill="white" transform="translate(9479 10440)"/>
 </mask>
 <g mask="url(#mask2_outline_ins)">
-<use xlink:href="#path1_stroke_2x" transform="translate(9479 10440)" fill="#F2994A" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_stroke_2x" transform="translate(9479 10440)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>

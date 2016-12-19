@@ -3,20 +3,15 @@
   "name": "Materiales Vallejo",
   "category": "Website",
   "status": {
-    "active": true,
+    "active": false,
     "title": "Draft",
     "color": "gold"
   },
   "caption": "Designing and building a material store’s first website",
   "card": {
-    "1x": "/images/pending@1x.jpg",
-    "2x": "/images/pending@2x.jpg",
+    "1x": "/images/projects/materiales-vallejo/card@1x.jpg",
+    "2x": "/images/projects/materiales-vallejo/card@2x.jpg",
     "alt": "Image pending."
-  },
-  "hero": {
-    "1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
-    "2x": "/images/projects/materiales-vallejo/hero@2x.jpg",
-    "alt": "Materiales Vallejo Case Study: Designing and building a material store's first website."
   },
   "source": {
     "site": {
@@ -44,7 +39,7 @@
       },
       {
         "title": "Figma",
-        "subtitle": "Wireframing",
+        "subtitle": "Web Design",
         "path": "https://www.figma.com/",
         "profile": {
           "image": {
@@ -87,6 +82,17 @@
         }
       },
       {
+        "title": "Gulp.js",
+        "subtitle": "File Optimization",
+        "path": "http://gulpjs.com/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/gulp.svg",
+            "alt": "Gulp concept icon"
+          }
+        }
+      },
+      {
         "title": "Netlify",
         "subtitle": "Continuous Deploys",
         "path": "https://www.netlify.com/",
@@ -118,6 +124,14 @@
         {
           "type": "note",
           "text": "Note: The official business website is in Spanish so I made an English site to use as reference for this case study."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/materiales-vallejo/hero@1x.jpg",
+            "2x": "/images/projects/materiales-vallejo/hero@2x.jpg",
+            "alt": "Materiales Vallejo Case Study: Designing and building a material store's first website."
+          }
         }
       ]
     },
@@ -156,7 +170,7 @@
       ]
     },
     {
-      "title": "Design Details",
+      "title": "Website Details",
       "content": [
         {
           "type": "text",

@@ -1,0 +1,82 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>gulp</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9624 -10508)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9624 10508L 9688 10508L 9688 10572L 9624 10572L 9624 10508Z" fill="#FFFFFF"/>
+</mask>
+<g id="gulp" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10519)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10521)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10523)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10525)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10527)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10529)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10531)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10533)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10535)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10537)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10539)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10541)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10543)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10545)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9654 10547)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 30" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(9656 10549)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 32" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(9653 10551)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(9653 10551)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 33" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path3_fill" transform="translate(9655 10558)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 33" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path4_fill" transform="translate(9655 10553)" fill="#EB5757" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 2 0L 2 2L 0 2L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 6 0L 6 10L 0 10L 0 0Z"/>
+<path id="path2_stroke_2x" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 6 0L 7 0L 7 -1L 6 -1L 6 0ZM 6 10L 6 11L 7 11L 7 10L 6 10ZM 0 10L -1 10L -1 11L 0 11L 0 10ZM 0 1L 6 1L 6 -1L 0 -1L 0 1ZM 5 0L 5 10L 7 10L 7 0L 5 0ZM 6 9L 0 9L 0 11L 6 11L 6 9ZM 1 10L 1 0L -1 0L -1 10L 1 10Z"/>
+<path id="path3_fill" d="M 0 0L 2 0L 2 1L 0 1L 0 0Z"/>
+<path id="path4_fill" d="M 0 0L 2 0L 2 3L 0 3L 0 0Z"/>
+</defs>
+</svg>

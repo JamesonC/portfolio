@@ -3,19 +3,14 @@
   "name": "Filipao Nunes",
   "category": "Website",
   "status": {
-    "active": true,
+    "active": false,
     "title": "Draft",
     "color": "gold"
   },
-  "caption": "Designing and building an architecture studio’s online portfolio",
+  "caption": "Designing an architecture studio’s portfolio",
   "card": {
-    "1x": "/images/pending@1x.jpg",
-    "2x": "/images/pending@2x.jpg",
-    "alt": "Image pending."
-  },
-  "hero": {
-    "1x": "/images/pending@1x.jpg",
-    "2x": "/images/pending@2x.jpg",
+    "1x": "/images/projects/filipao-nunes/card@1x.jpg",
+    "2x": "/images/projects/filipao-nunes/card@2x.jpg",
     "alt": "Image pending."
   },
   "source": {
@@ -44,7 +39,7 @@
       },
       {
         "title": "Figma",
-        "subtitle": "Wireframing",
+        "subtitle": "Web Design",
         "path": "https://www.figma.com/",
         "profile": {
           "image": {
@@ -76,6 +71,17 @@
         }
       },
       {
+        "title": "Gulp.js",
+        "subtitle": "File Optimization",
+        "path": "http://gulpjs.com/",
+        "profile": {
+          "image": {
+            "path": "/images/tools/gulp.svg",
+            "alt": "Gulp concept icon"
+          }
+        }
+      },
+      {
         "title": "Netlify",
         "subtitle": "Continuous Deploys",
         "path": "https://www.netlify.com/",
@@ -103,6 +109,18 @@
         {
           "type": "text",
           "text": "Filipao Nunes is a multi-disciplinary studio based in Monterrey, Mexico focusing on architecture, interior design, and sculpture. The studio needed an online portfolio to expose their new brand, work, and process."
+        },
+        {
+          "type": "note",
+          "text": "Note: The content and images in the website mockups are temporary and will be updated mid January 2017."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/filipao-nunes/hero@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/hero@2x.jpg",
+            "alt": "Caption Pending"
+          }
         }
       ]
     },
@@ -120,9 +138,9 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
-            "alt": "Image pending."
+            "1x": "/images/projects/filipao-nunes/branding@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/branding@2x.jpg",
+            "alt": "Caption pending."
           }
         }
       ]
@@ -137,15 +155,15 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/styleguide@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/styleguide@2x.jpg",
             "alt": "Image pending."
           }
         }
       ]
     },
     {
-      "title": "Design Details",
+      "title": "Portfolio Details",
       "content": [
         {
           "type": "text",
@@ -154,8 +172,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/sitemap@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/sitemap@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -166,8 +184,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/index-logo@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/index-logo@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -178,8 +196,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/index-gallery@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/index-gallery@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -190,20 +208,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
-            "alt": "Image pending."
-          }
-        },
-        {
-          "type": "text",
-          "text": "On desktops, hovering over a project card creates a zoom-in effect on the card’s background image to create the effect of immersing into the project."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/projects@2x.jpg",
+            "2x": "/images/projects/filipao-nunes/projects@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -214,8 +220,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/project-detail-hero@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/project-detail-hero@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -226,8 +232,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/project-detail-components@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/project-detail-components@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -298,7 +304,7 @@
             },
             {
               "title": "Fast, Reusable Styling",
-              "description": "I wanted to build the prototypes as quickly as possible. I had been reading about the benefits of functional styling so I decided to give Tachyons a try. I had an incredible development experience, and learned that function-based styling eliminates the problem of inheritance, and makes CSS styling scalable, reusable, and predictable."
+              "description": "I needed to build 3 prototypes as quickly as possible. I had been reading about the benefits of functional styling so I decided to give Tachyons a try. By using Tachyons I learned that function-based styling eliminates the problem of inheritance, making CSS classes scalable, reusable, and predictable."
             }
           ]
         }

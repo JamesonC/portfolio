@@ -54,14 +54,19 @@ description: DESCRIPTION PENDING
           <% rl = projects.length - 1 %>
           <%# End %>
           <% projects.each do |project, r| %>
-            <a class="db no-underline mb2 pa2 cover" style="background-image: url('<%= project.card["1x"] %>'); height: 20rem;" href="/<%= pretty_url project.name %>">
-              <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
-              <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
-                <%= project.type %>
-                <% if project.status.active %>
-                  <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
-                <% end %>
-              </h3>
+            <a class="db no-underline mb2 ba b--light-gray" href="/<%= pretty_url project.name %>">
+              <picture>
+                <img class="db w-100" src="<%= project.card["1x"] %>" srcset="<%= project.card["1x"] %> 1x, <%= project.card["2x"] %> 2x" alt="<%= project.card.alt %>">
+              </picture>
+              <div class="pa2">
+                <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
+                <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
+                  <%= project.type %>
+                  <% if project.status.active %>
+                    <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
+                  <% end %>
+                </h3>
+              </div>
             </a>
           <% end %>
         <% elsif section.type === "writing" %>
@@ -91,10 +96,10 @@ description: DESCRIPTION PENDING
                 <table class="w-100" style="border-spacing: 0;">
                   <tbody>
                     <tr>
-                      <td class="tc w-20 w-25-ns">
+                      <td class="tc w-20">
                         <%= image_tag post.avatar, :class => "v-mid" %>
                       </td>
-                      <td class="w-80 w-75-ns pv1 pl1 bl b--light-gray">
+                      <td class="w-80 pv1 pl1 bl b--light-gray">
                         <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
                         <p class="ma0 lato f0_75 fw7 tracked ttu silver">
                           <%= post.subtitle %>
