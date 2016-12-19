@@ -39,6 +39,7 @@ html { -webkit-font-smoothing: antialiased; }
 .gray { color: #828282; }
 .silver { color: #bdbdbd; }
 .light-gray { color: #e0e0e0; }
+.pearl { color: #f2f2f2; }
 .blue { color: #0080ff; }
 .orange { color: #f2994a; }
 /* Fill colors */
@@ -150,10 +151,9 @@ html { -webkit-font-smoothing: antialiased; }
      -m  = medium
      -l  = large
 */
-.br0_125 { border-radius: 0.125rem; }
-.bb--dotted { border-bottom-style: dotted; border-bottom-width: 1px; }
-.b--blue { border-color: #0080ff; }
 .b--light-gray { border-color: #e0e0e0; }
+.b--pearl { color: #f2f2f2; }
+.b--almost-white { border-color: #fafafa; }
 /*
    SPACING
    Docs: http://tachyons.io/docs/layout/spacing/
@@ -319,10 +319,24 @@ html { -webkit-font-smoothing: antialiased; }
     ANIMATION
 
 */
-.js-load { webkit-transition: opacity 1.5s ease-in-out; transition: opacity 1.5s ease-in-out; }
-.is-hidden { opacity: 0; }
-.is-visible { opacity: 1; }
-.js-title { webkit-transition: opacity 0.25s ease-in-out; transition: opacity 0.25s ease-in-out; }
+/* Transition Functions */
+.function-cubic { -webkit-transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); }
+.function-ease-io { -webkit-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
+/* Transition Durations */
+.duration-1_5 { -webkit-transition-duration: 1.5s; transition-duration: 1.5s; }
+.duration-0_25 { -webkit-transition-duration: 0.25s; transition-duration: 0.25s; }
+/* Transition Properties */
+.property-transform { -webkit-transition-property: transform; transition-property: transform; }
+.property-opacity { -webkit-transition-property: opacity; transition-property: opacity; }
+.property-box-shadow { -webkit-transition-property: box-shadow; transition-property: box-shadow; }
+.property-all { -webkit-transition-property: all; transition-property: all; }
+/* Properties */
+.translateY-0 { transform: translateY(0); }
+.translateY--0_5 { transform: translateY(-0.5rem); }
+.opacity-0 { opacity: 0; }
+.opacity-1 { opacity: 1; }
+.shadow-0 { box-shadow: 0 0 0.5rem rgba(0,0,0,0.08); }
+.shadow-1 { box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); }
 /*
   CUSTOM MEDIA QUERIES
   Media query values can be changed to fit your own content.

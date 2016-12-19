@@ -9,6 +9,7 @@
   },
   "caption": "Designing and building a material store’s first website",
   "card": {
+    "title": "View Case Study",
     "1x": "/images/projects/materiales-vallejo/card@1x.jpg",
     "2x": "/images/projects/materiales-vallejo/card@2x.jpg",
     "alt": "Image pending."
@@ -29,6 +30,7 @@
       {
         "title": "Swipies",
         "subtitle": "Sketching",
+        "link": "View Website",
         "path": "http://swipi.es/",
         "profile": {
           "image": {
@@ -40,6 +42,7 @@
       {
         "title": "Figma",
         "subtitle": "Web Design",
+        "link": "View Website",
         "path": "https://www.figma.com/",
         "profile": {
           "image": {
@@ -51,6 +54,7 @@
       {
         "title": "Photoshop",
         "subtitle": "Image Editing",
+        "link": "View Website",
         "path": "http://www.adobe.com/products/photoshop.html",
         "profile": {
           "image": {
@@ -62,6 +66,7 @@
       {
         "title": "Middleman",
         "subtitle": "Static Site Generator",
+        "link": "View Website",
         "path": "https://middlemanapp.com/",
         "profile": {
           "image": {
@@ -73,6 +78,7 @@
       {
         "title": "Tachyons",
         "subtitle": "Reusable Styling",
+        "link": "View Website",
         "path": "http://tachyons.io/",
         "profile": {
           "image": {
@@ -84,6 +90,7 @@
       {
         "title": "Gulp.js",
         "subtitle": "File Optimization",
+        "link": "View Website",
         "path": "http://gulpjs.com/",
         "profile": {
           "image": {
@@ -95,6 +102,7 @@
       {
         "title": "Netlify",
         "subtitle": "Continuous Deploys",
+        "link": "View Website",
         "path": "https://www.netlify.com/",
         "profile": {
           "image": {

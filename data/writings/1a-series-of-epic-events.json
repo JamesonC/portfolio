@@ -2,13 +2,13 @@
   "title": "A Series of Epic Events",
   "date": "Nov 1 2016",
   "status": {
-    "active": false,
-    "title": "Draft",
-    "color": "gold"
+    "active": true,
+    "title": "Writing",
+    "color": "silver"
   },
   "description": "A story of the events that led to Epicurrence and my experience adventuring in Moab with new friends.",
   "link": {
-    "title": "Read More",
+    "title": "View Article",
     "path": "/a-series-of-epic-events"
   },
   "content": [

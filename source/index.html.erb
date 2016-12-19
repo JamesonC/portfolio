@@ -25,7 +25,7 @@ description: DESCRIPTION PENDING
 <main class="mt1 mb6 cf">
   <div class="mw45 center mt4-ns ph1 ph0-ns">
     <%# Profile Card %>
-    <a class="js-link db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
+    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db cf mb6 no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
         <picture>
           <% index.profile.image.breakpoints.each do |breakpoint| %>
@@ -35,9 +35,9 @@ description: DESCRIPTION PENDING
         </picture>
       </div>
       <div class="fl-ns w-70-ns pa1 pa2-ns">
-        <div class="relative mb2">
-          <h3 class="js-title is-visible absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.title %></h3>
-          <h3 class="js-title is-hidden absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.subtitle %></h3>
+        <div class="relative mb1" style="height: 13px;">
+          <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.title %></h3>
+          <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.subtitle %> →</h3>
         </div>
         <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= index.profile.title %></h1>
         <p class="ma0 merriweather f1 space-gray lh1_75"><%= index.profile.description %></p>
@@ -57,18 +57,21 @@ description: DESCRIPTION PENDING
           <% rl = projects.length - 1 %>
           <%# End %>
           <% projects.each do |project, r| %>
-            <a class="db no-underline mb2 ba b--light-gray" href="/<%= pretty_url project.name %>">
+            <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2" href="/<%= pretty_url project.name %>">
               <picture>
                 <img class="db w-100" src="<%= project.card["1x"] %>" srcset="<%= project.card["1x"] %> 1x, <%= project.card["2x"] %> 2x" alt="<%= project.card.alt %>">
               </picture>
               <div class="pa2">
                 <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %> <%= project.category %></h1>
-                <h3 class="ma0 lato f0_75 fw7 tracked ttu silver">
-                  <%= project.type %>
-                  <% if project.status.active %>
-                    <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
-                  <% end %>
-                </h3>
+                <div class="relative" style="height: 13px;">
+                  <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver">
+                    <%= project.type %>
+                    <% if project.status.active %>
+                      <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
+                    <% end %>
+                  </h3>
+                  <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= project.card.title %> →</h3>
+                </div>
               </div>
             </a>
           <% end %>
@@ -77,13 +80,16 @@ description: DESCRIPTION PENDING
           <% al = writings.length - 1 %>
           <%# End %>
           <% writings.each do |article, a| %>
-            <a class="db no-underline mb2 pv2 pl2 pr4 ba b--light-gray" href="<%= article.link.path %>">
-              <h3 class="ma0 lato mb1 f0_75 fw7 tracked ttu silver">
-                <%= article.date %>
-                <% if article.status.active %>
-                  <span class="ph0_5">・</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
-                <% end %>
-              </h3>
+            <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 pv2 pl2 pr4" href="<%= article.link.path %>">
+              <div class="relative mb1" style="height: 13px;">
+                <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu silver">
+                  <%= article.date %>
+                  <% if article.status.active %>
+                    <span class="pr0_5">∙</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
+                  <% end %>
+                </h3>
+                <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= article.link.title %> →</h3>
+              </div>
               <h1 class="ma0 mb0_5 merriweather f1 fw4 black"><%= article.title %></h1>
               <p class="ma0 merriweather f1 fw3 space-gray lh1_75"><%= article.description %></p>
             </a>
@@ -93,19 +99,22 @@ description: DESCRIPTION PENDING
           <% rl = links.length - 1 %>
           <%# End %>
           <% links.each_with_index do |post, r| %>
-            <div class="fl w-100 w-50-ns <% if r < rl %>mb1<% end %> <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
-              <a class="db ba b--light-gray no-underline" href="<%= post.source %>" target="_blank">
+            <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= post.source %>" target="_blank">
                 <table class="w-100" style="border-spacing: 0;">
                   <tbody>
                     <tr>
                       <td class="tc w-20">
                         <%= image_tag post.avatar, :class => "v-mid" %>
                       </td>
-                      <td class="w-80 pv1 pl1 bl b--light-gray">
+                      <td class="w-80 pv1 pl1 bl b--pearl">
                         <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
-                        <p class="ma0 lato f0_75 fw7 tracked ttu silver">
-                          <%= post.subtitle %>
-                        </p>
+                        <div class="relative" style="height: 13px;">
+                          <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu silver">
+                            <%= post.subtitle %>
+                          </p>
+                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= post.link %> →</p>
+                        </div>
                       </td>
                     </tr>
                   </tbody>

@@ -8,16 +8,18 @@
 <g id="podcast" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
 <g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_stroke" transform="translate(9491.51 10683)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path0_stroke" transform="translate(9491 10683)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="translate(9483.65 10696)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path1_stroke" transform="translate(9484 10695.1)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_stroke" transform="translate(9495.58 10706.8)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
 </g>
 <g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path2_stroke" transform="translate(9495.93 10705.8)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_stroke" transform="translate(9492.78 10717.9)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
 </g>
-<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path3_stroke" transform="translate(9493.13 10717)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 </g>
