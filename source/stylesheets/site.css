@@ -333,10 +333,12 @@ html { -webkit-font-smoothing: antialiased; }
 /* Properties */
 .translateY-0 { transform: translateY(0); }
 .translateY--0_5 { transform: translateY(-0.5rem); }
+.translateX-0 { transform: translateX(0); }
+.translateX--0_5 { transform: translateX(-0.5rem); }
 .opacity-0 { opacity: 0; }
 .opacity-1 { opacity: 1; }
-.shadow-0 { box-shadow: 0 0 0.5rem rgba(0,0,0,0.08); }
-.shadow-1 { box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); }
+.shadow-0 { box-shadow: 0 0 1rem rgba(0,0,0,0.08); }
+.shadow-1 { box-shadow: 0 1rem 1rem rgba(0,0,0,0.1); }
 /*
   CUSTOM MEDIA QUERIES
   Media query values can be changed to fit your own content.
