@@ -1,9 +1,10 @@
 {
   "profile": {
-    "title": "Product Designer",
+    "title": "Claudio Vallejo",
     "description": "Hello there I'm Claudio, a freelance product designer building custom online experiences for businesses and currently available for hire.",
     "link": {
-      "title": "Read Bio",
+      "title": "Intro",
+      "subtitle": "Read Bio",
       "path": "/about"
     },
     "image": {

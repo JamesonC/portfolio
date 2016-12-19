@@ -25,7 +25,7 @@ description: DESCRIPTION PENDING
 <main class="mt1 mb6 cf">
   <div class="mw45 center mt4-ns ph1 ph0-ns">
     <%# Profile Card %>
-    <a class="db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
+    <a class="js-link db cf mb6 ba b--light-gray no-underline" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
         <picture>
           <% index.profile.image.breakpoints.each do |breakpoint| %>
@@ -35,9 +35,12 @@ description: DESCRIPTION PENDING
         </picture>
       </div>
       <div class="fl-ns w-70-ns pa1 pa2-ns">
+        <div class="relative mb2">
+          <h3 class="js-title is-visible absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.title %></h3>
+          <h3 class="js-title is-hidden absolute ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.subtitle %></h3>
+        </div>
         <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= index.profile.title %></h1>
-        <p class="ma0 mb1 merriweather f1 space-gray lh1_75"><%= index.profile.description %></p>
-        <h3 class="ma0 lato f0_75 fw7 tracked ttu silver"><%= index.profile.link.title %></h3>
+        <p class="ma0 merriweather f1 space-gray lh1_75"><%= index.profile.description %></p>
       </div>
     </a>
     <%# Content Sections %>
@@ -82,8 +85,7 @@ description: DESCRIPTION PENDING
                 <% end %>
               </h3>
               <h1 class="ma0 mb0_5 merriweather f1 fw4 black"><%= article.title %></h1>
-              <p class="ma0 mb1 merriweather f1 fw3 space-gray lh1_75"><%= article.description %></p>
-              <h3 class="ma0 lato f0_75 fw7 tracked ttu silver"><%= article.link.title %></h3>
+              <p class="ma0 merriweather f1 fw3 space-gray lh1_75"><%= article.description %></p>
             </a>
           <% end %>
         <% elsif section.type === "press" %>

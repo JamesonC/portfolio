@@ -2,7 +2,7 @@
   "title": "A Series of Epic Events",
   "date": "Nov 1 2016",
   "status": {
-    "active": true,
+    "active": false,
     "title": "Draft",
     "color": "gold"
   },
