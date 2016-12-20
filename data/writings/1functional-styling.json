@@ -1,0 +1,82 @@
+{
+  "title": "Functional Styling",
+  "date": "Dec 19 2016",
+  "status": {
+    "active": false,
+    "title": "Writing",
+    "color": "silver"
+  },
+  "description": "Thoughts about scalable and maintainable CSS and my experience working with Tachyons.",
+  "link": {
+    "title": "Read Article",
+    "path": "/functional-styling"
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "When I started learning about front-end development my HTML files were composed of simple component-based classes. But the simplicity was superficial. Under the hood, the site’s CSS was made up of a knot of overly specific classes. Reusing a class was only possible if the component was a child of a particular parent or the sibling of a particular component. As a consequence building new components resulted in creating new classes, which resulted in more uncertainty and more wasted time untangling my knot of styles."
+        },
+        {
+          "type": "text",
+          "text": "After building several client websites, I found it ridiculous that I was struggling to manage the site’s styling codebase. How do others approach their styling? How do large companies manage and scale their CSS codebase? I started reading articles by Adam Morse and his work on Tachyons. The more I learned about his thoughts and his experience building websites, the more I was attracted to function-based styling. So I decided to build some website prototypes with Tachyons."
+        },
+        {
+          "type": "text",
+          "text": "At first, styling with Tachyons felt overly complex, time consuming, and confusing. Tachyons felt wrong because my component-based mindset refused to share an element’s property with any other element that wasn’t related to it. I didn’t like that a button’s padding could be used by a paragraph or the navigation menu. On top of that, adding so many classes to my HTML files felt overly complex."
+        },
+        {
+          "type": "text",
+          "text": "Function-based styling felt foreign and uncomfortable because it required a completely different mindset and approach to styling. Instead of building a UI component with a single multi-property class, function-based styling builds components with multiple single-property classes. After building the prototypes with Tachyons I realized I was building things much faster because I was writing very little CSS and I could easily predict the outcome of my styling. I also realized that while the markup seemed bloated and complex, the underlying CSS was lean, simple, and easy to read."
+        },
+        {
+          "type": "text",
+          "text": "After building several other client projects with Tachyons, I believe function-based styling is the answer to building manageable and scalable websites and applications. Not only does function-based styling result in immutable, reusable, and predictable styling, but it also results in leaner CSS files and highly-readable HTML files."
+        }
+      ]
+    },
+    {
+      "title": "More About Functional CSS",
+      "content": [
+        {
+          "type": "list",
+          "list": [
+            {
+              "title": "Lego Bits (ft. Adam Morse)",
+              "subtitle": "Design Details Podcast",
+              "link": "Hear Interview",
+              "color": "royal",
+              "source": "http://mrmrs.io/writing/2014/08/11/good-css/",
+              "avatar": "/images/press/podcast.svg"
+            },
+            {
+              "title": "Things I've Learned about CSS",
+              "subtitle": "CSSConf Oakland 2014",
+              "link": "Watch Video",
+              "color": "chili",
+              "source": "https://www.youtube.com/watch?v=14N_V56tqd4&t=626s",
+              "avatar": "/images/sources/video.svg"
+            },
+            {
+              "title": "CSS and Scalability",
+              "subtitle": "by Adam Morse",
+              "link": "Read Article",
+              "color": "gold",
+              "source": "http://mrmrs.io/writing/2016/03/24/scalable-css/",
+              "avatar": "/images/sources/css-and-scalability.svg"
+            },
+            {
+              "title": "Good CSS",
+              "subtitle": "by Adam Morse",
+              "link": "Read Article",
+              "color": "jade",
+              "source": "http://mrmrs.io/writing/2014/08/11/good-css/",
+              "avatar": "/images/sources/good-css.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

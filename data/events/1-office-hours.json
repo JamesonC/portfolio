@@ -1,7 +1,8 @@
 {
   "title": "Out of Office Hours",
-  "subtitle": "Mentorship Program",
-  "link": "Visit Website",
+  "subtitle": "Mentorship",
+  "link": "Visit Site",
+  "color": "green",
   "source": "https://www.outofofficehours.com/",
   "avatar": "/images/events/holidays.svg"
 }

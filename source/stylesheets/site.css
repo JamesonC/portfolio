@@ -40,8 +40,15 @@ html { -webkit-font-smoothing: antialiased; }
 .silver { color: #bdbdbd; }
 .light-gray { color: #e0e0e0; }
 .pearl { color: #f2f2f2; }
+.violet { color: #9b51e0; }
+.royal { color: #2f80ed; }
 .blue { color: #0080ff; }
+.mint { color: #56ccf2; }
+.green { color: #27ae60; }
+.jade { color: #6fcf97; }
+.gold { color: #f2c94c; }
 .orange { color: #f2994a; }
+.chili { color: #eb5757; }
 /* Fill colors */
 .blue-fill { fill: #0080ff; }
 /* Background colors */

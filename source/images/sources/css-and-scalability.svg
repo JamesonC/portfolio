@@ -1,0 +1,52 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>css-and-scalability</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9743 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9743 10668L 9807 10668L 9807 10732L 9743 10732L 9743 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="css-and-scalability" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 36" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9758 10700.1)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9758 10700.1)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 36" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask2_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9775.05 10700.1)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9775.05 10700.1)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 36" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<mask id="mask3_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9758 10683)"/>
+</mask>
+<g mask="url(#mask3_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9758 10683)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<g id="Rectangle 35" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="translate(9784.92 10683)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 35" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 -1 1 6.12323e-17 9792.1 10691.1)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 35" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path3_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 9782.46 10692.9)" fill="#F2C94C" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 17.9487 0L 17.9487 17.9487L 0 17.9487L 0 0Z"/>
+<path id="path1_stroke_2x" d="M 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 17.9487 0L 18.9487 0L 18.9487 -1L 17.9487 -1L 17.9487 0ZM 17.9487 17.9487L 17.9487 18.9487L 18.9487 18.9487L 18.9487 17.9487L 17.9487 17.9487ZM 0 17.9487L -1 17.9487L -1 18.9487L 0 18.9487L 0 17.9487ZM 0 1L 17.9487 1L 17.9487 -1L 0 -1L 0 1ZM 16.9487 0L 16.9487 17.9487L 18.9487 17.9487L 18.9487 0L 16.9487 0ZM 17.9487 16.9487L 0 16.9487L 0 18.9487L 17.9487 18.9487L 17.9487 16.9487ZM 1 17.9487L 1 0L -1 0L -1 17.9487L 1 17.9487Z"/>
+<path id="path2_fill" d="M 0 0L 8.07692 0L 8.07692 0.897436L 0 0.897436L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 13.4615 0L 13.4615 0.897436L 0 0.897436L 0 0Z"/>
+</defs>
+</svg>

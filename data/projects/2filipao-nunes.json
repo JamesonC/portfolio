@@ -7,7 +7,7 @@
     "title": "Draft",
     "color": "gold"
   },
-  "caption": "Designing an architecture studio’s portfolio",
+  "caption": "An overview of the studio's portfolio and details about the studio's brand and business needs that shaped the site's design",
   "card": {
     "title": "View Case Study",
     "1x": "/images/projects/filipao-nunes/card@1x.jpg",
@@ -16,12 +16,12 @@
   },
   "source": {
     "site": {
-      "title": "Website",
+      "title": "Cover Page",
       "path": "http://filipaonunes.com"
     },
     "code": {
-      "title": "Source Code",
-      "path": "https://github.com/claudiovallejo/prototypes"
+      "title": "Prototypes",
+      "path": "http://prototypes.netlify.com/"
     }
   },
   "tool_kit": {
@@ -114,10 +114,6 @@
     {
       "content": [
         {
-          "type": "text",
-          "text": "Filipao Nunes is a multi-disciplinary studio based in Monterrey, Mexico focusing on architecture, interior design, and sculpture. The studio needed an online portfolio to expose their new brand, work, and process."
-        },
-        {
           "type": "note",
           "text": "Note: The content and images in the website mockups are temporary and will be updated mid January 2017."
         },
@@ -140,7 +136,7 @@
         },
         {
           "type": "text",
-          "text": "The studio worked closely with Nation Visuals to design a unique, simple and modern brand. The studio’s logo is adaptable and can be applied in three different orientations to reflect the studio’s multi-disciplinary focus. The brand uses a sans serif type, a dark gray / white color palette and a lot of negative space to create a simple, modern brand that alludes to the use of space in architecture while directing attention at the studio’s work."
+          "text": "The studio worked closely with <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://nationvisuals.com/NTN/\" target=\"_blank\">Nation Visuals</a> to design a unique, simple and modern brand. The studio’s logo is adaptable and can be applied in three different orientations to reflect the studio’s multi-disciplinary focus. The brand uses a sans serif type, a dark gray / white color palette and a lot of negative space to create a simple, modern brand that alludes to the use of space in architecture while directing attention at the studio’s work."
         },
         {
           "type": "media",
@@ -157,7 +153,7 @@
       "content": [
         {
           "type": "text",
-          "text": "A visual styleguide was designed to serve as a library of reusable visual properties to expedite the design process. Defining a visual styleguide limits building blocks used to construct UI components, which helped focus design critiques on the function rather than the aesthetic of the component."
+          "text": "A visual styleguide was designed to serve as a library of reusable visual properties to expedite the design process."
         },
         {
           "type": "media",
@@ -174,7 +170,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The studio’s portfolio, like it’s branding, is simple and uses negative space and dark backgrounds to focus the user’s attention on the content. The site is composed of the following pages—"
+          "text": "The portfolio is composed of the following pages—"
         },
         {
           "type": "media",
@@ -251,8 +247,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/project-detail-end@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/project-detail-end@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -263,8 +259,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/studio@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/studio@2x.jpg",
             "alt": "Image pending."
           }
         },
@@ -275,8 +271,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/pending@1x.jpg",
-            "2x": "/images/pending@2x.jpg",
+            "1x": "/images/projects/filipao-nunes/contact@1x.jpg",
+            "2x": "/images/projects/filipao-nunes/contact@2x.jpg",
             "alt": "Image pending."
           }
         }

@@ -64,15 +64,17 @@ for (var s = 0; s < sources.length; s++) {
 */
 const nav = document.getElementsByClassName('js-nav')[0];
 //
-nav.addEventListener('mouseenter', function(){
-  var $arrow = this.getElementsByClassName('js-arrow')[0];
-  translateX($arrow);
-});
-//
-nav.addEventListener('mouseleave', function(){
-  var $arrow = this.getElementsByClassName('js-arrow')[0];
-  translateX($arrow);
-});
+if (nav) {
+  nav.addEventListener('mouseenter', function(){
+    var $arrow = this.getElementsByClassName('js-arrow')[0];
+    translateX($arrow);
+  });
+  //
+  nav.addEventListener('mouseleave', function(){
+    var $arrow = this.getElementsByClassName('js-arrow')[0];
+    translateX($arrow);
+  });
+}
 //
 function show($element) {
   $element.classList.toggle('opacity-0');

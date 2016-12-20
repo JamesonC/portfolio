@@ -11,13 +11,13 @@ layout: main
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= project.name %></h1>
       <h2 class="w-80-ns mb2 lato f1_5 fw3 lh1_50 dark-gray"><%= project.caption %></h2>
       <ul class="pa0 list">
-        <li class="dib tc bg-white">
-          <a class="js-source shadow-0 translateY-0 duration-0_25 property-all dib w10 mr0_5-ns mb1 pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.site.path %>" target="_blank">
+        <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-white mb1 mr0_5-ns">
+          <a class="dib w10 pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.site.path %>" target="_blank">
             <%= project.source.site.title %>
           </a>
         </li>
-        <li class="dib tc bg-white">
-          <a class="js-source shadow-0 translateY-0 duration-0_25 property-all dib w10 ml0_5-ns pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.code.path %>" target="_blank">
+        <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-white ml0_5-ns">
+          <a class="dib w10 pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.code.path %>" target="_blank">
             <%= project.source.code.title %>
           </a>
         </li>
@@ -95,7 +95,7 @@ layout: main
                           <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu gray">
                             <%= tool.subtitle %>
                           </p>
-                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= tool.link %> →</p>
+                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu <%= tool.color %>"><%= tool.link %> →</p>
                         </div>
                       </td>
                     </tr>

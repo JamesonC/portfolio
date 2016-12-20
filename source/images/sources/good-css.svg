@@ -1,0 +1,27 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>good-css</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9812 -10668)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9812 10668L 9876 10668L 9876 10732L 9812 10732L 9812 10668Z" fill="#FFFFFF"/>
+</mask>
+<g id="good-css" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Ellipse 9" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9824 10680)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9824 10680)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(-0.707107 -0.707107 0.707107 -0.707107 9840.36 10707.2)" fill="#6FCF97" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 40 20C 40 31.0457 31.0457 40 20 40C 8.95431 40 0 31.0457 0 20C 0 8.95431 8.95431 0 20 0C 31.0457 0 40 8.95431 40 20Z"/>
+<path id="path1_stroke_2x" d="M 39 20C 39 30.4934 30.4934 39 20 39L 20 41C 31.598 41 41 31.598 41 20L 39 20ZM 20 39C 9.50659 39 1 30.4934 1 20L -1 20C -1 31.598 8.40202 41 20 41L 20 39ZM 1 20C 1 9.50659 9.50659 1 20 1L 20 -1C 8.40202 -1 -1 8.40202 -1 20L 1 20ZM 20 1C 30.4934 1 39 9.50659 39 20L 41 20C 41 8.40202 31.598 -1 20 -1L 20 1Z"/>
+<path id="path2_fill" d="M 7.36841 0L 1.47368 0L 0 0L 0 1.47368L 0 18.421L 1.47368 18.421L 1.47368 1.47368L 7.36841 1.47368L 7.36841 0Z"/>
+</defs>
+</svg>

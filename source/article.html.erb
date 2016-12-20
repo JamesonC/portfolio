@@ -21,10 +21,10 @@ layout: main
   <% sl = article.content.length - 1 %>
   <%# End %>
   <% article.content.each_with_index do |section, s| %>
-    <section>
+    <section class="<% if s != sl %>mb2<% else %>mb6<% end %> cf">
       <% if section.title %>
-        <div class="mw38 center ph1 ph0-ns">
-          <h3 class="ma0 mb2 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h3>
+        <div class="mw45 center mb2 ph1 ph0-ns">
+          <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray"><%= section.title %></h1>
         </div>
       <% end %>
       <%# Config %>
@@ -67,6 +67,37 @@ layout: main
         <% if content.type === "break" %>
           <div class="mw45 center mt2 mb4">
             <div class="w5 bb b--light-gray"></div>
+          </div>
+        <% end %>
+        <% if content.type === "list" %>
+          <%# Config %>
+          <% rl = content.list.length - 1 %>
+          <%# End %>
+          <div class="mw45 center ph1 ph0-ns">
+            <% content.list.each_with_index do |post, r| %>
+              <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
+                <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
+                  <table class="w-100" style="border-spacing: 0;">
+                    <tbody>
+                      <tr>
+                        <td class="tc w-20">
+                          <%= image_tag post.avatar, :class => "v-mid" %>
+                        </td>
+                        <td class="w-80 pv1 pl1 bl b--pearl">
+                          <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
+                          <div class="relative" style="height: 13px;">
+                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu gray">
+                              <%= post.subtitle %>
+                            </p>
+                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu <%= post.color %>"><%= post.link %> →</p>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </a>
+              </div>
+            <% end %>
           </div>
         <% end %>
       <% end %>

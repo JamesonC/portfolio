@@ -25,7 +25,7 @@ description: DESCRIPTION PENDING
 <main class="mt1 mb6 cf">
   <div class="mw45 center mt4-ns ph1 ph0-ns">
     <%# Profile Card %>
-    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db cf mb2 no-underline bg-white" href="<%= index.profile.link.path %>">
+    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db cf mb6 no-underline bg-white" href="<%= index.profile.link.path %>">
       <div class="fl-ns w-30-ns">
         <picture>
           <% index.profile.image.breakpoints.each do |breakpoint| %>
@@ -48,7 +48,10 @@ description: DESCRIPTION PENDING
     <% sl = index.sections.length - 1 %>
     <%# End %>
     <% index.sections.each do |section, s| %>
-      <section>
+      <section class="mb6">
+        <header class="mb2">
+          <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray"><%= section.title %></h1>
+        </header>
         <% if section.type === "projects" %>
           <%# Config %>
           <% rl = projects.length - 1 %>
@@ -110,7 +113,7 @@ description: DESCRIPTION PENDING
                           <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu gray">
                             <%= post.subtitle %>
                           </p>
-                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= post.link %> →</p>
+                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu <%= post.color %>"><%= post.link %> →</p>
                         </div>
                       </td>
                     </tr>
