@@ -51,14 +51,6 @@
               "avatar": "/images/press/podcast.svg"
             },
             {
-              "title": "Things I've Learned about CSS",
-              "subtitle": "CSSConf Oakland 2014",
-              "link": "Watch Video",
-              "color": "chili",
-              "source": "https://www.youtube.com/watch?v=14N_V56tqd4&t=626s",
-              "avatar": "/images/sources/video.svg"
-            },
-            {
               "title": "CSS and Scalability",
               "subtitle": "by Adam Morse",
               "link": "Read Article",
