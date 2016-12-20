@@ -31,6 +31,7 @@
         "title": "Swipies",
         "subtitle": "Sketching",
         "link": "View Website",
+        "color": "royal",
         "path": "http://swipi.es/",
         "profile": {
           "image": {
@@ -43,6 +44,7 @@
         "title": "Figma",
         "subtitle": "Web Design",
         "link": "View Website",
+        "color": "violet",
         "path": "https://www.figma.com/",
         "profile": {
           "image": {
@@ -55,6 +57,7 @@
         "title": "Middleman",
         "subtitle": "Static Site Generator",
         "link": "View Website",
+        "color": "gold",
         "path": "https://middlemanapp.com/",
         "profile": {
           "image": {
@@ -67,6 +70,7 @@
         "title": "Tachyons",
         "subtitle": "Reusable Styling",
         "link": "View Website",
+        "color": "orange",
         "path": "http://tachyons.io/",
         "profile": {
           "image": {
@@ -79,6 +83,7 @@
         "title": "Gulp.js",
         "subtitle": "File Optimization",
         "link": "View Website",
+        "color": "chili",
         "path": "http://gulpjs.com/",
         "profile": {
           "image": {
@@ -91,6 +96,7 @@
         "title": "Netlify",
         "subtitle": "Continuous Deploys",
         "link": "View Website",
+        "color": "jade",
         "path": "https://www.netlify.com/",
         "profile": {
           "image": {
