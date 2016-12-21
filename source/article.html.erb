@@ -6,7 +6,7 @@ layout: main
 <%# End %>
 <article>
   <header>
-    <div class="mw45 center pv6 ph1 ph2-m ph0-l">
+    <div class="mw45 center pv4 ph1 ph2-m ph0-l">
       <h3 class="mb2 lato f0_75 fw7 tracked ttu silver">
         <%= article.date %>
         <% if article.status.active %>
@@ -24,7 +24,7 @@ layout: main
     <section class="<% if s != sl %>mb2<% else %>mb6<% end %> cf">
       <% if section.title %>
         <div class="mw45 center mb2 ph1 ph2-m ph0-l">
-          <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray"><%= section.title %></h1>
+          <h1 class="relative z-2 dib ma0 merriweather f1_125 fw4 dark-gray"><%= section.title %></h1>
         </div>
       <% end %>
       <%# Config %>
@@ -38,11 +38,11 @@ layout: main
         <%# End %>
         <% if content.type === "text" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1 f1_125-ns fw3 space-gray lh1_75 lh2-ns"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
           </div>
         <% end %>
         <% if content.type === "media" %>
-          <div class="mw60 center mb6">
+          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %> mb6-ns">
             <img src="<%= content.media["1x"] %>" srcset="<%= content.media["1x"] %> 1x, <%= content.media["2x"] %> 2x" alt="<% if content.media.alt %><%= content.media.alt %><% end %>">
             <% if content.media.caption %>
               <div class="mw45 center tc ph1 ph0-ns">
@@ -58,8 +58,8 @@ layout: main
           <div class="mw45 center ph1 ph2-m ph0-l">
             <% content.block.each_with_index do |item, i| %>
               <div class="<% if i != il %>mb2<% else %>mb6<% end %> pl2 bl b--light-gray">
-                <h4 class="ma0 mb1 merriweather f1 dark-gray"><%= item.title %></h4>
-                <p class="ma0 merriweather f1 f1_125-ns fw4 lh1_75 space-gray"><%= item.description %></p>
+                <h4 class="ma0 mb1 merriweather f1_125 dark-gray"><%= item.title %></h4>
+                <p class="ma0 merriweather f1_125 fw4 lh2 dark-gray"><%= item.description %></p>
               </div>
             <% end %>
           </div>

@@ -1,54 +1,82 @@
 {
-  "title": "Functional Styling",
+  "title": "Function-based Styling",
   "date": "Dec 19 2016",
   "status": {
     "active": false,
     "title": "Writing",
     "color": "silver"
   },
-  "description": "Thoughts about scalable and maintainable CSS and my experience working with Tachyons.",
+  "description": "My transition from component-based to function-based styling and how it sparked an interest in design systems.",
   "link": {
     "title": "Read Article",
-    "path": "/functional-styling"
+    "path": "/function-based-styling"
   },
   "content": [
     {
       "content": [
         {
           "type": "text",
-          "text": "When I started learning about front-end development my HTML files were composed of simple component-based classes. But the simplicity was superficial. Under the hood, the site’s CSS was made up of a knot of overly specific classes. Reusing a class was only possible if the component was a child of a particular parent or the sibling of a particular component. As a consequence building new components resulted in creating new classes, which resulted in more uncertainty and more wasted time untangling my knot of styles."
+          "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/writing/function-based-css/mess@1x.jpg",
+            "2x": "/images/writing/function-based-css/mess@2x.jpg",
+            "alt": "A tangled mess of a knot with different colors and squiggles. Yuck."
+          }
         },
         {
           "type": "text",
-          "text": "After building several client websites, I found it ridiculous that I was struggling to manage the site’s styling codebase. How do others approach their styling? How do large companies manage and scale their CSS codebase? I started reading articles by Adam Morse and his work on Tachyons. The more I learned about his thoughts and his experience building websites, the more I was attracted to function-based styling. So I decided to build some website prototypes with Tachyons."
+          "text": "I was frustrated, so I started questioning and looking for solutions. How do the best developers and top product companies manage their stylesheets? I chatted with designer friends, inspected websites, read articles, and re-listened to several <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"https://spec.fm/podcasts/design-details\" target=\"_blank\">Design Details</a> episodes. A friend of mine shared <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.io/writing/2016/03/24/scalable-css/\" target=\"_blank\">CSS and Scalability</a>, an article written by <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.cc/\" target=\"_blank\">Adam Morse</a> that talks about the benefits of function-based styling and his experience managing stylesheets. After reading more of Adam’s thoughts on CSS and learning about his active involvement with the development community, I found <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, one of his side projects, and decided to give it a try on my next client project."
         },
         {
           "type": "text",
-          "text": "At first, styling with Tachyons felt overly complex, time consuming, and confusing. Tachyons felt wrong because my component-based mindset refused to share an element’s property with any other element that wasn’t related to it. I didn’t like that a button’s padding could be used by a paragraph or the navigation menu. On top of that, adding so many classes to my HTML files felt overly complex."
+          "text": "At first, function-based styling felt wrong because it required an opposite approach to component-based styling. Instead of building UI components by adding a single, multi-property class I was building components by adding multiple, single-property classes. My component-based mindset refused to share a button’s padding with the site’s navigation menu and it hated cluttering my markup with so many classes. It wasn’t until I completed the first webpage that I became aware of the power of function-based styling. I realized my markup was readable, my classes reusable, and changes were predictable. What was once a bloated knot of overly specific classes became a collection of lean, globally reusable properties."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/writing/function-based-css/yes@1x.jpg",
+            "2x": "/images/writing/function-based-css/yes@1x@2x.jpg",
+            "alt": "A square block composed of small, repeating, color-coded shapes. It's lovely."
+          }
         },
         {
           "type": "text",
-          "text": "Function-based styling felt foreign and uncomfortable because it required a completely different mindset and approach to styling. Instead of building a UI component with a single multi-property class, function-based styling builds components with multiple single-property classes. After building the prototypes with Tachyons I realized I was building things much faster because I was writing very little CSS and I could easily predict the outcome of my styling. I also realized that while the markup seemed bloated and complex, the underlying CSS was lean, simple, and easy to read."
-        },
-        {
-          "type": "text",
-          "text": "After building several other client projects with Tachyons, I believe function-based styling is the answer to building manageable and scalable websites and applications. Not only does function-based styling result in immutable, reusable, and predictable styling, but it also results in leaner CSS files and highly-readable HTML files."
+          "text": "After working with Tachyons on my first client project, I started building websites faster and creating lean, manageable, and scaleable stylesheets. I quickly fell in love with the system mindset that is a result of prioritizing reusability. Instead of creating random, unrelated values for a component I started creating specific, scalable values for the entire website. Learning about function-based styling sparked an interest in learning more about design systems and their function in scaling digital products."
         }
       ]
     },
     {
-      "title": "More About Functional CSS",
+      "title": "Favorite Functional CSS Resources",
       "content": [
         {
           "type": "list",
           "list": [
             {
-              "title": "Lego Bits (ft. Adam Morse)",
+              "title": "Tachyons",
+              "subtitle": "Functional CSS",
+              "link": "View Site",
+              "color": "orange",
+              "source": "http://tachyons.io/",
+              "avatar": "/images/tools/tachyons.svg"
+            },
+            {
+              "title": "Freedom Juice ft. Jon Gold",
               "subtitle": "Design Details Podcast",
-              "link": "Hear Interview",
+              "link": "Play Interview",
               "color": "royal",
-              "source": "http://mrmrs.io/writing/2014/08/11/good-css/",
+              "source": "https://spec.fm/podcasts/design-details/14150",
               "avatar": "/images/press/podcast.svg"
+            },
+            {
+              "title": "Adam Morse on CSS",
+              "subtitle": "CSSConf Oakland 2014",
+              "link": "Watch Video",
+              "color": "chili",
+              "source": "https://www.youtube.com/watch?v=14N_V56tqd4&t=627s",
+              "avatar": "/images/sources/video.svg"
             },
             {
               "title": "CSS and Scalability",

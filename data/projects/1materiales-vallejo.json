@@ -7,7 +7,7 @@
     "title": "Draft",
     "color": "gold"
   },
-  "caption": "An overview of the store's first website and the business and user needs that guided the site's design",
+  "caption": "A design overview of the store's first website and the business and user needs that guided the site's design",
   "card": {
     "title": "View Case Study",
     "1x": "/images/projects/materiales-vallejo/card@1x.jpg",
@@ -138,7 +138,7 @@
         },
         {
           "type": "note",
-          "text": "Note: The official business website is in Spanish so I made an English site to use as reference for this case study."
+          "text": "Note: The <a class=\"no-underline bb b--light-gray gray dim\" href=\"https://www.materialesvallejo.com/\" target=\"_blank\">official business website</a> is in Spanish so I created a separate English site for reference."
         },
         {
           "type": "media",
@@ -166,7 +166,8 @@
           "media": {
             "1x": "/images/projects/materiales-vallejo/business@1x.jpg",
             "2x": "/images/projects/materiales-vallejo/business@2x.jpg",
-            "alt": "A stack of business images. The top-most image depicts one of the business's employees smiling, rolling a wheel barrow."
+            "alt": "A stack of business images. The top-most image depicts one of the business's employees smiling, rolling a wheel barrow.",
+            "caption": "An employee is checking the client's invoice to load the purchased material"
           }
         }
       ]
@@ -193,7 +194,7 @@
         },
         {
           "type": "text",
-          "text": "The navigation menu is fixed and has a contact button that displays the available form of contact at the time of visit. If the store is open, the button invites users to call the store. If the business is away for lunch or closed, the button invites users to send an email."
+          "text": "The navigation menu is fixed and has a contact button that displays the available form of contact at the time of visit. If the store is open, the button invites users to call the store. If the business is out for lunch or closed, the button invites users to send an email."
         },
         {
           "type": "media",
@@ -241,7 +242,7 @@
         },
         {
           "type": "text",
-          "text": "Product cards were designed to inform users about product availability. Tapping the card displays details about sale unit and available measurements. Product cards don’t display prices to increase the probability of the user engaging with the business."
+          "text": "Product cards were designed to inform users about product availability. Tapping the card displays details about sale unit and available measurements."
         },
         {
           "type": "media",
@@ -267,7 +268,7 @@
         },
         {
           "type": "text",
-          "text": "When there’s an available job the index and about pages display a job banner above the footer to avoid interrupting the core user’s experience. A careers page is created and lists the available jobs. Each job has a job detail page that displays a brief job description and links to a job application form."
+          "text": "When there’s an available job the index and about pages display a job banner above the footer to avoid interrupting the core user’s experience. A careers page is dynamically created and lists the available jobs. Each job has a job detail page that displays a brief job description and links to a job application form. Job application forms are designed based on the standard Mexican job application forms."
         },
         {
           "type": "media",
@@ -285,11 +286,11 @@
       "content": [
         {
           "type": "text",
-          "text": "Materiales Vallejo’s website was published on December 2016 and is tracking user data to provide better insight into user engagement and website use. At the moment, the business is not interested in investing time in ad words campaigns, so it will take some time to acquire a decent amount of user data. Nonetheless, I will be monitoring the site’s usage and working on cross-browser compatibility bugs in the coming weeks."
+          "text": "Materiales Vallejo’s website was published on December 2016 and is tracking user data to learn more about the user's context. Despite the business not being interested in investing more time on the website, I'll be monitoring the site's activity and check for cross-browser compatible bugs and other issues."
         },
         {
           "type": "text",
-          "text": "On another note, through this project I realized there is a need for business automation tools for small businesses in Mexico. There are so many areas where technology could make the lives of entrepreneurs much easier—payment processing, inventory management systems, client management systems, invoicing and PoS systems. I would love to tackle one of these problems in the near future."
+          "text": "Through this project I got a chance to learn more about the way the business operates and handles daily tasks. While Materiales Vallejo's transactions are still cash-based and online shopping is years away, there are other areas where software business tools could expedite daily tasks and improve communication with clients. I've talked with my client about designing a business tool to help them in daily operations, and may pursue the opportunity if it opens up."
         }
       ]
     },
@@ -298,7 +299,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The project was a great learning experience and I had a lot of fun running through the full design and development process. When the project started I had prior experience with website builders, a limited understanding of HTML/CSS, and was working on another web project. Throughout the project I faced multiple challenges and made innumerable mistakes on a number of different areas—communication, process, efficiency, design, and development. Through the challenges, mistakes and small successes, I was able to become aware of several principles / ideas—"
+          "text": "The project was a great opportunity to work on the full design and development process. When the project started I had prior experience with website builders and a limited understanding of HTML, CSS, and JavaScript. Throughout the project I faced multiple challenges and made innumerable mistakes on a number of different areas—communication, process, time management, design, and development. Through these challenges and mistakes I became aware of several business and design principles—"
         },
         {
           "type": "block",
@@ -308,16 +309,12 @@
               "description": "The value of a business website comes from solving real business problems. Business web design is about building usable tools, not useless trophies."
             },
             {
-              "title": "Communication",
-              "description": "Clear communication is at the core of good design and one of the biggest challenges a designer faces."
-            },
-            {
               "title": "External Factors",
               "description": "The ideal design solution may not be the right solution due to long-time business habits, technical limitations, and personal and cultural factors."
             },
             {
               "title": "Iteration",
-              "description": "Design is not a one-time thing. It's a continuous, long-term process. It's about building, analyzing, and rebuilding with a clear goal."
+              "description": "Product design is not a one-time thing. It's a continuous, long-term process composed of many small improvements and updates based on user and business needs."
             }
           ]
         }

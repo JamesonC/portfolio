@@ -120,10 +120,6 @@
     {
       "content": [
         {
-          "type": "note",
-          "text": "Note: The content and images in the website mockups are temporary and will be updated mid January 2017."
-        },
-        {
           "type": "media",
           "media": {
             "1x": "/images/projects/filipao-nunes/hero@1x.jpg",
@@ -142,7 +138,7 @@
         },
         {
           "type": "text",
-          "text": "The studio worked closely with <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://nationvisuals.com/NTN/\" target=\"_blank\">Nation Visuals</a> to design a unique, simple and modern brand. The studio’s logo is adaptable and can be applied in three different orientations to reflect the studio’s multi-disciplinary focus. The brand uses a sans serif type, a dark gray / white color palette and a lot of negative space to create a simple, modern brand that alludes to the use of space in architecture while directing attention at the studio’s work."
+          "text": "The studio worked closely with <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://nationvisuals.com/NTN/\" target=\"_blank\">Nation Visuals</a> to design the studio's branding. The studio’s logo is adaptable and can be applied in three different orientations to reflect the studio’s multi-disciplinary focus. The brand uses a sans serif type, a dark gray / white color palette, and a lot of negative space."
         },
         {
           "type": "media",
@@ -155,11 +151,11 @@
       ]
     },
     {
-      "title": "Visual Styleguide",
+      "title": "Portfolio Details",
       "content": [
         {
           "type": "text",
-          "text": "A visual styleguide was designed to serve as a library of reusable visual properties to expedite the design process."
+          "text": "The portfolio is designed with a focus on promoting the studio's new brand and creating an immersive experience into the studio's work. A visual styleguide was designed based on the studio's brand to serve as a reusable library of visual properties to build the site's UI components."
         },
         {
           "type": "media",
@@ -168,27 +164,10 @@
             "2x": "/images/projects/filipao-nunes/styleguide@2x.jpg",
             "alt": "Image pending."
           }
-        }
-      ]
-    },
-    {
-      "title": "Portfolio Details",
-      "content": [
-        {
-          "type": "text",
-          "text": "The portfolio is composed of the following pages—"
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/projects/filipao-nunes/sitemap@1x.jpg",
-            "2x": "/images/projects/filipao-nunes/sitemap@2x.jpg",
-            "alt": "Image pending."
-          }
         },
         {
           "type": "text",
-          "text": "The landing page was designed to provide a bold, captivating introduction to the studio’s brand, their services, and what they offer. The logo is the first thing users see because the studio is in need of exposing its brand and ensuring people relate the logo with the studio’s name. The logo and caption sections use a dark background to focus the user’s attention on the content."
+          "text": "The landing page was designed to provide a bold introduction to the studio’s brand, what they do, and their work. The landing page starts off with the studio's logo to help users connect the logo with the studio's name."
         },
         {
           "type": "media",
@@ -200,7 +179,7 @@
         },
         {
           "type": "text",
-          "text": "After exposing who the studio is and what they offer, the last section is an interactive gallery that features three star projects. Each project represents one of the studio’s three focus areas—architecture, interior design, sculpture—to promote the studio’s multi-disciplinary expertise."
+          "text": "After the studio's logo and caption, the last section features an interactive gallery that displays three select projects. Each project represents one of the studio’s three focus areas—architecture, interior design, sculpture—to promote the studio’s multi-disciplinary expertise."
         },
         {
           "type": "media",
@@ -212,7 +191,7 @@
         },
         {
           "type": "text",
-          "text": "The Projects page contains a select list of projects the studio has worked on. The page features a project category filter to provide a fast way of navigating through the project list."
+          "text": "The Projects section lists the studio's portfolio and orders projects by category and provides a category filter menu for faster project search."
         },
         {
           "type": "media",
@@ -224,7 +203,7 @@
         },
         {
           "type": "text",
-          "text": "Project detail pages are designed to provide an immersive experience into the studio’s ideation and creative process. Each project detail has an introductory section composed of a hero image and project description to give user’s context about the project’s purpose and mission."
+          "text": "Project detail pages provide an immersive experience into the project by displaying a list of images that walk the user through the studio's work. Each project detail has an introductory section composed of a hero image and project description to give user’s context about the project’s purpose and mission."
         },
         {
           "type": "media",
@@ -236,7 +215,7 @@
         },
         {
           "type": "text",
-          "text": "The core of the project’s detail page is in its content. Each project detail has a unique layout and design to ensure each project’s story is told in a way that fits with the project’s purpose, imagery, and press content. The project detail’s content is composed by 5 different reusable components—"
+          "text": "The core of the project’s detail page is in its content which is composed of 5 reusable components. Each component was designed to display different types of content. Some components work great for vertical shots, other components work better for full-width landscape shots. The studio has the flexibility to design each project detail to ensure each detail section displays the project in the best possible format."
         },
         {
           "type": "media",
@@ -248,19 +227,7 @@
         },
         {
           "type": "text",
-          "text": "The project detail will end with optional press and awards sections that link to third party articles and publications featuring the project. Every project will end with social media links to promote sharing the project and will end with a related projects section."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/projects/filipao-nunes/project-detail-end@1x.jpg",
-            "2x": "/images/projects/filipao-nunes/project-detail-end@2x.jpg",
-            "alt": "Image pending."
-          }
-        },
-        {
-          "type": "text",
-          "text": "The studio’s page was designed to provide an detailed look into the studio’s founder, the services it offers, and the agencies it collaborates with. The studio’s about page ends with a brief section introducing the studio’s offices and is followed by a job opportunity section that links to the site’s contact page to remind users about available internship and job opportunities."
+          "text": "The Studio section provides an overview into the studio’s founder, the services it offers, and the agencies it collaborates with. The studio’s about page ends with a brief section introducing the studio’s offices and is followed by a job opportunity section that links to the site’s contact page to remind users about available internship and job opportunities."
         },
         {
           "type": "media",
@@ -272,7 +239,7 @@
         },
         {
           "type": "text",
-          "text": "The site’s contact page provides the studio’s basic contact information and displays a list of available job and internship opportunities, which link to a detail page providing details about the job opportunity and provides an email address with a list of required attachments for those interested."
+          "text": "The Contact section displays the studio’s basic contact information and displays a list of available job and internship opportunities. Each job links to a detail page that provides job and application details."
         },
         {
           "type": "media",
@@ -289,7 +256,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The studio is working with Nation Visuals on gathering project images and site content and will touch base mid January 2017 to start designing the project detail pages and start the site’s development. In the mean time, I will design and document the site’s data architecture and prepare the studio’s GitHub and Netlify accounts. I will also make one last attempt to convince the studio to consider making the site in English to make the portfolio globally accessible and serve as reference for American and European clients."
+          "text": "The studio is working with Nation Visuals on gathering project images and site content and will touch base mid January 2017 to start designing the project detail pages and start the site’s development."
         }
       ]
     },
@@ -305,15 +272,15 @@
           "block": [
             {
               "title": "Exploring without Direction",
-              "description": "For the first round of designs I explored with several layouts and structures and created 3 scrappy, responsive prototypes so my client could feel his portfolio. The prototypes served as breathing dummies which my client bashed on during the first design critique. The critique went bad, but the prototypes helped my client communicate more clearly on what he wasn’t looking for from his portfolio."
+              "description": "For the first round of designs I explored with several layouts and structures and created 3 responsive prototypes so my client could interact with the designs. The prototypes were very helpful, as they help my client communicate more clearly and helped define the portfolio's structural and visual direction."
             },
             {
               "title": "Defining the Site’s Content",
-              "description": "The first design critique went terribly because I didn’t know who the studio was or what they wanted to communicate. I reached out to my client and asked if I could work with his team for some days. Working from the studio gave me enough context to get a feel for the studio’s personality and business needs, which led to the site’s final structure and visual design."
+              "description": "When I started doing some design explorations, I didn’t know who the studio was or what they wanted to communicate. I reached out to my client and asked if I could work with his team for a couple of days. Working from the studio gave me enough context to get a feel for the studio’s personality and business needs and enabled me to design a portfolio the studio was happy with."
             },
             {
               "title": "Fast, Reusable Styling",
-              "description": "I needed to build 3 prototypes as quickly as possible. I had been reading about the benefits of functional styling so I decided to give Tachyons a try. By using Tachyons I learned that function-based styling eliminates the problem of inheritance, making CSS classes scalable, reusable, and predictable."
+              "description": "I needed to build 3 prototypes as quickly as possible. I had been reading about the benefits of functional styling so I decided to give Tachyons a try. By building with Tachyons I learned that function-based styling eliminates specificity problems and is a great solution for building scalable, reusable, and predictable CSS libraries."
             }
           ]
         }

@@ -25,23 +25,25 @@ description: DESCRIPTION PENDING
 <main class="mt1 mb6 cf">
   <div class="mw45 center mt4-ns ph1 ph2-m ph0-l">
     <%# Profile Card %>
-    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db cf mb6 no-underline bg-white" href="<%= index.profile.link.path %>">
-      <div class="fl-ns w-30-ns">
-        <picture>
-          <% index.profile.image.breakpoints.each do |breakpoint| %>
-            <source srcset="<%= breakpoint["1x"] %> 1x, <%= breakpoint["2x"] %> 2x" media="(min-width: <%= breakpoint.width %>rem)">
-          <% end %>
-          <img class="db w-100" src="<%= index.profile.image["1x"] %>" srcset="<%= index.profile.image["1x"] %> 1x, <%= index.profile.image["2x"] %> 2x" alt="<%= index.profile.image.alt %>">
-        </picture>
-      </div>
-      <div class="fl-ns w-70-ns pa1 pa2-ns">
-        <div class="relative mb1" style="height: 13px;">
-          <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= index.profile.link.title %></h3>
-          <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= index.profile.link.subtitle %> →</h3>
-        </div>
-        <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray lh1_75"><%= index.profile.title %></h1>
-        <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= index.profile.description %></p>
-      </div>
+    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db mb6 no-underline bg-white" href="<%= index.profile.link.path %>">
+      <table class="w-100" style="border-spacing: 0;">
+        <tbody>
+          <tr class="dn-ns">
+            <td class="w-100 cover bg-center" style="height: 200px; background-image: url('<%= index.profile.image["1x"] %>');"></td>
+          </tr>
+          <tr>
+            <td class="dn dtc-ns tc w-30-m w-25-l h-100 cover bg-center" style="background-image: url('<%= index.profile.image["1x"] %>');"></td>
+            <td class="w-100 w-70-m w-75-l pa2">
+              <div class="relative mb1" style="height: 13px;">
+                <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= index.profile.link.title %></h3>
+                <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu gray"><%= index.profile.link.subtitle %> →</h3>
+              </div>
+              <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray lh1_75"><%= index.profile.title %></h1>
+              <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= index.profile.description %></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </a>
     <%# Content Sections %>
     <%# Config %>

@@ -27,18 +27,18 @@ description: Hi there! I’m Claudio, product designer freelancing from Monterre
   </div>
   <section class="mw45 center ph1 ph2-m ph0-l">
     <header class="mb2">
-      <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray">About</h1>
+      <h1 class="relative z-2 dib ma0 merriweather f1_125 fw4 dark-gray">About</h1>
     </header>
     <%# Config %>
     <% bsl = about.bio.content.length - 1 %>
     <%# End %>
     <% about.bio.content.each_with_index do |section, s| %>
-      <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1 f1_125-ns fw3 space-gray lh1_75 lh2-ns"><%= section %></p>
+      <p class="ma0 <% if s != bsl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 space-gray lh2"><%= section %></p>
     <% end %>
   </section>
   <section class="mw45 center mb6 ph1 ph2-m ph0-l cf">
     <header class="mb2">
-      <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray">Press and Events</h1>
+      <h1 class="relative z-2 dib ma0 merriweather f1_125 fw4 dark-gray">Press and Events</h1>
     </header>
     <%# Config %>
     <% rl = links.length - 1 %>
