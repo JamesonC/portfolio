@@ -4,7 +4,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-    <title><% if locals[:project] %><%= project.name %><% else %><%= current_page.data.title %><% end %></title>
+    <title><% if locals[:project] %><%= project.name %> Case Study<% elsif locals[:article] %><%= article.title %><% else %><%= current_page.data.title %><% end %></title>
     <%= partial "partials/meta" %>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">

@@ -2,8 +2,13 @@
 <% if locals[:project] %>
   <meta property="og:type" content="<%= project.meta.type %>">
   <meta property="og:title" content="<%= project.meta.title %>">
-  <meta property="og:description" content="<%= project.meta.description %>">
+  <meta property="og:description" content="<%= project.description %>">
   <meta property="og:image" content="<%= project.meta.images.og %>">
+<% elsif locals[:article] %>
+  <meta property="og:type" content="<%= article.meta.type %>">
+  <meta property="og:title" content="<%= article.meta.title %>">
+  <meta property="og:description" content="<%= article.description %>">
+  <meta property="og:image" content="<%= article.meta.images.og %>">
 <% else %>
   <meta property="og:type" content="<%= data.meta.type %>">
   <meta property="og:title" content="<%= data.meta.title %>">
@@ -15,8 +20,12 @@
 <meta name="twitter:site" content="<%= data.meta.site %>">
 <% if locals[:project] %>
   <meta name="twitter:title" content="<%= project.meta.title %>">
-  <meta name="twitter:description" content="<%= project.meta.description %>">
+  <meta name="twitter:description" content="<%= project.description %>">
   <meta name="twitter:image" content="<%= project.meta.images.twitter %>">
+<% elsif locals[:article] %>
+  <meta name="twitter:title" content="<%= article.meta.title %>">
+  <meta name="twitter:description" content="<%= article.description %>">
+  <meta name="twitter:image" content="<%= article.meta.images.twitter %>">
 <% else %>
   <meta name="twitter:title" content="<%= data.meta.title %>">
   <meta name="twitter:description" content="<%= data.meta.description %>">

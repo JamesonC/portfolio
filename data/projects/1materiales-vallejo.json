@@ -121,12 +121,11 @@
     ]
   },
   "meta": {
-    "type": "",
-    "title": "",
-    "description": "",
+    "type": "article",
+    "title": "Materiales Vallejo Website Case Study",
     "images": {
-      "og": "",
-      "twitter": ""
+      "og": "/images/projects/materiales-vallejo/meta-og.jpg",
+      "twitter": "/images/projects/materiales-vallejo/meta-twitter.jpg"
     }
   },
   "content": [

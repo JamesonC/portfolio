@@ -11,6 +11,14 @@
     "title": "Read Article",
     "path": "/function-based-styling"
   },
+  "meta": {
+    "type": "article",
+    "title": "Function-based Styling",
+    "images": {
+      "og": "/images/writing/function-based-css/meta-og.jpg",
+      "twitter": "/images/writing/function-based-css/meta-twitter.jpg"
+    }
+  },
   "content": [
     {
       "content": [

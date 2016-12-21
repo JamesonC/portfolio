@@ -108,12 +108,11 @@
     ]
   },
   "meta": {
-    "type": "",
-    "title": "",
-    "description": "",
+    "type": "article",
+    "title": "Filipao Nunes Website Case Study",
     "images": {
-      "og": "",
-      "twitter": ""
+      "og": "/images/projects/filipao-nunes/meta-og.jpg",
+      "twitter": "/images/projects/filipao-nunes/meta-twitter.jpg"
     }
   },
   "content": [
