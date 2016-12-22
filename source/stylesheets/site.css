@@ -27,7 +27,10 @@ html { -webkit-font-smoothing: antialiased; }
 .space-gray { color: #4f4f4f; }
 .gray { color: #828282; }
 .light-gray { color: #e0e0e0; }
+.pearl { color: #f2f2f2 }
+.almost-white { color: #fafafa; }
 /* Backgrounds */
+.bg-light-gray { background-color: #828282; }
 .bg-almost-white { background-color: #fafafa; }
 /* Borders */
 .b--light-gray { border-color: #e0e0e0; }

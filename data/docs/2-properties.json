@@ -1,0 +1,282 @@
+{
+  "title": "Properties",
+  "descriptions": [
+    "The site's components are built using a set of visual properties. These properties are encapsulated in immutable and reusable CSS classes."
+  ],
+  "content": [
+    {
+      "title": "Typography",
+      "content": [
+        {
+          "type": "text",
+          "text": "Lorem ipsum"
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "title": "Font Families",
+            "cards": [
+              {
+                "title": "Merriweather",
+                "subtitle": ".merriweather",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              },
+              {
+                "title": "Roboto Mono",
+                "subtitle": ".roboto-mono",
+                "classList": {
+                  "title": "roboto-mono f2 black"
+                }
+              },
+              {
+                "title": "Lato",
+                "subtitle": ".lato",
+                "classList": {
+                  "title": "lato f2 black"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "title": "Font Sizes",
+            "cards": [
+              {
+                "title": "2rem",
+                "subtitle": ".f2",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              },
+              {
+                "title": "1.5rem",
+                "subtitle": ".f1_5",
+                "classList": {
+                  "title": "merriweather f1_5 black"
+                }
+              },
+              {
+                "title": "1.125rem",
+                "subtitle": ".f1_125",
+                "classList": {
+                  "title": "merriweather f1_125 black"
+                }
+              },
+              {
+                "title": "1rem",
+                "subtitle": ".f1",
+                "classList": {
+                  "title": "merriweather f1 black"
+                }
+              },
+              {
+                "title": "0.75rem",
+                "subtitle": ".f0_75",
+                "classList": {
+                  "title": "merriweather f0_75 black"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "title": "Font Weights",
+            "cards": [
+              {
+                "title": "700",
+                "subtitle": ".fw7",
+                "classList": {
+                  "title": "merriweather f2 fw7 black"
+                }
+              },
+              {
+                "title": "400",
+                "subtitle": ".fw4",
+                "classList": {
+                  "title": "merriweather f2 fw4 black"
+                }
+              },
+              {
+                "title": "300",
+                "subtitle": ".fw3",
+                "classList": {
+                  "title": "merriweather f2 fw3 black"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "title": "Line Heights",
+            "cards": [
+              {
+                "title": "1.25",
+                "subtitle": ".lh1_25",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              },
+              {
+                "title": "1.50",
+                "subtitle": ".lh1_50",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              },
+              {
+                "title": "1.75",
+                "subtitle": ".lh1_75",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              },
+              {
+                "title": "2.00",
+                "subtitle": ".lh2",
+                "classList": {
+                  "title": "merriweather f2 black"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "title": "Letter Spacing",
+            "cards": [
+              {
+                "title": "0.15rem",
+                "subtitle": ".ls0_15",
+                "classList": {
+                  "title": "merriweather f2 ls0_15 black"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Colors",
+      "content": [
+        {
+          "type": "text",
+          "text": "Lorem ipsum"
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "cards": [
+              {
+                "title": "Dark Gray",
+                "subtitle": ".dark-gray",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              },
+              {
+                "title": "Space Gray",
+                "subtitle": ".space-gray",
+                "classList": {
+                  "title": "merriweather f2 space-gray"
+                }
+              },
+              {
+                "title": "Gray",
+                "subtitle": ".gray",
+                "classList": {
+                  "title": "merriweather f2 gray"
+                }
+              },
+              {
+                "title": "Light Gray",
+                "subtitle": ".light-gray",
+                "classList": {
+                  "title": "merriweather f2 light-gray"
+                }
+              },
+              {
+                "title": "Pearl",
+                "subtitle": ".pearl",
+                "classList": {
+                  "card": "bg-light-gray",
+                  "title": "merriweather f2 pearl",
+                  "subtitle": "roboto-mono pearl"
+                }
+              },
+              {
+                "title": "Almost White",
+                "subtitle": ".almost-white",
+                "classList": {
+                  "card": "bg-light-gray",
+                  "title": "merriweather f2 almost-white",
+                  "subtitle": "roboto-mono almost-white"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Spacing",
+      "content": [
+        {
+          "type": "text",
+          "text": "Lorem ipsum"
+        },
+        {
+          "type": "deck",
+          "deck": {
+            "cards": [
+              {
+                "title": "0rem",
+                "subtitle": ".spacing0",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              },
+              {
+                "title": "0.5rem",
+                "subtitle": ".spacing0_5",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              },
+              {
+                "title": "1rem",
+                "subtitle": ".spacing1",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              },
+              {
+                "title": "2rem",
+                "subtitle": ".spacing2",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              },
+              {
+                "title": "4rem",
+                "subtitle": ".spacing4",
+                "classList": {
+                  "title": "merriweather f2 dark-gray"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

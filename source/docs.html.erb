@@ -19,7 +19,7 @@ layout: docs
         <% if section.title != "Introduction" %>
           <% path = section.title.parameterize %>
         <% end %>
-        <li class="ma0 <% if s != sl %>mb1<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu gray no-underline dim" href="/docs/<%= path %>"><%= section.title %></a></li>
+        <li class="ma0 <% if s != sl %>mb2<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu dark-gray no-underline dim" href="/docs/<%= path %>"><%= section.title %></a></li>
       <% end %>
     </ul>
   </nav>
@@ -39,7 +39,7 @@ layout: docs
       <section class="<% if s != sl %>mb4 pb4 bb b--light-gray<% else %>mb6<% end %>">
         <% if section.title %>
           <header class="mb1 ph1 ph2-m ph0-l">
-            <h2 class="ma0 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h2>
+            <h2 class="ma0 merriweather f1_5 fw4 b black"><%= section.title %></h2>
           </header>
         <% end %>
         <%# Config %>
@@ -69,7 +69,7 @@ layout: docs
                           </td>
                         <% elsif cell.type === "code" %>
                           <td class="v-top w-50 pa1 ba b--pearl">
-                            <code class="ma0 roboto-mono f1 fw4 lh1_50 chili"><%= cell.code %></code>
+                            <code class="ma0 roboto-mono f1 fw4 lh1_50 blue"><%= cell.code %></code>
                           </td>
                         <% elsif cell.type === "descriptions" %>
                           <td class="v-top w-50 pa1 ba b--pearl">
@@ -82,7 +82,7 @@ layout: docs
                               <% elsif description.type === "rule" %>
                                 <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 black lh1_50">
                                   <%= description.title %>:
-                                  <code class="roboto-mono green"><%= description.code %></code>
+                                  <code class="roboto-mono gray"><%= description.code %></code>
                                 </p>
                               <% end %>
                             <% end %>
@@ -93,6 +93,26 @@ layout: docs
                   <% end %>
                 </tbody>
               </table>
+            </div>
+          <% end %>
+          <% if content.type === "deck" %>
+            <div class="ph1 ph2-m ph0-l <% if next_type === "deck" %>mb4<% end %>">
+              <% if content.deck.title %>
+                <h3 class="ma0 mb2 merriweather f1_125 fw4 black"><%= content.deck.title %></h3>
+              <% end %>
+              <%# Config %>
+              <% al = content.deck.cards.length - 1 %>
+              <%# End %>
+              <div class="cf">
+                <% content.deck.cards.each_with_index do |card, a| %>
+                  <div class="fl-ns w-50-ns <% if a != al %>mb2<% end %> <% if a % 2 === 0 %>pr1-ns<% else %>pl1-ns<% end %>">
+                    <div class="pa2 <% if card.classList.card %><%= card.classList.card %><% else %> ba b--light-gray<% end %>">
+                      <p class="ma0 mb0_5 <% if card.classList.title %><%= card.classList.title %><% end %>"><%= card.title %></p>
+                      <code class="<% if card.classList.subtitle %><%= card.classList.subtitle %><% else %> roboto-mono gray<% end %>"><%= card.subtitle %></code>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
             </div>
           <% end %>
         <% end %>
