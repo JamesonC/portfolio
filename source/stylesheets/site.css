@@ -1,226 +1,97 @@
 html { -webkit-font-smoothing: antialiased; }
 /*
-   FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
+   TYPOGRAPHY
 */
+/* Font Families */
 .lato { font-family: 'Lato'; }
 .merriweather { font-family: 'Merriweather'; }
 .roboto-mono { font-family: 'Roboto Mono'; }
-/*
-   LINE HEIGHT / LEADING
-   Docs: http://tachyons.io/docs/typography/line-height
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
+/* Font Sizes */
+.f0_75 { font-size: 0.75rem; }
+.f1 { font-size: 1rem; }
+.f1_125 { font-size: 1.125rem; }
+.f1_5 { font-size: 1.5rem; }
+.f2 { font-size: 2rem; }
+/* Line Heights */
 .lh1_25 { line-height: 1.25; }
 .lh1_50 { line-height: 1.50; }
 .lh1_75 { line-height: 1.75; }
 .lh2 { line-height: 2; }
+/* Letter Spacing */
+.ls0_15 { letter-spacing: 0.15em; }
 /*
-   LETTER SPACING
-   Docs: http://tachyons.io/docs/typography/tracking/
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+   COLORS
 */
-.tracked { letter-spacing: 0.15em; }
-/*
-   SKINS
-   Docs: http://tachyons.io/docs/themes/skins/
-   Classes for setting foreground and background colors on elements.
-   If you haven't declared a border color, but set border on an element, it will
-   be set to the current text color.
-*/
-/* Text colors */
+/* Text */
 .dark-gray { color: #333; }
 .space-gray { color: #4f4f4f; }
 .gray { color: #828282; }
-.silver { color: #bdbdbd; }
 .light-gray { color: #e0e0e0; }
-.pearl { color: #f2f2f2; }
-.violet { color: #9b51e0; }
-.royal { color: #2f80ed; }
-.blue { color: #0080ff; }
-.mint { color: #56ccf2; }
-.green { color: #27ae60; }
-.jade { color: #6fcf97; }
-.gold { color: #f2c94c; }
-.orange { color: #f2994a; }
-.chili { color: #eb5757; }
-/* Fill colors */
-.blue-fill { fill: #0080ff; }
-/* Background colors */
-.bg-dark-gray { background-color: #333; }
-.bg-space-gray { background-color: #4f4f4f;}
-.bg-gray { background-color: #bdbdbd; }
+/* Backgrounds */
 .bg-almost-white { background-color: #fafafa; }
-/* Hover */
-.hover-gray:hover { color: #828282; }
-.hover-gray:focus { color: #828282; }
-.hover-dark-gray:hover { color: #333333; }
-.hover-dark-gray:focus { color: #333333; }
-.hover-dark-blue:hover { color: #0070df; }
-.hover-dark-blue:focus { color: #0070df; }
-.dim { opacity: 1; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-.dim:hover, .dim:focus { opacity: .5; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-.dim:active { opacity: .8; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-/* Filters */
-.blur1 { filter: blur(1rem); }
-/*
-   WIDTHS
-   Docs: http://tachyons.io/docs/layout/widths/
-   Base:
-     h = height
-     min-h = min-height
-     min-vh = min-height vertical screen height
-     vh = vertical screen height
-   Modifiers
-     1 = 1st step in height scale
-     2 = 2nd step in height scale
-     3 = 3rd step in height scale
-     4 = 4th step in height scale
-     5 = 5th step in height scale
-     -25   = literal value 25%
-     -50   = literal value 50%
-     -75   = literal value 75%
-     -100  = literal value 100%
-     -auto = string value of auto
-     -inherit = string value of inherit
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-.w5 { width: 5rem; }
-.w10 { width: 10rem; }
-.mw25 { max-width: 25rem; }
-.mw28 { max-width: 28rem; }
-.mw38 { max-width: 38rem; }
-.mw58 { max-width: 58rem; }
-.mw45 { max-width: 45rem; }
-.mw46 { max-width: 46rem; }
-.mw60 { max-width: 60rem; }
-/*
-   HEIGHTS
-   Docs: http://tachyons.io/docs/layout/heights/
-   Base:
-     h = height
-     min-h = min-height
-     min-vh = min-height vertical screen height
-     vh = vertical screen height
-   Modifiers
-     1 = 1st step in height scale
-     2 = 2nd step in height scale
-     3 = 3rd step in height scale
-     4 = 4th step in height scale
-     5 = 5th step in height scale
-     -25   = literal value 25%
-     -50   = literal value 50%
-     -75   = literal value 75%
-     -100  = literal value 100%
-     -auto = string value of auto
-     -inherit = string value of inherit
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
-.min-h-1 { min-height: 1px; }
-.h38 { height: 38rem; }
-.h40 { height: 40rem; }
-/* POSITION */
-.top--1_5 { top: -1.5rem; }
-/*
-   LINKS
-   Docs: http://tachyons.io/docs/elements/links/
-*/
-.link { text-decoration: none; -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
-.link:link, .link:visited { -webkit-transition: color .25s ease-in-out; transition: color .15s ease-in-out; }
-.link:hover { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
-.link:active { -webkit-transition: color .25s ease-in-out; transition: color .15s ease-in-out; }
-.link:focus { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; outline: 1px dotted currentColor; }
-/*
-    BORDERS
-    Docs: http://tachyons.io/docs/themes/borders/
-    Base:
-      b = border
-    Modifiers:
-      a = all
-      t = top
-      r = right
-      b = bottom
-      l = left
-      n = none
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-*/
+/* Borders */
 .b--light-gray { border-color: #e0e0e0; }
 .b--pearl { border-color: #f2f2f2; }
 .b--almost-white { border-color: #fafafa; }
 /*
-   SPACING
-   Docs: http://tachyons.io/docs/layout/spacing/
-   An eight step powers of two scale ranging from 0 to 16rem.
-   Base:
-     p = padding
-     m = margin
-   Modifiers:
-     a = all
-     h = horizontal
-     v = vertical
-     t = top
-     r = right
-     b = bottom
-     l = left
-     0 = none
-     _ = decimal
-     i = rem value
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+   LINKS
 */
-/* Margin all */
+.dim { opacity: 1; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.dim:hover, .dim:focus { opacity: .5; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.dim:active { opacity: .8; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+/*
+   WIDTHS
+*/
+.w10 { width: 10rem; }
+.mw45 { max-width: 45rem; }
+.mw60 { max-width: 60rem; }
+/*
+   HEIGHTS
+*/
+.min-h-1 { min-height: 1px; }
+.h0_75 { height: 0.75rem; }
+.h12 { height: 12rem; }
+.h38 { height: 38rem; }
+.h40 { height: 40rem; }
+/*
+   SPACING
+*/
+/* Margins */
 .ma0 { margin: 0; }
 .ma0_5 { margin: 0.5rem; }
 .ma1 { margin: 1rem; }
 .ma2 { margin: 2rem; }
 .ma4 { margin: 4rem; }
 .ma8 { margin: 8rem; }
-/* Margin vertical */
+/* Vertical Margins */
 .mv0 { margin-top: 0; margin-bottom: 0; }
 .mv0_5 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .mv1 { margin-top: 1rem; margin-bottom: 1rem; }
 .mv2 { margin-top: 2rem; margin-bottom: 2rem; }
 .mv4 { margin-top: 4rem; margin-bottom: 4rem; }
 .mv8 { margin-top: 8rem; margin-bottom: 8rem; }
-/* Margin horizontal */
+/* Horizontal Margins */
 .mh0 { margin-right: 0; margin-left: 0; }
 .mh0_5 { margin-right: 0.5rem; margin-left: 0.5rem; }
 .mh1 { margin-right: 1rem; margin-left: 1rem; }
 .mh2 { margin-right: 2rem; margin-left: 2rem; }
 .mh4 { margin-right: 4rem; margin-left: 4rem; }
 .mh8 { margin-right: 8rem; margin-left: 8rem; }
-/* Margin top */
+/* Top Margins */
 .mt0 { margin-top: 0; }
 .mt0_5 { margin-top: 0.5rem; }
 .mt1 { margin-top: 1rem; }
 .mt2 { margin-top: 2rem; }
 .mt4 { margin-top: 4rem; }
 .mt8 { margin-top: 8rem; }
-/* Margin right */
+/* Right Margins */
 .mr0 { margin-right: 0; }
 .mr0_5 { margin-right: 0.5rem; }
 .mr1 { margin-right: 1rem; }
 .mr2 { margin-right: 2rem; }
 .mr4 { margin-right: 4rem; }
 .mr8 { margin-right: 8rem; }
-/* Margin bottom */
+/* Bottom Margins */
 .mb0 { margin-bottom: 0; }
 .mb0_5 { margin-bottom: 0.5rem; }
 .mb1 { margin-bottom: 1rem; }
@@ -228,56 +99,56 @@ html { -webkit-font-smoothing: antialiased; }
 .mb4 { margin-bottom: 4rem; }
 .mb6 { margin-bottom: 6rem; }
 .mb8 { margin-bottom: 8rem; }
-/* Margin left */
+/* Left Margins */
 .ml0 { margin-left: 0; }
 .ml0_5 { margin-left: 0.5rem; }
 .ml1 { margin-left: 1rem; }
 .ml2 { margin-left: 2rem; }
 .ml4 { margin-left: 4rem; }
 .ml8 { margin-left: 8rem; }
-/* Padding all */
+/* Paddings */
 .pa0 { padding: 0 }
 .pa0_5 { padding: 0.5rem; }
 .pa1 { padding: 1rem; }
 .pa2 { padding: 2rem; }
 .pa4 { padding: 4rem; }
 .pa8 { padding: 8rem; }
-/* Padding vertical */
+/* Vertical Paddings */
 .pv0 { padding-top: 0; padding-bottom: 0; }
 .pv0_5 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 .pv1 { padding-top: 1rem; padding-bottom: 1rem; }
 .pv2 { padding-top: 2rem; padding-bottom: 2rem; }
 .pv4 { padding-top: 4rem; padding-bottom: 4rem; }
 .pv8 { padding-top: 8rem; padding-bottom: 8rem; }
-/* Padding horizontal */
+/* Horizontal Paddings */
 .ph0 { padding-right: 0; padding-left: 0; }
 .ph0_5 { padding-right: 0.5rem; padding-left: 0.5rem; }
 .ph1 { padding-right: 1rem; padding-left: 1rem; }
 .ph2 { padding-right: 2rem; padding-left: 2rem; }
 .ph4 { padding-right: 4rem; padding-left: 4rem; }
 .ph8 { padding-right: 8rem; padding-left: 8rem; }
-/* Padding top */
+/* Top Paddings */
 .pt0 { padding-top: 0; }
 .pt0_5 { padding-top: 0.5rem; }
 .pt1 { padding-top: 1rem; }
 .pt2 { padding-top: 2rem; }
 .pt4 { padding-top: 4rem; }
 .pt8 { padding-top: 8rem; }
-/* Padding right */
+/* Right Paddings */
 .pr0 { padding-right: 0; }
 .pr0_5 { padding-right: 0.5rem; }
 .pr1 { padding-right: 1rem; }
 .pr2 { padding-right: 2rem; }
 .pr4 { padding-right: 4rem; }
 .pr8 { padding-right: 8rem; }
-/* Padding bottom */
+/* Bottom Paddings */
 .pb0 { padding-bottom: 0; }
 .pb0_5 { padding-bottom: 0.5rem; }
 .pb1 { padding-bottom: 1rem; }
 .pb2 { padding-bottom: 2rem; }
 .pb4 { padding-bottom: 4rem; }
 .pb8 { padding-bottom: 8rem; }
-/* Padding left */
+/* Left Paddings */
 .pl0 { padding-left: 0; }
 .pl0_5 { padding-left: 0.5rem; }
 .pl1 { padding-left: 1rem; }
@@ -285,47 +156,12 @@ html { -webkit-font-smoothing: antialiased; }
 .pl4 { padding-left: 4rem; }
 .pl8 { padding-left: 8rem; }
 /*
-   TYPE SCALE
-   Docs: http://tachyons.io/docs/typography/scale/
-   Base:
-    f = font-size
-   Modifiers
-     1 = 1st step in size scale
-     2 = 2nd step in size scale
-     3 = 3rd step in size scale
-     4 = 4th step in size scale
-     5 = 5th step in size scale
-     6 = 6th step in size scale
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
+   OVERFLOW
 */
-.f0_75 { font-size: 0.75rem; }
-.f1 { font-size: 1rem; }
-.f1_125 { font-size: 1.125rem; }
-.f1_5 { font-size: 1.5rem; }
-.f2 { font-size: 2rem; }
-.f3 { font-size: 3rem; }
-.f4 { font-size: 4rem; }
-.f6 { font-size: 6rem; }
-.f8 { font-size: 8rem; }
-/*
-
-    OVERFLOW
-
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
-
- */
 .overflow-scrolling { -webkit-overflow-scrolling: touch; }
 .scrollbar-dn::-webkit-scrollbar { display: none; }
 /*
-
-    ANIMATION
-
+   ANIMATION
 */
 /* Transition Functions */
 .function-cubic { -webkit-transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1); }
@@ -349,27 +185,6 @@ html { -webkit-font-smoothing: antialiased; }
 .shadow-1 { box-shadow: 0 1rem 1rem rgba(0,0,0,0.1); }
 /*
   CUSTOM MEDIA QUERIES
-  Media query values can be changed to fit your own content.
-  There are no magic bullets when it comes to media query width values.
-  They should be declared in em units - and they should be set to meet
-  the needs of your content. You can also add additional media queries,
-  or remove some of the existing ones.
-  These media queries can be referenced like so:
-  @media (--breakpoint-not-small) {
-    .medium-and-larger-specific-style {
-      background-color: red;
-    }
-  }
-  @media (--breakpoint-medium) {
-    .medium-screen-specific-style {
-      background-color: red;
-    }
-  }
-  @media (--breakpoint-large) {
-    .large-and-larger-screen-specific-style {
-      background-color: red;
-    }
-  }
 */
 @media screen and (min-width: 30em) {
   /* Line Heights */
