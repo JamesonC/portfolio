@@ -25,3 +25,7 @@ end
 data.writings.each do |id, article|
   proxy "/#{ I18n.transliterate(article.title).downcase.strip.gsub(' ', '-').gsub('(', '').gsub(')', '') }/index.html", "/article.html", :locals => { :article => article }, :ignore => true
 end
+
+data.docs.each do |id, doc|
+  proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
+end

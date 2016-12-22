@@ -3,8 +3,9 @@ html { -webkit-font-smoothing: antialiased; }
    FONT FAMILY GROUPS
    Docs: http://tachyons.io/docs/typography/font-family/
 */
-.lato { font-family: 'Lato', sans-serif; }
-.merriweather { font-family: 'Merriweather', serif; }
+.lato { font-family: 'Lato'; }
+.merriweather { font-family: 'Merriweather'; }
+.roboto-mono { font-family: 'Roboto Mono'; }
 /*
    LINE HEIGHT / LEADING
    Docs: http://tachyons.io/docs/typography/line-height
@@ -159,7 +160,7 @@ html { -webkit-font-smoothing: antialiased; }
      -l  = large
 */
 .b--light-gray { border-color: #e0e0e0; }
-.b--pearl { color: #f2f2f2; }
+.b--pearl { border-color: #f2f2f2; }
 .b--almost-white { border-color: #fafafa; }
 /*
    SPACING

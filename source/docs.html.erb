@@ -1,0 +1,87 @@
+---
+layout: docs
+---
+<%# Config %>
+<% doc = locals[:doc] %>
+<%# End %>
+<div class="mw60 center cf pv4">
+  <nav class="fl-ns w-25-ns">
+    <ul class="ma0 pa0 list">
+      <% data.docs.each do |id, section| %>
+        <li class="ma0 dib"><a class="ma0 mb2 lato f0_75 fw7 tracked ttu dark-gray no-underline" href="/docs/<%= section.title.parameterize %>"><%= section.title %></a></li>
+      <% end %>
+    </ul>
+  </nav>
+  <article class="fl-ns w-75-ns">
+    <header class="mb4 pb2 bb b--light-gray">
+      <div class="ph1 ph2-m ph0-l">
+        <h1 class="ma0 mb2 merriweather f2 fw3 dark-gray"><%= doc.title %></h1>
+        <h2 class="merriweather f1_125 fw3 lh2 dark-gray"><%= doc.description %></h2>
+      </div>
+    </header>
+    <%# Config %>
+    <% sl = doc.content.length - 1 %>
+    <%# End %>
+    <% doc.content.each_with_index do |section, s| %>
+      <section <% if s != sl %>class="mb4 pb4 bb b--light-gray"<% end %>>
+        <% if section.title %>
+          <header class="mb1 ph1 ph2-m ph0-l">
+            <h2 class="ma0 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h2>
+          </header>
+        <% end %>
+        <%# Config %>
+        <% cl = section.content.length - 1 %>
+        <%# End %>
+        <% section.content.each_with_index do |content, c| %>
+          <%# Config %>
+          <% if cl != c %>
+            <% next_type = section.content[c + 1].type %>
+          <% end %>
+          <%# End %>
+          <% if content.type === "text" || content.type === "note" %>
+            <div class="ph1 ph2-m ph0-l">
+              <p class="ma0 <% if next_type === "table" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
+            </div>
+          <% end %>
+          <% if content.type === "table" %>
+            <table class="w-100 collapse">
+              <tbody>
+                <% content.table.each_with_index do |row, r| %>
+                  <tr>
+                    <% row.each_with_index do |cell, e| %>
+                      <% if cell.type === "header" %>
+                        <td class="v-top w-50 pa1 ba b--pearl bg-almost-white">
+                          <h3 class="ma0 merriweather f1_125 fw4 black"><%= cell.header %></h3>
+                        </td>
+                      <% elsif cell.type === "code" %>
+                        <td class="v-top w-50 pa1 ba b--pearl">
+                          <code class="ma0 roboto-mono f1 fw4 lh1_50 chili"><%= cell.code %></code>
+                        </td>
+                      <% elsif cell.type === "descriptions" %>
+                        <td class="v-top w-50 pa1 ba b--pearl">
+                          <%# Config %>
+                          <% dl = cell.descriptions.length - 1 %>
+                          <%# End %>
+                          <% cell.descriptions.each_with_index do |description, d| %>
+                            <% if description.type === "text" %>
+                              <p class="ma0 mb1 merriweather f1 fw3 black lh1_50"><%= description.text %></p>
+                            <% elsif description.type === "rule" %>
+                              <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 black lh1_50"><%= description.title %>: <code class="roboto-mono green"><%= description.code %></code></p>
+                            <% end %>
+                          <% end %>
+                        </td>
+                      <% end %>
+                    <% end %>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          <% end %>
+          <% if content.type === "code" %>
+            <code class="db w-100 pa1 ba b--pearl"><%= content.code %></code>
+          <% end %>
+        <% end %>
+      </section>
+    <% end %>
+  </article>
+</div>
