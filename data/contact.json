@@ -1,17 +1,14 @@
 {
-  "date": "Dec 10 2016",
   "content": [
     {
-      "title": "Twitter",
-      "source": "https://twitter.com/claudiovallejop"
+      "title": "Docs",
+      "source": "/docs",
+      "target": false
     },
     {
-      "title": "Dribbble",
-      "source": "https://dribbble.com/claudiovallejo"
-    },
-    {
-      "title": "Email",
-      "source": "mailto:hola@claudiovallejo.mx"
+      "title": "Source Code",
+      "source": "https://github.com/claudiovallejo/portfolio",
+      "target": true
     }
   ]
 }

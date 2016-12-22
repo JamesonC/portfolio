@@ -7,17 +7,17 @@ layout: main
 <article class="mb6">
   <header class="mb2">
     <div class="mw45 center pv4 ph1 ph2-m ph0-l">
-      <h3 class="mb2 lato f0_75 fw7 tracked ttu gray"><%= project.type %></h3>
+      <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray"><%= project.type %></h3>
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= project.name %></h1>
       <h2 class="w-80-ns mb2 lato f1_5 fw3 lh1_50 dark-gray"><%= project.caption %></h2>
       <ul class="pa0 list">
         <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-white mb1 mr0_5-ns">
-          <a class="dib w10 pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.site.path %>" target="_blank">
+          <a class="dib w10 pv1 lato f0_75 fw7 ls0_15 ttu gray no-underline" href="<%= project.source.site.path %>" target="_blank">
             <%= project.source.site.title %>
           </a>
         </li>
         <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-white ml0_5-ns">
-          <a class="dib w10 pv1 lato f0_75 fw7 tracked ttu gray no-underline" href="<%= project.source.code.path %>" target="_blank">
+          <a class="dib w10 pv1 lato f0_75 fw7 ls0_15 ttu gray no-underline" href="<%= project.source.code.path %>" target="_blank">
             <%= project.source.code.title %>
           </a>
         </li>
@@ -83,19 +83,19 @@ layout: main
           <% project.tool_kit.tools.each_with_index do |tool, t| %>
             <div class="fl w-100 w-50-ns <% if t != tl %>mb1<% end %> <% if t < tl - 1 %>mb1-ns<% end %> <% if t % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
               <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= tool.path %>" target="_blank">
-                <table class="w-100" style="border-spacing: 0;">
+                <table class="w-100 collapse">
                   <tbody>
                     <tr>
-                      <td class="tc w-20 <% if tool.profile.color %>bg-<%= tool.profile.color %><% end %>">
+                      <td class="tc w-20">
                         <%= image_tag tool.profile.image.path, :class => "v-mid", :alt => tool.profile.image.path %>
                       </td>
                       <td class="w-80 pv1 pl1 bl b--pearl">
                         <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= tool.title %></p>
-                        <div class="relative" style="height: 13px;">
-                          <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu gray">
+                        <div class="relative h0_75">
+                          <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
                             <%= tool.subtitle %>
                           </p>
-                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu <%= tool.color %>"><%= tool.link %> →</p>
+                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= tool.link %> →</p>
                         </div>
                       </td>
                     </tr>

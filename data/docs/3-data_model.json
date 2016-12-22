@@ -1,0 +1,710 @@
+{
+  "title": "Data Models",
+  "descriptions": [
+    "A data model is the sum of structured data types that store a defined data set.",
+
+    "The website’s content, i.e. data set, is separated into <span class=\"roboto-mono\">.json</span> files for fast editing and dynamic layout generation. All of the <span class=\"roboto-mono\">.json</span> files are stored in <span class=\"roboto-mono\">/data</span> and use a unique data model."
+  ],
+  "content": [
+    {
+      "title": "Index Page",
+      "content": [
+        {
+          "type": "text",
+          "text": "The content is stored in <span class=\"roboto-mono\">index.json</span>. It's data model is an array of objects, and each object has the following data—"
+        },
+        {
+          "type": "table",
+          "table": [
+            [
+              {
+                "type": "header",
+                "header": "Key"
+              },
+              {
+                "type": "header",
+                "header": "Description"
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "title"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Section's name"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "section"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Type of cards the section will display."
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Values",
+                    "code": "\"about\", \"projects\", \"journal\", \"press\""
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "About Page",
+      "content": [
+        {
+          "type": "text",
+          "text": "The content is stored in <span class=\"roboto-mono\">about.json</span> and uses the following data models—"
+        },
+        {
+          "type": "table",
+          "table": [
+            [
+              {
+                "type": "header",
+                "header": "Key"
+              },
+              {
+                "type": "header",
+                "header": "Description"
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "card"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Content displayed on index page link"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "content"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "List of sections"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "array:object"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Articles",
+      "content": [
+        {
+          "type": "text",
+          "text": "Journal posts and project case studies are stored in separate <span class=\"roboto-mono\">.json</span> files under <span class=\"roboto-mono\">/data/journal</span> and <span class=\"roboto-mono\">/data/projects</span>. Posts and case studies use the following data model—"
+        },
+        {
+          "type": "table",
+          "table": [
+            [
+              {
+                "type": "header",
+                "header": "Key"
+              },
+              {
+                "type": "header",
+                "header": "Description"
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "title"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Article's name"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "description"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Summarizing caption"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "type"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Is the article a post or a case study?"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Values",
+                    "code": "\"post\", \"case study\""
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "date"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Date of publication"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "ruby Date object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "category"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Type of article"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "featured"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Will the journal post be featured on the index page?"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "bool"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "card"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Content displayed on index page link"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "links"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Header links, used primarily to reference to a project case study's website or source code"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "array:object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "meta"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Meta data and social media images"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "content"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "List of sections"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "array:object"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "External Resources",
+      "content": [
+        {
+          "type": "text",
+          "text": "Press, events, case study tools, and post resources are stored in separate <span class=\"roboto-mono\">.json</span> files under <span class=\"roboto-mono\">/data/press</span>, <span class=\"roboto-mono\">/data/events</span>, <span class=\"roboto-mono\">/data/tools</span>, and <span class=\"roboto-mono\">/data/resources</span> . Each file uses the following data model—"
+        },
+        {
+          "type": "table",
+          "table": [
+            [
+              {
+                "type": "header",
+                "header": "Key"
+              },
+              {
+                "type": "header",
+                "header": "Description"
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "title"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Resource name"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "subtitle"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Resource's location name or author"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "action"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Call to action text that is displayed on hover"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "path"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Resource url path"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "profile"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Relative url path for <span class=\"roboto-mono\">.svg</span> profile image."
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meta",
+      "content": [
+        {
+          "type": "text",
+          "text": "Site's metadata and favicon content is stored in <span class=\"roboto-mono\">meta.json</span> and uses the following data model—"
+        },
+        {
+          "type": "table",
+          "table": [
+            [
+              {
+                "type": "header",
+                "header": "Key"
+              },
+              {
+                "type": "header",
+                "header": "Description"
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "url"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Website root url"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "site"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Twitter handle"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "type"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Metadata value-type"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Value",
+                    "code": "\"website\""
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "card"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Social media card type"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Value",
+                    "code": "summary"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "og"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Relative path to Open Graph social media card image"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "twitter"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Relative path to Twitter social media card image"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "string"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "favicons"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Stores Android and iOS favicon metadata"
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "array:object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "tiles"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "<span class=\"roboto-monot\">ms-application</span> and <span class=\"\">theme-color</span> metadata."
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "array:object"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "type": "code",
+                "code": "comments"
+              },
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": "Metadata HTML comments that referencing the Open Graph and Twitter metadata documentation and favicon generator GitHub repo."
+                  },
+                  {
+                    "type": "rule",
+                    "title": "Type",
+                    "code": "object"
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

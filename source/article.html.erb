@@ -7,7 +7,7 @@ layout: main
 <article>
   <header>
     <div class="mw45 center pv4 ph1 ph2-m ph0-l">
-      <h3 class="mb2 lato f0_75 fw7 tracked ttu silver">
+      <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray">
         <%= article.date %>
         <% if article.status.active %>
           <span class="ph0_5">・</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
@@ -64,11 +64,6 @@ layout: main
             <% end %>
           </div>
         <% end %>
-        <% if content.type === "break" %>
-          <div class="mw45 center mt2 mb4">
-            <div class="w5 bb b--light-gray"></div>
-          </div>
-        <% end %>
         <% if content.type === "list" %>
           <%# Config %>
           <% rl = content.list.length - 1 %>
@@ -77,7 +72,7 @@ layout: main
             <% content.list.each_with_index do |post, r| %>
               <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
                 <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
-                  <table class="w-100" style="border-spacing: 0;">
+                  <table class="w-100 collapse">
                     <tbody>
                       <tr>
                         <td class="tc w-20">
@@ -85,11 +80,11 @@ layout: main
                         </td>
                         <td class="w-80 pv1 pl1 bl b--pearl">
                           <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
-                          <div class="relative" style="height: 13px;">
-                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 tracked ttu gray">
+                          <div class="relative h0_75">
+                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
                               <%= post.subtitle %>
                             </p>
-                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 tracked ttu <%= post.color %>"><%= post.link %> →</p>
+                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %> →</p>
                           </div>
                         </td>
                       </tr>

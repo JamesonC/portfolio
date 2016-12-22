@@ -27,5 +27,9 @@ data.writings.each do |id, article|
 end
 
 data.docs.each do |id, doc|
-  proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
+  if doc.title === "Introduction"
+    proxy "/docs/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
+  else
+    proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
+  end
 end
