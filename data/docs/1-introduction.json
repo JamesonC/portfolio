@@ -1,15 +1,103 @@
 {
   "title": "Introduction",
   "descriptions": [
-    "Lorem ipsum dolor sit amet."
+    "The documentation serves as reference for scaling and building the portfolio and to provide a detailed view of the site's visual properties and data models.",
+
+    "The website's structure is based on a simple idea—",
+
+    "<span class=\"dib mv1 pl2 pv2 bl b--light-gray fw4 dark-gray\">Properties + Data Model = Component</span>",
+
+    "The site uses <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, a functional CSS library, to encapsulate related CSS properties into bite-sized classes. The site's visual properties (typography, color, spacing, etc.) are translated into function-based classes to create an immutable, reusable, and scalable visual system.",
+
+    "The site is built with <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"https://middlemanapp.com/\" target=\"_blank\">Middleman</a>, a static site generator, to create dynamic pages and layouts and to automate the website's build process. The website's content is stored in separate <span class=\"roboto-mono\">.json</span> files to create a structured way of locating and editing content and to design data models to generate dynamic visual components."
   ],
   "content": [
     {
-      "title": "Lorem Ipsum",
+      "title": "Website Links",
       "content": [
         {
-          "type": "text",
-          "text": "Dolor sit amet"
+          "type": "links",
+          "links": [
+            {
+              "title": "Website",
+              "subtitle": "claudiovallejo.mx",
+              "link": "View Site",
+              "source": "http://www.claudiovallejo.mx/",
+              "avatar": "/images/tools/tachyons.svg"
+            },
+            {
+              "title": "Latest Prototype",
+              "subtitle": "Temp Netlify Domain",
+              "link": "View Prototype",
+              "source": "http://claudio-vallejo.netlify.com/",
+              "avatar": "/images/press/podcast.svg"
+            },
+            {
+              "title": "Source Code",
+              "subtitle": "GitHub",
+              "link": "View Repo",
+              "source": "https://github.com/claudiovallejo/portfolio",
+              "avatar": "/images/sources/video.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Toolkit",
+      "content": [
+        {
+          "type": "links",
+          "links": [
+            {
+              "title": "Swipies",
+              "subtitle": "Sketching",
+              "link": "View Site",
+              "color": "royal",
+              "path": "http://swipi.es/",
+              "avatar": "/images/tools/swipies.svg"
+            },
+            {
+              "title": "Figma",
+              "subtitle": "Web Design",
+              "link": "View Site",
+              "color": "violet",
+              "path": "https://www.figma.com/",
+              "avatar": "/images/tools/figma.svg"
+            },
+            {
+              "title": "Middleman",
+              "subtitle": "Static Site Generator",
+              "link": "View Site",
+              "color": "gold",
+              "path": "https://middlemanapp.com/",
+              "avatar": "/images/tools/middleman.svg"
+            },
+            {
+              "title": "Tachyons",
+              "subtitle": "Reusable Styling",
+              "link": "View Site",
+              "color": "orange",
+              "path": "http://tachyons.io/",
+              "avatar": "/images/tools/tachyons.svg"
+            },
+            {
+              "title": "Gulp.js",
+              "subtitle": "File Optimization",
+              "link": "View Site",
+              "color": "chili",
+              "path": "http://gulpjs.com/",
+              "avatar": "/images/tools/gulp.svg"
+            },
+            {
+              "title": "Netlify",
+              "subtitle": "Continuous Deploys",
+              "link": "View Site",
+              "color": "jade",
+              "path": "https://www.netlify.com/",
+              "avatar": "/images/tools/netlify.svg"
+            }
+          ]
         }
       ]
     }

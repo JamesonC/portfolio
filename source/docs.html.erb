@@ -8,9 +8,10 @@ layout: docs
   <% sections.push(section) %>
 <% end %>
 <%# End %>
-<div class="mw60 center cf pv4">
-  <nav class="fl-l w-25-l">
-    <ul class="ma0 pa0 list">
+<div class="mw60 center cf pv4-l">
+  <%= partial "partials/doc_nav" %>
+  <nav class="fl-l w-25-l mb4 mb0-l pv1 pv0-l bt bb bn-l b--light-gray bg-almost-white-l">
+    <ul class="ma0 ph1 ph2-m ph0-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
       <%# Config %>
       <% sl = sections.length - 1 %>
       <%# End %>
@@ -19,7 +20,7 @@ layout: docs
         <% if section.title != "Introduction" %>
           <% path = section.title.parameterize %>
         <% end %>
-        <li class="ma0 <% if s != sl %>mb2<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu dark-gray no-underline dim" href="/docs/<%= path %>"><%= section.title %></a></li>
+        <li class="dib db-l ma0 <% if s != sl %>mb2-l pr2 pr0-l<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu dark-gray no-underline dim" href="/docs/<%= path %>"><%= section.title %></a></li>
       <% end %>
     </ul>
   </nav>
@@ -38,7 +39,7 @@ layout: docs
     <% doc.content.each_with_index do |section, s| %>
       <section class="<% if s != sl %>mb4 pb4 bb b--light-gray<% else %>mb6<% end %>">
         <% if section.title %>
-          <header class="mb1 ph1 ph2-m ph0-l">
+          <header class="mb2 ph1 ph2-m ph0-l">
             <h2 class="ma0 merriweather f1_5 fw4 b black"><%= section.title %></h2>
           </header>
         <% end %>
@@ -53,7 +54,7 @@ layout: docs
           <%# End %>
           <% if content.type === "text" || content.type === "note" %>
             <div class="ph1 ph2-m ph0-l">
-              <p class="ma0 <% if next_type === "table" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
+              <p class="ma0 <% if next_type === "table" %>mb2<% elsif next_type === "deck" %>mb4<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
             </div>
           <% end %>
           <% if content.type === "table" %>
@@ -103,16 +104,49 @@ layout: docs
               <%# Config %>
               <% al = content.deck.cards.length - 1 %>
               <%# End %>
-              <div class="cf">
+              <div class="pa2 bl b--light-gray">
                 <% content.deck.cards.each_with_index do |card, a| %>
-                  <div class="fl-ns w-50-ns <% if a != al %>mb2<% end %> <% if a % 2 === 0 %>pr1-ns<% else %>pl1-ns<% end %>">
-                    <div class="pa2 <% if card.classList.card %><%= card.classList.card %><% else %> ba b--light-gray<% end %>">
-                      <p class="ma0 mb0_5 <% if card.classList.title %><%= card.classList.title %><% end %>"><%= card.title %></p>
-                      <code class="<% if card.classList.subtitle %><%= card.classList.subtitle %><% else %> roboto-mono gray<% end %>"><%= card.subtitle %></code>
-                    </div>
+                  <div class="dib mb2 mb0-ns pa1 pl0 <% if a != al %>pr2<% end %>">
+                    <p class="ma0 mb1 <% if card.classList.title %><%= card.classList.title %><% end %>">
+                      <%= card.title %>
+                    </p>
+                    <code class="db minw5 pt1 b--pearl bt <% if card.classList.subtitle %><%= card.classList.subtitle %><% else %> roboto-mono gray<% end %>">
+                      <%= card.subtitle %>
+                    </code>
                   </div>
                 <% end %>
               </div>
+            </div>
+          <% end %>
+          <% if content.type === "links" %>
+            <%# Config %>
+            <% rl = content.links.length - 1 %>
+            <%# End %>
+            <div class="mw45 center ph1 ph0-l cf">
+              <% content.links.each_with_index do |post, r| %>
+                <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
+                  <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
+                    <table class="w-100 collapse">
+                      <tbody>
+                        <tr>
+                          <td class="tc w-20">
+                            <%= image_tag post.avatar, :class => "v-mid" %>
+                          </td>
+                          <td class="w-80 pv1 pl1 bl b--pearl">
+                            <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
+                            <div class="relative h0_75">
+                              <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
+                                <%= post.subtitle %>
+                              </p>
+                              <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %> →</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </a>
+                </div>
+              <% end %>
             </div>
           <% end %>
         <% end %>

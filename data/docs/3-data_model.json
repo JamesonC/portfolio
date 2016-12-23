@@ -1,9 +1,7 @@
 {
   "title": "Data Models",
   "descriptions": [
-    "A data model is the sum of structured data types that store a defined data set.",
-
-    "The website’s content, i.e. data set, is separated into <span class=\"roboto-mono\">.json</span> files for fast editing and dynamic layout generation. All of the <span class=\"roboto-mono\">.json</span> files are stored in <span class=\"roboto-mono\">/data</span> and use a unique data model."
+    "The website’s content is separated into <span class=\"roboto-mono\">.json</span> files for fast editing and dynamic layout generation. All of the <span class=\"roboto-mono\">.json</span> files are stored in <span class=\"roboto-mono\">/data</span> and use a unique data model."
   ],
   "content": [
     {

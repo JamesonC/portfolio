@@ -1,7 +1,9 @@
 {
   "title": "Properties",
   "descriptions": [
-    "The site's components are built using a set of visual properties. These properties are encapsulated in immutable and reusable CSS classes."
+    "The website is built with a defined set of visual properties. The visual properties are encapsulated in functional CSS classes and are appended to the <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a> library. The website uses function-based styling for immutability, reusability, and scalability.",
+
+    "The classes use a slightly different naming convention than the default Tachyons naming convention. Instead of appending the scale value to the end of a class, the site appends the final <span class=\"roboto-mono\">rem</span> value for easier readability and faster editing. For example, <span class=\"roboto-mono\">.h5</span> is equivalent to <span class=\"roboto-mono\">{ height: 5rem; }</span> and <span class=\"roboto-mono\">.ma4</span> is equivalent to <span class=\"roboto-mono\">{ margin: 4rem; }</span>."
   ],
   "content": [
     {
@@ -9,7 +11,7 @@
       "content": [
         {
           "type": "text",
-          "text": "Lorem ipsum"
+          "text": "The website's core typographic properties are composed of <span class=\"roboto-mono\">font-family</span>, <span class=\"roboto-mono\">font-size</span>, <span class=\"roboto-mono\">line-height</span>, and <span class=\"roboto-mono\">letter-spacing</span> classes."
         },
         {
           "type": "deck",
@@ -118,31 +120,31 @@
             "title": "Line Heights",
             "cards": [
               {
-                "title": "1.25",
-                "subtitle": ".lh1_25",
+                "title": "2.00",
+                "subtitle": ".lh2",
                 "classList": {
-                  "title": "merriweather f2 black"
-                }
-              },
-              {
-                "title": "1.50",
-                "subtitle": ".lh1_50",
-                "classList": {
-                  "title": "merriweather f2 black"
+                  "title": "mb1 merriweather f2 lh2 black"
                 }
               },
               {
                 "title": "1.75",
                 "subtitle": ".lh1_75",
                 "classList": {
-                  "title": "merriweather f2 black"
+                  "title": "mb1 merriweather f2 lh1_75 black"
                 }
               },
               {
-                "title": "2.00",
-                "subtitle": ".lh2",
+                "title": "1.50",
+                "subtitle": ".lh1_50",
                 "classList": {
-                  "title": "merriweather f2 black"
+                  "title": "mb1 merriweather f2 lh1_50 black"
+                }
+              },
+              {
+                "title": "1.25",
+                "subtitle": ".lh1_25",
+                "classList": {
+                  "title": "mb1 merriweather f2 lh1_25 black"
                 }
               }
             ]
@@ -170,56 +172,52 @@
       "content": [
         {
           "type": "text",
-          "text": "Lorem ipsum"
+          "text": "The website uses a gray-scale palette to style text, backgrounds, and borders."
         },
         {
           "type": "deck",
           "deck": {
             "cards": [
               {
-                "title": "Dark Gray",
+                "title": "",
                 "subtitle": ".dark-gray",
                 "classList": {
-                  "title": "merriweather f2 dark-gray"
+                  "title": "w10 h5 bg-dark-gray"
                 }
               },
               {
-                "title": "Space Gray",
+                "title": "",
                 "subtitle": ".space-gray",
                 "classList": {
-                  "title": "merriweather f2 space-gray"
+                  "title": "w10 h5 bg-space-gray"
                 }
               },
               {
-                "title": "Gray",
+                "title": "",
                 "subtitle": ".gray",
                 "classList": {
-                  "title": "merriweather f2 gray"
+                  "title": "w10 h5 bg-gray"
                 }
               },
               {
-                "title": "Light Gray",
+                "title": "",
                 "subtitle": ".light-gray",
                 "classList": {
-                  "title": "merriweather f2 light-gray"
+                  "title": "w10 h5 bg-light-gray"
                 }
               },
               {
-                "title": "Pearl",
+                "title": "",
                 "subtitle": ".pearl",
                 "classList": {
-                  "card": "bg-light-gray",
-                  "title": "merriweather f2 pearl",
-                  "subtitle": "roboto-mono pearl"
+                  "title": "w10 h5 bg-pearl"
                 }
               },
               {
-                "title": "Almost White",
+                "title": "",
                 "subtitle": ".almost-white",
                 "classList": {
-                  "card": "bg-light-gray",
-                  "title": "merriweather f2 almost-white",
-                  "subtitle": "roboto-mono almost-white"
+                  "title": "w10 h5 bg-almost-white"
                 }
               }
             ]
@@ -232,45 +230,38 @@
       "content": [
         {
           "type": "text",
-          "text": "Lorem ipsum"
+          "text": "The website uses a four-step spacing scale for layout. The examples below denote a class starting with <span class=\"roboto-mono\">.s</span> which stands for 'spacing'. The site replaces <span class=\"roboto-mono\">.s</span> with the default Tachyons margin and padding naming conventions but appends the spacing's <span class=\"roboto-mono\">rem</span> value. For example, <span class=\"roboto-mono\">.pr2</span> is equivalent to <span class=\"roboto-mono\">{ padding-right: 2rem; }</span>"
         },
         {
           "type": "deck",
           "deck": {
             "cards": [
               {
-                "title": "0rem",
-                "subtitle": ".spacing0",
+                "title": "",
+                "subtitle": ".s0_5",
                 "classList": {
-                  "title": "merriweather f2 dark-gray"
+                  "title": "bg-pearl w0_5 h10"
                 }
               },
               {
-                "title": "0.5rem",
-                "subtitle": ".spacing0_5",
+                "title": "",
+                "subtitle": ".s1",
                 "classList": {
-                  "title": "merriweather f2 dark-gray"
+                  "title": "bg-pearl w1 h10"
                 }
               },
               {
-                "title": "1rem",
-                "subtitle": ".spacing1",
+                "title": "",
+                "subtitle": ".s2",
                 "classList": {
-                  "title": "merriweather f2 dark-gray"
+                  "title": "bg-pearl w2 h10"
                 }
               },
               {
-                "title": "2rem",
-                "subtitle": ".spacing2",
+                "title": "",
+                "subtitle": ".s4",
                 "classList": {
-                  "title": "merriweather f2 dark-gray"
-                }
-              },
-              {
-                "title": "4rem",
-                "subtitle": ".spacing4",
-                "classList": {
-                  "title": "merriweather f2 dark-gray"
+                  "title": "bg-pearl w4 h10"
                 }
               }
             ]
