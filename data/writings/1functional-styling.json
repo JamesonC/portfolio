@@ -57,24 +57,22 @@
       ]
     },
     {
-      "title": "Favorite Functional CSS Resources",
+      "title": "Favorite Sources",
       "content": [
         {
           "type": "list",
           "list": [
             {
-              "title": "Tachyons",
-              "subtitle": "Functional CSS",
-              "link": "View Site",
-              "color": "orange",
-              "source": "http://tachyons.io/",
-              "avatar": "/images/tools/tachyons.svg"
+              "title": "Lego Bits ft. Adam Morse",
+              "subtitle": "Design Details Podcast",
+              "link": "Play Interview",
+              "source": "https://spec.fm/podcasts/design-details/16190",
+              "avatar": "/images/press/podcast.svg"
             },
             {
               "title": "Freedom Juice ft. Jon Gold",
               "subtitle": "Design Details Podcast",
               "link": "Play Interview",
-              "color": "royal",
               "source": "https://spec.fm/podcasts/design-details/14150",
               "avatar": "/images/press/podcast.svg"
             },
@@ -82,7 +80,6 @@
               "title": "Adam Morse on CSS",
               "subtitle": "CSSConf Oakland 2014",
               "link": "Watch Video",
-              "color": "chili",
               "source": "https://www.youtube.com/watch?v=14N_V56tqd4&t=627s",
               "avatar": "/images/sources/video.svg"
             },
@@ -90,17 +87,15 @@
               "title": "CSS and Scalability",
               "subtitle": "by Adam Morse",
               "link": "Read Article",
-              "color": "gold",
               "source": "http://mrmrs.io/writing/2016/03/24/scalable-css/",
-              "avatar": "/images/sources/css-and-scalability.svg"
+              "avatar": "/images/sources/article.svg"
             },
             {
-              "title": "Good CSS",
-              "subtitle": "by Adam Morse",
+              "title": "Functional Programing",
+              "subtitle": "by Jon Gold",
               "link": "Read Article",
-              "color": "jade",
-              "source": "http://mrmrs.io/writing/2014/08/11/good-css/",
-              "avatar": "/images/sources/good-css.svg"
+              "source": "http://www.jon.gold/2015/07/functional-css/",
+              "avatar": "/images/sources/article.svg"
             }
           ]
         }
