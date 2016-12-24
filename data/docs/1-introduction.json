@@ -23,35 +23,28 @@
               "subtitle": "claudiovallejo.mx",
               "link": "View Site",
               "source": "http://www.claudiovallejo.mx/",
-              "avatar": "/images/tools/tachyons.svg"
-            },
-            {
-              "title": "Latest Prototype",
-              "subtitle": "Temp Netlify Domain",
-              "link": "View Prototype",
-              "source": "http://claudio-vallejo.netlify.com/",
-              "avatar": "/images/press/podcast.svg"
+              "avatar": "/images/sources/website.svg"
             },
             {
               "title": "Source Code",
               "subtitle": "GitHub",
               "link": "Explore Repo",
               "source": "https://github.com/claudiovallejo/portfolio",
-              "avatar": "/images/sources/video.svg"
+              "avatar": "/images/sources/code.svg"
             }
           ]
         }
       ]
     },
     {
-      "title": "Portfolio Toolkit",
+      "title": "Website Toolkit",
       "content": [
         {
           "type": "links",
           "links": [
             {
               "title": "Swipies",
-              "subtitle": "Sketching",
+              "subtitle": "Reusable Grid Paper",
               "link": "View Site",
               "color": "royal",
               "path": "http://swipi.es/",
@@ -59,7 +52,7 @@
             },
             {
               "title": "Figma",
-              "subtitle": "Web Design",
+              "subtitle": "UI Design App",
               "link": "View Site",
               "color": "violet",
               "path": "https://www.figma.com/",
@@ -75,7 +68,7 @@
             },
             {
               "title": "Tachyons",
-              "subtitle": "Reusable Styling",
+              "subtitle": "Functional CSS Library",
               "link": "View Site",
               "color": "orange",
               "path": "http://tachyons.io/",
@@ -83,7 +76,7 @@
             },
             {
               "title": "Gulp.js",
-              "subtitle": "File Optimization",
+              "subtitle": "Streaming Build System",
               "link": "View Site",
               "color": "chili",
               "path": "http://gulpjs.com/",
@@ -91,7 +84,7 @@
             },
             {
               "title": "Netlify",
-              "subtitle": "Continuous Deploys",
+              "subtitle": "Hosting",
               "link": "View Site",
               "color": "jade",
               "path": "https://www.netlify.com/",
