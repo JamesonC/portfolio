@@ -42,7 +42,7 @@ layout: docs
     <% sl = doc.content.length - 1 %>
     <%# End %>
     <% doc.content.each_with_index do |section, s| %>
-      <section class="<% if s != sl %>mb4 pb4 bb b--light-gray<% else %>mb6<% end %>">
+      <section class="<% if s != sl %>mb4 pb4 bb b--light-gray<% else %>mb4<% end %>">
         <% if section.title %>
           <header class="mb2 ph1 ph2-m ph0-l">
             <h2 class="ma0 merriweather f1_5 fw4 b black"><%= section.title %></h2>
@@ -59,7 +59,7 @@ layout: docs
           <%# End %>
           <% if content.type === "text" || content.type === "note" %>
             <div class="ph1 ph2-m ph0-l">
-              <p class="ma0 <% if next_type === "table" %>mb2<% elsif next_type === "deck" %>mb4<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
+              <p class="ma0 <% if next_type === "table" %>mb2<% elsif next_type === "deck" %>mb4<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
             </div>
           <% end %>
           <% if content.type === "table" %>
@@ -75,7 +75,7 @@ layout: docs
                           </td>
                         <% elsif cell.type === "code" %>
                           <td class="v-top w-50 pa1 ba b--pearl">
-                            <code class="ma0 roboto-mono f1 fw4 lh1_50 blue"><%= cell.code %></code>
+                            <code class="ma0 roboto-mono f1 fw4 lh1_50 chili"><%= cell.code %></code>
                           </td>
                         <% elsif cell.type === "descriptions" %>
                           <td class="v-top w-50 pa1 ba b--pearl">
@@ -88,7 +88,7 @@ layout: docs
                               <% elsif description.type === "rule" %>
                                 <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 black lh1_50">
                                   <%= description.title %>:
-                                  <code class="roboto-mono gray"><%= description.code %></code>
+                                  <code class="roboto-mono green"><%= description.code %></code>
                                 </p>
                               <% end %>
                             <% end %>

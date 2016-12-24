@@ -4,7 +4,7 @@ layout: main
 <%# Config %>
 <% project = locals[:project] %>
 <%# End %>
-<article class="mb6">
+<article class="mb4">
   <header class="mb2">
     <div class="mw45 center pv4 ph1 ph2-m ph0-l">
       <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray"><%= project.type %></h3>
@@ -45,11 +45,11 @@ layout: main
         <%# End %>
         <% if content.type === "text" || content.type === "note" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" %>mb2 mb4-ns<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" %>mb2 mb4-ns<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
           </div>
         <% end %>
         <% if content.type === "media" %>
-          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %> mb6-ns">
+          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %> mb4-ns">
             <img src="<%= content.media["1x"] %>" srcset="<%= content.media["1x"] %> 1x, <%= content.media["2x"] %> 2x" alt="<% if content.media.alt %><%= content.media.alt %><% end %>">
             <% if content.media.caption %>
               <div class="mw45 center tc ph1 ph2-m ph0-l">
@@ -64,7 +64,7 @@ layout: main
           <%# End %>
           <div class="mw45 center ph1 ph2-m ph0-l">
             <% content.block.each_with_index do |item, i| %>
-              <div class="<% if i != il %>mb2<% else %>mb6<% end %> pl2 bl b--light-gray">
+              <div class="<% if i != il %>mb2<% else %>mb4<% end %> pl2 bl b--light-gray">
                 <h4 class="ma0 mb1 merriweather f1_125 fw4 dark-gray"><%= item.title %></h4>
                 <p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= item.description %></p>
               </div>

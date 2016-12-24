@@ -38,11 +38,11 @@ layout: main
         <%# End %>
         <% if content.type === "text" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb6<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
           </div>
         <% end %>
         <% if content.type === "media" %>
-          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %> mb6-ns">
+          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %>">
             <img src="<%= content.media["1x"] %>" srcset="<%= content.media["1x"] %> 1x, <%= content.media["2x"] %> 2x" alt="<% if content.media.alt %><%= content.media.alt %><% end %>">
             <% if content.media.caption %>
               <div class="mw45 center tc ph1 ph0-ns">
@@ -57,7 +57,7 @@ layout: main
           <%# End %>
           <div class="mw45 center ph1 ph2-m ph0-l">
             <% content.block.each_with_index do |item, i| %>
-              <div class="<% if i != il %>mb2<% else %>mb6<% end %> pl2 bl b--light-gray">
+              <div class="<% if i != il %>mb2<% else %>mb4<% end %> pl2 bl b--light-gray">
                 <h4 class="ma0 mb1 merriweather f1_125 dark-gray"><%= item.title %></h4>
                 <p class="ma0 merriweather f1_125 fw4 lh2 dark-gray"><%= item.description %></p>
               </div>
