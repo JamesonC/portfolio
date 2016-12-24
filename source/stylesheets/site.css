@@ -30,7 +30,7 @@ html { -webkit-font-smoothing: antialiased; }
 .pearl { color: #f2f2f2 }
 .almost-white { color: #fafafa; }
 /* Backgrounds */
-.bg-dark-gray { background-color: #333; }
+.bg-dark-gray { background-color: #333333; }
 .bg-space-gray { background-color: #4f4f4f; }
 .bg-gray { background-color: #828282; }
 .bg-pearl { background-color: #f2f2f2; }
@@ -42,9 +42,10 @@ html { -webkit-font-smoothing: antialiased; }
 /*
    LINKS
 */
-.dim { opacity: 1; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-.dim:hover, .dim:focus { opacity: .5; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
-.dim:active { opacity: .8; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }
+.link { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:hover, .dim:focus { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.link:active { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
+.hover-dark-gray:hover { color: #333333; }
 /*
    WIDTHS
 */
@@ -105,7 +106,6 @@ html { -webkit-font-smoothing: antialiased; }
 .mb1 { margin-bottom: 1rem; }
 .mb2 { margin-bottom: 2rem; }
 .mb4 { margin-bottom: 4rem; }
-.mb6 { margin-bottom: 6rem; }
 /* Left Margins */
 .ml0 { margin-left: 0; }
 .ml0_5 { margin-left: 0.5rem; }
