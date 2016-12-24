@@ -43,7 +43,7 @@ layout: main
           <% next_type = section.content[c + 1].type %>
         <% end %>
         <%# End %>
-        <% if content.type === "text" || content.type === "note" %>
+        <% if content.type === "text" || content.type === "comment" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
             <p class="ma0 <% if next_type && next_type === "media" %>mb2 mb4-ns<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 <% if content.type === "text" %>dark-gray<% else %>gray<% end %> lh2"><%= content.text %></p>
           </div>
