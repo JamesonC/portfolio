@@ -1,0 +1,34 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>article</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9743 -10588)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9743 10588L 9807 10588L 9807 10652L 9743 10652L 9743 10588Z" fill="#FFFFFF"/>
+</mask>
+<g id="article" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 37" style="mix-blend-mode:normal;" figma:type="vector">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9763 10605.4)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9763 10605.4)" fill="#27AE60" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 37" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(9765.42 10603)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask2_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(9765.42 10603)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(9765.42 10603)" fill="#27AE60" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 22.5806 32.5581L 0 32.5581L 0 0L 17.788 0L 22.5806 4.89331L 22.5806 32.5581Z"/>
+<path id="path1_stroke_2x" d="M 17.788 4.89331L 17.288 4.89331L 17.288 5.39331L 17.788 5.39331L 17.788 4.89331ZM 22.5806 4.39331L 17.788 4.39331L 17.788 5.39331L 22.5806 5.39331L 22.5806 4.39331ZM 18.288 4.89331L 18.288 0L 17.288 0L 17.288 4.89331L 18.288 4.89331ZM 22.5806 32.5581L 22.5806 33.5581L 23.5806 33.5581L 23.5806 32.5581L 22.5806 32.5581ZM 0 32.5581L -1 32.5581L -1 33.5581L 0 33.5581L 0 32.5581ZM 0 0L 0 -1L -1 -1L -1 0L 0 0ZM 17.788 0L 18.5024 -0.699722L 18.2083 -1L 17.788 -1L 17.788 0ZM 22.5806 4.89331L 23.5806 4.89331L 23.5806 4.48517L 23.2951 4.19359L 22.5806 4.89331ZM 22.5806 31.5581L 0 31.5581L 0 33.5581L 22.5806 33.5581L 22.5806 31.5581ZM 1 32.5581L 1 0L -1 0L -1 32.5581L 1 32.5581ZM 0 1L 17.788 1L 17.788 -1L 0 -1L 0 1ZM 21.5806 4.89331L 21.5806 32.5581L 23.5806 32.5581L 23.5806 4.89331L 21.5806 4.89331ZM 17.0736 0.699722L 21.8662 5.59303L 23.2951 4.19359L 18.5024 -0.699722L 17.0736 0.699722Z"/>
+</defs>
+</svg>

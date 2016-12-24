@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>code</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-9812 -10588)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 9812 10588L 9876 10588L 9876 10652L 9812 10652L 9812 10588Z" fill="#FFFFFF"/>
+</mask>
+<g id="code" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(0.711608 -0.702577 0.711608 0.702577 9828 10620)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-0.711608 0.702577 -0.711608 -0.702577 9859 10620)" fill="#9B51E0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 2.135 0L 0 0L 0 2.135L 0 14.2333L 2.135 14.2333L 2.135 2.135L 14.2333 2.135L 14.2333 0L 2.135 0Z"/>
+</defs>
+</svg>
