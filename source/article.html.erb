@@ -21,7 +21,7 @@ layout: main
   <% sl = article.content.length - 1 %>
   <%# End %>
   <% article.content.each_with_index do |section, s| %>
-    <section class="<% if s != sl %>mb2<% else %>mb6<% end %> cf">
+    <section class="mb4 cf">
       <% if section.title %>
         <div class="mw45 center mb2 ph1 ph2-m ph0-l">
           <h1 class="relative z-2 dib ma0 merriweather f1_125 fw4 dark-gray"><%= section.title %></h1>
