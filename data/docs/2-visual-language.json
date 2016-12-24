@@ -1,5 +1,5 @@
 {
-  "title": "Properties",
+  "title": "Visual Language",
   "descriptions": [
     "The website is built with a defined set of visual properties. The visual properties are encapsulated in functional CSS classes and are appended to the <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a> library. The website uses function-based styling for immutability, reusability, and scalability.",
 
