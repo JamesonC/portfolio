@@ -3,24 +3,29 @@ layout: docs
 ---
 <%# Config %>
 <% doc = locals[:doc] %>
+<% page_title = doc.title %>
 <% sections = [] %>
 <% data.docs.each do |id, section| %>
   <% sections.push(section) %>
 <% end %>
 <%# End %>
 <div class="mw60 center cf pv4-l">
-  <%= partial "partials/doc_nav" %>
   <nav class="fl-l w-25-l mb4 mb0-l pv1 pv0-l bt bb bn-l b--light-gray bg-almost-white-l">
     <ul class="ma0 ph1 ph2-m ph0-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
       <%# Config %>
       <% sl = sections.length - 1 %>
       <%# End %>
+      <li class="dib db-l ma0 mb2-l pr2 pr0-l">
+        <a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="/">
+          Back to Site
+        </a>
+      </li>
       <% sections.each_with_index do |section, s| %>
         <% path = "" %>
         <% if section.title != "Introduction" %>
           <% path = section.title.parameterize %>
         <% end %>
-        <li class="dib db-l ma0 <% if s != sl %>mb2-l pr2 pr0-l<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu dark-gray no-underline dim" href="/docs/<%= path %>"><%= section.title %></a></li>
+        <li class="dib db-l ma0 <% if s != sl %>mb2-l pr2 pr0-l<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu <% if section.title === doc.title %>dark-gray<% else %>gray<% end %> link hover-dark-gray" href="/docs/<%= path %>"><%= section.title %></a></li>
       <% end %>
     </ul>
   </nav>
