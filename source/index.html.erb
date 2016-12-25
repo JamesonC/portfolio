@@ -2,117 +2,162 @@
 layout: index
 ---
 <%# Config %>
+<%# Index %>
 <% index = data.index %>
-<% projects = [] %>
-<% data.projects.each do |id, project| %>
-  <% projects.push(project) %>
+<%# About %>
+<% about = data.about %>
+<%# Case Studies %>
+<% case_studies = [] %>
+<% data.case_studies.each do |id, study| %>
+  <% case_studies.push(study) %>
 <% end %>
-<% writings = [] %>
-<% data.writings.each do |id, article| %>
-  <% writings.push(article) %>
+<%# Journal %>
+<% journal = [] %>
+<% data.journal.each do |id, article| %>
+  <% journal.push(article) %>
 <% end %>
-<% links = [] %>
+<%# Press, Events, and Press and Events %>
+<% press_and_events = [] %>
+<% press = [] %>
 <% data.press.each do |id, post| %>
-  <% links.push(post) %>
+  <% press.push(post) %>
+  <% press_and_events.push(post) %>
 <% end %>
+<% events = [] %>
 <% data.events.each do |id, event| %>
-  <% links.push(event) %>
+  <% events.push(event) %>
+  <% press_and_events.push(event) %>
 <% end %>
+<%# End %>
 <%# Content %>
-<main class="mt1 mb4 cf">
+<main class="mt4 mt1-l cf">
   <div class="mw45 center mt4-ns ph1 ph2-m ph0-l">
-    <%# Profile Card %>
-    <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db mb4 no-underline bg-white" href="<%= index.profile.link.path %>">
-      <table class="w-100 collapse">
-        <tbody>
-          <tr class="dn-ns">
-            <td class="w-100 h12 cover bg-center" style="background-image: url('<%= index.profile.image["1x"] %>');"></td>
-          </tr>
-          <tr>
-            <td class="dn dtc-ns tc w-30-m w-25-l h-100 cover bg-center" style="background-image: url('<%= index.profile.image["1x"] %>');"></td>
-            <td class="w-100 w-70-m w-75-l pa2">
-              <div class="relative h0_75 mb1">
-                <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= index.profile.link.title %></h3>
-                <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= index.profile.link.subtitle %> →</h3>
-              </div>
-              <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray lh1_75"><%= index.profile.title %></h1>
-              <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= index.profile.description %></p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </a>
     <%# Content Sections %>
     <%# Config %>
-    <% sl = index.sections.length - 1 %>
+    <% sl = index.length - 1 %>
     <%# End %>
-    <% index.sections.each do |section, s| %>
-      <section class="mb4">
-        <header class="mb2">
-          <h1 class="relative z-2 dib ma0 merriweather f1 fw4 dark-gray"><%= section.title %></h1>
-        </header>
-        <% if section.type === "projects" %>
+    <% index.each do |section, s| %>
+      <section class="mb4 cf">
+        <%# Config %>
+        <% if section.type === "About" %>
+          <% posts = [about] %>
+          <% type = "About" %>
+        <% elsif section.type === "Case Studies" %>
+          <% posts = case_studies %>
+          <% type = "Case Studies" %>
+        <% elsif section.type === "Journal" %>
+          <% posts = journal %>
+          <% type = "Journal" %>
+        <% elsif section.type === "Press" %>
+          <% links = press %>
+        <% elsif section.type === "Events" %>
+          <% links = events %>
+        <% elsif section.type === "Press and Events" %>
+          <% links = press_and_events %>
+        <% end %>
+        <%# End %>
+        <% if section.title %>
+          <header class="mb2">
+            <h1 class="ma0 merriweather f1_125 fw3 dark-gray"><%= section.title %></h1>
+          </header>
+        <% end %>
+        <% if posts %>
           <%# Config %>
-          <% rl = projects.length - 1 %>
+          <% ol = posts.length - 1 %>
           <%# End %>
-          <% projects.each do |project, r| %>
-            <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 bg-white" href="/<%= pretty_url project.name %>">
-              <picture>
-                <img class="db w-100" src="<%= project.card["1x"] %>" srcset="<%= project.card["1x"] %> 1x, <%= project.card["2x"] %> 2x" alt="<%= project.card.alt %>">
-              </picture>
-              <div class="pa2">
-                <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= project.name %></h1>
-                <div class="relative h0_75">
-                  <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray">
-                    <%= project.category %>
-                    <% if project.status.active %>
-                      <span class="ph0_5">・</span><span class="<%= project.status.color %>"><%= project.status.title %></span>
-                    <% end %>
-                  </h3>
-                  <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= project.card.title %> →</h3>
+          <% posts.each_with_index do |post, o| %>
+            <%# Config %>
+            <% if post.type === "Case Study" %>
+              <% root = "case-study/" %>
+            <% elsif post.type == "Article" %>
+              <% root = "journal/" %>
+            <% end %>
+            <%# End %>
+            <% if post.card.type === "main" %>
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 bg-white" href="/<%= root %><%= post.title.parameterize %>">
+                <picture>
+                  <img class="db w-100" src="<%= post.card.image["1x"] %>" srcset="<%= post.card.image["1x"] %> 1x, <%= post.card.image["2x"] %> 2x" alt="<%= post.card.image.alt %>">
+                </picture>
+                <div class="pa2">
+                  <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= post.title %></h1>
+                  <div class="relative h0_75">
+                    <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.category %></h3>
+                    <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.card.cta %></h3>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            <% elsif post.card.type === "secondary" %>
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db mb4 no-underline bg-white" href="<% if post.card.path %><%= post.card.path %><% else %>/<%= root %><%= post.title.parameterize %><% end %>">
+                <table class="w-100 collapse">
+                  <tbody>
+                    <tr class="dn-ns">
+                      <td class="w-100 h12 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: -webkit-image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x)"></td>
+                    </tr>
+                    <tr>
+                      <td class="dn dtc-ns tc w-30-m w-25-l h-100 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: -webkit-image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x)"></td>
+                      <td class="w-100 w-70-m w-75-l pa2">
+                        <div class="relative h0_75 mb1">
+                          <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray">
+                            <% if type === "About" %>
+                              <%= post.card.subtitle %>
+                            <% elsif type === "Case Studies" %>
+                              <%= post.type %>
+                            <% elsif type === "Journal" %>
+                              <%= post.date %>
+                            <% end %>
+                          </h3>
+                          <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.card.cta %></h3>
+                        </div>
+                        <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray lh1_75">
+                          <% if type === "About" %>
+                            <%= post.card.title %>
+                          <% else %>
+                            <%= post.title %>
+                          <% end %>
+                        </h1>
+                        <p class="ma0 merriweather f1 fw3 dark-gray lh1_75">
+                          <% if type === "About" %>
+                            <%= post.card.description %>
+                          <% else %>
+                            <%= post.description %>
+                          <% end %>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </a>
+            <% elsif post.card.type === "text" %>
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 pv2 pl2 pr4 bg-white" href="/<%= root %><%= post.title.parameterize %>">
+                <div class="relative mb1 h0_75">
+                  <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
+                    <%= post.date %>
+                  </h3>
+                  <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.card.cta %></h3>
+                </div>
+                <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray"><%= post.title %></h1>
+                <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= post.description %></p>
+              </a>
+            <% end %>
           <% end %>
-        <% elsif section.type === "writing" %>
+        <% elsif links %>
           <%# Config %>
-          <% al = writings.length - 1 %>
+          <% ll = links.length - 1 %>
           <%# End %>
-          <% writings.each do |article, a| %>
-            <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 pv2 pl2 pr4 bg-white" href="<%= article.link.path %>">
-              <div class="relative mb1 h0_75">
-                <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
-                  <%= article.date %>
-                  <% if article.status.active %>
-                    <span class="pr0_5">∙</span><span class="<%= article.status.color %>"><%= article.status.title %></span>
-                  <% end %>
-                </h3>
-                <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= article.link.title %> →</h3>
-              </div>
-              <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray"><%= article.title %></h1>
-              <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= article.description %></p>
-            </a>
-          <% end %>
-        <% elsif section.type === "press" %>
-          <%# Config %>
-          <% rl = links.length - 1 %>
-          <%# End %>
-          <% links.each_with_index do |post, r| %>
-            <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
+          <% links.each_with_index do |link, l| %>
+            <div class="fl w-100 w-50-ns <% if l != ll %>mb1<% end %> <% if l < ll - 1 %>mb1-ns<% end %> <% if l % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.path %>" target="_blank">
                 <table class="w-100 collapse">
                   <tbody>
                     <tr>
                       <td class="tc w-20">
-                        <%= image_tag post.avatar, :class => "v-mid" %>
+                        <%= image_tag link.avatar, :class => "v-mid" %>
                       </td>
                       <td class="w-80 pv1 pl1 bl b--pearl">
-                        <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
+                        <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= link.title %></p>
                         <div class="relative h0_75">
-                          <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
-                            <%= post.subtitle %>
-                          </p>
-                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %> →</p>
+                          <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray"><%= link.subtitle %></p>
+                          <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= link.cta %></p>
                         </div>
                       </td>
                     </tr>
