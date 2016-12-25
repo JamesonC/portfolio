@@ -22,21 +22,21 @@
                 "title": "Merriweather",
                 "subtitle": ".merriweather",
                 "classList": {
-                  "title": "merriweather f2 black"
+                  "title": "merriweather f2 dark-gray"
                 }
               },
               {
                 "title": "Roboto Mono",
                 "subtitle": ".roboto-mono",
                 "classList": {
-                  "title": "roboto-mono f2 black"
+                  "title": "roboto-mono f2 dark-gray"
                 }
               },
               {
                 "title": "Lato",
                 "subtitle": ".lato",
                 "classList": {
-                  "title": "lato f2 black"
+                  "title": "lato f2 dark-gray"
                 }
               }
             ]
@@ -51,35 +51,35 @@
                 "title": "2rem",
                 "subtitle": ".f2",
                 "classList": {
-                  "title": "merriweather f2 black"
+                  "title": "merriweather f2 dark-gray"
                 }
               },
               {
                 "title": "1.5rem",
                 "subtitle": ".f1_5",
                 "classList": {
-                  "title": "merriweather f1_5 black"
+                  "title": "merriweather f1_5 dark-gray"
                 }
               },
               {
                 "title": "1.125rem",
                 "subtitle": ".f1_125",
                 "classList": {
-                  "title": "merriweather f1_125 black"
+                  "title": "merriweather f1_125 dark-gray"
                 }
               },
               {
                 "title": "1rem",
                 "subtitle": ".f1",
                 "classList": {
-                  "title": "merriweather f1 black"
+                  "title": "merriweather f1 dark-gray"
                 }
               },
               {
                 "title": "0.75rem",
                 "subtitle": ".f0_75",
                 "classList": {
-                  "title": "merriweather f0_75 black"
+                  "title": "merriweather f0_75 dark-gray"
                 }
               }
             ]
@@ -94,21 +94,21 @@
                 "title": "700",
                 "subtitle": ".fw7",
                 "classList": {
-                  "title": "merriweather f2 fw7 black"
+                  "title": "merriweather f2 fw7 dark-gray"
                 }
               },
               {
                 "title": "400",
                 "subtitle": ".fw4",
                 "classList": {
-                  "title": "merriweather f2 fw4 black"
+                  "title": "merriweather f2 fw4 dark-gray"
                 }
               },
               {
                 "title": "300",
                 "subtitle": ".fw3",
                 "classList": {
-                  "title": "merriweather f2 fw3 black"
+                  "title": "merriweather f2 fw3 dark-gray"
                 }
               }
             ]
@@ -123,28 +123,28 @@
                 "title": "2.00",
                 "subtitle": ".lh2",
                 "classList": {
-                  "title": "mb1 merriweather f2 lh2 black"
+                  "title": "mb1 merriweather f2 lh2 dark-gray"
                 }
               },
               {
                 "title": "1.75",
                 "subtitle": ".lh1_75",
                 "classList": {
-                  "title": "mb1 merriweather f2 lh1_75 black"
+                  "title": "mb1 merriweather f2 lh1_75 dark-gray"
                 }
               },
               {
                 "title": "1.50",
                 "subtitle": ".lh1_50",
                 "classList": {
-                  "title": "mb1 merriweather f2 lh1_50 black"
+                  "title": "mb1 merriweather f2 lh1_50 dark-gray"
                 }
               },
               {
                 "title": "1.25",
                 "subtitle": ".lh1_25",
                 "classList": {
-                  "title": "mb1 merriweather f2 lh1_25 black"
+                  "title": "mb1 merriweather f2 lh1_25 dark-gray"
                 }
               }
             ]
@@ -159,7 +159,7 @@
                 "title": "0.15rem",
                 "subtitle": ".ls0_15",
                 "classList": {
-                  "title": "merriweather f2 ls0_15 black"
+                  "title": "merriweather f2 ls0_15 dark-gray"
                 }
               }
             ]
