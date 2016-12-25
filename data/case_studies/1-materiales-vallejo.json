@@ -1,128 +1,30 @@
 {
+  "title": "Materiales Vallejo",
+  "description": "A design overview of the store's first website and the business and user needs that guided the site's design",
   "type": "Case Study",
-  "name": "Materiales Vallejo",
   "category": "Website",
-  "status": {
-    "active": false,
-    "title": "Draft",
-    "color": "gold"
-  },
-  "caption": "A design overview of the store's first website and the business and user needs that guided the site's design",
+  "featured": true,
   "card": {
-    "title": "View Case Study",
-    "1x": "/images/projects/materiales-vallejo/card@1x.jpg",
-    "2x": "/images/projects/materiales-vallejo/card@2x.jpg",
-    "alt": "Image pending."
+    "type": "main",
+    "cta": "Read Case Study",
+    "image": {
+      "1x": "/images/projects/materiales-vallejo/card@1x.jpg",
+      "2x": "/images/projects/materiales-vallejo/card@2x.jpg",
+      "alt": "Materiales Vallejo Website Case Study"
+    }
   },
-  "source": {
-    "site": {
+  "links": [
+    {
       "title": "Website",
-      "path": "http://materialesvallejo.netlify.com/"
+      "path": "http://materialesvallejo.netlify.com"
     },
-    "code": {
+    {
       "title": "Source Code",
       "path": "https://github.com/claudiovallejo/materiales-vallejo"
     }
-  },
-  "tool_kit": {
-    "title": "Tool Kit",
-    "tools": [
-      {
-        "title": "Swipies",
-        "subtitle": "Sketching",
-        "link": "View Site",
-        "color": "royal",
-        "path": "http://swipi.es/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/swipies.svg",
-            "alt": "Swipies concept icon"
-          }
-        }
-      },
-      {
-        "title": "Figma",
-        "subtitle": "Web Design",
-        "link": "View Site",
-        "color": "violet",
-        "path": "https://www.figma.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/figma.svg",
-            "alt": "Figma concept icon"
-          }
-        }
-      },
-      {
-        "title": "Photoshop",
-        "subtitle": "Image Editing",
-        "link": "View Site",
-        "color": "mint",
-        "path": "http://www.adobe.com/products/photoshop.html",
-        "profile": {
-          "image": {
-            "path": "/images/tools/photoshop.svg",
-            "alt": "Photoshop concept icon"
-          }
-        }
-      },
-      {
-        "title": "Middleman",
-        "subtitle": "Static Site Generator",
-        "link": "View Site",
-        "color": "gold",
-        "path": "https://middlemanapp.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/middleman.svg",
-            "alt": "Middleman concept icon"
-          }
-        }
-      },
-      {
-        "title": "Tachyons",
-        "subtitle": "Reusable Styling",
-        "link": "View Site",
-        "color": "orange",
-        "path": "http://tachyons.io/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/tachyons.svg",
-            "alt": "Swipies concept icon"
-          }
-        }
-      },
-      {
-        "title": "Gulp.js",
-        "subtitle": "File Optimization",
-        "link": "View Site",
-        "color": "chili",
-        "path": "http://gulpjs.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/gulp.svg",
-            "alt": "Gulp concept icon"
-          }
-        }
-      },
-      {
-        "title": "Netlify",
-        "subtitle": "Continuous Deploys",
-        "link": "View Site",
-        "color": "jade",
-        "path": "https://www.netlify.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/netlify.svg",
-            "alt": "Netlify concept icon"
-          }
-        }
-      }
-    ]
-  },
+  ],
   "meta": {
     "type": "article",
-    "title": "Materiales Vallejo Website Case Study",
     "images": {
       "og": "/images/projects/materiales-vallejo/meta-og.jpg",
       "twitter": "/images/projects/materiales-vallejo/meta-twitter.jpg"
@@ -137,7 +39,7 @@
         },
         {
           "type": "comment",
-          "text": "Note: The <a class=\"no-underline bb b--light-gray gray dim\" href=\"https://www.materialesvallejo.com/\" target=\"_blank\">official business website</a> is in Spanish so I created a separate English site for reference."
+          "comment": "The <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"https://www.materialesvallejo.com/\" target=\"_blank\">official business website</a> is in Spanish, so a separate English website was built to use as reference for this case study."
         },
         {
           "type": "media",

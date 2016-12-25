@@ -1,118 +1,33 @@
 {
+  "title": "Filipao Nunes",
+  "description": "An overview of the studio's portfolio and details about the studio's brand and business needs that shaped the site's design",
   "type": "Case Study",
-  "name": "Filipao Nunes",
   "category": "Website",
-  "status": {
-    "active": false,
-    "title": "Draft",
-    "color": "gold"
-  },
-  "caption": "An overview of the studio's portfolio and details about the studio's brand and business needs that shaped the site's design",
+  "featured": true,
   "card": {
-    "title": "View Case Study",
-    "1x": "/images/projects/filipao-nunes/card@1x.jpg",
-    "2x": "/images/projects/filipao-nunes/card@2x.jpg",
-    "alt": "Image pending."
+    "type": "main",
+    "cta": "Read Case Study",
+    "image": {
+      "1x": "/images/projects/filipao-nunes/card@1x.jpg",
+      "2x": "/images/projects/filipao-nunes/card@2x.jpg",
+      "alt": "Filipao Nunes Website Case Study"
+    }
   },
-  "source": {
-    "site": {
+  "links": [
+    {
       "title": "Cover Page",
       "path": "http://filipaonunes.com"
     },
-    "code": {
+    {
       "title": "Prototypes",
       "path": "http://prototypes.netlify.com/"
     }
-  },
-  "tool_kit": {
-    "title": "Tool Kit",
-    "tools": [
-      {
-        "title": "Swipies",
-        "subtitle": "Sketching",
-        "link": "View Website",
-        "color": "royal",
-        "path": "http://swipi.es/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/swipies.svg",
-            "alt": "Swipies concept icon"
-          }
-        }
-      },
-      {
-        "title": "Figma",
-        "subtitle": "Web Design",
-        "link": "View Website",
-        "color": "violet",
-        "path": "https://www.figma.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/figma.svg",
-            "alt": "Figma concept icon"
-          }
-        }
-      },
-      {
-        "title": "Middleman",
-        "subtitle": "Static Site Generator",
-        "link": "View Website",
-        "color": "gold",
-        "path": "https://middlemanapp.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/middleman.svg",
-            "alt": "Middleman concept icon"
-          }
-        }
-      },
-      {
-        "title": "Tachyons",
-        "subtitle": "Reusable Styling",
-        "link": "View Website",
-        "color": "orange",
-        "path": "http://tachyons.io/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/tachyons.svg",
-            "alt": "Swipies concept icon"
-          }
-        }
-      },
-      {
-        "title": "Gulp.js",
-        "subtitle": "File Optimization",
-        "link": "View Website",
-        "color": "chili",
-        "path": "http://gulpjs.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/gulp.svg",
-            "alt": "Gulp concept icon"
-          }
-        }
-      },
-      {
-        "title": "Netlify",
-        "subtitle": "Continuous Deploys",
-        "link": "View Website",
-        "color": "jade",
-        "path": "https://www.netlify.com/",
-        "profile": {
-          "image": {
-            "path": "/images/tools/netlify.svg",
-            "alt": "Netlify concept icon"
-          }
-        }
-      }
-    ]
-  },
+  ],
   "meta": {
     "type": "article",
-    "title": "Filipao Nunes Website Case Study",
     "images": {
-      "og": "/images/projects/filipao-nunes/meta-og.jpg",
-      "twitter": "/images/projects/filipao-nunes/meta-twitter.jpg"
+      "og": "/images/projects/materiales-vallejo/meta-og.jpg",
+      "twitter": "/images/projects/materiales-vallejo/meta-twitter.jpg"
     }
   },
   "content": [
