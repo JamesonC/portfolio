@@ -1,38 +1,17 @@
-{
-  "profile": {
-    "title": "Product Designer",
-    "description": "Hello there I'm Claudio, a freelance product designer focusing on design systems and internal business tools.",
-    "link": {
-      "title": "About",
-      "subtitle": "Read Bio",
-      "path": "/about"
-    },
-    "image": {
-      "1x": "/images/about/portrait@1x.jpg",
-      "2x": "/images/about/portrait@2x.jpg",
-      "alt": "Hi, I'm Claudio.",
-      "responsive": true,
-      "breakpoints": [
-        {
-          "width": 30,
-          "1x": "/images/about/portrait-square@1x.jpg",
-          "2x": "/images/about/portrait-square@2x.jpg"
-        }
-      ]
-    }
+[
+  {
+    "type": "About"
   },
-  "sections": [
-    {
-      "title": "Selected Work",
-      "type": "projects"
-    },
-    {
-      "title": "Journal",
-      "type": "writing"
-    },
-    {
-      "title": "Press and Events",
-      "type": "press"
-    }
-  ]
-}
+  {
+    "title": "Selected Work",
+    "type": "Case Studies"
+  },
+  {
+    "title": "Journal",
+    "type": "Journal"
+  },
+  {
+    "title": "Press and Events",
+    "type": "Press and Events"
+  }
+]
