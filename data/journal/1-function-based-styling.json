@@ -1,19 +1,15 @@
 {
   "title": "Function-based Styling",
-  "date": "Dec 19 2016",
-  "status": {
-    "active": false,
-    "title": "Writing",
-    "color": "silver"
-  },
   "description": "My transition from component-based to function-based styling and how it sparked an interest in design systems.",
-  "link": {
-    "title": "Read Article",
-    "path": "/function-based-styling"
+  "type": "Article",
+  "date": "Dec 19 2016",
+  "featured": true,
+  "card": {
+    "type": "text",
+    "cta": "Read Article"
   },
   "meta": {
     "type": "article",
-    "title": "Function-based Styling",
     "images": {
       "og": "/images/writing/function-based-css/meta-og.jpg",
       "twitter": "/images/writing/function-based-css/meta-twitter.jpg"
