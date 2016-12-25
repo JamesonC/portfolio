@@ -1,38 +1,22 @@
-{
-  "content": [
-    {
-      "title": "Claudio Vallejo",
-      "color": "black",
-      "source": "/",
-      "target": false
-    },
-    {
-      "float": true,
-      "title": "Work",
-      "color": "silver",
-      "source": "/",
-      "target": false
-    },
-    {
-      "float": true,
-      "title": "About",
-      "color": "silver",
-      "source": "/about",
-      "target": false
-    },
-    {
-      "float": true,
-      "title": "Twitter",
-      "color": "silver",
-      "source": "https://twitter.com/claudiovallejop",
-      "target": true
-    },
-    {
-      "float": true,
-      "title": "Email",
-      "color": "silver",
-      "source": "mailto:hola@claudiovallejo.mx",
-      "target": false
-    }
-  ]
-}
+[
+  {
+    "title": "Home",
+    "path": "/",
+    "target": false
+  },
+  {
+    "title": "About",
+    "path": "/about",
+    "target": false
+  },
+  {
+    "title": "Twitter",
+    "path": "https://twitter.com/claudiovallejop",
+    "target": true
+  },
+  {
+    "title": "Email",
+    "path": "mailto:hola@claudiovallejo.mx",
+    "target": false
+  }
+]
