@@ -64,7 +64,7 @@
                   {
                     "type": "rule",
                     "title": "Values",
-                    "code": "\"about\", \"projects\", \"journal\", \"press\""
+                    "code": "\"About\", \"Case Studies\", \"Journal\", \"Press\", \"Events\", \"Press and Events\""
                   }
                 ]
               }
@@ -138,11 +138,11 @@
       ]
     },
     {
-      "title": "Articles",
+      "title": "Posts",
       "content": [
         {
           "type": "text",
-          "text": "Journal posts and project case studies are stored in separate <span class=\"roboto-mono\">.json</span> files under <span class=\"roboto-mono\">/data/journal</span> and <span class=\"roboto-mono\">/data/projects</span>. Posts and case studies use the following data model—"
+          "text": "Articles and case studies are stored in separate <span class=\"roboto-mono\">.json</span> files under <span class=\"roboto-mono\">/data/journal</span> and <span class=\"roboto-mono\">/data/projects</span>. Articles and case studies share the same data model—"
         },
         {
           "type": "table",
@@ -217,7 +217,7 @@
                   {
                     "type": "rule",
                     "title": "Values",
-                    "code": "\"post\", \"case study\""
+                    "code": "\"Post\", \"Case Study\""
                   }
                 ]
               }
