@@ -1,0 +1,114 @@
+{
+  "title": "",
+  "description": "",
+  "type": "":["Article", "Case Study"],
+  "date"?: "", // Optional
+  "category": "",
+  "featured": true,
+  "card": {
+    "type": "":["main", "secondary", "text"],
+    "cta": "",
+    "image": {
+      "1x": "",
+      "2x": "",
+      "alt": ""
+    }
+  },
+  "links": [
+    {
+      "title": "",
+      "path": ""
+    }
+  ],
+  "meta": {
+    "type": "article",
+    "images": {
+      "og": "",
+      "twitter": ""
+    }
+  },
+  "content": [
+    {
+      "title": "",
+      "content": [
+        // Text
+        {
+          "type": "text",
+          "text": ""
+        },
+        // Comment
+        {
+          "type": "comment",
+          "text": ""
+        },
+        // Media
+        {
+          "type": "media",
+          "media": {
+            "1x": "",
+            "2x": "",
+            "alt": "",
+            "caption"?: ""
+          }
+        }
+        // Block
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "",
+              "description": ""
+            }
+          ]
+        },
+        // Table
+        {
+          "type": "table",
+          "table": [
+            // Table Rows
+            [
+              // Header Cell
+              {
+                "type": "header",
+                "header": ""
+              },
+              // Code Cell
+              {
+                "type": "code",
+                "code": ""
+              },
+              // Description Cell
+              {
+                "type": "descriptions",
+                "descriptions": [
+                  {
+                    "type": "text",
+                    "text": ""
+                  },
+                  {
+                    "type": "rule",
+                    "title": "",
+                    "code": ""
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        // Link List
+        {
+          "type": "list",
+          "list": [
+            {
+              "title": "",
+              "subtitle": "",
+              "cta": "",
+              "path": "",
+              "image": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
