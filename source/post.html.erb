@@ -87,10 +87,50 @@ layout: post
         <%# Content Type: List %>
         <% if content.type === "list" %>
           <%# Config %>
-          <% rl = content.list.length - 1 %>
+          <% sources = [] %>
+          <% rl = 0 %>
+          <% content.list.each do |list| %>
+            <% if list.type === "tools" %>
+              <% rl += list.tools.length - 1 %>
+              <% list.tools.each do |t| %>
+                <% data.tools.each do |id, tool| %>
+                  <% if t === tool.title %>
+                    <% sources.push(tool) %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% elsif list.type === "press" %>
+              <% rl += list.press.length - 1 %>
+              <% list.press.each do |r| %>
+                <% data.press.each do |id, post| %>
+                  <% if r === post.title %>
+                    <% sources.push(post) %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% elsif list.type === "events" %>
+              <% rl += list.events.length - 1 %>
+              <% list.events.each do |e| %>
+                <% data.events.each do |id, event| %>
+                  <% if e === event.title %>
+                    <% sources.push(event) %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% elsif list.type === "sources" %>
+              <% rl += list.sources.length - 1 %>
+              <% list.sources.each do |s| %>
+                <% data.sources.each do |id, reference| %>
+                  <% if s === reference.title %>
+                    <% sources.push(reference) %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% end %>
+          <% end %>
           <%# End %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <% content.list.each_with_index do |post, r| %>
+            <% sources.each_with_index do |post, r| %>
               <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
                 <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
                   <table class="w-100 collapse">
@@ -102,10 +142,8 @@ layout: post
                         <td class="w-80 pv1 pl1 bl b--pearl">
                           <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
                           <div class="relative h0_75">
-                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
-                              <%= post.subtitle %>
-                            </p>
-                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %></p>
+                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray"><%= post.subtitle %></p>
+                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.cta %></p>
                           </div>
                         </td>
                       </tr>
