@@ -53,45 +53,14 @@
       ]
     },
     {
-      "title": "Favorite Sources",
+      "title": "Functional CSS Resources",
       "content": [
         {
           "type": "list",
           "list": [
             {
-              "title": "Lego Bits ft. Adam Morse",
-              "subtitle": "Design Details Podcast",
-              "link": "Hear Interview",
-              "source": "https://spec.fm/podcasts/design-details/16190",
-              "avatar": "/images/press/podcast.svg"
-            },
-            {
-              "title": "Freedom Juice ft. Jon Gold",
-              "subtitle": "Design Details Podcast",
-              "link": "Hear Interview",
-              "source": "https://spec.fm/podcasts/design-details/14150",
-              "avatar": "/images/press/podcast.svg"
-            },
-            {
-              "title": "Adam Morse on CSS",
-              "subtitle": "CSSConf Oakland 2014",
-              "link": "Watch Video",
-              "source": "https://www.youtube.com/watch?v=14N_V56tqd4&t=627s",
-              "avatar": "/images/sources/video.svg"
-            },
-            {
-              "title": "CSS and Scalability",
-              "subtitle": "by Adam Morse",
-              "link": "Read Article",
-              "source": "http://mrmrs.io/writing/2016/03/24/scalable-css/",
-              "avatar": "/images/sources/article.svg"
-            },
-            {
-              "title": "Functional Programing",
-              "subtitle": "by Jon Gold",
-              "link": "Read Article",
-              "source": "http://www.jon.gold/2015/07/functional-css/",
-              "avatar": "/images/sources/article.svg"
+              "type": "sources",
+              "sources": ["Lego Bits ft. Adam Morse", "Freedom Juice ft. Jon Gold", "Adam Morse on CSS", "CSS and Scalability", "Functional Programming"]
             }
           ]
         }
