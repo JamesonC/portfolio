@@ -1,4 +1,24 @@
 {
+  "card": {
+    "type": "secondary",
+    "title": "Product Designer",
+    "subtitle": "About",
+    "description": "Hello there I'm Claudio, a freelance product designer focusing on design systems and internal business tools.",
+    "cta": "Read Bio",
+    "path": "/about",
+    "image": {
+      "1x": "/images/about/portrait@1x.jpg",
+      "2x": "/images/about/portrait@2x.jpg",
+      "alt": "Hi, I'm Claudio.",
+      "breakpoints": [
+        {
+          "width": 30,
+          "1x": "/images/about/portrait-square@1x.jpg",
+          "2x": "/images/about/portrait-square@2x.jpg"
+        }
+      ]
+    }
+  },
   "image": {
     "1x": "/images/about/portrait-square@1x.jpg",
     "2x": "/images/about/portrait-square@2x.jpg",
