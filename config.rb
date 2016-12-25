@@ -18,16 +18,20 @@ page '/*.txt', layout: false
 ###
 # Proxies
 ###
-data.projects.each do |id, project|
-  proxy "/#{ project.name.parameterize }/index.html", "/case-study.html", :locals => { :project => project }, :ignore => true
+
+# Project Case Studies
+data.case_studies.each do |id, study|
+  proxy "/case-study/#{ study.title.parameterize }/index.html", "/post.html", :locals => { :project => study }, :ignore => true
 end
 
-data.writings.each do |id, article|
-  proxy "/#{ I18n.transliterate(article.title).downcase.strip.gsub(' ', '-').gsub('(', '').gsub(')', '') }/index.html", "/article.html", :locals => { :article => article }, :ignore => true
+# Journal Articles
+data.journal.each do |id, article|
+  proxy "/journal/#{ article.title.parameterize }/index.html", "/post.html", :locals => { :article => article }, :ignore => true
 end
 
+# Documentation
 data.docs.each do |id, doc|
-  if doc.title === "Introduction"
+  if doc.title === "Overview"
     proxy "/docs/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
   else
     proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
