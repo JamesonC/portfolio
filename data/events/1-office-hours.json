@@ -1,7 +1,7 @@
 {
   "title": "Out of Office Hours",
   "subtitle": "Mentorship Program",
-  "link": "Visit Site",
-  "source": "https://www.outofofficehours.com/",
+  "cta": "Visit Site",
+  "path": "https://www.outofofficehours.com/",
   "avatar": "/images/events/holidays.svg"
 }

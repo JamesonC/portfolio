@@ -1,7 +1,7 @@
 {
   "title": "Epicurrence #4",
   "subtitle": "Non-Conference",
-  "link": "Watch Video",
-  "source": "https://www.youtube.com/watch?v=gNHzaOzDrHs",
+  "cta": "Watch Video",
+  "path": "https://www.youtube.com/watch?v=gNHzaOzDrHs",
   "avatar": "/images/events/epicurrence-no_4.svg"
 }

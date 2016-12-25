@@ -1,7 +1,7 @@
 {
   "title": "Epicurrence #5",
   "subtitle": "Non-Conference",
-  "link": "Visit Site",
-  "source": "https://www.epicurrence.com/",
+  "cta": "Visit Site",
+  "path": "https://www.epicurrence.com/",
   "avatar": "/images/events/epicurrence-no_5.svg"
 }
