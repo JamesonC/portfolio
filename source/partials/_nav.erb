@@ -1,8 +1,13 @@
 <%# Config %>
-<% contact = data.navigation.content %>
+<% contact = data.navigation %>
 <%# Partial %>
-<nav class="mw45 center pv1 pv2-ns ph1 ph2-m ph0-l bg-white">
-  <a class="js-nav lato f0_75 fw7 ls0_15 ttu dark-gray no-underline" href="/">
-    <span class="js-arrow property-transform duration-0_25 function-cubic translateX-0 dib mr0_5">←</span> Home
-  </a>
+<nav class="fixed top-0 top-1-l right-0 right-2-l z-999 w-100 w-auto-l bg-white tl tr-l shadow-0 shadow-none-l">
+  <ul class="ma0 pa0 ph1 ph2-m ph0-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap">
+    <%# Config %>
+    <% sl = contact.length - 1 %>
+    <%# End %>
+    <% contact.each_with_index do |section, s| %>
+      <li class="dib db-l ma0 pa0 <% if s != sl %>pr2 pr0-l<% end %>"><a class="dib pv1 lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="<%= section.path %>" <% if section.target %>target="_blank"<% end %>><%= section.title %></a></li>
+    <% end %>
+  </ul>
 </nav>
