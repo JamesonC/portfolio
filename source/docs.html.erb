@@ -9,27 +9,8 @@ layout: docs
   <% sections.push(section) %>
 <% end %>
 <%# End %>
-<div class="mw60 center cf pv4-l">
-  <nav class="fl-l w-25-l mb4 mb0-l pv1 pv0-l bt bb bn-l b--light-gray bg-almost-white-l">
-    <ul class="ma0 ph1 ph2-m ph0-l overflow-x-auto overflow-scrolling scrollbar-dn nowrap list">
-      <%# Config %>
-      <% sl = sections.length - 1 %>
-      <%# End %>
-      <li class="dib db-l ma0 mb2-l pr2 pr0-l">
-        <a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="/">
-          Back to Site
-        </a>
-      </li>
-      <% sections.each_with_index do |section, s| %>
-        <% path = "" %>
-        <% if section.title != "Introduction" %>
-          <% path = section.title.parameterize %>
-        <% end %>
-        <li class="dib db-l ma0 <% if s != sl %>mb2-l pr2 pr0-l<% end %>"><a class="ma0 mb2 lato f0_75 fw7 ls0_15 ttu <% if section.title === doc.title %>dark-gray<% else %>gray<% end %> link hover-dark-gray" href="/docs/<%= path %>"><%= section.title %></a></li>
-      <% end %>
-    </ul>
-  </nav>
-  <article class="fl-l w-75-l">
+<div class="mw45 center cf mt4 mt0-l pv4-l">
+  <article>
     <header class="mb4 pb2 bb b--light-gray">
       <div class="ph1 ph2-m ph0-l">
         <h1 class="ma0 mb2 merriweather f2 fw3 dark-gray"><%= doc.title %></h1>
@@ -45,7 +26,7 @@ layout: docs
       <section class="<% if s != sl %>mb4 pb4 bb b--light-gray<% else %>mb4<% end %>">
         <% if section.title %>
           <header class="mb2 ph1 ph2-m ph0-l">
-            <h2 class="ma0 merriweather f1_5 fw4 b black"><%= section.title %></h2>
+            <h2 class="ma0 merriweather f1_5 fw4 b dark-gray"><%= section.title %></h2>
           </header>
         <% end %>
         <%# Config %>
@@ -70,23 +51,23 @@ layout: docs
                     <tr>
                       <% row.each_with_index do |cell, e| %>
                         <% if cell.type === "header" %>
-                          <td class="v-top w-50 pa1 ba b--pearl bg-almost-white">
-                            <h3 class="ma0 merriweather f1_125 fw4 black"><%= cell.header %></h3>
+                          <td class="v-top w-50 pa1 ba b--light-gray bg-almost-white">
+                            <h3 class="ma0 merriweather f1_125 fw4 dark-gray"><%= cell.header %></h3>
                           </td>
                         <% elsif cell.type === "code" %>
-                          <td class="v-top w-50 pa1 ba b--pearl">
+                          <td class="v-top w-50 pa1 ba b--light-gray">
                             <code class="ma0 roboto-mono f1 fw4 lh1_50 chili"><%= cell.code %></code>
                           </td>
                         <% elsif cell.type === "descriptions" %>
-                          <td class="v-top w-50 pa1 ba b--pearl">
+                          <td class="v-top w-50 pa1 ba b--light-gray">
                             <%# Config %>
                             <% dl = cell.descriptions.length - 1 %>
                             <%# End %>
                             <% cell.descriptions.each_with_index do |description, d| %>
                               <% if description.type === "text" %>
-                                <p class="ma0 mb1 merriweather f1 fw3 black lh1_50"><%= description.text %></p>
+                                <p class="ma0 mb1 merriweather f1 fw3 dark-gray lh1_50"><%= description.text %></p>
                               <% elsif description.type === "rule" %>
-                                <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 black lh1_50">
+                                <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 dark-gray lh1_50">
                                   <%= description.title %>:
                                   <code class="roboto-mono green"><%= description.code %></code>
                                 </p>
@@ -104,7 +85,7 @@ layout: docs
           <% if content.type === "deck" %>
             <div class="ph1 ph2-m ph0-l <% if next_type === "deck" %>mb4<% end %>">
               <% if content.deck.title %>
-                <h3 class="ma0 mb2 merriweather f1_125 fw4 black"><%= content.deck.title %></h3>
+                <h3 class="ma0 mb2 merriweather f1_125 fw4 dark-gray"><%= content.deck.title %></h3>
               <% end %>
               <%# Config %>
               <% al = content.deck.cards.length - 1 %>
@@ -143,7 +124,7 @@ layout: docs
                               <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
                                 <%= post.subtitle %>
                               </p>
-                              <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %> →</p>
+                              <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.link %></p>
                             </div>
                           </td>
                         </tr>
