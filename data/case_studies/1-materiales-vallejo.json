@@ -220,6 +220,20 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Toolkit",
+      "content": [
+        {
+          "type": "list",
+          "list": [
+            {
+              "type": "tools",
+              "tools": ["Swipies", "Figma", "Middleman", "Tachyons", "Gulp.js", "Netlify"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
