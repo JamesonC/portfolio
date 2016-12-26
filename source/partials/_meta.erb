@@ -1,12 +1,12 @@
 <meta property="og:url" content="<%= data.meta.url %>">
 <% if locals[:project] %>
   <meta property="og:type" content="<%= project.meta.type %>">
-  <meta property="og:title" content="<%= project.meta.title %>">
+  <meta property="og:title" content="<%= project.title %>">
   <meta property="og:description" content="<%= project.description %>">
   <meta property="og:image" content="<%= project.meta.images.og %>">
 <% elsif locals[:article] %>
   <meta property="og:type" content="<%= article.meta.type %>">
-  <meta property="og:title" content="<%= article.meta.title %>">
+  <meta property="og:title" content="<%= article.title %>">
   <meta property="og:description" content="<%= article.description %>">
   <meta property="og:image" content="<%= article.meta.images.og %>">
 <% else %>
