@@ -8,7 +8,7 @@ layout: post
   <% post = locals[:project] %>
 <% end %>
 <%# End %>
-<article class="mt4 mt0-l">
+<article class="mt1 mt0-l">
   <header>
     <div class="mw45 center pv4 ph1 ph2-m ph0-l">
       <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray"><% if post.date %><%= post.date %><% else %><%= post.type %><% end %></h3>
@@ -20,8 +20,8 @@ layout: post
           <% ll = post.links.length - 1 %>
           <%# End %>
           <% post.links.each_with_index do |link, l| %>
-            <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-dark-gray <% if l != ll %>mb1 mr0_5-ns<% end %>">
-              <a class="dib w10 pv1 lato f0_75 fw7 ls0_15 ttu white no-underline" href="<%= link.path %>" target="_blank"><%= link.title %></a>
+            <li class="js-source shadow-0 translateY-0 duration-0_25 property-all dib tc bg-white <% if l != ll %>mb1 mr1<% end %>">
+              <a class="dib w9 pv1 lato f0_75 fw7 ls0_15 ttu dark-gray no-underline" href="<%= link.path %>" target="_blank"><%= link.title %></a>
             </li>
           <% end %>
         </ul>
@@ -55,8 +55,10 @@ layout: post
         <% end %>
         <%# Content Type: Comment %>
         <% if content.type === "comment" %>
-          <div class="mw45 center <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type == "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> pa1 pa2-ns bg-almost-white ba b--light-gray">
-            <p class="ma0 merriweather f1_125 fw3 dark-gray lh2"><%= content.comment %></p>
+          <div class="mw45 center <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type == "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> ph1 ph2-m ph0-l">
+            <div class="pa1 pa2-ns bg-almost-white ba b--light-gray">
+              <p class="ma0 merriweather f1_125 fw3 dark-gray lh2"><%= content.comment %></p>
+            </div>
           </div>
         <% end %>
         <%# Content Type: Media %>
