@@ -10,16 +10,6 @@
     "target": false
   },
   {
-    "title": "Docs",
-    "path": "/docs",
-    "target": false
-  },
-  {
-    "title": "Code",
-    "path": "https://github.com/claudiovallejo/portfolio",
-    "target": true
-  },
-  {
     "title": "Twitter",
     "path": "https://twitter.com/claudiovallejop",
     "target": true
