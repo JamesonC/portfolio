@@ -61,15 +61,6 @@
         {
           "type": "text",
           "text": "Materiales Vallejo uses manual processes for daily management tasks. It doesn’t count with an up-to-date inventory system and most of its sales transactions are made with cash. When there’s an available job, the business purchases newspaper and radio ads with a job description and application instructions. Interested applicants are asked to purchase a job application form at a local office supply store and deliver the application in person or email a scanned copy."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/projects/materiales-vallejo/business@1x.jpg",
-            "2x": "/images/projects/materiales-vallejo/business@2x.jpg",
-            "alt": "A stack of business images. The top-most image depicts one of the business's employees smiling, rolling a wheel barrow.",
-            "caption": "An employee is checking the client's invoice to load the purchased material"
-          }
         }
       ]
     },
