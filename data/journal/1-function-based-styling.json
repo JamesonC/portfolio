@@ -12,8 +12,8 @@
   "meta": {
     "type": "article",
     "images": {
-      "og": "/images/writing/function-based-css/meta-og.jpg",
-      "twitter": "/images/writing/function-based-css/meta-twitter.jpg"
+      "og": "/images/journal/function-based-styling/meta-og.jpg",
+      "twitter": "/images/journal/function-based-styling/meta-twitter.jpg"
     }
   },
   "content": [
@@ -26,8 +26,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/writing/function-based-css/mess@1x.jpg",
-            "2x": "/images/writing/function-based-css/mess@2x.jpg",
+            "1x": "/images/journal/function-based-styling/mess@1x.jpg",
+            "2x": "/images/journal/function-based-styling/mess@2x.jpg",
             "alt": "A tangled mess of a knot with different colors and squiggles. Yuck."
           }
         },
@@ -42,8 +42,8 @@
         {
           "type": "media",
           "media": {
-            "1x": "/images/writing/function-based-css/yes@1x.jpg",
-            "2x": "/images/writing/function-based-css/yes@2x.jpg",
+            "1x": "/images/journal/function-based-styling/yes@1x.jpg",
+            "2x": "/images/journal/function-based-styling/yes@2x.jpg",
             "alt": "A square block composed of small, repeating, color-coded shapes. It's lovely."
           }
         },
