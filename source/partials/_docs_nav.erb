@@ -6,12 +6,12 @@
 <%# End %>
 <nav class="fixed top-0 top-1-l right-0 right-2-l z-999 w-100 w-auto-l bg-white tl tr-l shadow-0 shadow-none-l">
   <ul class="ma0 pa0 ph1 ph2-m ph0-l overflow-x-auto overflow-visible-l overflow-scrolling scrollbar-dn nowrap">
+    <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pv0_5 pv0-l pr2 pr0-l">
+      <a class="dib pv1 pv0-l pb1-l lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="/">Back to Site</a>
+    </li>
     <%# Config %>
     <% sl = sections.length - 1 %>
     <%# End %>
-    <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pr2 pr0-l">
-      <a class="dib pv1 lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="/">Back to Site</a>
-    </li>
     <% sections.each_with_index do |section, s| %>
       <%# Config %>
       <% path = "" %>
@@ -19,7 +19,7 @@
         <% path = section.title.parameterize %>
       <% end %>
       <%# End %>
-      <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pa0 <% if s != sl %>pr2 pr0-l<% end %>"><a class="dib ma0 pv1 lato f0_75 fw7 ls0_15 ttu <% if section.title === doc.title %>dark-gray<% else %>gray<% end %> link hover-dark-gray" href="/docs/<%= path %>"><%= section.title %></a></li>
+      <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pa0 <% if s != sl %>pr2 pr0-l<% end %>"><a class="dib ma0 pv1 pv0-l <% if s != sl %>pb1-l<% end %>lato f0_75 fw7 ls0_15 ttu <% if section.title === doc.title %>dark-gray<% else %>gray<% end %> link hover-dark-gray" href="/docs/<%= path %>"><%= section.title %></a></li>
     <% end %>
   </ul>
 </nav>
