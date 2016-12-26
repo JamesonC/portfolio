@@ -7,7 +7,7 @@
     <% sl = contact.length - 1 %>
     <%# End %>
     <% contact.each_with_index do |section, s| %>
-      <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pa0 <% if s != sl %>pr2 pr0-l<% end %>"><a class="dib <% if s != sl %>pb1<% end %> lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="<%= section.path %>" <% if section.target %>target="_blank"<% end %>><%= section.title %></a></li>
+      <li class="js-nav translateX-0 duration-0_25 property-transform function-cubic dib db-l ma0 pa0 pv0_5 pv0-l <% if s != sl %>pr2 pr0-l<% end %>"><a class="dib pv1 pv0-l <% if s != sl %>pb1-l<% end %> lato f0_75 fw7 ls0_15 ttu gray link hover-dark-gray" href="<%= section.path %>" <% if section.target %>target="_blank"<% end %>><%= section.title %></a></li>
     <% end %>
   </ul>
 </nav>
