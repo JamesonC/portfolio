@@ -30,14 +30,14 @@ layout: index
 <% end %>
 <%# End %>
 <%# Content %>
-<main class="mt4 mt0-l cf">
+<main class="mt4 cf">
   <div class="mw45 center mt2-ns ph1 ph2-m ph0-l">
     <%# Content Sections %>
     <%# Config %>
     <% sl = index.length - 1 %>
     <%# End %>
-    <% index.each do |section, s| %>
-      <section class="mb4 cf">
+    <% index.each_with_index do |section, s| %>
+      <section class="<% if s === 0 %>mt1 mt0-ns<% end %> mb4 cf">
         <%# Config %>
         <% if section.type === "About" %>
           <% posts = [about] %>
@@ -74,7 +74,7 @@ layout: index
             <% end %>
             <%# End %>
             <% if post.card.type === "main" %>
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 bg-white" href="/<%= root %><%= post.title.parameterize %>">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% end %> bg-white" href="/<%= root %><%= post.title.parameterize %>">
                 <picture>
                   <img class="db w-100" src="<%= post.card.image["1x"] %>" srcset="<%= post.card.image["1x"] %> 1x, <%= post.card.image["2x"] %> 2x" alt="<%= post.card.image.alt %>">
                 </picture>
@@ -87,7 +87,7 @@ layout: index
                 </div>
               </a>
             <% elsif post.card.type === "secondary" %>
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db mb4 no-underline bg-white" href="<% if post.card.path %><%= post.card.path %><% else %>/<%= root %><%= post.title.parameterize %><% end %>">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db <% if o != ol %>mb2<% end %> no-underline bg-white" href="<% if post.card.path %><%= post.card.path %><% else %>/<%= root %><%= post.title.parameterize %><% end %>">
                 <table class="w-100 collapse">
                   <tbody>
                     <tr class="dn-ns">
@@ -128,7 +128,7 @@ layout: index
                 </table>
               </a>
             <% elsif post.card.type === "text" %>
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline mb2 pv2 pl2 pr4 bg-white" href="/<%= root %><%= post.title.parameterize %>">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% end %> pv2 pl2 pr4 bg-white" href="/<%= root %><%= post.title.parameterize %>">
                 <div class="relative mb1 h0_75">
                   <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
                     <%= post.date %>
