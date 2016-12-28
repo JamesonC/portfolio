@@ -1,0 +1,73 @@
+{
+  "title": "Lorem Perception",
+  "description": "My transition from component-based to function-based styling and how it sparked an interest in design systems.",
+  "type": "Article",
+  "category": "Development",
+  "date": "Dec 19 2016",
+  "featured": false,
+  "card": {
+    "type": "text",
+    "cta": "Read Article"
+  },
+  "meta": {
+    "type": "article",
+    "images": {
+      "og": "/images/journal/function-based-styling/meta-og.jpg",
+      "twitter": "/images/journal/function-based-styling/meta-twitter.jpg"
+    }
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/journal/function-based-styling/mess@1x.jpg",
+            "2x": "/images/journal/function-based-styling/mess@2x.jpg",
+            "alt": "A tangled mess of a knot with different colors and squiggles. Yuck.",
+            "caption": "Highly specific classes resulted in cluttered unmanageable stylesheets"
+          }
+        },
+        {
+          "type": "text",
+          "text": "I was frustrated, so I started questioning and looking for solutions. How do the best developers and top product companies manage their stylesheets? I chatted with designer friends, inspected websites, read articles, and re-listened to several <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"https://spec.fm/podcasts/design-details\" target=\"_blank\">Design Details</a> episodes. A friend of mine shared <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.io/writing/2016/03/24/scalable-css/\" target=\"_blank\">CSS and Scalability</a>, an article written by <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.cc/\" target=\"_blank\">Adam Morse</a> that talks about the benefits of function-based styling and his experience managing stylesheets. After reading more of Adam’s thoughts on CSS and learning about his active involvement with the development community, I found <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, one of his side projects, and decided to give it a try on my next client project."
+        },
+        {
+          "type": "text",
+          "text": "At first, function-based styling felt wrong because it required an opposite approach to component-based styling. Instead of building UI components by adding a single, multi-property class I was building components by adding multiple, single-property classes. My component-based mindset refused to share a button’s padding with the site’s navigation menu and it hated cluttering my markup with so many classes. It wasn’t until I completed the first webpage that I became aware of the power of function-based styling. I realized my markup was readable, my classes reusable, and changes were predictable. What was once a bloated knot of overly specific classes became a collection of lean, globally reusable properties."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/journal/function-based-styling/yes@1x.jpg",
+            "2x": "/images/journal/function-based-styling/yes@2x.jpg",
+            "alt": "A square block composed of small, repeating, color-coded shapes. It's lovely.",
+            "caption": "Isolated global classes resulted in manageable and scalable stylesheets"
+          }
+        },
+        {
+          "type": "text",
+          "text": "After working with Tachyons on my first client project, I started building websites faster and creating lean, manageable, and scaleable stylesheets. I quickly fell in love with the system mindset that is a result of prioritizing reusability. Instead of creating random, unrelated values for a component I started creating specific, scalable values for the entire website. Learning about function-based styling sparked an interest in learning more about design systems and their function in scaling digital products."
+        }
+      ]
+    },
+    {
+      "title": "Functional CSS Resources",
+      "content": [
+        {
+          "type": "list",
+          "list": [
+            {
+              "type": "sources",
+              "sources": ["Lego Bits ft. Adam Morse", "Freedom Juice ft. Jon Gold", "Adam Morse on CSS", "CSS and Scalability", "Functional Programming"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
