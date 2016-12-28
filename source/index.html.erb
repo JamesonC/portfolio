@@ -9,12 +9,16 @@ layout: index
 <%# Case Studies %>
 <% case_studies = [] %>
 <% data.case_studies.each do |id, study| %>
-  <% case_studies.push(study) %>
+  <% if study.featured %>
+    <% case_studies.push(study) %>
+  <% end %>
 <% end %>
 <%# Journal %>
 <% journal = [] %>
 <% data.journal.each do |id, article| %>
-  <% journal.push(article) %>
+  <% if article.featured %>
+    <% journal.push(article) %>
+  <% end %>
 <% end %>
 <%# Press, Events, and Press and Events %>
 <% press_and_events = [] %>
