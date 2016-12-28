@@ -21,12 +21,16 @@ page '/*.txt', layout: false
 
 # Project Case Studies
 data.case_studies.each do |id, study|
-  proxy "/case-study/#{ study.title.parameterize }/index.html", "/post.html", :locals => { :project => study }, :ignore => true
+  if study.featured
+    proxy "/case-study/#{ study.title.parameterize }/index.html", "/post.html", :locals => { :project => study }, :ignore => true
+  end
 end
 
 # Journal Articles
 data.journal.each do |id, article|
-  proxy "/journal/#{ article.title.parameterize }/index.html", "/post.html", :locals => { :article => article }, :ignore => true
+  if article.featured
+    proxy "/journal/#{ article.title.parameterize }/index.html", "/post.html", :locals => { :article => article }, :ignore => true
+  end
 end
 
 # Documentation
