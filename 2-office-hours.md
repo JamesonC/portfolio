@@ -7,10 +7,7 @@ Over the past few weeks I've talked with 13 designers and each conversation has 
 
 I've depended on videos, articles, and podcasts to learn about design and development since I started designing a couple of years ago. I've learned most of what I currently know online and owe everything to social media platforms, designers, and companies that have opened up and shared their experiences and thoughts about design. While these resources are invaluable and form a big part of what I know about design and development, I wouldn't have learned as fast as I did without a mentor. I've been lucky that one of my best friends has been my mentor even before I started designing. My friend has shared his knowledge about which tools to use to build projects and how to approach design (and personal) challenges. My friend's mentorship (or friendship) has been the most valuable resource I have...
 
-
-
-
-
+---
 
 - Soft skills determine your ability to collaborate with a design team
 - Engage with designers you admire and would like to work with
@@ -21,12 +18,18 @@ I've depended on videos, articles, and podcasts to learn about design and develo
 - Freelance after you've worked with a company and once you're familiar with the design process
 - Integrate user research into your projects
 - Learn about incentive alignment and how to understand your client's needs
--
 
 ---
 
-What do I want to share?
-- How invaluable the experience is
-- What I've learned
-- The nature of the experiences
-- How to make them better
+## What do I want to say?
+- Current challenges
+- Resources I've used to learn and overcome these challenges
+- The value of previous mentorship experiences
+- The value of Out of Office Hours
+- Conclusion
+
+---
+
+I first learned about design on my last semester in college. Upon graduation, I was so fascinated by design that I decided to seek job opportunities. For the following two years I took every opportunity I could to learn. During those years I worked as a graphic designer, interaction designer, web designer, and front-end developer. Everything I've learned has been through work, reading articles, listening to podcasts, and watching conference videos. Without others sharing their work, their thoughts, and their experiences about design
+
+---
