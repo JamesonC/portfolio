@@ -5,7 +5,9 @@ When @fat Tweeted about his experience applying for a job, I was pretty down for
 
 Over the past few weeks I've talked with 13 designers and each conversation has been invaluable. The interactions have ranged from interview-style chats to dynamic conversations. About 75% of the conversations were via video chat, and it was surreal to get 1-on-1 time with designers I look up to. I was quite scared for my first interview, but as I started going through the interviews I quickly realized the people I was engaging with were genuinely interested in helping out. Through these conversations I learned more about their stories, their journeys and their struggles. I learned about their process and approach to solving complex problems. I learned about their current focus and how they're preparing for future challenges. I got invaluable feedback on my portfolio, interview advice, application tips, and an opportunity for a potential job.
 
-I've depended on videos, articles, and podcasts to learn about design and development since I started designing a couple of years ago. I've learned most of what I currently know online and owe everything to social media platforms, designers, and companies that have opened up and shared their experiences and thoughts about design. While these resources are invaluable and form a big part of what I know about design and development, I wouldn't have learned as fast as I did without a mentor. I've been lucky that one of my best friends has been my mentor even before I started designing. My friend has shared his knowledge about which tools to use to build projects and how to approach design (and personal) challenges. My friend's mentorship (or friendship) has been the most valuable resource I have...
+I've learned most of what I currently know online and owe everything to social media platforms, designers, and companies that have opened up and shared their experiences and thoughts about design. While these resources are invaluable and form a big part of what I know about design and development, I wouldn't have learned as fast as I did without a mentor. I've been lucky that one of my best friends has been my mentor even before I started designing. Throughout the years my friend and I have kept in touch and our friendship has not only served as an invaluable bridge to learn about the lastest things about design, but more importantly, it has served as a source of hope and support as I faced new challenges and obstacles.
+
+Over the past few weeks I've talked with 13 designers through Out of Office Hours. Each conversation has been invaluable, as I've been able to interact 1-on-1 with designers I look up to. The interactions have ranged from interview-style chats where I learned a lot about their journeys and challenges, to dynamic interactions where we've learned about each other and received invaluable advice.
 
 ---
 
@@ -31,5 +33,13 @@ I've depended on videos, articles, and podcasts to learn about design and develo
 ---
 
 I first learned about design on my last semester in college. Upon graduation, I was so fascinated by design that I decided to seek job opportunities. For the following two years I took every opportunity I could to learn. During those years I worked as a graphic designer, interaction designer, web designer, and front-end developer. Everything I've learned has been through work, reading articles, listening to podcasts, and watching conference videos. Without others sharing their work, their thoughts, and their experiences about design
+
+---
+
+Everything I know about design and development I've learned through online courses, articles and forums, videos and podcasts, and social media. But I wouldn't have found these sources or looked up to the designers and companies I look up to without a mentor.
+
+---
+
+Ever since I started designing, I've depended on online courses, forums, videos, and podcasts to learn. Without having access to the ideas and experiences of leading designers, I would never have been able to grow because one of the hardest things about starting out is knowing on what to focus and what needs work.
 
 ---
