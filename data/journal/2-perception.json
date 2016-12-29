@@ -1,10 +1,10 @@
 {
-  "title": "Lorem Perception",
-  "description": "My transition from component-based to function-based styling and how it sparked an interest in design systems.",
+  "title": "Designer Ego",
+  "description": "Reflections of the root of my designer ego and how changing what I value as a designer has helped me focus on what matters.",
   "type": "Article",
-  "category": "Development",
-  "date": "Dec 19 2016",
-  "featured": false,
+  "category": "Reflections",
+  "date": "Dec 28 2016",
+  "featured": true,
   "card": {
     "type": "text",
     "cta": "Read Article"
@@ -21,51 +21,15 @@
       "content": [
         {
           "type": "text",
-          "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/journal/function-based-styling/mess@1x.jpg",
-            "2x": "/images/journal/function-based-styling/mess@2x.jpg",
-            "alt": "A tangled mess of a knot with different colors and squiggles. Yuck.",
-            "caption": "Highly specific classes resulted in cluttered unmanageable stylesheets"
-          }
+          "text": "When I first started freelancing I worked on projects where the most important thing was aesthetics. Design critiques centered around the visuals. They centered around paddings and borders and animations. My client's and I usually had differing ideas of what 'good design was'. As a consequence design critiques were only 'successful' when the client liked my designs. In retrospect, I was having a miserable time fighting for superficial, unintentional design whose sole purpose was to satisfy my own ideals. I was so stuck on the details that I forgot about the bigger picture."
         },
         {
           "type": "text",
-          "text": "I was frustrated, so I started questioning and looking for solutions. How do the best developers and top product companies manage their stylesheets? I chatted with designer friends, inspected websites, read articles, and re-listened to several <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"https://spec.fm/podcasts/design-details\" target=\"_blank\">Design Details</a> episodes. A friend of mine shared <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.io/writing/2016/03/24/scalable-css/\" target=\"_blank\">CSS and Scalability</a>, an article written by <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://mrmrs.cc/\" target=\"_blank\">Adam Morse</a> that talks about the benefits of function-based styling and his experience managing stylesheets. After reading more of Adam’s thoughts on CSS and learning about his active involvement with the development community, I found <a class=\"no-underline bb b--light-gray dark-gray dim\" href=\"http://tachyons.io/\" target=\"_blank\">Tachyons</a>, one of his side projects, and decided to give it a try on my next client project."
+          "text": "After working on a number of projects I realized why I felt so emotionally attached to my work. I became aware of the root of my designer ego. I was emotionally attached to my work because of what I valued. I valued creating beautiful, magical, fairytale designs so much that I forgot about what or why I was designing in the first place. My obsession with 'good design' was so evident that it clouded my vision to focusing on solving the problem. I was so focused on the how that I forgot, time and time again, about the why or the who. The more expectations I had for the end (visual) result, the harder it was for me to focus on analyzing and solving business needs."
         },
         {
           "type": "text",
-          "text": "At first, function-based styling felt wrong because it required an opposite approach to component-based styling. Instead of building UI components by adding a single, multi-property class I was building components by adding multiple, single-property classes. My component-based mindset refused to share a button’s padding with the site’s navigation menu and it hated cluttering my markup with so many classes. It wasn’t until I completed the first webpage that I became aware of the power of function-based styling. I realized my markup was readable, my classes reusable, and changes were predictable. What was once a bloated knot of overly specific classes became a collection of lean, globally reusable properties."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/journal/function-based-styling/yes@1x.jpg",
-            "2x": "/images/journal/function-based-styling/yes@2x.jpg",
-            "alt": "A square block composed of small, repeating, color-coded shapes. It's lovely.",
-            "caption": "Isolated global classes resulted in manageable and scalable stylesheets"
-          }
-        },
-        {
-          "type": "text",
-          "text": "After working with Tachyons on my first client project, I started building websites faster and creating lean, manageable, and scaleable stylesheets. I quickly fell in love with the system mindset that is a result of prioritizing reusability. Instead of creating random, unrelated values for a component I started creating specific, scalable values for the entire website. Learning about function-based styling sparked an interest in learning more about design systems and their function in scaling digital products."
-        }
-      ]
-    },
-    {
-      "title": "Functional CSS Resources",
-      "content": [
-        {
-          "type": "list",
-          "list": [
-            {
-              "type": "sources",
-              "sources": ["Lego Bits ft. Adam Morse", "Freedom Juice ft. Jon Gold", "Adam Morse on CSS", "CSS and Scalability", "Functional Programming"]
-            }
-          ]
+          "text": "I find it very challenging to enter a project with a blank slate and analyze things without any personal input or expectation of the end result. I don't know why I have this instinct to want to make things my own. It's ego, yes it is. But I believe the root of that ego is not evil or a result of being a bad designer. Its a result of valuing the wrong things. And I'm constantly working on redefining what I value as a person to create useful, meaningful products."
         }
       ]
     }
