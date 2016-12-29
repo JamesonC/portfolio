@@ -11,7 +11,15 @@ layout: post
 <article class="mt4">
   <header>
     <div class="mw45 center pv4 ph1 ph2-m ph0-l">
-      <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray"><% if post.date %><%= post.date %><% else %><%= post.type %><% end %></h3>
+      <h3 class="mb2 lato f0_75 fw7 ls0_15 ttu gray">
+        <% if post.date %>
+          <%= post.date %>
+        <% else %>
+          <%= post.type %>
+        <% end %>
+        <span class="ph0_5">∙</span>
+        <%= post.category %>
+      </h3>
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= post.title %></h1>
       <h2 class="w-80-ns <% if post.links %>mb2<% end %> lato f1_5 fw3 lh1_50 dark-gray"><%= post.description %></h2>
       <% if post.links %>
