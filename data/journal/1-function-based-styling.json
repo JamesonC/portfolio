@@ -12,8 +12,8 @@
   "meta": {
     "type": "article",
     "images": {
-      "og": "/images/journal/function-based-styling/meta-og.jpg",
-      "twitter": "/images/journal/function-based-styling/meta-twitter.jpg"
+      "og": "http://www.claudiovallejo.mx/images/journal/function-based-styling/meta-og.jpg",
+      "twitter": "http://www.claudiovallejo.mx/images/journal/function-based-styling/meta-twitter.jpg"
     }
   },
   "content": [
