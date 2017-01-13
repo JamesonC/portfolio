@@ -19,11 +19,11 @@
 <meta name="twitter:card" content="<%= data.meta.card %>">
 <meta name="twitter:site" content="<%= data.meta.site %>">
 <% if locals[:project] %>
-  <meta name="twitter:title" content="<%= project.meta.title %>">
+  <meta name="twitter:title" content="<%= project.title %>">
   <meta name="twitter:description" content="<%= project.description %>">
   <meta name="twitter:image" content="<%= project.meta.images.twitter %>">
 <% elsif locals[:article] %>
-  <meta name="twitter:title" content="<%= article.meta.title %>">
+  <meta name="twitter:title" content="<%= article.title %>">
   <meta name="twitter:description" content="<%= article.description %>">
   <meta name="twitter:image" content="<%= article.meta.images.twitter %>">
 <% else %>
