@@ -29,7 +29,7 @@
             "1x": "/images/journal/function-based-styling/mess@1x.jpg",
             "2x": "/images/journal/function-based-styling/mess@2x.jpg",
             "alt": "A tangled mess of a knot with different colors and squiggles. Yuck.",
-            "caption": "Highly specific classes resulted in cluttered unmanageable stylesheets"
+            "caption": "Highly specific classes resulted in cluttered, unmanageable stylesheets"
           }
         },
         {
