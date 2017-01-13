@@ -142,7 +142,7 @@ layout: post
           <div class="mw45 center ph1 ph2-m ph0-l">
             <% sources.each_with_index do |post, r| %>
               <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
-                <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.source %>" target="_blank">
+                <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.path %>" target="_blank">
                   <table class="w-100 collapse">
                     <tbody>
                       <tr>
