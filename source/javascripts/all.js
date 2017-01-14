@@ -1,14 +1,12 @@
 /*
   Document Load-in Animation
 */
-const $load = document.getElementsByClassName('js-load');
-window.addEventListener('load', function(){
-  if ($load) {
-    for (var i = 0; i < $load.length; i++) {
-      toggle($load[i], 'opacity-0', 'opacity-1');
-    }
-  }
-});
+const $load = document.getElementsByClassName('js-load')[0];
+if ($load) {
+  window.addEventListener('load', function(){
+    toggle($load, 'opacity-0', 'opacity-1');
+  });
+}
 /*
   Card Link Interactions
 */
