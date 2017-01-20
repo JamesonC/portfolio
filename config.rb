@@ -41,3 +41,10 @@ data.docs.each do |id, doc|
     proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
   end
 end
+
+# ClassPass Case Study
+data.case_studies.each do |id, study|
+  if study.interviewee === "ClassPass"
+    proxy "/classpass/voyage/index.html", "/post.html", :locals => { :project => study }, :ignore => true
+  end
+end
