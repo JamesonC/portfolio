@@ -1,0 +1,286 @@
+{
+  "title": "Voyage",
+  "description": "Designing a service that connects people with nature",
+  "type": "UX Assignment",
+  "category": "ClassPass",
+  "featured": false,
+  "interviewee": "ClassPass",
+  "card": {
+    "type": "",
+    "cta": "",
+    "image": {
+      "1x": "",
+      "2x": "",
+      "alt": ""
+    }
+  },
+  "meta": {
+    "type": "article",
+    "images": {
+      "og": "http://www.claudiovallejo.mx/images/projects/materiales-vallejo/meta-og.jpg",
+      "twitter": "http://www.claudiovallejo.mx/images/projects/materiales-vallejo/meta-twitter.jpg"
+    }
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "I started this assignment by first learning about hiker and outdoor enthusiast needs and preferences to design a business mission and define user goals and assumptions. Designing a usable service requires knowledge of the business mission and user goals because they are what drive design decisions. So I started asking questions—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+            "Why do people hike?",
+            "What do hikers value?",
+            "Do hikers enjoy hiking in groups? Why?",
+            "What is a good hike?",
+            "Why do hikers select one trail over another?",
+            "What could the service offer that would bring value to a hiking experience?",
+            "How can the service be an indispensable hiking tool?"
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Based on personal hiking experiences and doing some research online, I learned that some of the reasons why people love exploring the outdoors is because they want to get some exercise, spend time with others, stay fit, and admire and be close to nature ¹."
+        },
+        {
+          "type": "text",
+          "text": "So I designed a service called Voyage whose mission is to connect people with nature. It offers a platform to explore hiking trails and organize group hiking trips. Voyage has three main goals that guide the design and functionality of it’s service—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Explorable Nature",
+              "description": "Voyage serves as a reliable source people can use to learn about trails around the world. Voyage will work towards making trails accessible and explorable by marking and documenting trails."
+            },
+            {
+              "title": "Safe Nature",
+              "description": "Voyage aims at providing people with relevant and important trail details that inform users about a trail’s terrain conditions to create safe hiking experiences. Voyage designed an accountability system where users can report trail issues and damages as well as hiker misconduct to create a safe and reliable community."
+            },
+            {
+              "title": "Open Nature",
+              "description": "Voyage is more than just a platform—its a community of people that care about nature and each other. The service enables users to create new trails and update trail content. We believe opening up the service’s content to the community will help create a sense of responsibility and care for nature. New trail submissions and content updates go through a quick approval process prior to being published to validate content and avoid duplicate trails."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Users",
+      "content": [
+        {
+          "type": "text",
+          "text": "The Voyage experience is designed based on many assumptions about hiker preferences and needs. I based most user assumptions on personal hiking experiences and by learning about other hikers through articles, blogs, company blogs, and videos."
+        },
+        {
+          "type": "text",
+          "text": "Some of the most important assumptions I made to design the Voyage experience include—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Trail Search Preferences",
+              "description": "Hikers will search nearby trails more frequently than more distant trails. Hikers will most likely value trail length and distance above any other trail factor when selecting a trail to hike."
+            },
+            {
+              "title": "Necessary Trail Details",
+              "description": "Hikers prepare for new hikes by learning about trail details—trail’s terrain, wildlife presence, water presence, presence of toxic/dangerous plants, required gear, etc. Hikers care about staying safe."
+            },
+            {
+              "title": "Hiker Participation",
+              "description": "Hikers are interested in creating and updating trail content. They care about the well being of the community and are interested in reporting trail damage and hiker misconduct."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Here are some of the most important tasks users can accomplish within the Voyage app—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+            "Sign in / sign out of app",
+            "Explore trails on a map or list",
+            "Search trails by country, state, city, park, or trail name",
+            "Filter trail results by distance to trail, trail length, and terrain type",
+            "View trail profiles",
+            "Create a new hike",
+            "Join/leave an upcoming hike",
+            "Invite hikers to an upcoming hike",
+            "View hiker profiles",
+            "File a report for hiker misconduct",
+            "Create a new trail and submit for approval",
+            "File a report for trail issues/damages",
+            "View recent and upcoming hikes",
+            "Save favorite trails",
+            "Control hike notification settings",
+            "Control profile details",
+            "Find help and support articles",
+            "Give app feedback"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wireframe",
+      "content": [
+        {
+          "type": "text",
+          "text": "The app’s navigation is separated into four main sections—Explore, Hikes, Favorites, and Profile. Each section has a defined group of screens which can only be accessed within each section. Users can’t jump to another section without tapping the section’s menu tab. Trail and hiker profiles can be accessed through each section."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/wireframe@1x.jpg",
+            "2x": "/images/projects/classpass/wireframe@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Trail Search Flow",
+      "content": [
+        {
+          "type": "text",
+          "text": "When launching the app, logged in users are taken to the Explore tab, which displays a map view of the user’s location and nearby trails to provide users with a sense of location and relative position."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/default-map-view@1x.jpg",
+            "2x": "/images/projects/classpass/default-map-view@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Green pins depict trail start points. Tapping a trail pin’s start point displays the trail’s end point, animates the trail’s path, and zooms the map to fit the entire trail into view. Above the trail a card-style gallery appears displaying important trail details to provide users with a glimpse of the displayed trail. Swiping the gallery re-positions the map to display the new trail."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/trail-map-view@1x.jpg",
+            "2x": "/images/projects/classpass/trail-map-view@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search nearby (or filtered) trails by name and trail length versus geographical location."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/list-view@1x.jpg",
+            "2x": "/images/projects/classpass/list-view@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Trails can be searched by name, region, city, state, and country. Search results prioritize trails over larger regions and user location to make it faster for users to find nearby points of interest."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/search-view@1x.jpg",
+            "2x": "/images/projects/classpass/search-view@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Filters enable users to control displayed trails. Users can filter results by distance, trail length, trail entrance fee, and trail types."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/filter-view@1x.jpg",
+            "2x": "/images/projects/classpass/filter-view@2x.jpg",
+            "alt": "LOREM IPSUm"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pressing a trail card on the map or list view takes users to the trail profile. Trail profiles were designed to provide users with important information that helps users plan and prepare for a safe hiking experience. Trail profiles display trail details and suggested gear equipment prior to listing upcoming hikes to ensure users know what to expect from the hike."
+        },
+        {
+          "type": "text",
+          "text": "The trail profile features an Upcoming Hikes section that contains a gallery of cards displaying available hikes. Users can sign up for hikes, invite other hikers to an available hike, and create a new hike."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/trail-view@2x.jpg",
+            "2x": "/images/projects/classpass/trail-view@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Naming and Logo",
+      "content": [
+        {
+          "type": "text",
+          "text": "When thinking about a name for the service, I started writing down words that reminded me of nature, connection, community, and exploration—"
+        },
+        {
+          "type": "text",
+          "text": "I selected Voyage (French for trip) because it evokes feelings of adventure, courage, and curiosity which are feelings hikers may experience when exploring new trails. I also opted for Voyage because I didn’t want to use a word that was explicitly related to hiking, as I believe the app’s model (after being tested and researched) could be expanded to incorporate other types of outdoor activities like kayaking, rock climbing, and biking."
+        },
+        {
+          "type": "text",
+          "text": "After selecting the name I started exploring with different logos. I was looking for a logo that reflected a brand that was modern, simple, and contained a small hint of the outdoors. I was looking for a simple logo with very little branding because I wanted to create an experience that focused more on hiking and nature than on the business and the brand."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/logo@1x.jpg",
+            "2x": "/images/projects/classpass/logo@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Early Explorations",
+      "content": [
+        {
+          "type": "text",
+          "text": "I did a lot of sketching and exploring and questioning to define the business and user assumptions that guided the app’s design. While some of the conclusions I made weren’t written down, almost all of my thought process and ideation happened on paper. Here are all the sketches and notes I took as I worked through this assignment—"
+        }
+      ]
+    },
+    {
+      "title": "Concluding Insights",
+      "content": [
+        {
+          "type": "text",
+          "text": "Voyage was designed based on very little hiking experience, minimal online research, and a lot of hiker assumptions. I could keep on exploring and testing out new layouts, but I am aware that they would be based on assumptions and that user testing and feedback are the only way of validating these assumptions to create more focused, guided explorations that are aligned with real user needs."
+        },
+        {
+          "type": "text",
+          "text": "The whole experience is built on assumptions and nice-to-haves, and I’m aware that turning a project into reality is extremely challenging. Some questions I have about the assumptions I made include—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+            "How could the service make a profit?",
+            "What would the internal report system be like?",
+            "How would Voyage validate a new trail submission?",
+            "How is a trail’s length measured?",
+            "Should hiking groups have a member limit? How do you determine a hike member limit?",
+            "Should available hikes be more easily accessible through the Explore tab?",
+            "Should trails be reviewed?",
+            "Why not display trail lengths on trail pins?"
+          ]
+        }
+      ]
+    }
+  ]
+}
