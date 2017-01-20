@@ -51,6 +51,10 @@ html { -webkit-font-smoothing: antialiased; }
 .link:active { -webkit-transition: color .25s ease-in-out; transition: color .25s ease-in-out; }
 .hover-dark-gray:hover { color: #333333; }
 /*
+  LISTS
+*/
+.lst-circle { list-style-type: circle; }
+/*
    WIDTHS
 */
 .minw5 { min-width: 5rem; }
