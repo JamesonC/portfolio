@@ -164,6 +164,21 @@ layout: post
             <% end %>
           </div>
         <% end %>
+        <%# Content Type: Bullet %>
+        <% if content.type === "bullet" %>
+          <%# Config %>
+          <% il = content.bullet.length - 1 %>
+          <%# End %>
+          <div class="mw45 center ph1 ph2-m ph0-l">
+            <% content.bullet.each_with_index do |item, i| %>
+              <div class="<% if i != il %>mb0_5<% else %>mb4<% end %>">
+                <ul class="ma0 pl2 lst-circle">
+                  <li><p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= item %></p></li>
+                </ul>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
         <%# Content Type: Table %>
         <% if content.type === "table" %>
           <div class="ph1 ph2-m ph0-l">
