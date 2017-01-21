@@ -17,8 +17,6 @@ layout: post
         <% else %>
           <%= post.type %>
         <% end %>
-        <span class="ph0_5">∙</span>
-        <%= post.category %>
       </h3>
       <h1 class="mb1 merriweather f2 fw3 dark-gray"><%= post.title %></h1>
       <h2 class="w-80-ns <% if post.links %>mb2<% end %> lato f1_5 fw3 lh1_50 dark-gray"><%= post.description %></h2>
@@ -55,10 +53,18 @@ layout: post
           <% next_type = section.content[c + 1].type %>
         <% end %>
         <%# End %>
+        <%# Content Type: Full Section %>
+        <% if content.type === "full separator" %>
+          <div class="bb b--light-gray"></div>
+        <% end %>
+        <%# Content Type: Intra Section %>
+        <% if content.type === "part separator" %>
+          <div class="mw45 center bb b--light-gray"></div>
+        <% end %>
         <%# Content Type: Text %>
         <% if content.type === "text" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" || next_type === "comment" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" || next_type === "comment" || next_type === "carrusel" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
           </div>
         <% end %>
         <%# Content Type: Comment %>
@@ -173,10 +179,35 @@ layout: post
             <% content.bullet.each_with_index do |item, i| %>
               <div class="<% if i != il %>mb0_5<% else %>mb4<% end %>">
                 <ul class="ma0 pl2 lst-circle">
-                  <li><p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= item %></p></li>
+                  <li class="<% if i != il %>mb1<% end %>"><p class="ma0 merriweather f1_125 fw3 lh1_75 dark-gray"><%= item %></p></li>
                 </ul>
               </div>
             <% end %>
+          </div>
+        <% end %>
+        <%# Content Type: Carrusel %>
+        <% if content.type === "carrusel" %>
+          <div>
+            <% if content.carrusel.title %>
+              <div class="mw45 center mb1 ph1 ph2-m ph0-l">
+                <h4 class="ma0 mb1 merriweather f1_125 fw4 dark-gray"><%= content.carrusel.title %></h4>
+              </div>
+            <% end %>
+            <% if content.carrusel.description %>
+              <div class="mw45 center mb2 ph1 ph2-m ph0-l">
+                <p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= content.carrusel.description %></p>
+              </div>
+            <% end %>
+            <div class="js-gallery relative mw60 center mb4 overflow-hidden" style="height: 600px;">
+              <%# Config %>
+              <% gl = content.carrusel.gallery.length - 1 %>
+              <%# End %>
+              <% content.carrusel.gallery.each_with_index do |media, m| %>
+                <div class="js-image duration-0_25 property-opacity function-cubic absolute <% if m != 0 %>opacity-0<% end %>">
+                  <img class="w-100" src="<%= media["1x"] %>" srcset="<%= media["1x"] %> 1x, <%= media["2x"] %> 2x" alt="<% if media.alt %><%= media.alt %><% end %>">
+                </div>
+              <% end %>
+            </div>
           </div>
         <% end %>
         <%# Content Type: Table %>
