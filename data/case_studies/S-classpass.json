@@ -1,20 +1,10 @@
 {
   "title": "Voyage App for iOS",
-  "description": "A dive into the business and user assumptions that guided the design of a group hiking app",
+  "description": "A dive into the research and ideation that guided the design of a group hiking app",
   "type": "UX Assignment",
   "category": "iOS App",
   "featured": false,
   "interviewee": "ClassPass",
-  "links": [
-    {
-      "title": "Website",
-      "path": "http://materialesvallejo.netlify.com"
-    },
-    {
-      "title": "Source Code",
-      "path": "https://github.com/claudiovallejo/materiales-vallejo"
-    }
-  ],
   "meta": {
     "type": "article",
     "images": {
@@ -170,7 +160,7 @@
         },
         {
           "type": "text",
-          "text": "Green pins depict trail start points. Tapping a trail pin’s start point displays the trail’s end point, animates the trail’s path, and zooms the map to fit the entire trail into view. Above the trail a card-style gallery appears displaying important trail details to provide users with a glimpse of the displayed trail. Swiping the gallery re-positions the map to display the new trail."
+          "text": "Trail pins display a trail's start point, length, and entrance fees. Tapping a pin displays the trail’s end point, animates the trail’s path, and zooms the map to fit the entire trail into view. Above the trail a card-style gallery appears displaying important trail details to provide users with a glimpse of the displayed trail. Swiping the gallery re-positions the map to display a different trail."
         },
         {
           "type": "media",
@@ -182,7 +172,7 @@
         },
         {
           "type": "text",
-          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search nearby (or filtered) trails by name and trail length versus geographical location."
+          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search trails in a more linear, structured way that emphasizes a trail's image over a trail's relative location to the user."
         },
         {
           "type": "media",
@@ -246,8 +236,7 @@
           "media": {
             "1x": "/images/projects/classpass/branding-challenge@1x.jpg",
             "2x": "/images/projects/classpass/branding-challenge@2x.jpg",
-            "alt": "Branding challenge sketches and notes.",
-            "caption": "Branding Challenge—60 minutes for naming and designing a simple logo."
+            "alt": "Branding challenge sketches and notes."
           }
         },
         {
@@ -273,7 +262,7 @@
       "content": [
         {
           "type": "text",
-          "text": "I did a lot of sketching and exploring and questioning to define the business and user assumptions that guided the app’s design. While some of the conclusions I made weren’t written down, almost all of my thought process and ideation happened on paper. Here are all the sketches and notes I took as I worked through this assignment—"
+          "text": "I did a lot of sketching and exploring and questioning to define the business and user assumptions that guided the app’s design. Most of my thought process and ideation happened on paper. Here are all the sketches and notes I took as I worked through this assignment—"
         },
         {
           "type": "carrusel",
@@ -354,33 +343,24 @@
       "content": [
         {
           "type": "text",
-          "text": "Voyage was designed based on very little hiking experience, minimal online research, and a lot of hiker assumptions. I could keep on exploring and testing out new layouts, but I am aware that they would be based on assumptions and that user testing and feedback are the only way of validating these assumptions to create more focused, guided explorations that are aligned with real user needs."
+          "text": "Voyage was designed based on very little hiking experience, minimal online research, and a lot of hiker assumptions. I could keep on exploring and testing out new layouts, but I'm aware that they would be based on assumptions and that user testing and feedback are the only way of validating these assumptions to create more focused, guided explorations that are aligned with real user needs."
         },
         {
           "type": "text",
-          "text": "The whole experience is built on assumptions and nice-to-haves, and I’m aware that turning a project into reality is extremely challenging. Some questions I have about the assumptions I made include—"
+          "text": "Even though my assumptions likely don't depict how users will end up interacting with the app, I'm also aware that the layout, structure, and UI design may not be the best solutions to my assumptions. I would love to chat about this assignment in detail to provide more insight about why I made some assumptions and would really like to learn and obtain your feedback to work on logic, UI, and any other area I did poorly on."
         },
         {
-          "type": "bullet",
-          "bullet": [
-            "How could the service make a profit?",
-            "What would the internal report system be like?",
-            "How would Voyage validate a new trail submission?",
-            "How is a trail’s length measured?",
-            "Should hiking groups have a member limit? How do you determine a hike member limit?",
-            "Should available hikes be more easily accessible through the Explore tab?",
-            "Should trails be reviewed?",
-            "Why not display trail lengths on trail pins?"
-          ]
+          "type": "text",
+          "text": "Thank you Noah (and ClassPass) for taking the time to read through my assignment, I really appreciate the opportunity to share my work. Honestly I purposefully selected this prompt because I am aware that the ClassPass app faces similar UI/layout challenges and wanted to get a more in depth glimpse on what you guys are currently facing/potentially working on. I had a lot of fun working on this assignment and hope you guys found something useful/interesting from the result."
         }
       ]
     },
     {
-      "title": "Deliverables",
+      "title": "Assignment Assets",
       "content": [
         {
           "type": "text",
-          "text": "Below you can find links to the asset files I used to design the app's UI, which include wireframes, icons, and UI screens. Feel free to break apart or do whatever you'd like with these files—"
+          "text": "If you'd like to get a closer look at any of the assignment assets, feel free to explore the asset files below. I've cleaned them up and organized them to facilitate their exploration—"
         },
         {
           "type": "list",
@@ -389,9 +369,10 @@
               "type": "assets",
               "assets": [
                 "Menu Icons",
-                "Join Hike Flow",
+                "Wireframes",
                 "Voyage Logo",
-                "Wireframes"
+                "Explore Tab UI",
+                "Assignment Imagery"
               ]
             }
           ]
