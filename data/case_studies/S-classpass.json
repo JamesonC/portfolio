@@ -94,12 +94,16 @@
           "type": "block",
           "block": [
             {
-              "title": "Trail Search Preferences",
-              "description": "Hikers will search nearby trails more frequently than more distant trails. Hikers will most likely value trail length and distance above any other trail factor when selecting a trail to hike."
+              "title": "Hiking Nearby Trails",
+              "description": "Hikers will signup for nearby trails more often than more distant trails."
             },
             {
-              "title": "Necessary Trail Details",
-              "description": "Hikers value safe hiking experiences and prepare for upcoming hikes by researching the trail's terrain, wildlife presence, weather conditions, trail length, trail history, among other things."
+              "title": "Hiking Shorter Trails",
+              "description": "Hikers will signup for hikes in shorter trails more frequently than longer trails."
+            },
+            {
+              "title": "Pre-hike Research",
+              "description": "Hikers prepare for hiking trips to ensure their experience is safe and as predictable as possible."
             },
             {
               "title": "Group Hiking",
@@ -234,14 +238,6 @@
       "title": "Naming and Logo",
       "content": [
         {
-          "type": "media",
-          "media": {
-            "1x": "/images/projects/classpass/logo@1x.jpg",
-            "2x": "/images/projects/classpass/logo@2x.jpg",
-            "alt": "Voyage logo."
-          }
-        },
-        {
           "type": "text",
           "text": "When thinking about a name for the service, I started writing down words that reminded me of nature, connection, community, and exploration—"
         },
@@ -261,6 +257,14 @@
         {
           "type": "text",
           "text": "After selecting the name I started exploring with different logos. I was looking for a logo that reflected a brand that was modern, simple, and contained a small hint of the outdoors. I was looking for a simple logo with very little branding because I wanted to create an experience that focused more on hiking and nature than on the business and the brand."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/logo@1x.jpg",
+            "2x": "/images/projects/classpass/logo@2x.jpg",
+            "alt": "Voyage logo."
+          }
         }
       ]
     },
