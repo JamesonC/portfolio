@@ -144,7 +144,7 @@
           "media": {
             "1x": "/images/projects/classpass/wireframe@1x.jpg",
             "2x": "/images/projects/classpass/wireframe@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "High-level view of the app's sections, sub-screens, and flows."
           }
         }
       ]
@@ -161,7 +161,7 @@
           "media": {
             "1x": "/images/projects/classpass/default-map-view@1x.jpg",
             "2x": "/images/projects/classpass/default-map-view@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "Screen of the app's default map view on launch."
           }
         },
         {
@@ -173,7 +173,7 @@
           "media": {
             "1x": "/images/projects/classpass/trail-map-view@1x.jpg",
             "2x": "/images/projects/classpass/trail-map-view@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "Close-up view of a selected trail displaying a trail's path and a trail card gallery to navigate between nearby trails."
           }
         },
         {
@@ -185,7 +185,7 @@
           "media": {
             "1x": "/images/projects/classpass/list-view@1x.jpg",
             "2x": "/images/projects/classpass/list-view@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "A complementary list view of the nearby trails to provide a more linear, structured way of exploring trails."
           }
         },
         {
@@ -197,7 +197,7 @@
           "media": {
             "1x": "/images/projects/classpass/search-view@1x.jpg",
             "2x": "/images/projects/classpass/search-view@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "The search view enables users to quickly search trails by name, region, city, state, and country."
           }
         },
         {
@@ -209,7 +209,7 @@
           "media": {
             "1x": "/images/projects/classpass/filter-view@1x.jpg",
             "2x": "/images/projects/classpass/filter-view@2x.jpg",
-            "alt": "LOREM IPSUm"
+            "alt": "Trail results can be filtered to provide custom views of trails aligned with user interests."
           }
         },
         {
@@ -225,7 +225,7 @@
           "media": {
             "1x": "/images/projects/classpass/trail-view@2x.jpg",
             "2x": "/images/projects/classpass/trail-view@2x.jpg",
-            "alt": "LOREM IPSUM"
+            "alt": "Trail profile card screen."
           }
         }
       ]
@@ -233,6 +233,14 @@
     {
       "title": "Naming and Logo",
       "content": [
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/logo@1x.jpg",
+            "2x": "/images/projects/classpass/logo@2x.jpg",
+            "alt": "Voyage logo."
+          }
+        },
         {
           "type": "text",
           "text": "When thinking about a name for the service, I started writing down words that reminded me of nature, connection, community, and exploration—"
@@ -253,14 +261,6 @@
         {
           "type": "text",
           "text": "After selecting the name I started exploring with different logos. I was looking for a logo that reflected a brand that was modern, simple, and contained a small hint of the outdoors. I was looking for a simple logo with very little branding because I wanted to create an experience that focused more on hiking and nature than on the business and the brand."
-        },
-        {
-          "type": "media",
-          "media": {
-            "1x": "/images/projects/classpass/logo@1x.jpg",
-            "2x": "/images/projects/classpass/logo@2x.jpg",
-            "alt": "LOREM IPSUM"
-          }
         }
       ]
     },
@@ -279,17 +279,17 @@
               {
                 "1x": "/images/projects/classpass/flow-1@1x.jpg",
                 "2x": "/images/projects/classpass/flow-1@2x.jpg",
-                "alt": "Lorem ipsum"
+                "alt": "Test"
               },
               {
                 "1x": "/images/projects/classpass/flow-2@1x.jpg",
                 "2x": "/images/projects/classpass/flow-2@2x.jpg",
-                "alt": "Lorem ipsum"
+                "alt": "Test"
               },
               {
                 "1x": "/images/projects/classpass/flow-3@1x.jpg",
                 "2x": "/images/projects/classpass/flow-3@2x.jpg",
-                "alt": "Lorem ipsum"
+                "alt": "Test"
               }
             ]
           }
@@ -376,7 +376,21 @@
       "content": [
         {
           "type": "text",
-          "text": "Lorem ipsum"
+          "text": "Below you can find links to the asset files I used to design the app's UI, which include wireframes, icons, and UI screens. Feel free to break apart or do whatever you'd like with these files—"
+        },
+        {
+          "type": "list",
+          "list": [
+            {
+              "type": "assets",
+              "assets": [
+                "Menu Icons",
+                "Join Hike Flow",
+                "Voyage Logo",
+                "Wireframes"
+              ]
+            }
+          ]
         }
       ]
     }
