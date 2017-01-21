@@ -64,7 +64,7 @@ layout: post
         <%# Content Type: Text %>
         <% if content.type === "text" %>
           <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" || next_type === "comment" || next_type === "carrusel" %>mb4<% elsif next_type && next_type === "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
+            <p class="ma0 <% if next_type && next_type === "media" || next_type === "comment" || next_type === "carrusel" %>mb4<% elsif next_type && next_type === "block" || next_type === "list" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
           </div>
         <% end %>
         <%# Content Type: Comment %>
@@ -139,6 +139,15 @@ layout: post
                 <% data.sources.each do |id, reference| %>
                   <% if s === reference.title %>
                     <% sources.push(reference) %>
+                  <% end %>
+                <% end %>
+              <% end %>
+            <% elsif list.type === "assets" %>
+              <% rl += list.assets.length - 1 %>
+              <% list.assets.each do |a| %>
+                <% data.assets.each do |id, asset| %>
+                  <% if a === asset.title %>
+                    <% sources.push(asset) %>
                   <% end %>
                 <% end %>
               <% end %>
