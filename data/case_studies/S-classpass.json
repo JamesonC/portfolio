@@ -1,19 +1,20 @@
 {
-  "title": "Voyage",
-  "description": "Designing a service that connects people with nature",
+  "title": "Voyage App for iOS",
+  "description": "A dive into the business and user assumptions that guided the design of a group hiking app",
   "type": "UX Assignment",
-  "category": "ClassPass",
+  "category": "iOS App",
   "featured": false,
   "interviewee": "ClassPass",
-  "card": {
-    "type": "",
-    "cta": "",
-    "image": {
-      "1x": "",
-      "2x": "",
-      "alt": ""
+  "links": [
+    {
+      "title": "Website",
+      "path": "http://materialesvallejo.netlify.com"
+    },
+    {
+      "title": "Source Code",
+      "path": "https://github.com/claudiovallejo/materiales-vallejo"
     }
-  },
+  ],
   "meta": {
     "type": "article",
     "images": {
@@ -25,54 +26,65 @@
     {
       "content": [
         {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/hero@1x.jpg",
+            "2x": "/images/projects/classpass/hero@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Selected Prompt and Guidelines",
+      "content": [
+        {
           "type": "text",
-          "text": "I started this assignment by first learning about hiker and outdoor enthusiast needs and preferences to design a business mission and define user goals and assumptions. Designing a usable service requires knowledge of the business mission and user goals because they are what drive design decisions. So I started asking questions—"
+          "text": "Design a service to organize group hiking trips with people in your area—"
         },
         {
           "type": "bullet",
           "bullet": [
-            "Why do people hike?",
-            "What do hikers value?",
-            "Do hikers enjoy hiking in groups? Why?",
-            "What is a good hike?",
-            "Why do hikers select one trail over another?",
-            "What could the service offer that would bring value to a hiking experience?",
-            "How can the service be an indispensable hiking tool?"
+              "Outline user goals / tasks that should be supported in the experience. Consider what constraints, requirements, and assumptions you are making with your design.",
+              "Produce a low-fidelity overview of the product or feature (wireframes or sketches are fine) that illustrates how users could get from the start page of this offering to meeting their goals. Design one high-fidelity screen for any individual moment or interaction to showcase visual design capabilities.",
+              "Try not to spend more than a few hours. This doesn’t need to be too thorough, we are just looking to learn a bit more about your process, creative thinking, and design skills (e.g. don’t worry about a complete architecture of the application, feel free to just explore one possible flow or task)",
+              "Any file format is fine to express your idea (e.g. PDF, keynote, presentation, sketch file, prototype, website, zip, dropbox folder, etc,.)"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "title": "Business Details",
+      "content": [
         {
           "type": "text",
-          "text": "Based on personal hiking experiences and doing some research online, I learned that some of the reasons why people love exploring the outdoors is because they want to get some exercise, spend time with others, stay fit, and admire and be close to nature ¹."
-        },
-        {
-          "type": "text",
-          "text": "So I designed a service called Voyage whose mission is to connect people with nature. It offers a platform to explore hiking trails and organize group hiking trips. Voyage has three main goals that guide the design and functionality of it’s service—"
+          "text": "Voyage is a business whose mission is to connect people with nature. Voyage is an iOS app that enables people to explore hiking trails and organize group hiking trips. Voyage has three main goals that guide the app's design and functionality—"
         },
         {
           "type": "block",
           "block": [
             {
-              "title": "Explorable Nature",
-              "description": "Voyage serves as a reliable source people can use to learn about trails around the world. Voyage will work towards making trails accessible and explorable by marking and documenting trails."
+              "title": "Make Nature Easy to Explore",
+              "description": "Voyage wants to be the most reliable resource to learn about nearby trails to prepare for and organize safe group hiking trips."
             },
             {
-              "title": "Safe Nature",
-              "description": "Voyage aims at providing people with relevant and important trail details that inform users about a trail’s terrain conditions to create safe hiking experiences. Voyage designed an accountability system where users can report trail issues and damages as well as hiker misconduct to create a safe and reliable community."
+              "title": "Make Nature Safe to Explore",
+              "description": "Voyage wants to make outdoor exploration as safe as possible by documenting important trail details and by working with local governments to maintain local trails."
             },
             {
-              "title": "Open Nature",
-              "description": "Voyage is more than just a platform—its a community of people that care about nature and each other. The service enables users to create new trails and update trail content. We believe opening up the service’s content to the community will help create a sense of responsibility and care for nature. New trail submissions and content updates go through a quick approval process prior to being published to validate content and avoid duplicate trails."
+              "title": "Create a Community of Outdoor Enthusiasts",
+              "description": "Voyage represents a community of people that care about nature and each other and believes that an integral component of growing and nurturing a loving community is by enabling users to create new trails, update trail information, and report trail damages and hiker misconduct."
             }
           ]
         }
       ]
     },
     {
-      "title": "Users",
+      "title": "User Details",
       "content": [
         {
           "type": "text",
-          "text": "The Voyage experience is designed based on many assumptions about hiker preferences and needs. I based most user assumptions on personal hiking experiences and by learning about other hikers through articles, blogs, company blogs, and videos."
+          "text": "User needs are defined based on personal hiking experiences and online research about hiker needs and preferences. One important report I found online, <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://www.outdoorfoundation.org/pdf/ResearchParticipation2016.pdf\" target=\"_blank\">2016 Outdoor Participation Report</a> by <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://www.outdoorfoundation.org/\" target=\"_blank\">Outdoor Foundation</a>, states that some of the reasons why Americans enjoy outdoor activities (including hiking) are to exercise, stay fit, spend time with others, and admire and be close to nature."
         },
         {
           "type": "text",
@@ -87,25 +99,24 @@
             },
             {
               "title": "Necessary Trail Details",
-              "description": "Hikers prepare for new hikes by learning about trail details—trail’s terrain, wildlife presence, water presence, presence of toxic/dangerous plants, required gear, etc. Hikers care about staying safe."
+              "description": "Hikers value safe hiking experiences and prepare for upcoming hikes by researching the trail's terrain, wildlife presence, weather conditions, trail length, trail history, among other things."
             },
             {
-              "title": "Hiker Participation",
-              "description": "Hikers are interested in creating and updating trail content. They care about the well being of the community and are interested in reporting trail damage and hiker misconduct."
+              "title": "Group Hiking",
+              "description": "Hikers enjoy hiking in groups to meet new people and stay safe."
             }
           ]
         },
         {
           "type": "text",
-          "text": "Here are some of the most important tasks users can accomplish within the Voyage app—"
+          "text": "Some of the most important tasks users can accomplish within the Voyage app include—"
         },
         {
           "type": "bullet",
           "bullet": [
-            "Sign in / sign out of app",
             "Explore trails on a map or list",
-            "Search trails by country, state, city, park, or trail name",
-            "Filter trail results by distance to trail, trail length, and terrain type",
+            "Search trails by name, region, city, state, and country",
+            "Filter trail results by distance to trail, trail length, terrain type, and trail entrance fee",
             "View trail profiles",
             "Create a new hike",
             "Join/leave an upcoming hike",
@@ -116,10 +127,7 @@
             "File a report for trail issues/damages",
             "View recent and upcoming hikes",
             "Save favorite trails",
-            "Control hike notification settings",
-            "Control profile details",
-            "Find help and support articles",
-            "Give app feedback"
+            "Control hike notification settings"
           ]
         }
       ]
@@ -129,7 +137,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The app’s navigation is separated into four main sections—Explore, Hikes, Favorites, and Profile. Each section has a defined group of screens which can only be accessed within each section. Users can’t jump to another section without tapping the section’s menu tab. Trail and hiker profiles can be accessed through each section."
+          "text": "The app has four main sections—Explore, Hikes, Favorites, and Profile. Below is an example of a high-level view and flow of the app. Each mini card represents a different screen—"
         },
         {
           "type": "media",
@@ -230,6 +238,15 @@
           "text": "When thinking about a name for the service, I started writing down words that reminded me of nature, connection, community, and exploration—"
         },
         {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/branding-challenge@1x.jpg",
+            "2x": "/images/projects/classpass/branding-challenge@2x.jpg",
+            "alt": "Branding challenge sketches and notes.",
+            "caption": "Branding Challenge—60 minutes for naming and designing a simple logo."
+          }
+        },
+        {
           "type": "text",
           "text": "I selected Voyage (French for trip) because it evokes feelings of adventure, courage, and curiosity which are feelings hikers may experience when exploring new trails. I also opted for Voyage because I didn’t want to use a word that was explicitly related to hiking, as I believe the app’s model (after being tested and researched) could be expanded to incorporate other types of outdoor activities like kayaking, rock climbing, and biking."
         },
@@ -253,6 +270,78 @@
         {
           "type": "text",
           "text": "I did a lot of sketching and exploring and questioning to define the business and user assumptions that guided the app’s design. While some of the conclusions I made weren’t written down, almost all of my thought process and ideation happened on paper. Here are all the sketches and notes I took as I worked through this assignment—"
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Wireframe and Flows",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/flow-1@1x.jpg",
+                "2x": "/images/projects/classpass/flow-1@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/flow-2@1x.jpg",
+                "2x": "/images/projects/classpass/flow-2@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/flow-3@1x.jpg",
+                "2x": "/images/projects/classpass/flow-3@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Menu Icons",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/menu-icons@1x.jpg",
+                "2x": "/images/projects/classpass/menu-icons@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Explore Section",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/explore@1x.jpg",
+                "2x": "/images/projects/classpass/explore@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/filters@1x.jpg",
+                "2x": "/images/projects/classpass/filters@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/search@1x.jpg",
+                "2x": "/images/projects/classpass/search@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Trail Profile",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/trail-profile@1x.jpg",
+                "2x": "/images/projects/classpass/trail-profile@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
         }
       ]
     },
@@ -279,6 +368,15 @@
             "Should trails be reviewed?",
             "Why not display trail lengths on trail pins?"
           ]
+        }
+      ]
+    },
+    {
+      "title": "Deliverables",
+      "content": [
+        {
+          "type": "text",
+          "text": "Lorem ipsum"
         }
       ]
     }
