@@ -212,7 +212,9 @@ layout: post
               <% gl = content.carrusel.gallery.length - 1 %>
               <%# End %>
               <% content.carrusel.gallery.each_with_index do |media, m| %>
-                <div class="js-image duration-0_25 property-opacity function-cubic absolute <% if m != 0 %>opacity-0<% end %>">
+              <ul class="ma0 pa0">
+              </ul>
+                <div class="dib">
                   <img class="w-100" src="<%= media["1x"] %>" srcset="<%= media["1x"] %> 1x, <%= media["2x"] %> 2x" alt="<% if media.alt %><%= media.alt %><% end %>">
                 </div>
               <% end %>
