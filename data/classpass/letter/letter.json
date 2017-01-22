@@ -2,8 +2,7 @@
   "title": "Maecenas Rex",
   "description": "Lorem ipsum dolor sit amet consectetur adipiscing seit.",
   "type": "Cover Letter",
-  "category": "Thank You",
-  "date": "Dec 19 2016",
+  "date": "January 23, 2017",
   "featured": true,
   "card": {
     "type": "text",
@@ -18,12 +17,23 @@
   },
   "content": [
     {
-      "content": [
-        {
-          "type": "text",
-          "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
-        }
-      ]
+      "type": "header",
+      "header": "Dear Noah,"
+    },
+    {
+      "type": "text",
+      "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+    },
+    {
+      "type": "text",
+      "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to test. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+    },
+    {
+      "type": "footer",
+      "footer": {
+        "greeting": "Friends for ever and ever,",
+        "signature": "Pollito"
+      }
     }
   ]
 }
