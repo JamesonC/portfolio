@@ -43,8 +43,8 @@ data.docs.each do |id, doc|
 end
 
 # ClassPass Case Study
-data.case_studies.each do |id, study|
-  if study.interviewee === "ClassPass"
-    proxy "/classpass/voyage/index.html", "/post.html", :locals => { :project => study }, :ignore => true
-  end
+data.classpass.assignment.each do |id, post|
+  proxy "/classpass/assignment/index.html", "/assignment.html", :locals => { :project => post }, :ignore => true
 end
+
+# ClassPass Cover Letter
