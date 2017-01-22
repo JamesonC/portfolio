@@ -1,4 +1,82 @@
 ---
-layout: index
+layout: classpass
 ---
-<h1>classpass</h2>
+<%# Config %>
+<%# Assignment %>
+<% assignment = "" %>
+<% data.classpass.assignment.each do |id, post| %>
+  <% assignment = post %>
+<% end %>
+<%# Letter %>
+<% letter = "" %>
+<% data.classpass.letter.each do |id, post| %>
+  <% letter = post %>
+<% end %>
+<%# Contact Links %>
+<% links = [] %>
+<% data.contact.each do |id, contact| %>
+  <% links.push(contact) %>
+<% end %>
+<%# End %>
+<%# Content %>
+<main class="mt4 cf">
+  <div class="mw45 center mt2-ns ph1 ph2-m ph0-l">
+    <%# Cover Letter %>
+    <section class="mt1 mt0-ns mb4 cf">
+      <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline pv2 pl2 pr4 bg-white" href="/classpass/letter">
+        <div class="relative mb1 h0_75">
+          <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray"><%= letter.type %></h3>
+          <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= letter.card.cta %></h3>
+        </div>
+        <h1 class="ma0 mb0_5 merriweather f1 fw4 dark-gray"><%= letter.title %></h1>
+        <p class="ma0 merriweather f1 fw3 dark-gray lh1_75"><%= letter.description %></p>
+      </a>
+    </section>
+    <%# Assignment Card %>
+    <section class="mb4 cf">
+      <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="/classpass/assignment">
+        <picture>
+          <img class="db w-100" src="<%= assignment.card.image["1x"] %>" srcset="<%= assignment.card.image["1x"] %> 1x, <%= assignment.card.image["2x"] %> 2x" alt="<%= assignment.card.image.alt %>">
+        </picture>
+        <div class="pa2">
+          <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= assignment.title %></h1>
+          <div class="relative h0_75">
+            <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= assignment.type %></h3>
+            <h3 class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= assignment.card.cta %></h3>
+          </div>
+        </div>
+      </a>
+    </section>
+    <%# Contact Links %>
+    <section class="mb4 cf">
+      <header class="mb2">
+        <h1 class="ma0 merriweather f1_125 fw3 dark-gray">Contact Links</h1>
+      </header>
+      <%# Config %>
+      <% ll = links.length - 1 %>
+      <%# End %>
+      <% links.each_with_index do |link, l| %>
+        <div class="fl w-100 w-50-ns <% if l != ll %>mb1<% end %> <% if l < ll - 1 %>mb1-ns<% end %> <% if l % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
+          <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.source %>" target="_blank">
+            <table class="w-100 collapse">
+              <tbody>
+                <tr>
+                  <td class="tc w-20">
+                    <%= image_tag link.avatar, :class => "v-mid" %>
+                  </td>
+                  <td class="w-80 pv1 pl1 bl b--pearl">
+                    <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= link.title %></p>
+                    <div class="relative h0_75">
+                      <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray"><%= link.subtitle %></p>
+                      <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= link.cta %></p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </a>
+        </div>
+      <% end %>
+    </section>
+  </div>
+</main>
