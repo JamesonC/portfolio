@@ -1,0 +1,8 @@
+{
+  "display": true,
+  "title": "Email",
+  "subtitle": "hola@claudiovallejo.mx",
+  "cta": "Send Message",
+  "source": "mailto:hola@claudiovallejo.mx",
+  "avatar": "/images/sources/email.svg"
+}
