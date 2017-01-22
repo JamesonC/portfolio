@@ -1,0 +1,38 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>twitter</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-448 -160)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 448 160L 512 160L 512 224L 448 224L 448 160Z" fill="#FFFFFF"/>
+</mask>
+<g id="twitter" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<mask id="mask1_alpha" mask-type="alpha">
+<g id="Mask" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path0_fill" transform="translate(464 176)" fill="#C4C4C4" style="mix-blend-mode:normal;"/>
+</g>
+</mask>
+<g id="Icon" style="mix-blend-mode:normal;" mask="url(#mask1_alpha)" figma:type="vector">
+<mask id="mask2_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(468 185)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(468 185)" fill="#00CDFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Border" style="mix-blend-mode:normal;" mask="url(#mask1_alpha)" figma:type="ellipse">
+<mask id="mask3_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(464 176)"/>
+</mask>
+<g mask="url(#mask3_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(464 176)" fill="#00CDFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 32 16C 32 24.8366 24.8366 32 16 32C 7.16344 32 0 24.8366 0 16C 0 7.16344 7.16344 0 16 0C 24.8366 0 32 7.16344 32 16Z"/>
+<path id="path1_fill" d="M 15.2948 10.8683C 16.9244 9.80992 18 7.98889 18 5.92C 18 2.65047 15.3137 0 12 0C 8.68628 0 6 2.65047 6 5.92C 6 7.98889 7.07562 9.80992 8.7052 10.8683C 3.67975 12.4577 0 17.5918 0 23.68L 24 23.68C 24 17.5918 20.3203 12.4577 15.2948 10.8683Z"/>
+<path id="path2_stroke_2x" d="M 15.2948 10.8683L 14.7501 10.0297L 12.9741 11.1832L 14.9933 11.8218L 15.2948 10.8683ZM 8.7052 10.8683L 9.00674 11.8218L 11.0259 11.1832L 9.2499 10.0297L 8.7052 10.8683ZM 0 23.68L -1 23.68L -1 24.68L 0 24.68L 0 23.68ZM 24 23.68L 24 24.68L 25 24.68L 25 23.68L 24 23.68ZM 17 5.92C 17 7.63232 16.1111 9.14572 14.7501 10.0297L 15.8395 11.707C 17.7376 10.4741 19 8.34546 19 5.92L 17 5.92ZM 12 1C 14.7741 1 17 3.21536 17 5.92L 19 5.92C 19 2.08557 15.8533 -1 12 -1L 12 1ZM 7 5.92C 7 3.21536 9.22587 1 12 1L 12 -1C 8.14669 -1 5 2.08557 5 5.92L 7 5.92ZM 9.2499 10.0297C 7.88887 9.14572 7 7.63232 7 5.92L 5 5.92C 5 8.34546 6.26237 10.4741 8.1605 11.707L 9.2499 10.0297ZM 8.40366 9.91489C 2.91885 11.6495 -1 17.2032 -1 23.68L 1 23.68C 1 17.9805 4.44065 13.2659 9.00674 11.8218L 8.40366 9.91489ZM 0 24.68L 24 24.68L 24 22.68L 0 22.68L 0 24.68ZM 25 23.68C 25 17.2032 21.0812 11.6495 15.5963 9.91489L 14.9933 11.8218C 19.5594 13.2659 23 17.9805 23 23.68L 25 23.68Z"/>
+<path id="path3_stroke_2x" d="M 31 16C 31 24.2843 24.2843 31 16 31L 16 33C 25.3888 33 33 25.3888 33 16L 31 16ZM 16 31C 7.71573 31 1 24.2843 1 16L -1 16C -1 25.3888 6.61116 33 16 33L 16 31ZM 1 16C 1 7.71573 7.71573 1 16 1L 16 -1C 6.61116 -1 -1 6.61116 -1 16L 1 16ZM 16 1C 24.2843 1 31 7.71573 31 16L 33 16C 33 6.61116 25.3888 -1 16 -1L 16 1Z"/>
+</defs>
+</svg>

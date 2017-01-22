@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>phone</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-288 -160)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 288 160L 352 160L 352 224L 288 224L 288 160Z" fill="#FFFFFF"/>
+</mask>
+<g id="phone" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(311 176)" fill="#00BA16" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(311 176)" fill="#00BA16" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 9 30C 9.27615 30 9.5 29.7761 9.5 29.5C 9.5 29.2239 9.27615 29 9 29C 8.72385 29 8.5 29.2239 8.5 29.5C 8.5 29.7761 8.72385 30 9 30Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 18 4L 18 3L 18 1C 18 0.447708 17.5523 0 17 0L 1 0C 0.447723 0 5.68434e-14 0.447708 5.68434e-14 1L 5.68434e-14 3L 5.68434e-14 4L 5.68434e-14 27L 5.68434e-14 28L 5.68434e-14 31C 5.68434e-14 31.5523 0.447723 32 1 32L 17 32C 17.5523 32 18 31.5523 18 31L 18 28L 18 27L 18 4ZM 1 1L 17 1L 17 3L 1 3L 1 1ZM 1 27L 1 4L 17 4L 17 27L 1 27ZM 1 28L 17 28L 17 31L 1 31L 1 28Z"/>
+</defs>
+</svg>
