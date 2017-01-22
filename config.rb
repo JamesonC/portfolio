@@ -48,3 +48,6 @@ data.classpass.assignment.each do |id, post|
 end
 
 # ClassPass Cover Letter
+data.classpass.letter.each do |id, letter|
+  proxy "/classpass/letter/index.html", "/letter.html", :locals => { :letter => letter }, :ignore => true
+end
