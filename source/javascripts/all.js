@@ -68,27 +68,6 @@ if ($nav) {
   }
 }
 /*
-  Post Gallery Interactions
-*/
-const $galleries = document.getElementsByClassName('js-gallery');
-// Store gallery indexes if gallery has more than one image
-galleryIndexes = [];
-for (var i = 0; i < $galleries.length; i++) {
-  var totalImages = $galleries[i].getElementsByClassName('js-image').length;
-  if (totalImages > 1) {
-    galleryIndexes.push(0);
-  }
-}
-// Add click event listeners to galleries
-if ($galleries) {
-  for (var g = 0; g < $galleries.length; g++) {
-    // Click
-    $galleries[g].addEventListener('click', function(){
-      updateIndex(this);
-    });
-  }
-}
-/*
   Toggle Function
 */
 function toggle($element, classA, classB) {
