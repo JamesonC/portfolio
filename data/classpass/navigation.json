@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Home",
+    "path": "/classpass",
+    "target": false
+  },
+  {
+    "title": "Letter",
+    "path": "/classpass/letter",
+    "target": true
+  },
+  {
+    "title": "Assignment",
+    "path": "/classpass/assignment",
+    "target": false
+  }
+]

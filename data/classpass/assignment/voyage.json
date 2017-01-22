@@ -1,0 +1,392 @@
+{
+  "title": "Voyage App for iOS",
+  "description": "A dive into the research and ideation that guided the design of a group hiking app",
+  "type": "UX Assignment",
+  "category": "iOS App",
+  "featured": false,
+  "interviewee": "ClassPass",
+  "card": {
+    "type": "main",
+    "cta": "Read Assignment",
+    "image": {
+      "1x": "/images/projects/classpass/card@1x.jpg",
+      "2x": "/images/projects/classpass/card@2x.jpg",
+      "alt": "ClassPass UX Assignment"
+    }
+  },
+  "meta": {
+    "type": "article",
+    "images": {
+      "og": "http://www.claudiovallejo.mx/images/projects/materiales-vallejo/meta-og.jpg",
+      "twitter": "http://www.claudiovallejo.mx/images/projects/materiales-vallejo/meta-twitter.jpg"
+    }
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/hero@1x.jpg",
+            "2x": "/images/projects/classpass/hero@2x.jpg",
+            "alt": "LOREM IPSUM"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Selected Prompt and Guidelines",
+      "content": [
+        {
+          "type": "text",
+          "text": "Design a service to organize group hiking trips with people in your area—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+              "Outline user goals / tasks that should be supported in the experience. Consider what constraints, requirements, and assumptions you are making with your design.",
+              "Produce a low-fidelity overview of the product or feature (wireframes or sketches are fine) that illustrates how users could get from the start page of this offering to meeting their goals. Design one high-fidelity screen for any individual moment or interaction to showcase visual design capabilities.",
+              "Try not to spend more than a few hours. This doesn’t need to be too thorough, we are just looking to learn a bit more about your process, creative thinking, and design skills (e.g. don’t worry about a complete architecture of the application, feel free to just explore one possible flow or task)",
+              "Any file format is fine to express your idea (e.g. PDF, keynote, presentation, sketch file, prototype, website, zip, dropbox folder, etc,.)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Business Details",
+      "content": [
+        {
+          "type": "text",
+          "text": "Voyage is a business whose mission is to connect people with nature. Voyage is an iOS app that enables people to explore hiking trails and organize group hiking trips. Voyage has three main goals that guide the app's design and functionality—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Make Nature Easy to Explore",
+              "description": "Voyage wants to be the most reliable resource to learn about nearby trails to prepare for and organize safe group hiking trips."
+            },
+            {
+              "title": "Make Nature Safe to Explore",
+              "description": "Voyage wants to make outdoor exploration as safe as possible by documenting important trail details and by working with local governments to maintain local trails."
+            },
+            {
+              "title": "Create a Community of Outdoor Enthusiasts",
+              "description": "Voyage represents a community of people that care about nature and each other and believes that an integral component of growing and nurturing a loving community is by enabling users to create new trails, update trail information, and report trail damages and hiker misconduct."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "User Details",
+      "content": [
+        {
+          "type": "text",
+          "text": "User needs are defined based on personal hiking experiences and online research about hiker needs and preferences. One important report I found online, <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://www.outdoorfoundation.org/pdf/ResearchParticipation2016.pdf\" target=\"_blank\">2016 Outdoor Participation Report</a> by <a class=\"no-underline bb b--light-gray space-gray dim\" href=\"http://www.outdoorfoundation.org/\" target=\"_blank\">Outdoor Foundation</a>, states that some of the reasons why Americans enjoy outdoor activities (including hiking) are to exercise, stay fit, spend time with others, and admire and be close to nature."
+        },
+        {
+          "type": "text",
+          "text": "Some of the most important assumptions I made to design the Voyage experience include—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Hiking Nearby Trails",
+              "description": "Hikers will signup for nearby trails more often than more distant trails."
+            },
+            {
+              "title": "Hiking Shorter Trails",
+              "description": "Hikers will signup for hikes in shorter trails more frequently than longer trails."
+            },
+            {
+              "title": "Pre-hike Research",
+              "description": "Hikers prepare for hiking trips to ensure their experience is safe and as predictable as possible."
+            },
+            {
+              "title": "Group Hiking",
+              "description": "Hikers enjoy hiking in groups to meet new people and stay safe."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Some of the most important tasks users can accomplish within the Voyage app include—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+            "Explore trails on a map or list",
+            "Search trails by name, region, city, state, and country",
+            "Filter trail results by distance to trail, trail length, terrain type, and trail entrance fee",
+            "View trail profiles",
+            "Create a new hike",
+            "Join/leave an upcoming hike",
+            "Invite hikers to an upcoming hike",
+            "View hiker profiles",
+            "File a report for hiker misconduct",
+            "Create a new trail and submit for approval",
+            "File a report for trail issues/damages",
+            "View recent and upcoming hikes",
+            "Save favorite trails",
+            "Control hike notification settings"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wireframe",
+      "content": [
+        {
+          "type": "text",
+          "text": "The app has four main sections—Explore, Hikes, Favorites, and Profile. Below is an example of a high-level view and flow of the app. Each mini card represents a different screen—"
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/wireframe@1x.jpg",
+            "2x": "/images/projects/classpass/wireframe@2x.jpg",
+            "alt": "High-level view of the app's sections, sub-screens, and flows."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Trail Search Flow",
+      "content": [
+        {
+          "type": "text",
+          "text": "When launching the app, logged in users are taken to the Explore tab, which displays a map view of the user’s location and nearby trails to provide users with a sense of location and relative position."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/default-map-view@1x.jpg",
+            "2x": "/images/projects/classpass/default-map-view@2x.jpg",
+            "alt": "Screen of the app's default map view on launch."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Trail pins display a trail's start point, length, and entrance fees. Tapping a pin displays the trail’s end point, animates the trail’s path, and zooms the map to fit the entire trail into view. Above the trail a card-style gallery appears displaying important trail details to provide users with a glimpse of the displayed trail. Swiping the gallery re-positions the map to display a different trail."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/trail-map-view@1x.jpg",
+            "2x": "/images/projects/classpass/trail-map-view@2x.jpg",
+            "alt": "Close-up view of a selected trail displaying a trail's path and a trail card gallery to navigate between nearby trails."
+          }
+        },
+        {
+          "type": "text",
+          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search trails in a more linear, structured way that emphasizes a trail's image over a trail's relative location to the user."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/list-view@1x.jpg",
+            "2x": "/images/projects/classpass/list-view@2x.jpg",
+            "alt": "A complementary list view of the nearby trails to provide a more linear, structured way of exploring trails."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Trails can be searched by name, region, city, state, and country. Search results prioritize trails over larger regions and user location to make it faster for users to find nearby points of interest."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/search-view@1x.jpg",
+            "2x": "/images/projects/classpass/search-view@2x.jpg",
+            "alt": "The search view enables users to quickly search trails by name, region, city, state, and country."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Filters enable users to control displayed trails. Users can filter results by distance, trail length, trail entrance fee, and trail types."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/filter-view@1x.jpg",
+            "2x": "/images/projects/classpass/filter-view@2x.jpg",
+            "alt": "Trail results can be filtered to provide custom views of trails aligned with user interests."
+          }
+        },
+        {
+          "type": "text",
+          "text": "Pressing a trail card on the map or list view takes users to the trail profile. Trail profiles were designed to provide users with important information that helps users plan and prepare for a safe hiking experience. Trail profiles display trail details and suggested gear equipment prior to listing upcoming hikes to ensure users know what to expect from the hike."
+        },
+        {
+          "type": "text",
+          "text": "The trail profile features an Upcoming Hikes section that contains a gallery of cards displaying available hikes. Users can sign up for hikes, invite other hikers to an available hike, and create a new hike."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/trail-view@2x.jpg",
+            "2x": "/images/projects/classpass/trail-view@2x.jpg",
+            "alt": "Trail profile card screen."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Naming and Logo",
+      "content": [
+        {
+          "type": "text",
+          "text": "When thinking about a name for the service, I started writing down words that reminded me of nature, connection, community, and exploration—"
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/branding-challenge@1x.jpg",
+            "2x": "/images/projects/classpass/branding-challenge@2x.jpg",
+            "alt": "Branding challenge sketches and notes."
+          }
+        },
+        {
+          "type": "text",
+          "text": "I selected Voyage (French for trip) because it evokes feelings of adventure, courage, and curiosity which are feelings hikers may experience when exploring new trails. I also opted for Voyage because I didn’t want to use a word that was explicitly related to hiking, as I believe the app’s model (after being tested and researched) could be expanded to incorporate other types of outdoor activities like kayaking, rock climbing, and biking."
+        },
+        {
+          "type": "text",
+          "text": "After selecting the name I started exploring with different logos. I was looking for a logo that reflected a brand that was modern, simple, and contained a small hint of the outdoors. I was looking for a simple logo with very little branding because I wanted to create an experience that focused more on hiking and nature than on the business and the brand."
+        },
+        {
+          "type": "media",
+          "media": {
+            "1x": "/images/projects/classpass/logo@1x.jpg",
+            "2x": "/images/projects/classpass/logo@2x.jpg",
+            "alt": "Voyage logo."
+          }
+        }
+      ]
+    },
+    {
+      "title": "Early Explorations",
+      "content": [
+        {
+          "type": "text",
+          "text": "I did a lot of sketching and exploring and questioning to define the business and user assumptions that guided the app’s design. Most of my thought process and ideation happened on paper. Here are all the sketches and notes I took as I worked through this assignment—"
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Wireframe and Flows",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/flow-1@1x.jpg",
+                "2x": "/images/projects/classpass/flow-1@2x.jpg",
+                "alt": "Test"
+              },
+              {
+                "1x": "/images/projects/classpass/flow-2@1x.jpg",
+                "2x": "/images/projects/classpass/flow-2@2x.jpg",
+                "alt": "Test"
+              },
+              {
+                "1x": "/images/projects/classpass/flow-3@1x.jpg",
+                "2x": "/images/projects/classpass/flow-3@2x.jpg",
+                "alt": "Test"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Menu Icons",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/menu-icons@1x.jpg",
+                "2x": "/images/projects/classpass/menu-icons@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Explore Section",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/explore@1x.jpg",
+                "2x": "/images/projects/classpass/explore@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/filters@1x.jpg",
+                "2x": "/images/projects/classpass/filters@2x.jpg",
+                "alt": "Lorem ipsum"
+              },
+              {
+                "1x": "/images/projects/classpass/search@1x.jpg",
+                "2x": "/images/projects/classpass/search@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        },
+        {
+          "type": "carrusel",
+          "carrusel": {
+            "title": "Trail Profile",
+            "gallery": [
+              {
+                "1x": "/images/projects/classpass/trail-profile@1x.jpg",
+                "2x": "/images/projects/classpass/trail-profile@2x.jpg",
+                "alt": "Lorem ipsum"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Concluding Insights",
+      "content": [
+        {
+          "type": "text",
+          "text": "Voyage was designed based on very little hiking experience, minimal online research, and a lot of hiker assumptions. I could keep on exploring and testing out new layouts, but I'm aware that they would be based on assumptions and that user testing and feedback are the only way of validating these assumptions to create more focused, guided explorations that are aligned with real user needs."
+        },
+        {
+          "type": "text",
+          "text": "Even though my assumptions likely don't depict how users will end up interacting with the app, I'm also aware that the layout, structure, and UI design may not be the best solutions to my assumptions. I would love to chat about this assignment in detail to provide more insight about why I made some assumptions and would really like to learn and obtain your feedback to work on logic, UI, and any other area I did poorly on."
+        },
+        {
+          "type": "text",
+          "text": "Thank you Noah (and ClassPass) for taking the time to read through my assignment, I really appreciate the opportunity to share my work. Honestly I purposefully selected this prompt because I am aware that the ClassPass app faces similar UI/layout challenges and wanted to get a more in depth glimpse on what you guys are currently facing/potentially working on. I had a lot of fun working on this assignment and hope you guys found something useful/interesting from the result."
+        }
+      ]
+    },
+    {
+      "title": "Assignment Assets",
+      "content": [
+        {
+          "type": "text",
+          "text": "If you'd like to get a closer look at any of the assignment assets, feel free to explore the asset files below. I've cleaned them up and organized them to facilitate their exploration—"
+        },
+        {
+          "type": "list",
+          "list": [
+            {
+              "type": "assets",
+              "assets": [
+                "Menu Icons",
+                "Wireframes",
+                "Voyage Logo",
+                "Explore Tab UI",
+                "Assignment Imagery"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
