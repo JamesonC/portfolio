@@ -1,7 +1,7 @@
 {
-  "title": "Maecenas Rex",
-  "description": "Lorem ipsum dolor sit amet consectetur adipiscing seit.",
-  "type": "Cover Letter",
+  "title": "My Two Biggest Passions",
+  "description": "Forming a part of the ClassPass team is a unique opportunity to pursue my two biggest passions—design and health.",
+  "type": "Letter",
   "date": "January 23, 2017",
   "featured": true,
   "card": {
@@ -22,17 +22,25 @@
     },
     {
       "type": "text",
-      "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to manage. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+      "text": "I hope you had an amazing holiday break and 2017 is going well. Thank you for the opportunity to share my design process and to write about why ClassPass is the company I would love to learn and grow with."
     },
     {
       "type": "text",
-      "text": "When I started learning about front-end development my CSS files were a giant knot of overly specific classes that were impossible to test. The bigger the stylesheet the bigger the knot. My stylesheets were such a tangled mess that making a change to an existing class created an unintentional ripple effect throughout my sites. As a consequence, to make a predictable change I had to create a new, more specific class. Which meant a bigger stylesheet. Which resulted in a bigger knot."
+      "text": "Prior to learning about ClassPass I saw design and health as two separate, but indispensable parts of my life. Through working out and eating well I’ve been able to give my complete focus and energy to learning about design and development. I’ve been really interested in exercising and nutrition since I was a kid, as I played competitive soccer throughout my youth and through high school. In college I tore my ACL, but despite not being able to play soccer, I kept exercising by going to the gym and diving deeper into nutrition. For the past 4+ years I’ve been working out first thing in the morning and following a more rigorous diet. Exercising and proper nutrition gives me the energy, focus, and mood I need to thrive in my daily activities.  Exercising and proper nutrition are non-negotiable parts of my life and have played a crucial role in my growth as a designer and as a person."
+    },
+    {
+      "type": "text",
+      "text": "Forming a part of the ClassPass team is an opportunity to help others do exactly what I’ve been doing all my life—lead an active life to fully perform in my other interests. My interest in leading a healthy life will help me better understand ClassPass member struggles because their struggles are also my struggles. I’m excited to learn about the product to make it easier for others to attend class and because I want to go to class as part of ClassPass. I want to live the ClassPass experience. I’m confident that my interest in leading a healthy life, my hunger to learn about design and development, and my current design/development skills will help me better appreciate the challenges and struggles ClassPass faces to successfully develop the right business solutions with the ClassPass team."
+    },
+    {
+      "type": "text",
+      "text": "I’d love to chat more about my background and my experience anytime. I’m extremely excited about the opportunity to form a part of the team as I’ll be able to pursue my two biggest passions simultaneously to help people lead active, healthy lives."
     },
     {
       "type": "footer",
       "footer": {
-        "greeting": "Friends for ever and ever,",
-        "signature": "Pollito"
+        "greeting": "Sincerily,",
+        "signature": "Claudio"
       }
     }
   ]
