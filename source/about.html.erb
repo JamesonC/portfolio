@@ -16,9 +16,6 @@ layout: post
   <div class="mw45 center mt1-m mt2-l ph0-l">
     <article class="mb4">
       <picture>
-        <% about.image.breakpoints.each do |breakpoint| %>
-          <source srcset="<%= breakpoint["1x"] %> 1x, <%= breakpoint["2x"] %> 2x" media="(min-width: <%= breakpoint.width %>rem)">
-        <% end %>
         <img class="db w-100" src="<%= about.image["1x"] %>" srcset="<%= about.image["1x"] %> 1x, <%= about.image["2x"] %> 2x" alt="<%= about.image.alt %>">
       </picture>
     </article>
