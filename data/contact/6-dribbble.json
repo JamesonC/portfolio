@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": true,
+  "classpass": true,
   "title": "Dribbble",
   "subtitle": "@claudiovallejo",
   "cta": "View Profile",

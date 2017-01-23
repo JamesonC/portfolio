@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": false,
+  "classpass": true,
   "title": "Website",
   "subtitle": "claudiovallejo.mx",
   "cta": "View Site",

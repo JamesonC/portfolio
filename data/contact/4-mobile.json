@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": false,
+  "classpass": true,
   "title": "Mobile",
   "subtitle": "+52 (81) 2010 3857",
   "cta": "Call Mobile",

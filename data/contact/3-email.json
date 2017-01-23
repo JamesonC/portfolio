@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": true,
+  "classpass": true,
   "title": "Email",
   "subtitle": "hola@claudiovallejo.mx",
   "cta": "Send Message",

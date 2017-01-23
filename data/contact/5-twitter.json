@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": true,
+  "classpass": true,
   "title": "Twitter",
   "subtitle": "@claudiovallejop",
   "cta": "View Profile",

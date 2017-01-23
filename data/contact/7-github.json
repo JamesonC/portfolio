@@ -1,5 +1,6 @@
 {
-  "display": true,
+  "home": true,
+  "classpass": true,
   "title": "GitHub",
   "subtitle": "@claudiovallejo",
   "cta": "View Profile",
