@@ -32,6 +32,13 @@ layout: index
   <% events.push(event) %>
   <% press_and_events.push(event) %>
 <% end %>
+<%# Contact %>
+<% contact = [] %>
+<% data.contact.each do |id, link| %>
+  <% if link.home %>
+    <% contact.push(link) %>
+  <% end %>
+<% end %>
 <%# End %>
 <%# Content %>
 <main class="mt4 cf">
@@ -58,6 +65,8 @@ layout: index
           <% links = events %>
         <% elsif section.type === "Press and Events" %>
           <% links = press_and_events %>
+        <% elsif section.type === "Contact" %>
+          <% links = contact %>
         <% end %>
         <%# End %>
         <% if section.title %>
