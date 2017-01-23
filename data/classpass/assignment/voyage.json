@@ -140,7 +140,32 @@
       "content": [
         {
           "type": "text",
-          "text": "The app has four main sections—Explore, Hikes, Favorites, and My Profile. Below is an example of a high-level view and flow of the app. Each mini card represents a different screen—"
+          "text": "The app has four main sections—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Explore",
+              "description": "Search available trails by name, region, city, state, and country."
+            },
+            {
+              "title": "Hikes",
+              "description": "View a list of upcoming hikes you've signed up for."
+            },
+            {
+              "title": "Favorites",
+              "description": "View a list of your favorite trails and receive trail update notifications."
+            },
+            {
+              "title": "My Profile",
+              "description": "Edit and control your hiker profile, invite friends, control app settings, review report history, and create a new trail submission."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "I designed a simple wireframe that depicts the app's flows without creating too much clutter. I grouped related section screens and created 'portals' to illustrate the connection of a section screen with the two main content types—Trail Profiles and Hiker Profiles."
         },
         {
           "type": "media",
@@ -181,7 +206,7 @@
         },
         {
           "type": "text",
-          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search trails in a more linear, structured way that emphasizes a trail's image over a trail's relative location to the user."
+          "text": "The map view can be toggled to display a list of nearby trails. The list view enables users to search trails in a more linear, structured way that provides users a more detailed trail view."
         },
         {
           "type": "media",
@@ -356,11 +381,7 @@
         },
         {
           "type": "text",
-          "text": "Even though my assumptions likely don't depict how users will end up interacting with the app, I'm also aware that the layout, structure, and UI design may not be the best solutions to my assumptions. I would love to chat about this assignment in detail to provide more insight about why I made some assumptions and would really like to learn and obtain your feedback to work on logic, UI, and any other area I did poorly on."
-        },
-        {
-          "type": "text",
-          "text": "Thank you Noah (and ClassPass) for taking the time to read through my assignment, I really appreciate the opportunity to share my work. Honestly I purposefully selected this prompt because I am aware that the ClassPass app faces similar UI/layout challenges and wanted to get a more in depth glimpse on what you guys are currently facing/potentially working on. I had a lot of fun working on this assignment and hope you guys found something useful/interesting from the result."
+          "text": "Thank you Noah (and ClassPass) for taking the time to read through my assignment, I really appreciate the opportunity to share my work. I intentionally selected this prompt because I'm aware ClassPass faces similar UI/layout challenges and wanted to get a more in depth glimpse on some of the problems you've worked on. I had a lot of fun working on this assignment and hope you guys find something useful/interesting from the result. I'd love to learn about your thoughts and how the experience could be improved and refined."
         }
       ]
     },
@@ -369,7 +390,7 @@
       "content": [
         {
           "type": "text",
-          "text": "If you'd like to get a closer look at any of the assignment assets, feel free to explore the asset files below. I've cleaned them up and organized them to facilitate their exploration—"
+          "text": "If you're interested, you can take a closer look at the assignment assets. I've cleaned up the files to facilitate their exploration—"
         },
         {
           "type": "list",
