@@ -1,0 +1,47 @@
+<meta property="og:url" content="<%= data.classpass.meta.url %>">
+<% if locals[:project] %>
+  <meta property="og:type" content="<%= project.meta.type %>">
+  <meta property="og:title" content="<%= project.title %>">
+  <meta property="og:description" content="<%= project.description %>">
+  <meta property="og:image" content="<%= project.meta.images.og %>">
+<% elsif locals[:letter] %>
+  <meta property="og:type" content="<%= letter.meta.type %>">
+  <meta property="og:title" content="<%= letter.title %>">
+  <meta property="og:description" content="<%= letter.description %>">
+  <meta property="og:image" content="<%= letter.meta.images.og %>">
+<% else %>
+  <meta property="og:type" content="<%= data.classpass.meta.type %>">
+  <meta property="og:title" content="<%= data.classpass.meta.title %>">
+  <meta property="og:description" content="<%= data.classpass.meta.description %>">
+  <meta property="og:image" content="<%= data.classpass.meta.images.og %>">
+<% end %>
+<!-- <%= data.meta.comments.og %> -->
+<meta name="twitter:card" content="<%= data.classpass.meta.card %>">
+<meta name="twitter:site" content="<%= data.classpass.meta.site %>">
+<% if locals[:project] %>
+  <meta name="twitter:title" content="<%= project.title %>">
+  <meta name="twitter:description" content="<%= project.description %>">
+  <meta name="twitter:image" content="<%= project.meta.images.twitter %>">
+<% elsif locals[:letter] %>
+  <meta name="twitter:title" content="<%= letter.title %>">
+  <meta name="twitter:description" content="<%= letter.description %>">
+  <meta name="twitter:image" content="<%= letter.meta.images.twitter %>">
+<% else %>
+  <meta name="twitter:title" content="<%= data.classpass.meta.title %>">
+  <meta name="twitter:description" content="<%= data.classpass.meta.description %>">
+  <meta name="twitter:image" content="<%= data.classpass.meta.images.twitter %>">
+<% end %>
+<meta name="twitter:image:width" content="600">
+<meta name="twitter:image:height" content="600">
+<!-- <%= data.meta.comments.twitter %> -->
+<% data.meta.favicons.each do |favicon| %>
+  <% favicon.sizes.each do |size| %>
+    <link rel="<%= favicon.rel %>" sizes="<%= size %>" href="http://www.claudiovallejo.mx/images/metas/<%= favicon.rel %>-<%= size %><%= favicon.extension %>">
+  <% end %>
+<% end %>
+<% data.meta.tiles.each do |meta| %>
+  <meta name="<%= meta.name %>" content="<%= meta.content %>">
+<% end %>
+<!-- <%= data.meta.comments.favicons %> -->
+<link rel="shortcut icon" type="image/x-icon" href="http://www.claudiovallejo.mx/favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://www.claudiovallejo.mx/favicon.ico">
