@@ -7,7 +7,7 @@
   {
     "title": "Letter",
     "path": "/classpass/letter",
-    "target": true
+    "target": false
   },
   {
     "title": "Assignment",
