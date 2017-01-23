@@ -140,7 +140,7 @@
       "content": [
         {
           "type": "text",
-          "text": "The app has four main sections—Explore, Hikes, Favorites, and Profile. Below is an example of a high-level view and flow of the app. Each mini card represents a different screen—"
+          "text": "The app has four main sections—Explore, Hikes, Favorites, and My Profile. Below is an example of a high-level view and flow of the app. Each mini card represents a different screen—"
         },
         {
           "type": "media",
