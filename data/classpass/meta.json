@@ -1,0 +1,43 @@
+{
+  "url": "http://www.claudiovallejo.mx/classpass",
+  "site": "@claudiovallejop",
+  "type": "website",
+  "card": "summary",
+  "title": "ClassPass UX Assignment by Claudio Vallejo",
+  "description": "Welcome! For this assignment I explored with designing a platform that enables users to search nearby trails and book group hiking trips.",
+  "images": {
+    "og": "http://www.claudiovallejo.mx/images/projects/classpass/portrait-og@1x.jpg",
+    "twitter": "http://www.claudiovallejo.mx/images/projects/classpass/portrait-twitter@1x.jpg"
+  },
+  "favicons": [
+    {
+      "rel": "apple-touch-icon",
+      "sizes": ["60x60", "72x72", "76x76", "114x114", "120x120", "144x144", "152x152", "180x180"],
+      "extension": ".png"
+    },
+    {
+      "rel": "icon",
+      "sizes": ["16x16", "32x32", "96x96", "192x192"],
+      "extension": ".png"
+    }
+  ],
+  "tiles": [
+    {
+      "name": "msapplication-TileColor",
+      "content": "#ffffff"
+    },
+    {
+      "name": "msapplication-TileImage",
+      "content": "http://www.claudiovallejo.mx/images/metas/apple-touch-icon-144x144.png"
+    },
+    {
+      "name": "theme-color",
+      "content": "#ffffff"
+    }
+  ],
+  "comments": {
+    "og": "To learn more about Open Graph markup, visit Facebook for Developers -> https://developers.facebook.com/docs/sharing/webmasters",
+    "twitter": "To learn more about Twitter's Summary Card, visit Twitter for Developers -> https://dev.twitter.com/cards/types/summary",
+    "favicons": "To generate the favicons, I used frederick-jacques Sketch Favicon Exporter -> https://github.com/frederik-jacques/sketch-favicon-exporter-template"
+  }
+}
