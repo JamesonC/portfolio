@@ -15,7 +15,9 @@ layout: classpass
 <%# Contact Links %>
 <% links = [] %>
 <% data.contact.each do |id, contact| %>
-  <% links.push(contact) %>
+  <% if contact.classpass %>
+    <% links.push(contact) %>
+  <% end %>
 <% end %>
 <%# End %>
 <%# Content %>
