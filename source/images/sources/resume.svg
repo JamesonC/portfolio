@@ -1,0 +1,50 @@
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>resume</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-448 -160)" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 448 160L 512 160L 512 224L 448 224L 448 160Z" fill="#FFFFFF"/>
+</mask>
+<g id="resume" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Rectangle (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(468 178)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(471 181)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(478 182)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(478 191)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(478 193)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(478 184)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(478 188)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_fill" transform="translate(478 199)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="translate(478 201)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(478 196)" fill="#FFA32D" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 22 1L 1 1L 1 27L 22 27L 22 1ZM 1 0L 0 0L 0 1L 0 27L 0 28L 1 28L 22 28L 23 28L 23 27L 23 1L 23 0L 22 0L 1 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 4 1L 1 1L 1 4L 4 4L 4 1ZM 1 0L 0 0L 0 1L 0 4L 0 5L 1 5L 4 5L 5 5L 5 4L 5 1L 5 0L 4 0L 1 0Z"/>
+<path id="path2_fill" d="M 0 0L 10 0L 10 1L 0 1L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 8 0L 8 1L 0 1L 0 0Z"/>
+<path id="path4_fill" d="M 0 0L 5 0L 5 1L 0 1L 0 0Z"/>
+<path id="path5_fill" d="M 0 0L 9 0L 9 1L 0 1L 0 0Z"/>
+<path id="path6_fill" d="M 0 0L 7 0L 7 1L 0 1L 0 0Z"/>
+</defs>
+</svg>
