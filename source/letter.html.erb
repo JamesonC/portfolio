@@ -5,19 +5,18 @@ layout: assignment
 <% letter = locals[:letter] %>
 <%# End %>
 <article class="mw45 center mv4 ph1 ph0-ns cf">
-  <p class="ma0 mt2 mt0-ns mb4 lato f0_75 fw7 ls0_15 ttu gray"><%= letter.date %></p>
-  <div class="dn db-ns mv4 h5"></div>
+  <div class="dn db-ns mv4 h10"></div>
   <%# Config %>
   <% cl = letter.content.length - 1 %>
   <%# End %>
   <% letter.content.each_with_index do |content, c| %>
     <% if content.type === "header" %>
       <p class="ma0 mb4 merriweather i f1_125 fw3 dark-gray lh2"><%= content.header %></p>
-      <div class="dn db-ns mv4 h10 bl b--light-gray"></div>
+      <div class="dn db-ns mv4 h5"></div>
     <% elsif content.type === "text" %>
       <p class="ma0 <% if c === cl - 1 %>mb4<% else %>mb2<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
     <% elsif content.type === "footer" %>
-      <div class="dn db-ns mv4 h10 bl b--light-gray"></div>
+      <div class="dn db-ns mv4 h5"></div>
       <p class="ma0 merriweather i f1_125 fw3 dark-gray lh2"><%= content.footer.greeting %></p>
       <p class="ma0 merriweather i f1_125 fw3 dark-gray lh2"><%= content.footer.signature %></p>
     <% end %>
