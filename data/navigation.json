@@ -5,18 +5,18 @@
     "target": false
   },
   {
+    "title": "Journal",
+    "path": "/journal",
+    "target": false
+  },
+  {
     "title": "About",
     "path": "/about",
     "target": false
   },
   {
-    "title": "Twitter",
-    "path": "https://twitter.com/claudiovallejop",
+    "title": "Source Code",
+    "path": "https://github.com/claudiovallejo/portfolio",
     "target": true
-  },
-  {
-    "title": "Email",
-    "path": "mailto:hola@claudiovallejo.mx",
-    "target": false
   }
 ]
