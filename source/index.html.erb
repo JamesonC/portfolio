@@ -89,7 +89,7 @@ layout: index
             <% if post.card.type === "main" %>
               <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% end %> bg-white" href="/<%= root %><%= post.title.parameterize %>">
                 <picture>
-                  <img class="db w-100" src="<%= post.card.image["1x"] %>" srcset="<%= post.card.image["1x"] %> 1x, <%= post.card.image["2x"] %> 2x" alt="<%= post.card.image.alt %>">
+                  <img class="db w-100" src="<%= post.card.image["1x"] %>" srcset="<%= post.card.image["2x"] %> 2x" alt="<%= post.card.image.alt %>">
                 </picture>
                 <div class="pa2">
                   <h1 class="ma0 mb0_5 merriweather f1 fw4 black lh1_75"><%= post.title %></h1>
@@ -104,10 +104,10 @@ layout: index
                 <table class="w-100 collapse">
                   <tbody>
                     <tr class="dn-ns">
-                      <td class="w-100 h12 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: -webkit-image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x)"></td>
+                      <td class="w-100 h12 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x); background-image: -webkit-image-set(url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>'))"></td>
                     </tr>
                     <tr>
-                      <td class="dn dtc-ns tc w-30-m w-25-l h-100 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: -webkit-image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x)"></td>
+                      <td class="dn dtc-ns tc w-30-m w-25-l h-100 cover bg-center" style="background-image: url('<%= post.card.image["1x"] %>'); background-image: image-set (url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>') 2x); background-image: -webkit-image-set(url('<%= post.card.image["1x"] %>') 1x, url('<%= post.card.image["2x"] %>'))"></td>
                       <td class="w-100 w-70-m w-75-l pa2">
                         <div class="relative h0_75 mb1">
                           <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray">
@@ -159,7 +159,7 @@ layout: index
           <%# End %>
           <% links.each_with_index do |link, l| %>
             <div class="fl w-100 w-50-ns <% if l != ll %>mb1<% end %> <% if l < ll - 1 %>mb1-ns<% end %> <% if l % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.path %>" target="_blank">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.source %>" target="_blank">
                 <table class="w-100 collapse">
                   <tbody>
                     <tr>
