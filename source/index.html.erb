@@ -14,10 +14,10 @@ layout: index
   <% end %>
 <% end %>
 <%# Journal %>
-<% journal = [] %>
-<% data.journal.each do |id, article| %>
+<% writing = [] %>
+<% data.writing.each do |id, article| %>
   <% if article.featured %>
-    <% journal.push(article) %>
+    <% writing.push(article) %>
   <% end %>
 <% end %>
 <%# Press, Events, and Press and Events %>
@@ -56,9 +56,9 @@ layout: index
         <% elsif section.type === "Case Studies" %>
           <% posts = case_studies %>
           <% type = "Case Studies" %>
-        <% elsif section.type === "Journal" %>
-          <% posts = journal %>
-          <% type = "Journal" %>
+        <% elsif section.type === "Writing" %>
+          <% posts = writing %>
+          <% type = "Writing" %>
         <% elsif section.type === "Press" %>
           <% links = press %>
         <% elsif section.type === "Events" %>
@@ -83,7 +83,7 @@ layout: index
             <% if post.type === "Case Study" %>
               <% root = "case-study/" %>
             <% elsif post.type == "Article" %>
-              <% root = "journal/" %>
+              <% root = "writing/" %>
             <% end %>
             <%# End %>
             <% if post.card.type === "main" %>
