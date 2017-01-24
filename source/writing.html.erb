@@ -2,25 +2,24 @@
 layout: index
 ---
 <%# Config %>
-<% page = data.journal_home %>
-<% journal = [] %>
-<% data.journal.each do |id, article| %>
+<% page = data.writing_home %>
+<% writing = [] %>
+<% data.writing.each do |id, article| %>
   <% if article.featured %>
-    <% journal.push(article) %>
+    <% writing.push(article) %>
   <% end %>
 <% end %>
 <%# End %>
 <%# Content %>
 <main class="mt4 cf">
   <div class="mw45 center mt2-ns ph1 ph2-m ph0-l">
-    <h1 class="ma0 mt2 mb1 merriweather f1_125 fw3 dark-gray"><%= page.title %></h1>
-    <p class="ma0 mb2 merriweather f1 fw3 space-gray lh1_75"><%= page.description %></p>
+    <h1 class="ma0 mt2 mb2 merriweather f1_125 fw3 dark-gray"><%= page.title %></h1>
     <%# Config %>
-    <% ol = journal.length - 1 %>
+    <% ol = writing.length - 1 %>
     <%# End %>
-    <% journal.each_with_index do |post, o| %>
+    <% writing.each_with_index do |post, o| %>
       <% if post.card.type === "main" %>
-        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% end %> bg-white" href="/journal/<%= post.title.parameterize %>">
+        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% else %>mb4<% end %> bg-white" href="/writing/<%= post.title.parameterize %>">
           <picture>
             <img class="db w-100" src="<%= post.card.image["1x"] %>" srcset="<%= post.card.image["1x"] %> 1x, <%= post.card.image["2x"] %> 2x" alt="<%= post.card.image.alt %>">
           </picture>
@@ -33,7 +32,7 @@ layout: index
           </div>
         </a>
       <% elsif post.card.type === "secondary" %>
-        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db <% if o != ol %>mb2<% end %> no-underline bg-white" href="/journal/<%= post.title.parameterize %>">
+        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db <% if o != ol %>mb2<% else %>mb4<% end %> no-underline bg-white" href="/writing/<%= post.title.parameterize %>">
           <table class="w-100 collapse">
             <tbody>
               <tr class="dn-ns">
@@ -74,7 +73,7 @@ layout: index
           </table>
         </a>
       <% elsif post.card.type === "text" %>
-        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% end %> pv2 pl2 pr4 bg-white" href="/journal/<%= post.title.parameterize %>">
+        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline <% if o != ol %>mb2<% else %>mb4<% end %> pv2 pl2 pr4 bg-white" href="/writing/<%= post.title.parameterize %>">
           <div class="relative mb1 h0_75">
             <h3 class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
               <%= post.date %>
