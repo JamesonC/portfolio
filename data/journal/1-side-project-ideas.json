@@ -1,0 +1,62 @@
+{
+  "title": "Side Project Ideas",
+  "description": "Personal side project goals and a list of ideas I’m interested in pursuing to improve my writing, design, and development skills.",
+  "type": "Article",
+  "category": "Personal",
+  "date": "Jan 23 2017",
+  "featured": true,
+  "card": {
+    "type": "text",
+    "cta": "Read Article"
+  },
+  "meta": {
+    "type": "article",
+    "images": {
+      "og": "http://www.claudiovallejo.mx/images/journal/function-based-styling/meta-og.jpg",
+      "twitter": "http://www.claudiovallejo.mx/images/journal/function-based-styling/meta-twitter.jpg"
+    }
+  },
+  "content": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "Last year I learned a lot about web design and development through client projects. One of the biggest things I learned was that the fastest way of learning something new is by diving into it. I realized that the more uncomfortable I was and the less I knew, the more interesting (and challenging) the project was."
+        },
+        {
+          "type": "text",
+          "text": "This year, two of my biggest goals are to become a better writer and learn more about JavaScript development. I want to start working on side projects as a fun way of documenting and writing my design process and to dive deeper into development to start creating useful tools."
+        },
+        {
+          "type": "text",
+          "text": "I’d like to approach these side projects without any form of inspiration or competitive mindset. My intention of building these side projects is not to improve on existing products but rather to create tools that help me achieve simple daily tasks. I don’t want to research other existing apps, I simply want to let my own needs (and the needs of people I know/reach out) guide my design process. While this may not be the best way of building a business, I think it’s a great way to focus on the design process itself to explore with different layouts and structures to design the right tool without any monetary pressure."
+        },
+        {
+          "type": "text",
+          "text": "At the moment, there are a couple of side projects I’m interested in pursuing—"
+        },
+        {
+          "type": "block",
+          "block": [
+            {
+              "title": "Workout Log",
+              "description": "Over the years I’ve taken a journal and a pencil to the gym and logged many many workouts. While I love tracking my workouts, having all of that data on paper doesn’t enable me to easily evaluate and track my progress. I’d like to design a workout journal app specifically for weight lifting to facilitate exercise tracking and measure progress."
+            },
+            {
+              "title": "Ab Routine Generator",
+              "description": "Every other day, after working out, I come up with 5 - 10 ab exercises and create a mini circuit to end my workout. Each ab exercise lasts for a minute and I’ve found this style of training abs to be a quick, but effective way of working the core. I’d like to design an app that generates a different ab routine, enables you to track the number of reps you did for each exercise, serve as a guide during the workout, and enable you to track and measure your progress."
+            },
+            {
+              "title": "Health Journal",
+              "description": "Over the years I’ve been attempting different workouts, diets, and health goals. I’ve done a lot of research on how to achieve personal fitness goals. Last year was the first year I started slacking off. I lost my motivation to go to the gym and started to be a bit more careless about dieting. This year I’ve been back at hitting the gym hard and staying on track with my diet. I’d like to design a site or platform where I can share my workout routines, diet, and body measurements to stay accountable and share what works and what doesn’t work for me."
+            },
+            {
+              "title": "Dream Journal",
+              "description": "Last year I started writing my dreams every morning. I loved waking up every morning to write my previous dreams as I sipped some tea. I realized that writing my dreams every morning made me have more realistic, longer dreams. It also helped me be more aware during my dreams and I was even lucid on a couple of them. I’d love to design a simple site that is easy to update where I can publish and share my dreams without being ashamed of them. One thing I’d love to incorporate into the site would be a search feature, so that people who enter the site can search for anything they can imagine and find out if I’ve dreamt about that. Haha it sounds creepy, I guess, but I think it’s also quite fascinating to learn about what others are dreaming."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
