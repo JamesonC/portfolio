@@ -27,9 +27,9 @@ data.case_studies.each do |id, study|
 end
 
 # Journal Articles
-data.journal.each do |id, article|
+data.writing.each do |id, article|
   if article.featured
-    proxy "/journal/#{ article.title.parameterize }/index.html", "/post.html", :locals => { :article => article }, :ignore => true
+    proxy "/writing/#{ article.title.parameterize }/index.html", "/post.html", :locals => { :article => article }, :ignore => true
   end
 end
 
