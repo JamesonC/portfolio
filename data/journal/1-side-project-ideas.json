@@ -25,7 +25,7 @@
         },
         {
           "type": "text",
-          "text": "This year, two of my biggest goals are to become a better writer and learn more about JavaScript development. I want to start working on side projects as a fun way of documenting and writing my design process and to dive deeper into development to start creating useful tools."
+          "text": "This year two of my biggest goals are to become a better writer and learn more about JavaScript development. I want to start working on side projects as a fun way of documenting and writing my design process to become a better thinker and writer and to dive deeper into development to start creating useful tools."
         },
         {
           "type": "text",
@@ -44,15 +44,15 @@
             },
             {
               "title": "Ab Routine Generator",
-              "description": "Every other day, after working out, I come up with 5 - 10 ab exercises and create a mini circuit to end my workout. Each ab exercise lasts for a minute and I’ve found this style of training abs to be a quick, but effective way of working the core. I’d like to design an app that generates a different ab routine, enables you to track the number of reps you did for each exercise, serve as a guide during the workout, and enable you to track and measure your progress."
+              "description": "Every other day, after working out, I come up with 5 - 10 ab exercises and create a mini circuit. Each ab exercise lasts for a minute and I’ve found this style of training abs to be a quick, but effective way of working the core. I’d like to design an app that generates a different ab routine, enables you to track the number of reps you did for each exercise, serve as a guide during the workout, and enable you to track and measure your progress."
             },
             {
               "title": "Health Journal",
-              "description": "Over the years I’ve been attempting different workouts, diets, and health goals. I’ve done a lot of research on how to achieve personal fitness goals. Last year was the first year I started slacking off. I lost my motivation to go to the gym and started to be a bit more careless about dieting. This year I’ve been back at hitting the gym hard and staying on track with my diet. I’d like to design a site or platform where I can share my workout routines, diet, and body measurements to stay accountable and share what works and what doesn’t work for me."
+              "description": "Over the years I’ve attempted innumerable workouts, training techniques, and diets and have been pretty consistent with working out and sustaining a strict, healthy diet. Last year was the first year I started slacking off. I lost my motivation to go to the gym and lost interest in dieting. I’d like to design a site or platform where I can share my workout routines, diet, and body weight to stay accountable and share my lifting/health journey."
             },
             {
               "title": "Dream Journal",
-              "description": "Last year I started writing my dreams every morning. I loved waking up every morning to write my previous dreams as I sipped some tea. I realized that writing my dreams every morning made me have more realistic, longer dreams. It also helped me be more aware during my dreams and I was even lucid on a couple of them. I’d love to design a simple site that is easy to update where I can publish and share my dreams without being ashamed of them. One thing I’d love to incorporate into the site would be a search feature, so that people who enter the site can search for anything they can imagine and find out if I’ve dreamt about that. Haha it sounds creepy, I guess, but I think it’s also quite fascinating to learn about what others are dreaming."
+              "description": "Last year I started writing my dreams every morning. I realized that writing my dreams every morning made me have more realistic, longer dreams. It also helped me be more aware during my dreams and I was even lucid on a couple of them. I’d love to design a simple site that is easy to update where I can publish and share my dreams. One thing I’d love to incorporate into the site would be a search feature, so that people who enter the site can search for anything they can imagine and find out if I’ve dreamt about that as I think it’s quite fascinating to learn about what others are dreaming and how things connect."
             }
           ]
         }
