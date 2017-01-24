@@ -78,7 +78,7 @@ layout: post
         <%# Content Type: Media %>
         <% if content.type === "media" %>
           <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %>">
-            <img class="w-100" src="<%= content.media["1x"] %>" srcset="<%= content.media["1x"] %> 1x, <%= content.media["2x"] %> 2x" alt="<% if content.media.alt %><%= content.media.alt %><% end %>">
+            <img class="w-100" srcset="<%= content.media["2x"] %> 2x" src="<%= content.media["1x"] %>" <% if content.media.alt %>alt="<%= content.media.alt %>"<% end %>>
             <% if content.media.caption %>
               <div class="mw45 center tc mt1 ph1 ph0-ns">
                 <p class="ma0 lato f1 fw4 lh1_25 gray"><%= content.media.caption %></p>
