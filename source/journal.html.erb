@@ -2,6 +2,7 @@
 layout: index
 ---
 <%# Config %>
+<% page = data.journal_home %>
 <% journal = [] %>
 <% data.journal.each do |id, article| %>
   <% if article.featured %>
@@ -12,7 +13,8 @@ layout: index
 <%# Content %>
 <main class="mt4 cf">
   <div class="mw45 center mt2-ns ph1 ph2-m ph0-l">
-    <h1 class="ma0 mb2 merriweather f1_125 fw3 dark-gray">Journal</h1>
+    <h1 class="ma0 mt2 mb1 merriweather f1_125 fw3 dark-gray"><%= page.title %></h1>
+    <p class="ma0 mb2 merriweather f1 fw3 space-gray lh1_75"><%= page.description %></p>
     <%# Config %>
     <% ol = journal.length - 1 %>
     <%# End %>
