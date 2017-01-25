@@ -6,8 +6,8 @@
   "title": "Claudio Vallejo, Product Designer",
   "description": "Freelance product designer focusing on design systems and internal business tools currently available for hire.",
   "images": {
-    "og": "/images/metas/portrait-og.jpg",
-    "twitter": "/images/metas/portrait-twitter.jpg"
+    "og": "http://www.claudiovallejo.mx/images/metas/portrait-og.jpg",
+    "twitter": "http://www.claudiovallejo.mx/images/metas/portrait-twitter.jpg"
   },
   "favicons": [
     {
