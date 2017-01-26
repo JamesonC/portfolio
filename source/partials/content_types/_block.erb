@@ -1,0 +1,11 @@
+<%# Config %>
+<% il = content.block.length - 1 %>
+<%# End %>
+<div class="mw45 center ph1 ph2-m ph0-l">
+  <% content.block.each_with_index do |item, i| %>
+    <div class="<% if i != il %>mb2<% else %>mb4<% end %>">
+      <h4 class="ma0 mb1 merriweather f1_125 fw4 dark-gray"><%= item.title %></h4>
+      <p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= item.description %></p>
+    </div>
+  <% end %>
+</div>
