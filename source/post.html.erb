@@ -52,7 +52,7 @@ layout: post
         <% if cl != c %>
           <% next_type = section.content[c + 1].type %>
         <% end %>
-        <%# Hash variables to pass through to partials %>
+        <%# Hash to pass through to partials %>
         <% parameters = { :next_type => next_type, :cl => cl, :c => c, :content => content } %>
         <%# End %>
         <%# Content Type: Full Section %>
