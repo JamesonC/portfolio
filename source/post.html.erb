@@ -52,214 +52,48 @@ layout: post
         <% if cl != c %>
           <% next_type = section.content[c + 1].type %>
         <% end %>
+        <%# Hash variables to pass through to partials %>
+        <% parameters = { :next_type => next_type, :cl => cl, :c => c, :content => content } %>
         <%# End %>
         <%# Content Type: Full Section %>
         <% if content.type === "full separator" %>
-          <div class="bb b--light-gray"></div>
+          <%= partial "partials/content_types/full_separator" %>
         <% end %>
         <%# Content Type: Intra Section %>
         <% if content.type === "part separator" %>
-          <div class="mw45 center bb b--light-gray"></div>
+          <%= partial "partials/content_types/part_separator" %>
         <% end %>
         <%# Content Type: Text %>
         <% if content.type === "text" %>
-          <div class="mw45 center ph1 ph2-m ph0-l">
-            <p class="ma0 <% if next_type && next_type === "media" || next_type === "comment" || next_type === "carrusel" %>mb4<% elsif next_type && next_type === "block" || next_type === "list" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> merriweather f1_125 fw3 dark-gray lh2"><%= content.text %></p>
-          </div>
+          <%= partial("partials/content_types/text", :locals => parameters) %>
         <% end %>
         <%# Content Type: Comment %>
         <% if content.type === "comment" %>
-          <div class="mw45 center <% if next_type && next_type === "media" %>mb4<% elsif next_type && next_type == "block" %>mb2<% elsif c != cl %>mb1<% else %>mb4<% end %> ph1 ph2-m ph0-l">
-            <div class="pa1 pa2-ns bg-almost-white ba b--light-gray">
-              <p class="ma0 merriweather f1_125 fw3 dark-gray lh2"><%= content.comment %></p>
-            </div>
-          </div>
+          <%= partial("partials/content_types/comment", :locals => parameters) %>
         <% end %>
         <%# Content Type: Media %>
         <% if content.type === "media" %>
-          <div class="mw60 center <% if c != cl %>mb2<% else %>mb4<% end %>">
-            <img class="w-100" srcset="<%= content.media["2x"] %> 2x" src="<%= content.media["1x"] %>" <% if content.media.alt %>alt="<%= content.media.alt %>"<% end %>>
-            <% if content.media.caption %>
-              <div class="mw45 center tc mt1 ph1 ph0-ns">
-                <p class="ma0 lato f1 fw4 lh1_25 gray"><%= content.media.caption %></p>
-              </div>
-            <% end %>
-          </div>
+          <%= partial("partials/content_types/media", :locals => parameters) %>
         <% end %>
         <%# Content Type: Block %>
         <% if content.type === "block" %>
-          <%# Config %>
-          <% il = content.block.length - 1 %>
-          <%# End %>
-          <div class="mw45 center ph1 ph2-m ph0-l">
-            <% content.block.each_with_index do |item, i| %>
-              <div class="<% if i != il %>mb2<% else %>mb4<% end %>">
-                <h4 class="ma0 mb1 merriweather f1_125 fw4 dark-gray"><%= item.title %></h4>
-                <p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= item.description %></p>
-              </div>
-            <% end %>
-          </div>
+          <%= partial("partials/content_types/block", :locals => parameters) %>
         <% end %>
         <%# Content Type: List %>
         <% if content.type === "list" %>
-          <%# Config %>
-          <% sources = [] %>
-          <% rl = 0 %>
-          <% content.list.each do |list| %>
-            <% if list.type === "tools" %>
-              <% rl += list.tools.length - 1 %>
-              <% list.tools.each do |t| %>
-                <% data.tools.each do |id, tool| %>
-                  <% if t === tool.title %>
-                    <% sources.push(tool) %>
-                  <% end %>
-                <% end %>
-              <% end %>
-            <% elsif list.type === "press" %>
-              <% rl += list.press.length - 1 %>
-              <% list.press.each do |r| %>
-                <% data.press.each do |id, post| %>
-                  <% if r === post.title %>
-                    <% sources.push(post) %>
-                  <% end %>
-                <% end %>
-              <% end %>
-            <% elsif list.type === "events" %>
-              <% rl += list.events.length - 1 %>
-              <% list.events.each do |e| %>
-                <% data.events.each do |id, event| %>
-                  <% if e === event.title %>
-                    <% sources.push(event) %>
-                  <% end %>
-                <% end %>
-              <% end %>
-            <% elsif list.type === "sources" %>
-              <% rl += list.sources.length - 1 %>
-              <% list.sources.each do |s| %>
-                <% data.sources.each do |id, reference| %>
-                  <% if s === reference.title %>
-                    <% sources.push(reference) %>
-                  <% end %>
-                <% end %>
-              <% end %>
-            <% elsif list.type === "assets" %>
-              <% rl += list.assets.length - 1 %>
-              <% list.assets.each do |a| %>
-                <% data.assets.each do |id, asset| %>
-                  <% if a === asset.title %>
-                    <% sources.push(asset) %>
-                  <% end %>
-                <% end %>
-              <% end %>
-            <% end %>
-          <% end %>
-          <%# End %>
-          <div class="mw45 center ph1 ph2-m ph0-l">
-            <% sources.each_with_index do |post, r| %>
-              <div class="fl w-100 w-50-ns <% if r < rl %>mb2<% end %> <% if r % 2 == 0 %>pr1-ns<% else %>pl1-ns<% end %>">
-                <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline bg-white" href="<%= post.path %>" target="_blank">
-                  <table class="w-100 collapse">
-                    <tbody>
-                      <tr>
-                        <td class="tc w-20">
-                          <%= image_tag post.avatar, :class => "v-mid" %>
-                        </td>
-                        <td class="w-80 pv1 pl1 bl b--pearl">
-                          <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
-                          <div class="relative h0_75">
-                            <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray"><%= post.subtitle %></p>
-                            <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.cta %></p>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </a>
-              </div>
-            <% end %>
-          </div>
+          <%= partial("partials/content_types/list", :locals => parameters) %>
         <% end %>
         <%# Content Type: Bullet %>
         <% if content.type === "bullet" %>
-          <%# Config %>
-          <% il = content.bullet.length - 1 %>
-          <%# End %>
-          <div class="mw45 center ph1 ph2-m ph0-l">
-            <% content.bullet.each_with_index do |item, i| %>
-              <div class="<% if i != il %>mb0_5<% else %>mb4<% end %>">
-                <ul class="ma0 pl2 lst-circle">
-                  <li class="<% if i != il %>mb1<% end %>"><p class="ma0 merriweather f1_125 fw3 lh1_75 dark-gray"><%= item %></p></li>
-                </ul>
-              </div>
-            <% end %>
-          </div>
+          <%= partial("partials/content_types/bullet", :locals => parameters) %>
         <% end %>
         <%# Content Type: Carrusel %>
         <% if content.type === "carrusel" %>
-          <div>
-            <% if content.carrusel.title %>
-              <div class="mw45 center mb1 ph1 ph2-m ph0-l">
-                <h4 class="ma0 mb1 merriweather f1_125 fw4 dark-gray"><%= content.carrusel.title %></h4>
-              </div>
-            <% end %>
-            <% if content.carrusel.description %>
-              <div class="mw45 center mb2 ph1 ph2-m ph0-l">
-                <p class="ma0 merriweather f1_125 fw3 lh2 dark-gray"><%= content.carrusel.description %></p>
-              </div>
-            <% end %>
-            <div class="js-gallery relative mw60 center mb4 overflow-hidden" style="height: 600px;">
-              <%# Config %>
-              <% gl = content.carrusel.gallery.length - 1 %>
-              <%# End %>
-              <% content.carrusel.gallery.each_with_index do |media, m| %>
-              <ul class="ma0 pa0">
-              </ul>
-                <div class="dib">
-                  <img class="w-100" src="<%= media["1x"] %>" srcset="<%= media["1x"] %> 1x, <%= media["2x"] %> 2x" alt="<% if media.alt %><%= media.alt %><% end %>">
-                </div>
-              <% end %>
-            </div>
-          </div>
+          <%= partial("partials/content_types/carrusel", :locals => parameters) %>
         <% end %>
         <%# Content Type: Table %>
         <% if content.type === "table" %>
-          <div class="ph1 ph2-m ph0-l">
-            <table class="w-100 collapse">
-              <tbody>
-                <% content.table.each_with_index do |row, r| %>
-                  <tr>
-                    <% row.each_with_index do |cell, e| %>
-                      <% if cell.type === "header" %>
-                        <td class="v-top w-50 pa1 ba b--pearl bg-almost-white">
-                          <h3 class="ma0 merriweather f1_125 fw4 dark-gray"><%= cell.header %></h3>
-                        </td>
-                      <% elsif cell.type === "code" %>
-                        <td class="v-top w-50 pa1 ba b--pearl">
-                          <code class="ma0 roboto-mono f1 fw4 lh1_50 chili"><%= cell.code %></code>
-                        </td>
-                      <% elsif cell.type === "descriptions" %>
-                        <td class="v-top w-50 pa1 ba b--pearl">
-                          <%# Config %>
-                          <% dl = cell.descriptions.length - 1 %>
-                          <%# End %>
-                          <% cell.descriptions.each_with_index do |description, d| %>
-                            <% if description.type === "text" %>
-                              <p class="ma0 mb1 merriweather f1 fw3 dark-gray lh1_50"><%= description.text %></p>
-                            <% elsif description.type === "rule" %>
-                              <p class="ma0 <% if d != dl %>pb0_5<% end %> merriweather f1 fw4 dark-gray lh1_50">
-                                <%= description.title %>:
-                                <code class="roboto-mono green"><%= description.code %></code>
-                              </p>
-                            <% end %>
-                          <% end %>
-                        </td>
-                      <% end %>
-                    <% end %>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </div>
+          <%= partial("partials/content_types/table", :locals => parameters) %>
         <% end %>
       <% end %>
     </section>
