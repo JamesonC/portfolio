@@ -33,15 +33,6 @@ data.writing.each do |id, article|
   end
 end
 
-# Documentation
-data.docs.each do |id, doc|
-  if doc.title === "Overview"
-    proxy "/docs/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
-  else
-    proxy "/docs/#{ doc.title.parameterize }/index.html", "/docs.html", :locals => { :doc => doc }, :ignore => true
-  end
-end
-
 # ClassPass Case Study
 data.classpass.assignment.each do |id, post|
   proxy "/classpass/assignment/index.html", "/assignment.html", :locals => { :project => post }, :ignore => true
