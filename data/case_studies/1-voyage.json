@@ -34,7 +34,16 @@
       ]
     },
     {
-      "title": "Selected Prompt and Guidelines",
+      "title": "Introduction",
+      "content": [
+        {
+          "type": "text",
+          "text": "This is a practice case study I worked on early January 2017. I worked on the case study as a Product Design job application assignment, and worked on it for 1 week. After submitting the app there are many flaws and things I could improve on, and I've appended a section at the end of the case study detailing areas where I could work on and assumptions I overlooked during the process."
+        }
+      ]
+    },
+    {
+      "title": "Prompt and Guidelines",
       "content": [
         {
           "type": "text",
@@ -380,7 +389,18 @@
         },
         {
           "type": "text",
-          "text": "Thank you Noah (and ClassPass) for taking the time to read through my assignment, I really appreciate the opportunity to share my work. I intentionally selected this prompt because I'm aware ClassPass faces similar UI/layout challenges and wanted to get a more in depth glimpse on some of the problems you've worked on. I had a lot of fun working on this assignment and hope you guys find something useful/interesting from the result. I'd love to learn about your thoughts and how the experience could be improved and refined."
+          "text": "Despite my best efforts to create 'realistic' assumptions about user needs and expectations, if I were to continue working on this assignment I would reconsider the following areas—"
+        },
+        {
+          "type": "bullet",
+          "bullet": [
+            "Add a 'nearby hikes' view",
+            "Rename 'Hikes' tab to 'Upcoming Hikes'",
+            "Make scheduling hikes the main focus of the app",
+            "Clearly define user experience level",
+            "Engage with target user and ask about the information they need prior to preparing for a hike",
+            "Define a clear system for adding trail badges and icons"
+          ]
         }
       ]
     },
