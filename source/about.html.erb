@@ -8,6 +8,12 @@ layout: post
 <% data.press.each do |id, post| %>
   <% links.push(post) %>
 <% end %>
+<% contact = [] %>
+<% data.contact.each do |id, link| %>
+  <% if link.home %>
+    <% contact.push(link) %>
+  <% end %>
+<% end %>
 <% data.events.each do |id, event| %>
   <% links.push(event) %>
 <% end %>
@@ -40,7 +46,39 @@ layout: post
     <%# End %>
     <% links.each_with_index do |post, r| %>
       <div class="fl w-100 w-50-ns <% if r < rl %>mb1<% end %> <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
-        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= post.source %>" target="_blank">
+        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= post.path %>" target="_blank">
+          <table class="w-100 collapse">
+            <tbody>
+              <tr>
+                <td class="tc w-20">
+                  <%= image_tag post.avatar, :class => "v-mid" %>
+                </td>
+                <td class="w-80 pv1 pl1 bl b--pearl">
+                  <p class="ma0 mb0_5 merriweather f1 dark-gray"><%= post.title %></p>
+                  <div class="relative h0_75">
+                    <p class="js-title opacity-1 duration-0_25 property-opacity absolute ma0 pr1 lato f0_75 fw7 ls0_15 ttu gray">
+                      <%= post.subtitle %>
+                    </p>
+                    <p class="js-title opacity-0 duration-0_25 property-opacity absolute ma0 lato f0_75 fw7 ls0_15 ttu gray"><%= post.cta %></p>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </a>
+      </div>
+    <% end %>
+  </section>
+  <section class="mw45 center mb4 ph1 ph2-m ph0-l cf">
+    <header class="mb2">
+      <h1 class="relative z-2 dib ma0 merriweather f1_125 fw4 dark-gray">Contact</h1>
+    </header>
+    <%# Config %>
+    <% rl = contact.length - 1 %>
+    <%# End %>
+    <% contact.each_with_index do |post, r| %>
+      <div class="fl w-100 w-50-ns <% if r < rl %>mb1<% end %> <% if r % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
+        <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= post.path %>" target="_blank">
           <table class="w-100 collapse">
             <tbody>
               <tr>
