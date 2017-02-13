@@ -159,7 +159,7 @@ layout: index
           <%# End %>
           <% links.each_with_index do |link, l| %>
             <div class="fl w-100 w-50-ns <% if l != ll %>mb1<% end %> <% if l < ll - 1 %>mb1-ns<% end %> <% if l % 2 == 0 %>pr0_5-ns<% else %>pl0_5-ns<% end %>">
-              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.source %>" target="_blank">
+              <a class="js-link shadow-0 translateY-0 duration-0_25 property-all db no-underline" href="<%= link.path %>" target="_blank">
                 <table class="w-100 collapse">
                   <tbody>
                     <tr>

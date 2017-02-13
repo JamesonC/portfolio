@@ -4,6 +4,6 @@
   "title": "Resume",
   "subtitle": "PDF File",
   "cta": "View Site",
-  "source": "http://www.claudiovallejo.mx/resume.pdf",
+  "path": "http://www.claudiovallejo.mx/resume.pdf",
   "avatar": "/images/sources/resume.svg"
 }
