@@ -38,7 +38,7 @@
       "content": [
         {
           "type": "text",
-          "text": "This is a practice case study I worked on early January 2017. I worked on the case study as a Product Design job application assignment, and worked on it for 1 week. After submitting the app there are many flaws and things I could improve on, and I've appended a section at the end of the case study detailing areas where I could work on and assumptions I overlooked during the process."
+          "text": "This is a practice case study I worked on early January 2017. I worked on the case study as a Product Design job application assignment, and worked on it for 1 week."
         }
       ]
     },
@@ -389,7 +389,7 @@
         },
         {
           "type": "text",
-          "text": "Despite my best efforts to create 'realistic' assumptions about user needs and expectations, if I were to continue working on this assignment I would reconsider the following areas—"
+          "text": "Despite my best efforts to create 'realistic' assumptions about user needs and expectations, if I were to continue working on this assignment I would reconsider the following things/features—"
         },
         {
           "type": "bullet",
